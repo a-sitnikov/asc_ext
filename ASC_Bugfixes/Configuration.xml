@@ -55,6 +55,7 @@
 			<Language>Русский</Language>
 			<CommonModule>ИнтеграцияСВнешнимиСистемамиУХ</CommonModule>
 			<CommonModule>УправлениеСоединениямиВИБУХ</CommonModule>
+			<CommonModule>ОбщегоНазначенияУХ</CommonModule>
 			<Catalog>ТаблицыADO</Catalog>
 			<Document>НастраиваемыйОтчет</Document>
 		</ChildObjects>
