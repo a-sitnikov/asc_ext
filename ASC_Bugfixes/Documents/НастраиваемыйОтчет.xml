@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Document uuid="d927a20a-ac0e-49c4-8021-7d60e10632cd">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.НастраиваемыйОтчет" category="Object">
+				<xr:TypeId>1fe53027-427d-42af-86d9-3bab39c34498</xr:TypeId>
+				<xr:ValueId>72596ed1-fd17-4a7f-ba94-eee94c14c7a9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.НастраиваемыйОтчет" category="Ref">
+				<xr:TypeId>7513a9dc-73ad-4205-b186-31e061d5153b</xr:TypeId>
+				<xr:ValueId>a2fe9399-cf44-465a-80e2-2cac89b20a2b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.НастраиваемыйОтчет" category="Selection">
+				<xr:TypeId>9bd8d20c-04cb-4918-82ab-863c56a914d3</xr:TypeId>
+				<xr:ValueId>684ebb4f-0154-4c50-bad7-ac445fd6f14d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.НастраиваемыйОтчет" category="List">
+				<xr:TypeId>e48a3b6a-89b6-4694-93b1-47f632126282</xr:TypeId>
+				<xr:ValueId>65b86e73-92ff-4e52-974d-26e32f536833</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.НастраиваемыйОтчет" category="Manager">
+				<xr:TypeId>79a45c42-152d-49d7-857e-ab5a99959d0d</xr:TypeId>
+				<xr:ValueId>745f0dd1-5d14-4d45-a413-c4cb26a21b2c</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>НастраиваемыйОтчет</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects/>
+	</Document>
+</MetaDataObject>

@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Catalog uuid="8487dc5e-e47c-4161-bd14-d76a592377d8">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ТаблицыADO" category="Object">
+				<xr:TypeId>a61b971e-403e-4507-8abf-fdad4eb3fadf</xr:TypeId>
+				<xr:ValueId>ddd04cae-5e14-462f-b6c3-5c70a0de700e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ТаблицыADO" category="Ref">
+				<xr:TypeId>530e75c2-b380-4da3-a79f-af69dd4a7582</xr:TypeId>
+				<xr:ValueId>98f074cd-6f13-42be-9549-922287f0c553</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ТаблицыADO" category="Selection">
+				<xr:TypeId>a72792e2-981a-4751-ae0f-1d68d05bcbbb</xr:TypeId>
+				<xr:ValueId>c3db9955-42c6-4ecf-89a1-a59dc009437e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ТаблицыADO" category="List">
+				<xr:TypeId>a126ab79-a8c3-4655-82be-37de5e4f5e30</xr:TypeId>
+				<xr:ValueId>eae1a00a-bf62-48fa-8986-042b8f00d641</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ТаблицыADO" category="Manager">
+				<xr:TypeId>8a79540f-1aa3-4f3d-aa3d-2833b587f054</xr:TypeId>
+				<xr:ValueId>72699d73-d57d-4828-a697-c6563f538a96</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ТаблицыADO</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="1e4dc17d-2660-471e-9965-97433ad9a1ae">
+				<Properties>
+					<Name>ИмяФайла</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>200</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="bad4dd02-4481-49fd-80d3-e4a5c3112a03">
+				<Properties>
+					<Name>Имя</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>255</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<TabularSection uuid="d2e2266d-6e32-4b14-9bd5-a317cf30c26b">
+				<InternalInfo>
+					<xr:GeneratedType name="CatalogTabularSection.ТаблицыADO.Реквизиты" category="TabularSection">
+						<xr:TypeId>519b2679-24f4-48ce-bfe1-1af202e2a20d</xr:TypeId>
+						<xr:ValueId>0bd3a447-4144-43fa-bf1a-c29194c72b74</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="CatalogTabularSectionRow.ТаблицыADO.Реквизиты" category="TabularSectionRow">
+						<xr:TypeId>07cb6c78-fa1f-4cc3-bf82-b46bfd3a87d0</xr:TypeId>
+						<xr:ValueId>e8c04b80-526d-4f9c-ab00-7d38a9a9a5bb</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>Реквизиты</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="afbd2813-c206-42f2-9dac-e2aaf5f2498d">
+						<Properties>
+							<Name>Имя</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>255</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="fe716105-9807-4066-8f65-441cf58e238d">
+						<Properties>
+							<Name>ВнутреннееПредставление</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>250</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="ca1920fb-bb50-42e5-97cf-4d291eb16ba8">
+						<Properties>
+							<Name>ТипЗначения</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>10</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<TabularSection uuid="4b08c84e-d4f1-4b0c-b5cb-49f9b365a3ad">
+				<InternalInfo>
+					<xr:GeneratedType name="CatalogTabularSection.ТаблицыADO.СвязанныеТаблицы" category="TabularSection">
+						<xr:TypeId>7078dc3d-2d91-419c-92f6-30e9ce1c80dc</xr:TypeId>
+						<xr:ValueId>9544ae7c-6cd5-4161-b586-4fe6af9ca862</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="CatalogTabularSectionRow.ТаблицыADO.СвязанныеТаблицы" category="TabularSectionRow">
+						<xr:TypeId>d8c26c0a-f4bc-4f8d-9adc-3206eda7af12</xr:TypeId>
+						<xr:ValueId>d0265086-0dd7-4d6f-ac0f-c2cf547751f7</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>СвязанныеТаблицы</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="99ef0086-a9dc-49d1-9e70-42cf89f111a4">
+						<Properties>
+							<Name>ПолеТекущейТаблицы</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>255</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="9ac74058-eb58-49f6-b7f2-38097c923748">
+						<Properties>
+							<Name>ПолеСвязаннойТаблицы</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>255</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="cb1dea97-7306-499f-8ac1-87965c1c7f31">
+						<Properties>
+							<Name>СвязаннаяТаблица</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>cfg:CatalogRef.ТаблицыADO</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>
