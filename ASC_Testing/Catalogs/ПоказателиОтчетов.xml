@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Catalog uuid="ae298ec0-c82e-417a-9594-101c7821bd5e">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ПоказателиОтчетов" category="Object">
+				<xr:TypeId>62daef4c-567c-447a-878f-fbc7a062a54a</xr:TypeId>
+				<xr:ValueId>57282f34-9b33-44a2-a66f-86fe1f1804c8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ПоказателиОтчетов" category="Ref">
+				<xr:TypeId>f1e85cc0-e523-4ae8-9ed2-792ead13701c</xr:TypeId>
+				<xr:ValueId>530c1a3b-7258-4ea9-906e-5c5146f52c11</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ПоказателиОтчетов" category="Selection">
+				<xr:TypeId>6f71d21e-7e92-4b8c-8015-983a7998d988</xr:TypeId>
+				<xr:ValueId>808f52d2-7065-4be0-8ff2-70371056b091</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ПоказателиОтчетов" category="List">
+				<xr:TypeId>cba06382-93ea-4d71-a35c-cf4bbb1b6d3e</xr:TypeId>
+				<xr:ValueId>d3ce0f26-309b-44a3-90d1-149b25086658</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ПоказателиОтчетов" category="Manager">
+				<xr:TypeId>e4fd3f77-9899-40a6-8ec5-5a13deab6cc3</xr:TypeId>
+				<xr:ValueId>ac716098-f370-4061-bc90-bfa140877fa6</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПоказателиОтчетов</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

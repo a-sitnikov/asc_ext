@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Enum uuid="04dfa592-7681-46e2-8feb-cba6fb852423">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ТипыЗначенийПоказателейОтчетов" category="Ref">
+				<xr:TypeId>fe0580fb-7fc8-4ef8-bd9b-16721098582f</xr:TypeId>
+				<xr:ValueId>620ba2d8-d952-484d-8089-dd58c185cfb4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ТипыЗначенийПоказателейОтчетов" category="Manager">
+				<xr:TypeId>7cb736d8-f8f5-40d7-b6e0-b2daf587f6d8</xr:TypeId>
+				<xr:ValueId>6338d14b-4cff-427c-87e4-d63f95e16a76</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ТипыЗначенийПоказателейОтчетов" category="List">
+				<xr:TypeId>02b8d1bb-80bc-492f-8d32-5f0162a5db8b</xr:TypeId>
+				<xr:ValueId>4b757713-cb08-41dd-9dff-26977320b6bb</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ТипыЗначенийПоказателейОтчетов</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects/>
+	</Enum>
+</MetaDataObject>

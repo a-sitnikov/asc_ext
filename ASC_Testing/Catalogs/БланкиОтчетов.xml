@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Catalog uuid="d8245fde-2e50-4ec4-8076-91865c095f0d">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.БланкиОтчетов" category="Object">
+				<xr:TypeId>6ba5a6cd-79ed-4515-acee-dc0f71fa3389</xr:TypeId>
+				<xr:ValueId>e1c272e8-7270-4a86-937c-97e0253c2c22</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.БланкиОтчетов" category="Ref">
+				<xr:TypeId>4f0c802a-f82b-421f-8850-7505e335be99</xr:TypeId>
+				<xr:ValueId>a9ce0af2-c3b8-4ed5-9e53-c902ed4ad78b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.БланкиОтчетов" category="Selection">
+				<xr:TypeId>2aafa4b9-8722-4392-9459-d64dd3eb0e66</xr:TypeId>
+				<xr:ValueId>3198c00c-3d3d-4334-9d11-6ebbe5574cc1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.БланкиОтчетов" category="List">
+				<xr:TypeId>bd94b22d-6ac1-4480-8e26-b44ef105c590</xr:TypeId>
+				<xr:ValueId>c6074df0-2a24-4a44-8fb9-0fbc7b453578</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.БланкиОтчетов" category="Manager">
+				<xr:TypeId>b844221f-d34b-44a2-a099-3396277105b4</xr:TypeId>
+				<xr:ValueId>879fa7df-6393-46da-8c5a-38ff96555a53</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>БланкиОтчетов</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

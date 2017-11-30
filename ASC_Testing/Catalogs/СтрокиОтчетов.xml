@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Catalog uuid="0463ed33-f5fc-4dc5-b0bb-183bef67b591">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.СтрокиОтчетов" category="Object">
+				<xr:TypeId>171fceca-3a28-4c3b-a61e-eb92fa9f6647</xr:TypeId>
+				<xr:ValueId>857f7091-5b41-4816-adec-052f6e15e9c2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.СтрокиОтчетов" category="Ref">
+				<xr:TypeId>35db4fd5-836f-42bf-8867-5c95a4d09579</xr:TypeId>
+				<xr:ValueId>d6bfb26b-3c33-410c-9938-de0bca24d950</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.СтрокиОтчетов" category="Selection">
+				<xr:TypeId>c6fd3df9-58ae-46bd-897e-3971b5a43447</xr:TypeId>
+				<xr:ValueId>677dab72-864f-45e5-bf36-a0a344214292</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.СтрокиОтчетов" category="List">
+				<xr:TypeId>99e7beb7-60bf-45fd-8c79-6ac5d4606b9e</xr:TypeId>
+				<xr:ValueId>1c659251-52b4-4b41-a013-7563cf2981b2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.СтрокиОтчетов" category="Manager">
+				<xr:TypeId>3ed3bd9d-0f0d-4b8e-81da-c0241b153b69</xr:TypeId>
+				<xr:ValueId>8997a9f4-e814-4e8e-9b3b-65e7c84b78fc</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СтрокиОтчетов</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

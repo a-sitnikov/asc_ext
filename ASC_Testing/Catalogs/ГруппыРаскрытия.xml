@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Catalog uuid="05204091-ff81-4cd9-a4b5-0a89c1308cbb">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ГруппыРаскрытия" category="Object">
+				<xr:TypeId>c18fe776-7955-4bbe-a33d-6dcc930939cb</xr:TypeId>
+				<xr:ValueId>580738dc-6253-4069-858a-e1826ecf30e0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ГруппыРаскрытия" category="Ref">
+				<xr:TypeId>13526ef8-a7c9-4951-b95c-7d8910aade42</xr:TypeId>
+				<xr:ValueId>9f241577-bc20-4b11-b9e0-0065a40d7e7c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ГруппыРаскрытия" category="Selection">
+				<xr:TypeId>660e983d-3edd-47b5-b1cd-caa8cc27ccfb</xr:TypeId>
+				<xr:ValueId>99b0f635-7bae-4625-b265-a835a2978f3a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ГруппыРаскрытия" category="List">
+				<xr:TypeId>b7fd51b5-efef-4042-b5e9-9de06508300b</xr:TypeId>
+				<xr:ValueId>5262a8aa-ea72-4099-8ccf-6930a9630d9b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ГруппыРаскрытия" category="Manager">
+				<xr:TypeId>954db809-b8a4-45f5-9e57-5a8637b938db</xr:TypeId>
+				<xr:ValueId>876d2b73-fcb0-4283-ab2e-b253c4dc8aef</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ГруппыРаскрытия</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

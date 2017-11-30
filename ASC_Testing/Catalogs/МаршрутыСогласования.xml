@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Catalog uuid="a240f3db-593f-4215-b058-c770c6dcbdc4">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.МаршрутыСогласования" category="Object">
+				<xr:TypeId>2fb788c6-3dc8-4069-b1cd-00b0e51f9353</xr:TypeId>
+				<xr:ValueId>f4758d49-d3a6-417d-a2a6-d0787afde4b7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.МаршрутыСогласования" category="Ref">
+				<xr:TypeId>42efa0e0-18c5-44d3-8a65-4929ef957af6</xr:TypeId>
+				<xr:ValueId>fdd88101-be4b-45b3-86a5-e09d319f274f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.МаршрутыСогласования" category="Selection">
+				<xr:TypeId>c810bc8e-ef27-4ffa-8b0f-46ed581bb169</xr:TypeId>
+				<xr:ValueId>c424a813-31c6-47cc-9dc2-3cdc4bd4c2ba</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.МаршрутыСогласования" category="List">
+				<xr:TypeId>9d4e7267-e4e1-4e20-8672-1bee41899ada</xr:TypeId>
+				<xr:ValueId>8e618f2d-6888-4d3f-a2b5-cfa56f764a23</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.МаршрутыСогласования" category="Manager">
+				<xr:TypeId>fd90c366-2e9b-4b13-80dc-dcfe18045f9a</xr:TypeId>
+				<xr:ValueId>8864a5b8-03eb-4bd5-ba24-a1a1f5120e99</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>МаршрутыСогласования</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

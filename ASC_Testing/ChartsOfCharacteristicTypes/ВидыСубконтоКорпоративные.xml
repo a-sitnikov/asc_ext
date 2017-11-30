@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<ChartOfCharacteristicTypes uuid="9a1e859e-7b2b-4117-874c-f3c2cc0975cb">
+		<InternalInfo>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesObject.ВидыСубконтоКорпоративные" category="Object">
+				<xr:TypeId>6292e9b0-cfd2-4068-938a-4e4b6b3d6344</xr:TypeId>
+				<xr:ValueId>2aff66dc-c515-4a6f-b55a-9f8c517ac594</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные" category="Ref">
+				<xr:TypeId>554058e6-d8b5-4c0e-a653-60aed0f2f32b</xr:TypeId>
+				<xr:ValueId>9eb117f6-122a-4235-9a11-d485a70976dd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesSelection.ВидыСубконтоКорпоративные" category="Selection">
+				<xr:TypeId>944d7746-a890-4cbb-9684-eecc44b01dbf</xr:TypeId>
+				<xr:ValueId>3576d1a9-d081-45e9-8f57-30e8381dfe3c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesList.ВидыСубконтоКорпоративные" category="List">
+				<xr:TypeId>a7e4481d-eb68-4427-8684-33a92cbaec6c</xr:TypeId>
+				<xr:ValueId>4001f113-b81a-467f-86ff-064b20177d98</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="Characteristic.ВидыСубконтоКорпоративные" category="Characteristic">
+				<xr:TypeId>61ad09b1-a34a-48d6-bb05-7be2ddba884b</xr:TypeId>
+				<xr:ValueId>a6e74f40-f8a2-4b72-be1a-5e35c7dd1ace</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesManager.ВидыСубконтоКорпоративные" category="Manager">
+				<xr:TypeId>56700cd9-96c5-416e-8931-37985e4995d0</xr:TypeId>
+				<xr:ValueId>6a0c1a6c-5012-4fc0-ad07-715780c536cc</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ВидыСубконтоКорпоративные</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects/>
+	</ChartOfCharacteristicTypes>
+</MetaDataObject>

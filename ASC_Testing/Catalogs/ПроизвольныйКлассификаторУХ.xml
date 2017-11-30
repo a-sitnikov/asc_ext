@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Catalog uuid="08de297b-5c34-4f5d-bbe3-e9fb46eb5b4c">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ПроизвольныйКлассификаторУХ" category="Object">
+				<xr:TypeId>87cc527e-70ab-49f6-8d2f-435a5dec2c1e</xr:TypeId>
+				<xr:ValueId>a87b2555-f35c-4c93-8772-3c996260e0a4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ПроизвольныйКлассификаторУХ" category="Ref">
+				<xr:TypeId>0bd9e445-6efa-409d-85aa-b97a16339190</xr:TypeId>
+				<xr:ValueId>ce3236ae-92ef-4fb1-a7d4-dea77404caa5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ПроизвольныйКлассификаторУХ" category="Selection">
+				<xr:TypeId>18f449a4-3c50-4527-bcdb-dab55eb89afb</xr:TypeId>
+				<xr:ValueId>ddb1e039-d95f-484b-a1d1-29497e739b9b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ПроизвольныйКлассификаторУХ" category="List">
+				<xr:TypeId>f9ffdf21-b8a2-482c-aec4-33d57e23d460</xr:TypeId>
+				<xr:ValueId>726c7e35-7697-4215-95f1-834f4607cc60</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ПроизвольныйКлассификаторУХ" category="Manager">
+				<xr:TypeId>29d1ffeb-b0e9-405d-a9d3-18c2d728669c</xr:TypeId>
+				<xr:ValueId>49a97c3e-65e6-4082-9ca5-300c9ae88566</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПроизвольныйКлассификаторУХ</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

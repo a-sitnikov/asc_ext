@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Catalog uuid="d2461e95-6808-451f-9a0b-0286ef4aa928">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.УдалитьВерсииХранимыхФайлов" category="Object">
+				<xr:TypeId>b051f2f2-cd7b-4188-8979-1d540002e617</xr:TypeId>
+				<xr:ValueId>c9870aca-3dcb-4ab7-aff3-6e299274ca4d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.УдалитьВерсииХранимыхФайлов" category="Ref">
+				<xr:TypeId>eb528fef-3928-4346-9f49-902e89762ce8</xr:TypeId>
+				<xr:ValueId>8a0483bc-2856-4b5e-a5cd-5225ad02daf5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.УдалитьВерсииХранимыхФайлов" category="Selection">
+				<xr:TypeId>9a7ac8bf-f50f-4a3b-9d80-41a697025911</xr:TypeId>
+				<xr:ValueId>769d81d4-bc16-4345-a1ed-9394e29eeae9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.УдалитьВерсииХранимыхФайлов" category="List">
+				<xr:TypeId>ae1a81da-643b-4566-9e91-1e1d84317f21</xr:TypeId>
+				<xr:ValueId>376e7eac-68a7-4cf5-9c43-f7739abd45a4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.УдалитьВерсииХранимыхФайлов" category="Manager">
+				<xr:TypeId>bd2b6230-ac46-41ce-ab43-d1366f583d5f</xr:TypeId>
+				<xr:ValueId>0a2cf7f1-06e4-487d-a610-15f98645dd6c</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>УдалитьВерсииХранимыхФайлов</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

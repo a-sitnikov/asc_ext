@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Catalog uuid="f0f2e34e-669f-4a13-a90b-d36f8852de09">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ПланыСчетовБД" category="Object">
+				<xr:TypeId>f0c7ca97-16c0-428e-ad2a-82311453f074</xr:TypeId>
+				<xr:ValueId>78e2513e-87fe-443f-bf7d-512b89fba967</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ПланыСчетовБД" category="Ref">
+				<xr:TypeId>81a7af57-11f1-4e2e-8ce7-5ae65d03d51a</xr:TypeId>
+				<xr:ValueId>bb1d04c4-51f0-4153-9aec-81797724db56</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ПланыСчетовБД" category="Selection">
+				<xr:TypeId>f8f7f72a-13b2-4aa0-859b-d2c5759e00ab</xr:TypeId>
+				<xr:ValueId>e4ddaa53-4c81-4300-af12-7de908a66c45</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ПланыСчетовБД" category="List">
+				<xr:TypeId>68dbc88f-0a00-46d0-80af-90335947cfb0</xr:TypeId>
+				<xr:ValueId>f206e796-e6a7-46a0-9ef8-663e58e6eb31</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ПланыСчетовБД" category="Manager">
+				<xr:TypeId>37e864dc-a196-406a-b3c5-3c8432966a63</xr:TypeId>
+				<xr:ValueId>af68ff16-c0fe-43e3-8715-c375c4839661</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПланыСчетовБД</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

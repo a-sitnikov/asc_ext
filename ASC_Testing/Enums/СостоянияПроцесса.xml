@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Enum uuid="883e0991-3fdb-4d43-8e5e-56570e60e267">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СостоянияПроцесса" category="Ref">
+				<xr:TypeId>7ca81173-3feb-4ada-8675-ede81fb66f3c</xr:TypeId>
+				<xr:ValueId>1f60b443-596a-40d9-a22c-952c0942966e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СостоянияПроцесса" category="Manager">
+				<xr:TypeId>aec79b73-9785-4aa9-a04d-82f57bcb0296</xr:TypeId>
+				<xr:ValueId>e7d2316a-0b13-4ea1-be95-faadf1eb71d7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СостоянияПроцесса" category="List">
+				<xr:TypeId>d292a90b-82ef-4dac-ab78-313ef1e94122</xr:TypeId>
+				<xr:ValueId>876ff0e6-2247-4ab3-b2d8-40538b4c487c</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СостоянияПроцесса</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects/>
+	</Enum>
+</MetaDataObject>

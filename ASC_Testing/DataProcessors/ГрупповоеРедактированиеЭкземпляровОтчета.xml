@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<DataProcessor uuid="98a6fe4c-eefa-4da5-b4c5-151b43028b34">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.ГрупповоеРедактированиеЭкземпляровОтчета" category="Object">
+				<xr:TypeId>55f4e6ba-4e9e-445c-a07b-c3ad387aff3f</xr:TypeId>
+				<xr:ValueId>8eddd0d5-43c6-4332-a91e-aca2dc6c463b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.ГрупповоеРедактированиеЭкземпляровОтчета" category="Manager">
+				<xr:TypeId>4e0cf8b4-3e11-4bcb-9c4d-eb1c6546dfb6</xr:TypeId>
+				<xr:ValueId>d52b5ed2-a653-4e68-97e7-0949222a71c4</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ГрупповоеРедактированиеЭкземпляровОтчета</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="6e1d83b3-75e3-4edf-927c-ee4f2696d196">
+				<Properties>
+					<Name>ОсновнаяВалюта</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="5c7f190a-df93-4db5-bd75-60ece2a80564">
+				<Properties>
+					<Name>БазовоеЗначениеИзмерения</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type/>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="2e198dd5-14ef-4de7-9c7a-a5304935a7d8">
+				<Properties>
+					<Name>ГруппироватьПоИерархииСтрок</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="24c2cbfd-f762-4c50-879d-908fa1fc3b38">
+				<Properties>
+					<Name>ВидОтчета</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыОтчетов</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="69417799-a2fc-4dc7-a3cc-e70ca5140156">
+				<Properties>
+					<Name>ГруппироватьСтроки</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="bc9d8122-ba02-49f8-9bbf-f83599e2e714">
+				<Properties>
+					<Name>БланкОтчета</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>cfg:CatalogRef.БланкиОтчетов</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<TabularSection uuid="64c1eeb8-420d-4a39-9ef3-4dde97a1f477">
+				<InternalInfo>
+					<xr:GeneratedType name="DataProcessorTabularSection.ГрупповоеРедактированиеЭкземпляровОтчета.ГруппировкиКолонки" category="TabularSection">
+						<xr:TypeId>aef66e1b-2c50-4d45-80fe-03578d6f0076</xr:TypeId>
+						<xr:ValueId>a2f140fb-ad90-4f88-b208-1e32c1bbd9be</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ГрупповоеРедактированиеЭкземпляровОтчета.ГруппировкиКолонки" category="TabularSectionRow">
+						<xr:TypeId>10b49830-8081-4e78-a12a-264b0e4c1b3b</xr:TypeId>
+						<xr:ValueId>4fd4607d-195b-4efd-ba8f-531aee1d6b18</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>ГруппировкиКолонки</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="5129e36a-9d15-4070-989c-7e0d1c1f99ce">
+						<Properties>
+							<Name>ПредставлениеГруппировки</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>50</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="816b7e3e-9b41-4be9-851b-33c0f0c164d8">
+						<Properties>
+							<Name>Группировка</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>50</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<TabularSection uuid="ca873498-8cc0-44f2-9c50-b8573101b256">
+				<InternalInfo>
+					<xr:GeneratedType name="DataProcessorTabularSection.ГрупповоеРедактированиеЭкземпляровОтчета.ГруппировкиСтроки" category="TabularSection">
+						<xr:TypeId>3897cd39-458c-44fb-8e1a-7b2360cafc91</xr:TypeId>
+						<xr:ValueId>d830f063-36b9-4856-90a2-cf8110089300</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ГрупповоеРедактированиеЭкземпляровОтчета.ГруппировкиСтроки" category="TabularSectionRow">
+						<xr:TypeId>9e408275-2878-4171-bb0f-a0abd37d6675</xr:TypeId>
+						<xr:ValueId>b05304df-c088-4203-9152-5c252d1d3fbb</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>ГруппировкиСтроки</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="7309be38-f570-4bfa-91c6-2a4f05fca758">
+						<Properties>
+							<Name>Группировка</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>50</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="3082bfbf-1665-46af-91af-cdeef2b6af8c">
+						<Properties>
+							<Name>ПредставлениеГруппировки</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>50</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<TabularSection uuid="d0a10f8f-4df9-4d81-beee-d75f08287cf7">
+				<InternalInfo>
+					<xr:GeneratedType name="DataProcessorTabularSection.ГрупповоеРедактированиеЭкземпляровОтчета.ГруппировкиВычисляемыеКолонки" category="TabularSection">
+						<xr:TypeId>c98c7be6-20ae-4f6a-8fb3-cd397320f15f</xr:TypeId>
+						<xr:ValueId>e93fb207-d864-46be-aaf3-2bc71e84ed17</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ГрупповоеРедактированиеЭкземпляровОтчета.ГруппировкиВычисляемыеКолонки" category="TabularSectionRow">
+						<xr:TypeId>94fb7e61-7159-4060-b5ee-bec0b2d6e4e2</xr:TypeId>
+						<xr:ValueId>b379fef2-7033-4d1a-a5d5-3566b80b9335</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>ГруппировкиВычисляемыеКолонки</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="5caea7b8-3174-43ca-ac1f-4af34a14893e">
+						<Properties>
+							<Name>Группировка</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>50</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="62205467-4343-4355-aa76-36cdb2180d3f">
+						<Properties>
+							<Name>УсловноеОформление</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:boolean</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="a34f594e-a090-491c-bb29-51044b9ec4b3">
+						<Properties>
+							<Name>ПредставлениеГруппировки</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>50</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="b2af6769-b198-463e-92a8-adbdfd13d4b7">
+						<Properties>
+							<Name>Отображать</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:boolean</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<Form>ФормаУправляемая</Form>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

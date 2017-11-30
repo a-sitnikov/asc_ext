@@ -1,0 +1,983 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ГруппаАналитика1" id="52">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа аналитика1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаАналитика1ExtendedTooltip" id="53"/>
+			<ChildItems>
+				<LabelDecoration name="НадписьАналитика1" id="54">
+					<SkipOnInput>false</SkipOnInput>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналитика1</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НадписьАналитика1КонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="НадписьАналитика1РасширеннаяПодсказка" id="56"/>
+				</LabelDecoration>
+				<InputField name="Аналитика1" id="57">
+					<DataPath>Аналитика1</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="Аналитика1КонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="Аналитика1РасширеннаяПодсказка" id="59"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаАналитика2" id="60">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа аналитика1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаАналитика2ExtendedTooltip" id="61"/>
+			<ChildItems>
+				<LabelDecoration name="НадписьАналитика2" id="62">
+					<SkipOnInput>false</SkipOnInput>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналитика2</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НадписьАналитика2КонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="НадписьАналитика2ExtendedTooltip" id="64"/>
+				</LabelDecoration>
+				<InputField name="Аналитика2" id="65">
+					<DataPath>Аналитика2</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="Аналитика2КонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="Аналитика2ExtendedTooltip" id="67"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаАналитика3" id="68">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа аналитика1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаАналитика3ExtendedTooltip" id="69"/>
+			<ChildItems>
+				<LabelDecoration name="НадписьАналитика3" id="70">
+					<SkipOnInput>false</SkipOnInput>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналитика3</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НадписьАналитика3КонтекстноеМеню" id="71"/>
+					<ExtendedTooltip name="НадписьАналитика3ExtendedTooltip" id="72"/>
+				</LabelDecoration>
+				<InputField name="Аналитика3" id="73">
+					<DataPath>Аналитика3</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="Аналитика3КонтекстноеМеню" id="74"/>
+					<ExtendedTooltip name="Аналитика3ExtendedTooltip" id="75"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаАналитика4" id="76">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа аналитика1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаАналитика4ExtendedTooltip" id="77"/>
+			<ChildItems>
+				<LabelDecoration name="НадписьАналитика4" id="78">
+					<SkipOnInput>false</SkipOnInput>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналитика4</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НадписьАналитика4КонтекстноеМеню" id="79"/>
+					<ExtendedTooltip name="НадписьАналитика4ExtendedTooltip" id="80"/>
+				</LabelDecoration>
+				<InputField name="Аналитика4" id="81">
+					<DataPath>Аналитика4</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="Аналитика4КонтекстноеМеню" id="82"/>
+					<ExtendedTooltip name="Аналитика4ExtendedTooltip" id="83"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаАналитика5" id="84">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа аналитика1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаАналитика5ExtendedTooltip" id="85"/>
+			<ChildItems>
+				<LabelDecoration name="НадписьАналитика5" id="86">
+					<SkipOnInput>false</SkipOnInput>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналитика5</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НадписьАналитика5КонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="НадписьАналитика5ExtendedTooltip" id="88"/>
+				</LabelDecoration>
+				<InputField name="Аналитика5" id="89">
+					<DataPath>Аналитика5</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="Аналитика5КонтекстноеМеню" id="90"/>
+					<ExtendedTooltip name="Аналитика5ExtendedTooltip" id="91"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаАналитикаВалюта" id="92">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа аналитика валюта</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа аналитика1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаАналитикаВалютаРасширеннаяПодсказка" id="93"/>
+			<ChildItems>
+				<LabelDecoration name="НадписьАналитикаВалюта" id="94">
+					<SkipOnInput>false</SkipOnInput>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Валюта</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НадписьАналитикаВалютаКонтекстноеМеню" id="95"/>
+					<ExtendedTooltip name="НадписьАналитикаВалютаРасширеннаяПодсказка" id="96"/>
+				</LabelDecoration>
+				<InputField name="АналитикаВалюта" id="97">
+					<DataPath>АналитикаВалюта</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="АналитикаВалютаКонтекстноеМеню" id="98"/>
+					<ExtendedTooltip name="АналитикаВалютаРасширеннаяПодсказка" id="99"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПоказателей" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа показателей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа показателей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПоказателейExtendedTooltip" id="48"/>
+		</UsualGroup>
+		<CommandBar name="КоманднаяПанельОсновная" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командная панель основная</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командная панель основная</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalLocation>Right</HorizontalLocation>
+			<ExtendedTooltip name="КоманднаяПанельОсновнаяExtendedTooltip" id="49"/>
+			<ChildItems>
+				<Button name="Кнопка" id="29">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<SkipOnInput>false</SkipOnInput>
+					<DefaultItem>true</DefaultItem>
+					<CommandName>Form.Command.КомандаОК</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ОК</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КнопкаExtendedTooltip" id="50"/>
+				</Button>
+				<Button name="Закрыть" id="30">
+					<Type>CommandBarButton</Type>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>Form.Command.КомандаЗакрыть</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Закрыть</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ЗакрытьExtendedTooltip" id="51"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Аналитика1" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аналитика1</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:Characteristic.ВидыСубконтоКорпоративные</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="Аналитика2" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аналитика2</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:Characteristic.ВидыСубконтоКорпоративные</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="Аналитика3" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аналитика3</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:Characteristic.ВидыСубконтоКорпоративные</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="Аналитика4" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аналитика4</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:Characteristic.ВидыСубконтоКорпоративные</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="Аналитика5" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аналитика5</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:Characteristic.ВидыСубконтоКорпоративные</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="СтруктураАналитики" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Структура аналитики</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="СтруктураАналитикаТек" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Структура аналитика тек</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ТекущаяАналитика" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая аналитика</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="Операция" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Операция</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИсходнаяАналитика" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исходная аналитика</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="СтруктураВидовАналитик" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Структура видов аналитик</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="СтрАналитики" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стр аналитики</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="АналитикаВалюта" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аналитика валюта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:Characteristic.ВидыСубконтоКорпоративные</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="ГруппаРаскрытия" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа раскрытия</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ГруппыРаскрытия</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяСправочникаСтатьи" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя справочника статьи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Проект" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Организация" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаОК" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда ОК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда ОК</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+		<Command name="КомандаЗакрыть" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="СтрАналитики">
+			<Type/>
+		</Parameter>
+		<Parameter name="СтруктураАналитикаТек">
+			<Type/>
+		</Parameter>
+		<Parameter name="ИдентификаторРодителя">
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+	<BaseForm version="2.4">
+		<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+		<AutoTitle>false</AutoTitle>
+		<CommandBarLocation>None</CommandBarLocation>
+		<VerticalScroll>useIfNecessary</VerticalScroll>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+		<ChildItems>
+			<UsualGroup name="ГруппаАналитика1" id="52">
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа аналитика1</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Group>Horizontal</Group>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаАналитика1ExtendedTooltip" id="53"/>
+				<ChildItems>
+					<LabelDecoration name="НадписьАналитика1" id="54">
+						<SkipOnInput>false</SkipOnInput>
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Аналитика1</v8:content>
+							</v8:item>
+						</Title>
+						<ContextMenu name="НадписьАналитика1КонтекстноеМеню" id="55"/>
+						<ExtendedTooltip name="НадписьАналитика1РасширеннаяПодсказка" id="56"/>
+					</LabelDecoration>
+					<InputField name="Аналитика1" id="57">
+						<DataPath>Аналитика1</DataPath>
+						<TitleLocation>None</TitleLocation>
+						<ContextMenu name="Аналитика1КонтекстноеМеню" id="58"/>
+						<ExtendedTooltip name="Аналитика1РасширеннаяПодсказка" id="59"/>
+					</InputField>
+				</ChildItems>
+			</UsualGroup>
+			<UsualGroup name="ГруппаАналитика2" id="60">
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа аналитика1</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Group>Horizontal</Group>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаАналитика2ExtendedTooltip" id="61"/>
+				<ChildItems>
+					<LabelDecoration name="НадписьАналитика2" id="62">
+						<SkipOnInput>false</SkipOnInput>
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Аналитика2</v8:content>
+							</v8:item>
+						</Title>
+						<ContextMenu name="НадписьАналитика2КонтекстноеМеню" id="63"/>
+						<ExtendedTooltip name="НадписьАналитика2ExtendedTooltip" id="64"/>
+					</LabelDecoration>
+					<InputField name="Аналитика2" id="65">
+						<DataPath>Аналитика2</DataPath>
+						<TitleLocation>None</TitleLocation>
+						<ContextMenu name="Аналитика2КонтекстноеМеню" id="66"/>
+						<ExtendedTooltip name="Аналитика2ExtendedTooltip" id="67"/>
+					</InputField>
+				</ChildItems>
+			</UsualGroup>
+			<UsualGroup name="ГруппаАналитика3" id="68">
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа аналитика1</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Group>Horizontal</Group>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаАналитика3ExtendedTooltip" id="69"/>
+				<ChildItems>
+					<LabelDecoration name="НадписьАналитика3" id="70">
+						<SkipOnInput>false</SkipOnInput>
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Аналитика3</v8:content>
+							</v8:item>
+						</Title>
+						<ContextMenu name="НадписьАналитика3КонтекстноеМеню" id="71"/>
+						<ExtendedTooltip name="НадписьАналитика3ExtendedTooltip" id="72"/>
+					</LabelDecoration>
+					<InputField name="Аналитика3" id="73">
+						<DataPath>Аналитика3</DataPath>
+						<TitleLocation>None</TitleLocation>
+						<ContextMenu name="Аналитика3КонтекстноеМеню" id="74"/>
+						<ExtendedTooltip name="Аналитика3ExtendedTooltip" id="75"/>
+					</InputField>
+				</ChildItems>
+			</UsualGroup>
+			<UsualGroup name="ГруппаАналитика4" id="76">
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа аналитика1</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Group>Horizontal</Group>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаАналитика4ExtendedTooltip" id="77"/>
+				<ChildItems>
+					<LabelDecoration name="НадписьАналитика4" id="78">
+						<SkipOnInput>false</SkipOnInput>
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Аналитика4</v8:content>
+							</v8:item>
+						</Title>
+						<ContextMenu name="НадписьАналитика4КонтекстноеМеню" id="79"/>
+						<ExtendedTooltip name="НадписьАналитика4ExtendedTooltip" id="80"/>
+					</LabelDecoration>
+					<InputField name="Аналитика4" id="81">
+						<DataPath>Аналитика4</DataPath>
+						<TitleLocation>None</TitleLocation>
+						<ContextMenu name="Аналитика4КонтекстноеМеню" id="82"/>
+						<ExtendedTooltip name="Аналитика4ExtendedTooltip" id="83"/>
+					</InputField>
+				</ChildItems>
+			</UsualGroup>
+			<UsualGroup name="ГруппаАналитика5" id="84">
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа аналитика1</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Group>Horizontal</Group>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаАналитика5ExtendedTooltip" id="85"/>
+				<ChildItems>
+					<LabelDecoration name="НадписьАналитика5" id="86">
+						<SkipOnInput>false</SkipOnInput>
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Аналитика5</v8:content>
+							</v8:item>
+						</Title>
+						<ContextMenu name="НадписьАналитика5КонтекстноеМеню" id="87"/>
+						<ExtendedTooltip name="НадписьАналитика5ExtendedTooltip" id="88"/>
+					</LabelDecoration>
+					<InputField name="Аналитика5" id="89">
+						<DataPath>Аналитика5</DataPath>
+						<TitleLocation>None</TitleLocation>
+						<ContextMenu name="Аналитика5КонтекстноеМеню" id="90"/>
+						<ExtendedTooltip name="Аналитика5ExtendedTooltip" id="91"/>
+					</InputField>
+				</ChildItems>
+			</UsualGroup>
+			<UsualGroup name="ГруппаАналитикаВалюта" id="92">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа аналитика валюта</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа аналитика1</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Group>Horizontal</Group>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаАналитикаВалютаРасширеннаяПодсказка" id="93"/>
+				<ChildItems>
+					<LabelDecoration name="НадписьАналитикаВалюта" id="94">
+						<SkipOnInput>false</SkipOnInput>
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Валюта</v8:content>
+							</v8:item>
+						</Title>
+						<ContextMenu name="НадписьАналитикаВалютаКонтекстноеМеню" id="95"/>
+						<ExtendedTooltip name="НадписьАналитикаВалютаРасширеннаяПодсказка" id="96"/>
+					</LabelDecoration>
+					<InputField name="АналитикаВалюта" id="97">
+						<DataPath>АналитикаВалюта</DataPath>
+						<TitleLocation>None</TitleLocation>
+						<ContextMenu name="АналитикаВалютаКонтекстноеМеню" id="98"/>
+						<ExtendedTooltip name="АналитикаВалютаРасширеннаяПодсказка" id="99"/>
+					</InputField>
+				</ChildItems>
+			</UsualGroup>
+			<UsualGroup name="ГруппаПоказателей" id="31">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа показателей</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа показателей</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Group>Vertical</Group>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаПоказателейExtendedTooltip" id="48"/>
+			</UsualGroup>
+			<CommandBar name="КоманднаяПанельОсновная" id="28">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Командная панель основная</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Командная панель основная</v8:content>
+					</v8:item>
+				</ToolTip>
+				<HorizontalLocation>Right</HorizontalLocation>
+				<ExtendedTooltip name="КоманднаяПанельОсновнаяExtendedTooltip" id="49"/>
+				<ChildItems>
+					<Button name="Кнопка" id="29">
+						<Type>CommandBarButton</Type>
+						<DefaultButton>true</DefaultButton>
+						<SkipOnInput>false</SkipOnInput>
+						<DefaultItem>true</DefaultItem>
+						<CommandName>Form.Command.КомандаОК</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ОК</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="КнопкаExtendedTooltip" id="50"/>
+					</Button>
+					<Button name="Закрыть" id="30">
+						<Type>CommandBarButton</Type>
+						<SkipOnInput>false</SkipOnInput>
+						<CommandName>Form.Command.КомандаЗакрыть</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Закрыть</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ЗакрытьExtendedTooltip" id="51"/>
+					</Button>
+				</ChildItems>
+			</CommandBar>
+		</ChildItems>
+		<Attributes>
+			<Attribute name="Аналитика1" id="2">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Аналитика1</v8:content>
+					</v8:item>
+				</Title>
+				<Type>
+					<v8:TypeSet>cfg:Characteristic.ВидыСубконтоКорпоративные</v8:TypeSet>
+				</Type>
+			</Attribute>
+			<Attribute name="Аналитика2" id="3">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Аналитика2</v8:content>
+					</v8:item>
+				</Title>
+				<Type>
+					<v8:TypeSet>cfg:Characteristic.ВидыСубконтоКорпоративные</v8:TypeSet>
+				</Type>
+			</Attribute>
+			<Attribute name="Аналитика3" id="4">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Аналитика3</v8:content>
+					</v8:item>
+				</Title>
+				<Type>
+					<v8:TypeSet>cfg:Characteristic.ВидыСубконтоКорпоративные</v8:TypeSet>
+				</Type>
+			</Attribute>
+			<Attribute name="Аналитика4" id="5">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Аналитика4</v8:content>
+					</v8:item>
+				</Title>
+				<Type>
+					<v8:TypeSet>cfg:Characteristic.ВидыСубконтоКорпоративные</v8:TypeSet>
+				</Type>
+			</Attribute>
+			<Attribute name="Аналитика5" id="6">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Аналитика5</v8:content>
+					</v8:item>
+				</Title>
+				<Type>
+					<v8:TypeSet>cfg:Characteristic.ВидыСубконтоКорпоративные</v8:TypeSet>
+				</Type>
+			</Attribute>
+			<Attribute name="СтруктураАналитики" id="8">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Структура аналитики</v8:content>
+					</v8:item>
+				</Title>
+				<Type/>
+			</Attribute>
+			<Attribute name="СтруктураАналитикаТек" id="9">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Структура аналитика тек</v8:content>
+					</v8:item>
+				</Title>
+				<Type/>
+			</Attribute>
+			<Attribute name="ТекущаяАналитика" id="1">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Текущая аналитика</v8:content>
+					</v8:item>
+				</Title>
+				<Type/>
+			</Attribute>
+			<Attribute name="Операция" id="7">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Операция</v8:content>
+					</v8:item>
+				</Title>
+				<Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>0</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</Type>
+			</Attribute>
+			<Attribute name="ИсходнаяАналитика" id="10">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Исходная аналитика</v8:content>
+					</v8:item>
+				</Title>
+				<Type/>
+			</Attribute>
+			<Attribute name="СтруктураВидовАналитик" id="11">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Структура видов аналитик</v8:content>
+					</v8:item>
+				</Title>
+				<Type/>
+			</Attribute>
+			<Attribute name="СтрАналитики" id="12">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Стр аналитики</v8:content>
+					</v8:item>
+				</Title>
+				<Type/>
+			</Attribute>
+			<Attribute name="АналитикаВалюта" id="13">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Аналитика валюта</v8:content>
+					</v8:item>
+				</Title>
+				<Type>
+					<v8:TypeSet>cfg:Characteristic.ВидыСубконтоКорпоративные</v8:TypeSet>
+				</Type>
+			</Attribute>
+			<Attribute name="ГруппаРаскрытия" id="14">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа раскрытия</v8:content>
+					</v8:item>
+				</Title>
+				<Type>
+					<v8:Type>cfg:CatalogRef.ГруппыРаскрытия</v8:Type>
+				</Type>
+			</Attribute>
+			<Attribute name="ИмяСправочникаСтатьи" id="15">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Имя справочника статьи</v8:content>
+					</v8:item>
+				</Title>
+				<Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>0</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</Type>
+			</Attribute>
+			<Attribute name="Проект" id="16">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Проект</v8:content>
+					</v8:item>
+				</Title>
+				<Type>
+					<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+				</Type>
+			</Attribute>
+			<Attribute name="Организация" id="17">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Организация</v8:content>
+					</v8:item>
+				</Title>
+				<Type>
+					<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+				</Type>
+			</Attribute>
+		</Attributes>
+		<Commands>
+			<Command name="КомандаОК" id="1">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Команда ОК</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Команда ОК</v8:content>
+					</v8:item>
+				</ToolTip>
+			</Command>
+			<Command name="КомандаЗакрыть" id="2">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Команда закрыть</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Команда закрыть</v8:content>
+					</v8:item>
+				</ToolTip>
+			</Command>
+		</Commands>
+		<Parameters>
+			<Parameter name="СтрАналитики">
+				<Type/>
+			</Parameter>
+			<Parameter name="СтруктураАналитикаТек">
+				<Type/>
+			</Parameter>
+			<Parameter name="ИдентификаторРодителя">
+				<Type>
+					<v8:Type>v8:UUID</v8:Type>
+				</Type>
+				<KeyParameter>true</KeyParameter>
+			</Parameter>
+		</Parameters>
+	</BaseForm>
+</Form>

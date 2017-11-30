@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Enum uuid="9dc34c66-1631-4a7a-8332-7d4086df6e6e">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.КонтекстПротоколируемогоСобытия" category="Ref">
+				<xr:TypeId>a5a2def0-618b-42cb-83f3-11a3148faf31</xr:TypeId>
+				<xr:ValueId>55f4beb7-9877-4569-acad-0e0f5dead7c2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.КонтекстПротоколируемогоСобытия" category="Manager">
+				<xr:TypeId>b9ce0154-dd83-488a-b6d3-540b96b47df4</xr:TypeId>
+				<xr:ValueId>9f6ef987-2699-4631-a62c-ac27f9eaf29c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.КонтекстПротоколируемогоСобытия" category="List">
+				<xr:TypeId>58003b32-7601-43ec-92b2-f17a18bfc888</xr:TypeId>
+				<xr:ValueId>6762e830-f6b8-454c-8bfb-5ef09e4953a7</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>КонтекстПротоколируемогоСобытия</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects/>
+	</Enum>
+</MetaDataObject>
