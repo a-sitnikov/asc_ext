@@ -1,4 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.4">
-	<ConfigVersions/>
+	<ConfigVersions>
+		<Metadata name="CommonModule.АСЦ_Юникус" id="1a319e1e-9dd7-4279-b195-d97e97c0a013" configVersion="1318e88d5a83eb16761009630f37c5870bab2e09"/>
+		<Metadata name="CommonModule.АСЦ_Юникус.Module" id="1a319e1e-9dd7-4279-b195-d97e97c0a013.0" configVersion="c4da0aa5cbb4cac9e32a44e263e0496d7774e58b"/>
+	</ConfigVersions>
 </ConfigDumpInfo>
