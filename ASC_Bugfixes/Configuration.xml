@@ -46,7 +46,7 @@
 			</UsePurposes>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor/>
-			<Version>27.11.2017</Version>
+			<Version>05.12.2017</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<InterfaceCompatibilityMode>Taxi</InterfaceCompatibilityMode>
 			<CompatibilityMode>Version8_3_10</CompatibilityMode>
@@ -56,6 +56,7 @@
 			<CommonModule>ИнтеграцияСВнешнимиСистемамиУХ</CommonModule>
 			<CommonModule>УправлениеСоединениямиВИБУХ</CommonModule>
 			<CommonModule>ОбщегоНазначенияУХ</CommonModule>
+			<CommonModule>ИнтеграцияВИБПереопределяемыйУХ</CommonModule>
 			<Catalog>ТаблицыADO</Catalog>
 			<Document>НастраиваемыйОтчет</Document>
 		</ChildObjects>
