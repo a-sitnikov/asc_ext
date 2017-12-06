@@ -10,21 +10,25 @@
 	|	V_ASC_CONTRACT.PREMIUM_SUM as PREMIUM_SUM,
 	|	V_ASC_CONTRACT.KV_RUB as KV_RUB,
 	|	V_ASC_CONTRACT.PAY_DATE as PAY_DATE,
+	|	CASE WHEN V_ASC_CONTRACT.INSUR_TYPE = 'пролонгация' 
+	|		THEN 1
+	|		ELSE 0
+	|	END as Пролонгация,
 	// Номенклатура
-	|	V_ASC_CONTRACT.PRODUCT_NAME PRODUCT_NAME,
+	|	V_ASC_CONTRACT.PRODUCT_NAME as PRODUCT_NAME,
 	// Контрагент
-	|	V_ASC_CONTRACT.SUBJECT_NAME SUBJECT_NAME,
-	|	'ФизическоеЛицо' ЮрФизЛицо,
+	|	V_ASC_CONTRACT.SUBJECT_NAME as SUBJECT_NAME,
+	|	'ФизическоеЛицо' as ЮрФизЛицо,
 	// Договор
-	|	V_ASC_CONTRACT.POLICY_NUMBER POLICY_NUMBER,
-	|	V_ASC_CONTRACT.DATE_SIGN DATE_SIGN,
-	|	V_ASC_CONTRACT.ACTION_BEGIN_DATE ACTION_BEGIN_DATE,
-	|	V_ASC_CONTRACT.ACTION_END_DATE ACTION_END_DATE,
-	|	'СПокупателем' ВидДоговора,
-	|	'643' ВалютаКод,
+	|	V_ASC_CONTRACT.POLICY_NUMBER as POLICY_NUMBER,
+	|	V_ASC_CONTRACT.DATE_SIGN as DATE_SIGN,
+	|	V_ASC_CONTRACT.ACTION_BEGIN_DATE as ACTION_BEGIN_DATE,
+	|	V_ASC_CONTRACT.ACTION_END_DATE as ACTION_END_DATE,
+	|	'СПокупателем' as ВидДоговора,
+	|	'643' as ВалютаКод,
 	// Страховая
-	|	V_ASC_CONTRACT.SK_NAME SK_NAME,
-	|	'ЮридическоеЛицо' СК_ЮрФизЛицо
+	|	V_ASC_CONTRACT.SK_NAME as SK_NAME,
+	|	'ЮридическоеЛицо' as СК_ЮрФизЛицо
 	|FROM 
 	|	V_ASC_CONTRACT
 	|WHERE
@@ -56,18 +60,28 @@
 	//Результат = ИнтеграцияСВнешнимиСистемамиУХ.ТрансформироватьВнешниеДанные(ДокОбъект, ТаблицаДанных, ПравилаИспользованияПолей);
 	Результат = ЗаполнитьАналитику(ТаблицаДанных);
 	
+	Колонки = Новый Массив;
+	Колонки.Добавить("FULL_PREMIUM");
+	Колонки.Добавить("PREMIUM_SUM");
+	Колонки.Добавить("KV_RUB");
+	Колонки.Добавить("PAY_DATE");
+	
 	Для каждого СтрокаТЗ из Результат Цикл
 		
-		Для каждого СтрокаПоказателя из ДокОбъект.мПоказатели Цикл
+		Для каждого Колонка из Колонки Цикл
 			
-			Код = СокрЛП(СтрокаПоказателя.Колонка.Наименование);
-			Попытка
-				Значение = СтрокаТЗ[Код];
-			Исключение
-				Продолжить;
-			КонецПопытки;	
+			Значение = СтрокаТЗ[Колонка];
 			
-			ДокОбъект.УстановитьЗначениеПоказателя(СтрокаПоказателя.Ссылка, Значение, 
+			Если ВРег(СтрокаТЗ.PRODUCT_NAME) = "КАСКО" Тогда
+				Код = "КАСКО_" + Колонка;
+				
+			ИначеЕсли ВРег(СтрокаТЗ.PRODUCT_NAME) = "ОСАГО" Тогда
+				Код = "ОСАГО_" + Колонка;
+			Иначе
+				Код = "ДАННЫЕ_" + Колонка;
+			КонецЕсли;	
+			
+			ДокОбъект.УстановитьЗначениеПоказателя(Код, Значение, 
 										СтрокаТЗ.Аналитика1, СтрокаТЗ.Аналитика2, СтрокаТЗ.Аналитика3, СтрокаТЗ.Аналитика4);
 		КонецЦикла;	
 		
@@ -277,6 +291,7 @@
 		СтрокаТЗ.Аналитика1 = ПолучитьНоменклатуру(СтрокаТЗ.PRODUCT_NAME);
 		СтрокаТЗ.Аналитика2 = ПолучитьКонтрагента(СтрокаТЗ.SUBJECT_NAME);
 		СтрокаТЗ.Аналитика3 = ПолучитьДоговор(СтрокаТЗ.Аналитика2, СтрокаТЗ);
+		СтрокаТЗ.Аналитика4 = Справочники.Контрагенты.ПустаяСсылка();
 		
 	КонецЦикла;	
 	
