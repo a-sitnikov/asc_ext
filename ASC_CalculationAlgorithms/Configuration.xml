@@ -55,7 +55,7 @@
 			<Language>Русский</Language>
 			<CommonModule>АСЦ_104АСП</CommonModule>
 			<CommonModule>АСЦ_ОбщийМодуль</CommonModule>
-			<CommonModule>АСЦ_Юникус</CommonModule>
+			<CommonModule>АСЦ_UNICUS_Contracts</CommonModule>
 			<CommonModule>ИнтеграцияСВнешнимиСистемамиУХ</CommonModule>
 		</ChildObjects>
 	</Configuration>
