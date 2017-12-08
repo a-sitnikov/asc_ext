@@ -2196,6 +2196,11 @@
 				</Page>
 			</ChildItems>
 		</Pages>
+		<InputField name="Тест_КоличествоСтрок" id="741">
+			<DataPath>Тест_КоличествоСтрок</DataPath>
+			<ContextMenu name="Тест_КоличествоСтрокКонтекстноеМеню" id="742"/>
+			<ExtendedTooltip name="Тест_КоличествоСтрокРасширеннаяПодсказка" id="743"/>
+		</InputField>
 		<UsualGroup name="ГруппаПодвал" id="272">
 			<Title>
 				<v8:item>
@@ -3666,6 +3671,22 @@
 					<v8:Length>0</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Тест_КоличествоСтрок" id="84">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест количество строк</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>

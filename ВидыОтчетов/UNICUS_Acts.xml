@@ -703,8 +703,8 @@ kyZMmjBtQsIWpgYeDuxwOhR9RhdFbT30mt5DS6tB26TI3+MXtCy4k0Ytuj3hQZQP
 			<v8:Owner xsi:type="v8:CatalogRef.ВидыОтчетов">d3093484-db50-11e7-812d-005056012280</v8:Owner>
 			<v8:Code>00000001</v8:Code>
 			<v8:Description>UNICUS_Acts</v8:Description>
-			<v8:ПроцедураЗаполнения>ЭтотОбъект.ДополнительныеСвойства.Вставить("Тест_КоличествоСтрок", 50);
-АСЦ_UNICUS_Acts.ЗаполнитьОтчет(ЭтотОбъект);
+			<v8:ПроцедураЗаполнения>АСЦ_UNICUS_Acts.ЗаполнитьОтчет(ЭтотОбъект);
+
 
 </v8:ПроцедураЗаполнения>
 			<v8:ПроцедураВычисления/>

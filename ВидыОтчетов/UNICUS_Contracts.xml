@@ -7405,8 +7405,9 @@ kyZMmjBtQsIWpgYeDuxwOhR9RhdFbT30mt5DS6tB26TI3+MXtCy4k0Ytuj3hQZQP
 			<v8:Owner xsi:type="v8:CatalogRef.ВидыОтчетов">0d30bc89-d10e-11e7-8123-005056011723</v8:Owner>
 			<v8:Code>00000001</v8:Code>
 			<v8:Description>UNICUS_Contracts</v8:Description>
-			<v8:ПроцедураЗаполнения>//ЭтотОбъект.ДополнительныеСвойства.Вставить("Тест_ДопПараметр", " AND rownum &lt; 20");
-АСЦ_UNICUS_Contracts.ЗаполнитьОтчет(ЭтотОбъект);
+			<v8:ПроцедураЗаполнения>АСЦ_UNICUS_Contracts.ЗаполнитьОтчет(ЭтотОбъект);
+
+
 
 
 
