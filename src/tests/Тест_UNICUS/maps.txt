@@ -1,2 +1,3 @@
-﻿Form\Форма\Форма.bsl-->0a34d05b-5f1c-4dbf-add8-be4099d9ad0d.0 (46, 135)
-Макеты\Данные.mxl-->9c2860e2-c702-4aab-a589-5baa0cbda780.0
+﻿Form\Форма\Форма.bsl-->0a34d05b-5f1c-4dbf-add8-be4099d9ad0d.0 (46, 167)
+Макеты\ДанныеAct.mxl-->e72db7b3-79f6-4e32-b99f-8904b78c6a26.0
+Макеты\ДанныеContract.mxl-->9c2860e2-c702-4aab-a589-5baa0cbda780.0
