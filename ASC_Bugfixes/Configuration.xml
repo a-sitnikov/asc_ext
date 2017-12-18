@@ -46,19 +46,22 @@
 			</UsePurposes>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor/>
-			<Version>05.12.2017</Version>
+			<Version>18.12.2017</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<InterfaceCompatibilityMode>Taxi</InterfaceCompatibilityMode>
 			<CompatibilityMode>Version8_3_10</CompatibilityMode>
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<CommonPicture>СоздатьПроцесс</CommonPicture>
 			<CommonModule>ИнтеграцияСВнешнимиСистемамиУХ</CommonModule>
 			<CommonModule>УправлениеСоединениямиВИБУХ</CommonModule>
 			<CommonModule>ОбщегоНазначенияУХ</CommonModule>
 			<CommonModule>ИнтеграцияВИБПереопределяемыйУХ</CommonModule>
 			<Catalog>ТаблицыADO</Catalog>
+			<Catalog>ВидыОтчетов</Catalog>
 			<Document>НастраиваемыйОтчет</Document>
+			<DataProcessor>ВыгрузкаЗагрузкаМетодическихМоделей</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
