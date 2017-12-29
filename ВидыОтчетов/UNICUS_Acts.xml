@@ -9,34 +9,36 @@
 			<v8:Parent xsi:type="v8:CatalogRef.БланкиОтчетов">00000000-0000-0000-0000-000000000000</v8:Parent>
 			<v8:Code>00000001</v8:Code>
 			<v8:Description>UNICUS_Acts</v8:Description>
-			<v8:Макет>AgFTS2/0iI3BTqDV67a9oKcNvVjNbhs3EO45QK49G9srF+DfLrm9Be2ll6CAkbNg
-STZQoOgh9S0Q4LhockiQBEFPaRsnzQNUSSPE9Y/8Ctwn6St0Zsj9lRTtKnK09uyQ
-XH4znBnO7vDNl1/Q77/zq3vRVxHbT7kSXO3He0rYWO+PR/EeFzoeilE6Osj0WGcH
-7OaNe5YJliGDk6IIWoIR6/52H/JH7mzHXbn5Tv6Lu3Bzd54/dFN36U7zJ10emSCw
-kJYZSawEcLhpxvHGJ9CUwB8k0oxH1sZirLJY86GKh6PhMB5ndphmfH9vnFoGT/PF
-6aLP9EmYiFzXOwcNBUrkJAvXk3o1hL+Rse7c/u6bO7uDW6PDn6PJzRv4R49XU2R7
-invlZu7MvXOn7gMY6zh/tOPmcHvoZvmxm35d4qgGjlrAeZkfuX+8yQFpmj+A+xxa
-l8A/3QEh76ED/fHATUtQXYFypicsWSvkPmDMQd0A+w4knudPUNUSNG2BmjWgJ7DU
-I9L2fWPtJaBtAWZrAF/DGmekIcL+uxxU8BaqwBi0RUcy8YicpRPvNeKU5wyazou3
-S8Qfg+Bp/isZisx0BR0z2Ben+dNSgWQlwAv3fJAfwUZ6W7Ppamm44S7cdMfvQLTl
-DFZ7Cq46JzPQFgw4JuBkCzi/gaZgH7jP3VllJVUZBSOeL5uHUQYJYFaLebKSEKXp
-kA22EzIYD1gVzODZtGJNYNEvuu4XUTlGVJ4RlWuQLeBNBW8qeFPBWwBLmisMluH1
-hUheSkJWVWyQJEUpCdm0YoMk6TMfyuHhFy8hxY8CU4IdREo5hxdJT/q4DSoyyk2x
-CE9Qr89YtOn8GnyOLKk04LRn7k/3u/tr0PBeOV8gJJjd0y76UlZdDjuA3kvMEpjd
-YDueuakYwHNT4C8oPmmXUN6q6UDpTgeydQ1kJw1o+ddkA9VJA3rpyOvRQHfSQKFw
-tRUNGo0qxw3ca/fG/QHXs7rgBHcmke0KXsjO7qRKzit00aiGvg5dQu4Gc5wsz9wr
-NEpRmXQrGp3gi9e/yNspIAl0KzIg5OjD5BiWdp4/XrRL7fVTW6nB2DNbCcD1WtTe
-vM1Q1J58BhU+Gp+toNSefBat1kZqKzy1Jz106xwPgWwKvdLJgWyK28dzgWwuqq87
-Aukh8AVWcVRCQGh83CHSk83BV7pEerI5ch+nSE8+RVhft0hPeoh86d4C2jS/Dwt7
-XKxvXvpo1decCrSPpMWKsmkyTvWj7ofZKCDd81r92EBO/X935FoVCVKqeq+Bav1/
-d9T15qUP1YL0AW7UqC08HkhHPPzMjwjCV6ehPrsdsaIYIZ6eNs2mbTazZtPXe7W2
-aLRDuUdCY1H9ddS7cflzEkm1lUkzcr/Uk1Bv+rvVCr+JJVPhSCnlQumEKbpEOLCR
-3GRMlMDhzImz4kBHWlY1EiFlVh7SSDxmafXzRr8U2iRKW1NNEn44KCmxQxSCRNkP
-yiY8kVRQwOVPXhaGeDkkw1BidZZVJsKHVG3I2i4Doj3Aw0CQYkt7YMFZPiwzsEFd
-U6mrB2F1Gt1IdS+Wm4nBXF2Y3XDO2ld06+4Pez/S6SL3KOU8vtk8+4nTdMdpgiXC
-hiLaemlhmPszgOj7vcPD/bs/0S6MdqNiYzT7ceNYPGVbPvztimm7EZMJGIlGube4
-8scQsSimFB2q6giHGsYYKZIl3dJK0e6WqbZamyCK7BH5IeWD0C+dFXT5RXNqV3EA
-EQIZ0f8H</v8:Макет>
+			<v8:Макет>AgFTS2/0iI3BTqDV67a9oKcNvVjNbtw2EO45QB4gN0O9UgD/JFK9Be2ll6CAkfPC
+u2sDAYIeUt+CBRwXTQ4JkiDIoUjbOGkfoJs0i7j+Wb8C9SR9hc6QlChpV15ps/bK
+HlH8+b6ZIYcS59atr+zvv9OLh9HXEdlNqWBU7MY7gulY7o5H8Q5lMh6yUTray+RY
+Znvk5o2HmjCSYQEHRRE8MWKL5m/zOX9qTrbMhZlv5T+bMzM3p/kTMzXn5jh/3qXL
+BIEZ10RxW+QADjdJKN7oBB45lPcSrsYjrWM2Flks6VDEw9FwGI8zPUwzurszTjWB
+3nRxOOszfOIHYqnrnYKGDBmp5UJ7UqcGczfrrLt3vv/27vbg9mj/p2hy8wb+2e5h
+CG8OMe/MzJyYj+bYfAZnHeZPt8wcbk/MLD80029KHFHDEQs4b/MD849zOSBN88dw
+n8PTOZRfbAHJJ6jA+XhspiWoDKCUyAlJVpI8Aow5qOthPwLjaf4cVS1B0waoWgF6
+BKYeWG0/1WwvAXUDMFsB+B5snFkNEfbf5aCMNlAZrsGsqEgmDpGSdOJmzZaEKyl0
+naPXS+gPgXia/2IdZd10ARUziIvj/EWpQNIK8Ma8GuQHEEgfKj5tZ8OAOzPTLReB
+6MsZWHsMU3Vq3WBD0OOoVpzXoCn4B+5zc1JxveufLfT/1bwOvhTBdRgXdBk6rkXY
+JmaVyLC+ZKx0MBa9hxn3Loai8M5yxTQUlS9KrygUcd5kdSJZGphUYFKBSQUmHZh0
+YNKBKSuZOG48Sc1u7jcEWjWP85IUiyIUPSkP5vFgHg/mYd+CVNotCSmp/8VLRPGz
+uvEE91fcejgGCwhJuAJKECkKhUKDAJ1Tu8XRYo/lLky8VcRuhTHzPWyt2yBtiDqz
+3ZZcSgHvEfPS/GF+M38OasugHM8QEibNyS522U18OewAas9xU8LNFKL/xEzZAPpN
+oXxmw8EGpd0mKzrY3VV6sXENeCcNrPlX5APRSQP7juNXo4HspIFAcrERDWoPsFsN
+zHvzl/kdrpdVRo1RbMVmGcMm3kKcIGeyeeKF1485Cm+fFl0kqiGvQhf/cgJ3HC1/
+NbVolKIy6UY0OsIvC/el0tx0Ei83wgGL3H55HYJpp/mzRb9U3q8VSxWudrWRJb9a
+C3xr1xe/dOIauCufNfUwkE5cgwqXxkYjIKQT16LVyihphIZ0oodundeiF+tCLy4w
+L9YFbF01XqyL22cpeLE+Vd/59aIH4Rs8c9sDH6y1y2eYO7E++OIccyfWh2ydZe7E
++sh95pk78SVkfWeaO9GD8q35AGjT/BEY9qywb15Oe9v3tfCyD9NiSqHuMmoTCLIf
+Zi2DYF5VEgg15NT9d0eupBGAJRz4a6ja/XdHXe1ee3QoRB/gWpKigUe96IiHB6/I
+Qrj0hD9634kI8ydKW7a9Vf1R1x+z+qM7yleeWe3Zn+QtaczCX0e9a5dLlHGrnkoz
+O/3+vMvQDLxrKfCUwonwOcWUMiETIuzFfMaOU5URVgL7pCMlRUaPaxIeEsZ5Vmbp
+OObZGvW0Vs+ZVImQWoVBzDV7JTlWsIKIlfWgbEITbo94cLnU2yVNvNlEy6bC+kTL
+LAvew06y0qR1lwbW1sCbDdQ3eHpd+hDTBmVnnoHf6tZhpVCkyJ+yMiEsKS3LjIey
+LhIxmDtMFL4CitlUlJLmFd1+cG/nvs1ae8ByHF1vnP7CYbLjMEYSpn22RDs230yd
+A6Ifdvb3dx/8aIM72o6KeKvXYzxqzN4ub/6uZdh2RBJkbG3lSeJbvTrCJbDickhR
+IUKFT4cppThLllRzzVmzmqdSS6k8lfVW5JqEWzTOMaSQyy87pnIVeSgfIoj+Pw==
+</v8:Макет>
 			<v8:Комментарий/>
 			<v8:Описание/>
 			<v8:ЕдиницаИзмеренияПоУмолчанию/>
@@ -68,51 +70,55 @@ VKmWl6sWRcnCC/subLmw9WLDhW0XdlzYA+Rtxa14PljxJqCpu1EUQRAA</v8:Макет>
 			</v8:МакетРаскрытий>
 			<v8:МакетРаскрытий>
 				<v8:КодГруппыРаскрытия>АНЛТ_Данные</v8:КодГруппыРаскрытия>
-				<v8:Макет>AgFTS2/0iI3BTqDV67a9oKcN7VZPaxQxFPdcKH6FJV4nkH8zkyDexKMI4nnZ+bNH
-D9JbGagV8aDYIj1VpVRBvXUVxy7d/vkKmU/iV/AlmZmdabt1FneLiJshecl7yftt
-XvJ+uXfzhv39nJyto1vIE4xLQlWCw1QoLIaxwoomEY6CSPk08eOhTL3VlXVuKvjQ
-Q+Qh/UWP9Jk+0iOUmXH0CGWrK1nLZF+f6u86Lzb0Dz3Wx9DLS2PwmgaEU8JTPOBU
-YpEmMR4QKnBE4yAeKpEINTS20qOeqiYhBD3qWVEf6MPipT7qAYzTXvHMOpgULwDX
-iR4Xr7uYWDSUSS9kVmSwODTCI6YhGXQZyEOfhUksJaYJhx0iEcdRHEU4UTIKFEkH
-SSA9sCYXp9N5pmflRCN1bYnHrBPiyWo2zRwOUGWgrSReS8JJPPP8WgpqKXSSyNz2
-w9LlD19SVT+Lwc9KKM3iduJcrSA42/q9fqs/9PWOjccJRCpHNiCuwmYtW3UBYLfv
-8kX7MHoC3QnEfBNOIhxa2ge7kT2VOehO9Td3JpoI+PRPLNw/6+Sfem5fF++fd/LP
-7Olahn/Ryb+JAF+E/z3wAF71oR4BghxywKtzFjtWM4IWLJsYQvAfXg+GXf2mX2xA
-mvraBOCbi3U9APaLTUjWo+K5C0ixpfegn0OQxsVWE5PJcOK6MJm0fQxDu2BtyCSH
-BD4unsJxyqtMP0UWAKpgDmSGsxAqactMtXkQ3QeisRZhuyvbXdXuUnKuT1t98FVS
-pM1r9dcRa6u41GDTN1M8YIwE9XhJCFlDKbqp6EUVKVWsVBm2FGRKdtQ1jpI/Q+w+
-9e70yG33GrCUgx4M1tbSJ4/tLpuXAfN94KhyK9pas1XSHPfL1XfdssQtzF2D67Wq
-AT4dIA5zIKQQYTnZFIg5mSZ5agnM7elFBiPNOY1S8VkZkUZ86yfQnn0CmeQ2+f/0
-WfrThwbVmXTn529/BYmZeXEGL0A61B/1OyjbS6GI7mwwA8nCiGFeDpiBZ146uJKo
-qov8R2/Uf4BwqKyzH9y4ihZ8yRRTla3LKWJqWNGGRRiapagsb4KEF5ZLwA1euYoX
-iLvPv8n/y0707vsF</v8:Макет>
+				<v8:Макет>AgFTS2/0iI3BTqDV67a9oKcN7VdNi9NAGPa8IPgTSrwmMF9JJog3zyKI59I07dGD
+7G0JrCviQXEX2YOsyrIK6s0q1i3b/fgLk1/i1aPPzOSr3XZNsS0IZpLMO/POzPNm
+5u37vP1145q5fo4vtpybjisYl4RGiRf2ROSJfjfyIprEXhzEkU8Tv9uXPff6xhbX
+L9zOfcd11Gc1UBfqRA2cVPc7D5z0+kY6MeRInavvaphtqx9qpE7RGuaDgdoLCKeE
+97wOp9ITvaTrdQgVXky7QbcfiUREfT1WutSNikmOgxZ1jai+qOPsuTppwYzzVvbE
+AIyzZ7DrTI2yl02GGGsok27IjMiwOCrhEl2RFE0Gue+zMOlK6dGEY4dIzL24G8de
+Esk4iEivkwTSxWhyeTpdZHqaT9RS05q4zIAQ7FI+m6bWDqhSaAuJl5KwEk9dv5SC
+UgqtJFJXWsk3aHp5kl/ejFdxGTsCWBACOwRqCDwJJIle7DQelDQ3ul7snk29KcE5
+7ql36o1631b75ujOcKhDx2jty9OLmVcTC81Oz160jd4zNMdwjx04LfybtjFuYBx4
+CN25+mbdp24Br75i6fisET41zrcKfN4InxlHXAW+aISvT4AvA/8QCEBVx2oAC4YI
+Fy+mRuwbzQA1RtZtCIEfrseG12q/jozwYZ41IB+oV+1sG7H0a90AH+D+egw4ynbA
+KIPsqXWFbFcdoj2Ee4yy3bpNOgyLddmkueUUXQcYrRlvCJYZZY/hyMOCjirLAhMh
+m1umidVxcm7VU02wdu6CDc2IcLIpJ5vRZJOSqTadaAMr53ETUcu7oa0TxQYlYw6L
+eMAYCcr+nLXSmlI0U9H5KnZZRXIVz1Wa7QWpZMoqWcqSw6mtbKbxCaf9sXW7RW7Z
+JMfwp3Ovs7nZe/TQnItOeJjvg3rzzZvU6s3VFEhmq+84s/uxqE9IviixBM5t5ZVI
+RQevOoj9oEBIIcJ8si7wIVLRFdVL52d0mYxJfU6tFNScn3DNX8q879DkfTpMj//n
+eyvP92hQeKz1riWkfqxM/cTiqR9+BFiR4dGBTmBNH0+AJzTJX9g49fPnRuRpLkQE
+Vh/UW5S9ldDiHAacA7s0MmzOe3MsWRoFLsp2c+xZlPiupOQixPzV/4B/m1qNdVSW
+cRmxoGAzX7KIRcXYWicPqyUaMaL5iBCVT2X+45RIdC17kCoMXkV5xAajP5DXqlnK
+3r8B</v8:Макет>
 				<v8:ОсновнаяЧасть>false</v8:ОсновнаяЧасть>
 				<v8:КодЯзыка>0</v8:КодЯзыка>
 			</v8:МакетРаскрытий>
 			<v8:МакетРаскрытий>
 				<v8:КодГруппыРаскрытия/>
-				<v8:Макет>AgFTS2/0iI3BTqDV67a9oKcNpVdJbxNLEOaMBL/BGq4zUm8z3QPigHgXLuhJiHPk
-LRIS4gC5IUsh6MEBBFL0ThwIXOCIWSxCAs5f6Pkl/AVq6VntYDvx2N3V3VNfdS3d
-Vd6/fIE+v49PHkdXonicCS2FHid9LV1ixqNh0hfSJAM5zIbbuRmZfDu+dPGxi2Wc
-I4FMUQQjGRPpP/nvxQt/1PMnft4rnvqffu6Pi+d+6n/5w+LVOq9MEFgqF1tFpAJw
-6EwssBMTGCqgt1NlR0PnEjnSeWLEQCeD4WCQjHI3yHIx7o8yF8PbYpFdbsI+CYxI
-rdsL2KHETQqShfpkvA3JHRnr7u1bN+/e2box3HkUTS5dxC+9XrOoLot/52f+yH/x
-h/47GGuveNHzc+ie+1mx56dXKxzdwtELOG+LXf+VTQ5I0+IZ9HMY/QL6dQ+EfIMJ
-9MczP61ATQ0qYjOJ05VCngDGHLYbYL+AxOPiFW61As06oHYF6AGouku7/dbSvQJ0
-HcB8BeB70HFGO0TYH8tBpeigkntdOZFOGFHE2YS9RpRmyqLpWLxbIn4PBE+L/8hQ
-ZKYTmJjBuTgsXlcbSE8FeOP3t4pdOEifGzY9XRoeuJ9+2uMTiLacgbaH4KpjMgMd
-wYBjA06+gPM/7BTsA/3cH9VW0rVRMOLFMj6MMrgAZo2YJytJWZkOyWA7qYLxgNTB
-DExmNWkDaSZ8O4GzwidZ0pQfPmzoOkNHVZR3hWJ3097pNEOTyPAGzfJBp1gVpANf
-LVULiC1dtzoGq1A0YMjQrLNnupA60I0AaOCmCJmeB3chMv1BIzAbogxKMecTFcIS
-lDk4JSgbAjOUlW0o8A3mGbrkjvz07w5R3Jwd/FSXKG7OjryJUxQ35xG2qVsUNxuI
-fOs/A9q0eAKKvSz1m1c+qm6LSo7Eswiu53YTSYs5r20yQRnObIbZSnF+v5HhWsgZ
-/9ZHbuQ5kFJnpBaq49/6qKvNS5VD2WwC3MqiHTwRmjXx8EaNCILzZ8ggt6HSDPc+
-0fS2bQ9de5i3h5yRGmPZGoeEREITWX/X3Hfr4UpOUsKyWU7uV5ygJKqBvTNaQ85T
-seZKN9fWpZmE3IePjMuiUgmbx7KCDnWxqNddXA9SqVReFZIKS8HOvGjNK2lsqo2z
-NZPk5bBNRYqUgmQ9nxtlraFVeLg6lAFVqiwVqTIBjxdVVdsbNBjldcyhqcVbsVTP
-ChF3n+jGw3v9+/RPQ7CAik+cjc+dk82sZluo+P1HOHMfetd74loUynRc+re/szN+
-+IACProTlTHYnscYdVhyL1/+h9kEV0iakRNZvlxO6HoiVGnWWgVF0OK0ckp2p1Vm
-nDE2iCKVI17SHPQixEBolz/E03jKwikcHET/Aw==</v8:Макет>
+				<v8:Макет>AgFTS2/0iI3BTqDV67a9oKcNpVfNihw3EM7ZYPIKQ+eqBpWkbqkTcjDJJRcTWHxe
+5m8hEHJw9mYG1htiHxxsMD4EH7zxJTlm7HjwZteefQX1I+QJ8gqpKql/ZyYzs9s9
+Uyr91Felkkqq/ufTT/j59/LqQfJZIqa51CD1NB1qcKmZTsbpUIJJRzDOx0eFmZji
+SNy+9cAJEAUxJJQkWAPBrP/Tvy+f+IuBv/LLQfmT/+CX/rJ87Of+oz8vn+4yZEbA
+oJywilmF4FgYIamQM6wq5I8yZSdj51KY6CI1cqTT0Xg0SieFG+WFnA4nuRM4Wq6K
+wz7isyhI3K6lRAuBjJSsi+aTBzMgFOyse3e/+ereweGd8fGPyez2Lfrx8EZE9UX8
+b37hL/xbf+7fo7NOyycDv8TisV+Up37+eY2jOzh6BedVeeL/Ci5HpHn5CMsl1j4i
+/2yASt5hA63HIz+vQU0DKoWZiWyrkoeIsURzI+xb1HhZPiVTa9C8B2q3gJ7hVE/Y
+2nedudeArgdYbAF8jXNcsIUE+/d6UJA9VF7eomrIZgFRinwWVo05HThLrgvq3Rr1
+p6h4Xv7MjmI3XWHDAuPivHxWG5BtBHjpnx+WJxhIb1o+3ayNAu6Dnw9CBJIvFzjb
+c1yqS3YDh2DEsRtxXqCl6B8sl/6i5fowvlgZ/6t/0fhSN66juJDr0Gkv4jGxaEUG
++xKgdjCx0cOgoouR1dFZgc0b1kbWREORzThmyRYZn3QNqZ6wlSiSwVKEW1SPxAhw
+qBJJTsQSwRPSoc2GzwBZHUIq7COeLh8TSFKII7g1nCC8hyVPO5xZNUXtHfcc9lai
+RtFkRyS7zI1Puh40LVoL0BGWuwlga6u2cDOCzG6CuxJD/qwVQi1VhrSYm6mKAYST
+OdsQPi2FOenK91T4km5EPo4v/Pz/V1gFcn3w1TVWgVwfcuMqq0Cuj7zPOqtAbqJs
+35VWgeyh8pV/g2jz8iFO7Jdqfst62etDsNYDdF7gbgp0H02rF37XZZKvd7MfZud+
+989b13sHOQ//3ZFblzxqaa7jDqoL/91Rt7uX06aK7APcSSF6eDKSHfHo1E8YIiQP
+8WK8i2l2vM6Y59G2W3XdatGthou2VYdOPd6zrDSF5rej3Z03pLHA9ti84OVXZhYv
++lA6ozXeokrokOYX2rosB7xT6QVRZdRK2kJADR0/CmTT70RTyUCpos6iFeXBvXbZ
+aVdgbKaNs40QhO5opuKJVIqgaS+MstZwL74hNYaICirPZKZMp1P15WTdpWs5J4xs
+eFAN71xMcShBziydpJVLrJSi/yZ37n83/J4/zSJgLSevJ+duKGa2i618Ivk/ME5/
+H3w5kF8k8ROEur4dHh9P7//AQZIcJNW+7bbTvqa8TK7v/nqD2EEiMkmrTL0ypJI6
+5JkpVCJVg24aYjprrVWYVq42K6eg36xy44yxURU7JAldOoSRjLsq0vUvy7TeKl2M
+oUjo/wE=</v8:Макет>
 				<v8:ОсновнаяЧасть>true</v8:ОсновнаяЧасть>
 				<v8:КодЯзыка>0</v8:КодЯзыка>
 			</v8:МакетРаскрытий>
@@ -179,6 +185,13 @@ kyZMmjBtQsIWpgYeDuxwOhR9RhdFbT30mt5DS6tB26TI3+MXtCy4k0Ytuj3hQZQP
 			</v8:АдресаЭлементовСтруктурыОтчета>
 			<v8:АдресаЭлементовСтруктурыОтчета>
 				<v8:ТипЭлемента>Показатель</v8:ТипЭлемента>
+				<v8:Элемент xsi:type="v8:CatalogRef.ПоказателиОтчетов">a2a3b0c6-ec96-11e7-812f-005056012280</v8:Элемент>
+				<v8:СтрокаНомер>14</v8:СтрокаНомер>
+				<v8:КолонкаНомер>9</v8:КолонкаНомер>
+				<v8:АдресС1К1>С14К9</v8:АдресС1К1>
+			</v8:АдресаЭлементовСтруктурыОтчета>
+			<v8:АдресаЭлементовСтруктурыОтчета>
+				<v8:ТипЭлемента>Показатель</v8:ТипЭлемента>
 				<v8:Элемент xsi:type="v8:CatalogRef.ПоказателиОтчетов">a50b6b45-db52-11e7-812d-005056012280</v8:Элемент>
 				<v8:СтрокаНомер>14</v8:СтрокаНомер>
 				<v8:КолонкаНомер>6</v8:КолонкаНомер>
@@ -214,6 +227,13 @@ kyZMmjBtQsIWpgYeDuxwOhR9RhdFbT30mt5DS6tB26TI3+MXtCy4k0Ytuj3hQZQP
 			</v8:АдресаЭлементовСтруктурыОтчета>
 			<v8:АдресаЭлементовСтруктурыОтчета>
 				<v8:ТипЭлемента>Колонка</v8:ТипЭлемента>
+				<v8:Элемент xsi:type="v8:CatalogRef.КолонкиОтчетов">a2a3b0c5-ec96-11e7-812f-005056012280</v8:Элемент>
+				<v8:СтрокаНомер>0</v8:СтрокаНомер>
+				<v8:КолонкаНомер>9</v8:КолонкаНомер>
+				<v8:АдресС1К1>К9</v8:АдресС1К1>
+			</v8:АдресаЭлементовСтруктурыОтчета>
+			<v8:АдресаЭлементовСтруктурыОтчета>
+				<v8:ТипЭлемента>Колонка</v8:ТипЭлемента>
 				<v8:Элемент xsi:type="v8:CatalogRef.КолонкиОтчетов">a50b6b41-db52-11e7-812d-005056012280</v8:Элемент>
 				<v8:СтрокаНомер>0</v8:СтрокаНомер>
 				<v8:КолонкаНомер>6</v8:КолонкаНомер>
@@ -233,6 +253,37 @@ kyZMmjBtQsIWpgYeDuxwOhR9RhdFbT30mt5DS6tB26TI3+MXtCy4k0Ytuj3hQZQP
 				<v8:КолонкаНомер>7</v8:КолонкаНомер>
 				<v8:АдресС1К1>К7</v8:АдресС1К1>
 			</v8:АдресаЭлементовСтруктурыОтчета>
+		</v8:CatalogObject.БланкиОтчетов>
+		<v8:CatalogObject.БланкиОтчетов>
+			<v8:IsFolder>false</v8:IsFolder>
+			<v8:Ref xsi:type="v8:CatalogRef.БланкиОтчетов">5e957dd5-ec99-11e7-812f-005056012280</v8:Ref>
+			<v8:DeletionMark>false</v8:DeletionMark>
+			<v8:Owner xsi:type="v8:CatalogRef.ВидыОтчетов">d3093484-db50-11e7-812d-005056012280</v8:Owner>
+			<v8:Parent xsi:type="v8:CatalogRef.БланкиОтчетов">00000000-0000-0000-0000-000000000000</v8:Parent>
+			<v8:Code>00000002</v8:Code>
+			<v8:Description>UNICUS_Acts бланк 1</v8:Description>
+			<v8:Макет>AQEIAAAAAAAAAO+7v3siVSJ9</v8:Макет>
+			<v8:Комментарий/>
+			<v8:Описание/>
+			<v8:ЕдиницаИзмеренияПоУмолчанию>Окр1</v8:ЕдиницаИзмеренияПоУмолчанию>
+			<v8:УровеньТочностиПоУмолчанию>0</v8:УровеньТочностиПоУмолчанию>
+			<v8:ПоУмолчаниюВВидеБланка>false</v8:ПоУмолчаниюВВидеБланка>
+			<v8:Утвержден>false</v8:Утвержден>
+			<v8:РаскрытиеВМакете>false</v8:РаскрытиеВМакете>
+			<v8:ФиксацияСлева>0</v8:ФиксацияСлева>
+			<v8:ФиксацияСверху>0</v8:ФиксацияСверху>
+			<v8:БланкДляОтображения>false</v8:БланкДляОтображения>
+			<v8:СтрокаШапки>0</v8:СтрокаШапки>
+			<v8:СтрокаПодвала>0</v8:СтрокаПодвала>
+			<v8:Шапка/>
+			<v8:Подвал/>
+			<v8:ИмяЛиста/>
+			<v8:НастройкаСтруктуры>false</v8:НастройкаСтруктуры>
+			<v8:ИерархияГруппировокСтрок>true</v8:ИерархияГруппировокСтрок>
+			<v8:РежимСводнойТаблицы>true</v8:РежимСводнойТаблицы>
+			<v8:Периодичность>Месяц</v8:Периодичность>
+			<v8:ИерархияГруппировокКолонок>false</v8:ИерархияГруппировокКолонок>
+			<v8:Ракурс xsi:type="v8:CatalogRef.ОбластиДанныхВидовОтчетов">00000000-0000-0000-0000-000000000000</v8:Ракурс>
 		</v8:CatalogObject.БланкиОтчетов>
 		<v8:CatalogObject.ВидыОтчетов>
 			<v8:IsFolder>true</v8:IsFolder>
@@ -279,7 +330,7 @@ kyZMmjBtQsIWpgYeDuxwOhR9RhdFbT30mt5DS6tB26TI3+MXtCy4k0Ytuj3hQZQP
 			<v8:ОбъектДляСогласованияЗначений>ЭкземплярОтчета</v8:ОбъектДляСогласованияЗначений>
 		</v8:CatalogObject.ВидыОтчетов>
 		<v8:ChartOfCharacteristicTypesObject.ВидыСубконтоКорпоративные>
-			<v8:Ref xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">cf79868a-be3a-11e7-811f-005056011723</v8:Ref>
+			<v8:Ref xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">7cd3d8d4-e623-11e7-812d-005056012280</v8:Ref>
 			<v8:DeletionMark>false</v8:DeletionMark>
 			<v8:Code>КК        </v8:Code>
 			<v8:Description>Контрагенты</v8:Description>
@@ -297,7 +348,7 @@ kyZMmjBtQsIWpgYeDuxwOhR9RhdFbT30mt5DS6tB26TI3+MXtCy4k0Ytuj3hQZQP
 			<v8:ПроизвольныйКласификаторУХ>false</v8:ПроизвольныйКласификаторУХ>
 		</v8:ChartOfCharacteristicTypesObject.ВидыСубконтоКорпоративные>
 		<v8:ChartOfCharacteristicTypesObject.ВидыСубконтоКорпоративные>
-			<v8:Ref xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">cf798681-be3a-11e7-811f-005056011723</v8:Ref>
+			<v8:Ref xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">7cd3d8cb-e623-11e7-812d-005056012280</v8:Ref>
 			<v8:DeletionMark>false</v8:DeletionMark>
 			<v8:Code>ДКК       </v8:Code>
 			<v8:Description>Договоры контрагентов</v8:Description>
@@ -325,10 +376,10 @@ kyZMmjBtQsIWpgYeDuxwOhR9RhdFbT30mt5DS6tB26TI3+MXtCy4k0Ytuj3hQZQP
 			<v8:Аналитика3Обязательна>false</v8:Аналитика3Обязательна>
 			<v8:Аналитика4Обязательна>false</v8:Аналитика4Обязательна>
 			<v8:Аналитика5Обязательна>false</v8:Аналитика5Обязательна>
-			<v8:ВидАналитики1 xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">cf79868a-be3a-11e7-811f-005056011723</v8:ВидАналитики1>
-			<v8:ВидАналитики2 xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">cf798681-be3a-11e7-811f-005056011723</v8:ВидАналитики2>
-			<v8:ВидАналитики3 xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">cf79868a-be3a-11e7-811f-005056011723</v8:ВидАналитики3>
-			<v8:ВидАналитики4 xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">cf798681-be3a-11e7-811f-005056011723</v8:ВидАналитики4>
+			<v8:ВидАналитики1 xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">7cd3d8d4-e623-11e7-812d-005056012280</v8:ВидАналитики1>
+			<v8:ВидАналитики2 xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">7cd3d8cb-e623-11e7-812d-005056012280</v8:ВидАналитики2>
+			<v8:ВидАналитики3 xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">7cd3d8d4-e623-11e7-812d-005056012280</v8:ВидАналитики3>
+			<v8:ВидАналитики4 xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">7cd3d8cb-e623-11e7-812d-005056012280</v8:ВидАналитики4>
 			<v8:ВидАналитики5 xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">00000000-0000-0000-0000-000000000000</v8:ВидАналитики5>
 			<v8:ВидАналитики6 xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">00000000-0000-0000-0000-000000000000</v8:ВидАналитики6>
 			<v8:ПорядковыйНомер>1</v8:ПорядковыйНомер>
@@ -360,7 +411,7 @@ kyZMmjBtQsIWpgYeDuxwOhR9RhdFbT30mt5DS6tB26TI3+MXtCy4k0Ytuj3hQZQP
 				<v8:Ссылочное>true</v8:Ссылочное>
 				<v8:ИмяКолонки/>
 				<v8:МультиязычныйРеквизит>false</v8:МультиязычныйРеквизит>
-				<v8:ВидАналитики xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">cf79868a-be3a-11e7-811f-005056011723</v8:ВидАналитики>
+				<v8:ВидАналитики xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">7cd3d8d4-e623-11e7-812d-005056012280</v8:ВидАналитики>
 				<v8:КодАналитики/>
 				<v8:АналитикаВидаОтчета>false</v8:АналитикаВидаОтчета>
 			</v8:ПравилаОтображенияПолей>
@@ -373,7 +424,7 @@ kyZMmjBtQsIWpgYeDuxwOhR9RhdFbT30mt5DS6tB26TI3+MXtCy4k0Ytuj3hQZQP
 				<v8:Ссылочное>false</v8:Ссылочное>
 				<v8:ИмяКолонки>Контрагенты.Наименование</v8:ИмяКолонки>
 				<v8:МультиязычныйРеквизит>false</v8:МультиязычныйРеквизит>
-				<v8:ВидАналитики xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">cf79868a-be3a-11e7-811f-005056011723</v8:ВидАналитики>
+				<v8:ВидАналитики xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">7cd3d8d4-e623-11e7-812d-005056012280</v8:ВидАналитики>
 				<v8:КодАналитики>Аналитика1</v8:КодАналитики>
 				<v8:АналитикаВидаОтчета>false</v8:АналитикаВидаОтчета>
 			</v8:ПравилаОтображенияПолей>
@@ -386,7 +437,7 @@ kyZMmjBtQsIWpgYeDuxwOhR9RhdFbT30mt5DS6tB26TI3+MXtCy4k0Ytuj3hQZQP
 				<v8:Ссылочное>true</v8:Ссылочное>
 				<v8:ИмяКолонки/>
 				<v8:МультиязычныйРеквизит>false</v8:МультиязычныйРеквизит>
-				<v8:ВидАналитики xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">cf798681-be3a-11e7-811f-005056011723</v8:ВидАналитики>
+				<v8:ВидАналитики xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">7cd3d8cb-e623-11e7-812d-005056012280</v8:ВидАналитики>
 				<v8:КодАналитики/>
 				<v8:АналитикаВидаОтчета>false</v8:АналитикаВидаОтчета>
 			</v8:ПравилаОтображенияПолей>
@@ -399,7 +450,7 @@ kyZMmjBtQsIWpgYeDuxwOhR9RhdFbT30mt5DS6tB26TI3+MXtCy4k0Ytuj3hQZQP
 				<v8:Ссылочное>false</v8:Ссылочное>
 				<v8:ИмяКолонки>Договоры контрагентов.Наименование</v8:ИмяКолонки>
 				<v8:МультиязычныйРеквизит>false</v8:МультиязычныйРеквизит>
-				<v8:ВидАналитики xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">cf798681-be3a-11e7-811f-005056011723</v8:ВидАналитики>
+				<v8:ВидАналитики xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">7cd3d8cb-e623-11e7-812d-005056012280</v8:ВидАналитики>
 				<v8:КодАналитики>Аналитика2</v8:КодАналитики>
 				<v8:АналитикаВидаОтчета>false</v8:АналитикаВидаОтчета>
 			</v8:ПравилаОтображенияПолей>
@@ -412,7 +463,7 @@ kyZMmjBtQsIWpgYeDuxwOhR9RhdFbT30mt5DS6tB26TI3+MXtCy4k0Ytuj3hQZQP
 				<v8:Ссылочное>true</v8:Ссылочное>
 				<v8:ИмяКолонки/>
 				<v8:МультиязычныйРеквизит>false</v8:МультиязычныйРеквизит>
-				<v8:ВидАналитики xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">cf79868a-be3a-11e7-811f-005056011723</v8:ВидАналитики>
+				<v8:ВидАналитики xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">7cd3d8d4-e623-11e7-812d-005056012280</v8:ВидАналитики>
 				<v8:КодАналитики/>
 				<v8:АналитикаВидаОтчета>false</v8:АналитикаВидаОтчета>
 			</v8:ПравилаОтображенияПолей>
@@ -425,7 +476,7 @@ kyZMmjBtQsIWpgYeDuxwOhR9RhdFbT30mt5DS6tB26TI3+MXtCy4k0Ytuj3hQZQP
 				<v8:Ссылочное>false</v8:Ссылочное>
 				<v8:ИмяКолонки>Контрагенты.Наименование</v8:ИмяКолонки>
 				<v8:МультиязычныйРеквизит>false</v8:МультиязычныйРеквизит>
-				<v8:ВидАналитики xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">cf79868a-be3a-11e7-811f-005056011723</v8:ВидАналитики>
+				<v8:ВидАналитики xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">7cd3d8d4-e623-11e7-812d-005056012280</v8:ВидАналитики>
 				<v8:КодАналитики>Аналитика3</v8:КодАналитики>
 				<v8:АналитикаВидаОтчета>false</v8:АналитикаВидаОтчета>
 			</v8:ПравилаОтображенияПолей>
@@ -438,7 +489,7 @@ kyZMmjBtQsIWpgYeDuxwOhR9RhdFbT30mt5DS6tB26TI3+MXtCy4k0Ytuj3hQZQP
 				<v8:Ссылочное>true</v8:Ссылочное>
 				<v8:ИмяКолонки/>
 				<v8:МультиязычныйРеквизит>false</v8:МультиязычныйРеквизит>
-				<v8:ВидАналитики xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">cf798681-be3a-11e7-811f-005056011723</v8:ВидАналитики>
+				<v8:ВидАналитики xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">7cd3d8cb-e623-11e7-812d-005056012280</v8:ВидАналитики>
 				<v8:КодАналитики/>
 				<v8:АналитикаВидаОтчета>false</v8:АналитикаВидаОтчета>
 			</v8:ПравилаОтображенияПолей>
@@ -451,7 +502,7 @@ kyZMmjBtQsIWpgYeDuxwOhR9RhdFbT30mt5DS6tB26TI3+MXtCy4k0Ytuj3hQZQP
 				<v8:Ссылочное>false</v8:Ссылочное>
 				<v8:ИмяКолонки>Договоры контрагентов.Наименование</v8:ИмяКолонки>
 				<v8:МультиязычныйРеквизит>false</v8:МультиязычныйРеквизит>
-				<v8:ВидАналитики xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">cf798681-be3a-11e7-811f-005056011723</v8:ВидАналитики>
+				<v8:ВидАналитики xsi:type="v8:ChartOfCharacteristicTypesRef.ВидыСубконтоКорпоративные">7cd3d8cb-e623-11e7-812d-005056012280</v8:ВидАналитики>
 				<v8:КодАналитики>Аналитика4</v8:КодАналитики>
 				<v8:АналитикаВидаОтчета>false</v8:АналитикаВидаОтчета>
 			</v8:ПравилаОтображенияПолей>
@@ -536,6 +587,26 @@ kyZMmjBtQsIWpgYeDuxwOhR9RhdFbT30mt5DS6tB26TI3+MXtCy4k0Ytuj3hQZQP
 			<v8:НормализованныйКод>ДатаДок</v8:НормализованныйКод>
 			<v8:НеФинансовый>false</v8:НеФинансовый>
 		</v8:CatalogObject.КолонкиОтчетов>
+		<v8:CatalogObject.КолонкиОтчетов>
+			<v8:Ref xsi:type="v8:CatalogRef.КолонкиОтчетов">a2a3b0c5-ec96-11e7-812f-005056012280</v8:Ref>
+			<v8:DeletionMark>false</v8:DeletionMark>
+			<v8:Owner xsi:type="v8:CatalogRef.ВидыОтчетов">d3093484-db50-11e7-812d-005056012280</v8:Owner>
+			<v8:Code>ИД                  </v8:Code>
+			<v8:Description>ИД</v8:Description>
+			<v8:ПорядковыйНомер>5</v8:ПорядковыйНомер>
+			<v8:ТипЗначения>Строка</v8:ТипЗначения>
+			<v8:СпособОбработки/>
+			<v8:ВидКурса/>
+			<v8:Оборотный>false</v8:Оборотный>
+			<v8:НеМасштабируется>false</v8:НеМасштабируется>
+			<v8:Наименование1/>
+			<v8:Наименование2/>
+			<v8:ВидИтогаПоСчету/>
+			<v8:Предназначение/>
+			<v8:ВидИтогаСокращеннойОСВ/>
+			<v8:НормализованныйКод>ИД</v8:НормализованныйКод>
+			<v8:НеФинансовый>false</v8:НеФинансовый>
+		</v8:CatalogObject.КолонкиОтчетов>
 		<v8:CatalogObject.ОбластиДанныхВидовОтчетов>
 			<v8:IsFolder>false</v8:IsFolder>
 			<v8:Ref xsi:type="v8:CatalogRef.ОбластиДанныхВидовОтчетов">d3093485-db50-11e7-812d-005056012280</v8:Ref>
@@ -606,6 +677,55 @@ kyZMmjBtQsIWpgYeDuxwOhR9RhdFbT30mt5DS6tB26TI3+MXtCy4k0Ytuj3hQZQP
 			<v8:Защищенный>false</v8:Защищенный>
 			<v8:КоэффициентТР>0</v8:КоэффициентТР>
 			<v8:НормализованныйКод>Данные_ДатаДок</v8:НормализованныйКод>
+			<v8:КонтролироватьЛимиты>false</v8:КонтролироватьЛимиты>
+			<v8:ТипПоказателя xsi:type="v8:CatalogRef.ТипыПоказателей">00000000-0000-0000-0000-000000000000</v8:ТипПоказателя>
+		</v8:CatalogObject.ПоказателиОтчетов>
+		<v8:CatalogObject.ПоказателиОтчетов>
+			<v8:Ref xsi:type="v8:CatalogRef.ПоказателиОтчетов">a2a3b0c6-ec96-11e7-812f-005056012280</v8:Ref>
+			<v8:DeletionMark>false</v8:DeletionMark>
+			<v8:Owner xsi:type="v8:CatalogRef.ВидыОтчетов">d3093484-db50-11e7-812d-005056012280</v8:Owner>
+			<v8:Code>Данные_ИД                                         </v8:Code>
+			<v8:Description>Данные: ид</v8:Description>
+			<v8:ВидИтога/>
+			<v8:ВидКурса/>
+			<v8:ВидПоказателя/>
+			<v8:ВнутриГрупповой>false</v8:ВнутриГрупповой>
+			<v8:ГруппаРаскрытия xsi:type="v8:CatalogRef.ГруппыРаскрытия">d2a0067b-db52-11e7-812d-005056012280</v8:ГруппаРаскрытия>
+			<v8:ДействияПриАктуализации/>
+			<v8:Колонка xsi:type="v8:CatalogRef.КолонкиОтчетов">a2a3b0c5-ec96-11e7-812f-005056012280</v8:Колонка>
+			<v8:Наименование1/>
+			<v8:Наименование2/>
+			<v8:НеМасштабируется>false</v8:НеМасштабируется>
+			<v8:НеФинансовый>true</v8:НеФинансовый>
+			<v8:Оборотный>false</v8:Оборотный>
+			<v8:ОценкаПоложительногоОтклонения/>
+			<v8:ПриходРасход/>
+			<v8:СвязанныйПоказатель xsi:type="v8:CatalogRef.ПоказателиОтчетов">00000000-0000-0000-0000-000000000000</v8:СвязанныйПоказатель>
+			<v8:СпособОбработки/>
+			<v8:СтатьяДвиженияДенежныхСредств xsi:type="v8:CatalogRef.СтатьиДвиженияДенежныхСредств">00000000-0000-0000-0000-000000000000</v8:СтатьяДвиженияДенежныхСредств>
+			<v8:СтатьяДоходовИРасходов xsi:type="v8:CatalogRef.СтатьиДоходовИРасходов">00000000-0000-0000-0000-000000000000</v8:СтатьяДоходовИРасходов>
+			<v8:Строка xsi:type="v8:CatalogRef.СтрокиОтчетов">a50b6b43-db52-11e7-812d-005056012280</v8:Строка>
+			<v8:СуффиксКода/>
+			<v8:ТипЗначения>Строка</v8:ТипЗначения>
+			<v8:ЧисловойПоказатель>false</v8:ЧисловойПоказатель>
+			<v8:СчетБД xsi:type="v8:CatalogRef.СчетаБД">00000000-0000-0000-0000-000000000000</v8:СчетБД>
+			<v8:ВидИтогаПоСчету/>
+			<v8:КоррСчетБД xsi:type="v8:CatalogRef.СчетаБД">00000000-0000-0000-0000-000000000000</v8:КоррСчетБД>
+			<v8:Предназначение>ПроизвольныеДанные</v8:Предназначение>
+			<v8:РесурсРегистра/>
+			<v8:ПорядковыйНомер>0</v8:ПорядковыйНомер>
+			<v8:Проверочный>false</v8:Проверочный>
+			<v8:Описание/>
+			<v8:ПорядокУстранения/>
+			<v8:УровеньКритичности/>
+			<v8:Валютный>false</v8:Валютный>
+			<v8:ПересчитыватьВалютнуюСумму>false</v8:ПересчитыватьВалютнуюСумму>
+			<v8:ДляОтраженияКурсовыхРазниц>false</v8:ДляОтраженияКурсовыхРазниц>
+			<v8:СтатьяДвиженияРесурсов xsi:type="v8:CatalogRef.СтатьиДвиженияРесурсов">00000000-0000-0000-0000-000000000000</v8:СтатьяДвиженияРесурсов>
+			<v8:РазделениеПоПроектам>false</v8:РазделениеПоПроектам>
+			<v8:Защищенный>false</v8:Защищенный>
+			<v8:КоэффициентТР>0</v8:КоэффициентТР>
+			<v8:НормализованныйКод>Данные_ИД</v8:НормализованныйКод>
 			<v8:КонтролироватьЛимиты>false</v8:КонтролироватьЛимиты>
 			<v8:ТипПоказателя xsi:type="v8:CatalogRef.ТипыПоказателей">00000000-0000-0000-0000-000000000000</v8:ТипПоказателя>
 		</v8:CatalogObject.ПоказателиОтчетов>
@@ -757,7 +877,7 @@ kyZMmjBtQsIWpgYeDuxwOhR9RhdFbT30mt5DS6tB26TI3+MXtCy4k0Ytuj3hQZQP
 			<v8:ТипПоказателя xsi:type="v8:CatalogRef.ТипыПоказателей">00000000-0000-0000-0000-000000000000</v8:ТипПоказателя>
 		</v8:CatalogObject.ПоказателиОтчетов>
 		<v8:CatalogObject.ТипыБазДанных>
-			<v8:Ref xsi:type="v8:CatalogRef.ТипыБазДанных">474d29b1-be3a-11e7-811f-005056011723</v8:Ref>
+			<v8:Ref xsi:type="v8:CatalogRef.ТипыБазДанных">14e99103-e621-11e7-812d-005056012280</v8:Ref>
 			<v8:DeletionMark>false</v8:DeletionMark>
 			<v8:Code>00000007</v8:Code>
 			<v8:Description>Текущая информационная база</v8:Description>
@@ -778,7 +898,7 @@ kyZMmjBtQsIWpgYeDuxwOhR9RhdFbT30mt5DS6tB26TI3+MXtCy4k0Ytuj3hQZQP
 </v8:ПроцедураЗаполнения>
 			<v8:ПроцедураВычисления/>
 			<v8:ПравилоПроверки xsi:type="v8:CatalogRef.ПравилаПроверки">d3093487-db50-11e7-812d-005056012280</v8:ПравилоПроверки>
-			<v8:ТипБД xsi:type="v8:CatalogRef.ТипыБазДанных">474d29b1-be3a-11e7-811f-005056011723</v8:ТипБД>
+			<v8:ТипБД xsi:type="v8:CatalogRef.ТипыБазДанных">14e99103-e621-11e7-812d-005056012280</v8:ТипБД>
 			<v8:Утверждено>false</v8:Утверждено>
 			<v8:Описание/>
 			<v8:ДанныеПараметрическойНастройки>AQEIAAAAAAAAAO+7v3siVSJ9</v8:ДанныеПараметрическойНастройки>
@@ -800,7 +920,7 @@ kyZMmjBtQsIWpgYeDuxwOhR9RhdFbT30mt5DS6tB26TI3+MXtCy4k0Ytuj3hQZQP
 			<v8:Owner xsi:type="v8:CatalogRef.ВидыОтчетов">d3093484-db50-11e7-812d-005056012280</v8:Owner>
 			<v8:Code>00000001</v8:Code>
 			<v8:Description>UNICUS_Acts</v8:Description>
-			<v8:ТипБД xsi:type="v8:CatalogRef.ТипыБазДанных">474d29b1-be3a-11e7-811f-005056011723</v8:ТипБД>
+			<v8:ТипБД xsi:type="v8:CatalogRef.ТипыБазДанных">14e99103-e621-11e7-812d-005056012280</v8:ТипБД>
 			<v8:Описание/>
 			<v8:Комментарий/>
 			<v8:Утверждено>false</v8:Утверждено>
@@ -883,7 +1003,7 @@ kyZMmjBtQsIWpgYeDuxwOhR9RhdFbT30mt5DS6tB26TI3+MXtCy4k0Ytuj3hQZQP
 				<v8:ПериодОтчета xsi:type="v8:CatalogRef.Периоды">00000000-0000-0000-0000-000000000000</v8:ПериодОтчета>
 				<v8:ВерсияОрганизационнойСтруктуры xsi:type="v8:CatalogRef.ВерсииРегламентовПодготовкиОтчетности">00000000-0000-0000-0000-000000000000</v8:ВерсияОрганизационнойСтруктуры>
 				<v8:УДАЛИТЬ_ВидОтчета xsi:nil="true"/>
-				<v8:ЗначениеЭлементаНастройкиОтчета xsi:type="v8:CatalogRef.БланкиОтчетов">00000000-0000-0000-0000-000000000000</v8:ЗначениеЭлементаНастройкиОтчета>
+				<v8:ЗначениеЭлементаНастройкиОтчета xsi:type="v8:CatalogRef.БланкиОтчетов">5e957dd5-ec99-11e7-812f-005056012280</v8:ЗначениеЭлементаНастройкиОтчета>
 			</v8:Record>
 		</v8:InformationRegisterRecordSet.НастройкаОбработкиОтчетов>
 		<v8:InformationRegisterRecordSet.НастройкаОбработкиОтчетов>
@@ -1121,14 +1241,477 @@ kyZMmjBtQsIWpgYeDuxwOhR9RhdFbT30mt5DS6tB26TI3+MXtCy4k0Ytuj3hQZQP
 				<v8:ЗначениеЭлементаНастройкиОтчета xsi:type="v8:CatalogRef.ПравилаПроверки">d3093487-db50-11e7-812d-005056012280</v8:ЗначениеЭлементаНастройкиОтчета>
 			</v8:Record>
 		</v8:InformationRegisterRecordSet.НастройкаОбработкиОтчетов>
+		<v8:CatalogObject.ТипыБазДанных>
+			<v8:Ref xsi:type="v8:CatalogRef.ТипыБазДанных">20eed00e-cdcb-11e7-8123-005056011723</v8:Ref>
+			<v8:DeletionMark>false</v8:DeletionMark>
+			<v8:Code>00000010</v8:Code>
+			<v8:Description>Юникус (Oracle)</v8:Description>
+			<v8:ВИБПоУмолчанию xsi:type="v8:CatalogRef.ВнешниеИнформационныеБазы">3f98081c-cdcb-11e7-8123-005056011723</v8:ВИБПоУмолчанию>
+			<v8:ВерсияПлатформы>ADO</v8:ВерсияПлатформы>
+			<v8:ВалютаПоУмолчанию xsi:type="v8:CatalogRef.Валюты">00000000-0000-0000-0000-000000000000</v8:ВалютаПоУмолчанию>
+		</v8:CatalogObject.ТипыБазДанных>
+		<v8:CatalogObject.ВнешниеИнформационныеБазы>
+			<v8:Ref xsi:type="v8:CatalogRef.ВнешниеИнформационныеБазы">3f98081c-cdcb-11e7-8123-005056011723</v8:Ref>
+			<v8:DeletionMark>false</v8:DeletionMark>
+			<v8:Code>00000003</v8:Code>
+			<v8:Description>Юникус</v8:Description>
+			<v8:URIПространстваИмен/>
+			<v8:АутентификацияWindows>false</v8:АутентификацияWindows>
+			<v8:ВидОперацииСФайлами/>
+			<v8:ИмяWebСервиса/>
+			<v8:ИмяИБНаСервере/>
+			<v8:ИмяСервера/>
+			<v8:ИспользоватьWS>false</v8:ИспользоватьWS>
+			<v8:КаталогИБ/>
+			<v8:МаскаПолногоИмени/>
+			<v8:НастройкаИмпортаФайлаФорматаФНС xsi:type="v8:CatalogRef.НастройкиИмпортаФайлаИзФНС">00000000-0000-0000-0000-000000000000</v8:НастройкаИмпортаФайлаФорматаФНС>
+			<v8:НачалоИмени/>
+			<v8:НСИ_ТребуетСинхронизации>false</v8:НСИ_ТребуетСинхронизации>
+			<v8:Пароль/>
+			<v8:ПарольНаСтраницу/>
+			<v8:Пользователь/>
+			<v8:Примечание/>
+			<v8:ПутьКWebСервису/>
+			<v8:РазмещениеВнешнейИБ/>
+			<v8:РасширенныйСпособИмпорта>false</v8:РасширенныйСпособИмпорта>
+			<v8:СтрокаПодключения>Provider=OraOLEDB.Oracle.1;Password=CONNECT_PROD;Persist Security Info=True;User ID=CONNECT_PROD;Data Source=UNICUS;Extended Properties="alter session set current_schema= UNICUSWEB_RELEASE"</v8:СтрокаПодключения>
+			<v8:ТипБД xsi:type="v8:CatalogRef.ТипыБазДанных">20eed00e-cdcb-11e7-8123-005056011723</v8:ТипБД>
+			<v8:ТипТабличногоДокумента>ФайлXLS</v8:ТипТабличногоДокумента>
+			<v8:ТочкаПодключенияWebСервиса/>
+			<v8:УдалятьФайлыПослеИмпорта>false</v8:УдалятьФайлыПослеИмпорта>
+			<v8:ФайловыйРежим>false</v8:ФайловыйРежим>
+			<v8:ЭкспортироватьЭлементыНСИ>false</v8:ЭкспортироватьЭлементыНСИ>
+			<v8:ТипХранилищаДанныхADO>Прочие</v8:ТипХранилищаДанныхADO>
+			<v8:ИспользоватьДляИмпортаЭталонныйКаталог>false</v8:ИспользоватьДляИмпортаЭталонныйКаталог>
+			<v8:ЭталонныйКаталог/>
+			<v8:КонвертироватьЗначенияВТекст>false</v8:КонвертироватьЗначенияВТекст>
+		</v8:CatalogObject.ВнешниеИнформационныеБазы>
+		<v8:InformationRegisterRecordSet.НастройкаОбработкиОтчетов>
+			<v8:Filter>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">ЭлементНастройкиОтчета</Name>
+					<Value xsi:type="v8:EnumRef.ЭлементыНастройкиОтчета">ВнешняяИнформационнаяБаза</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">ДокументБД</Name>
+					<Value xsi:type="v8:CatalogRef.ДокументыБД">00000000-0000-0000-0000-000000000000</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">ШаблонДокументаБД</Name>
+					<Value xsi:type="v8:CatalogRef.ВидыОтчетов">d3093484-db50-11e7-812d-005056012280</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Организация</Name>
+					<Value xsi:type="v8:CatalogRef.Организации">00000000-0000-0000-0000-000000000000</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Сценарий</Name>
+					<Value xsi:type="v8:CatalogRef.Сценарии">00000000-0000-0000-0000-000000000000</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">ПериодОтчета</Name>
+					<Value xsi:type="v8:CatalogRef.Периоды">00000000-0000-0000-0000-000000000000</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">ВерсияОрганизационнойСтруктуры</Name>
+					<Value xsi:type="v8:CatalogRef.ВерсииРегламентовПодготовкиОтчетности">00000000-0000-0000-0000-000000000000</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">УДАЛИТЬ_ВидОтчета</Name>
+					<Value xsi:nil="true"/>
+				</FilterItem>
+			</v8:Filter>
+			<v8:Record>
+				<v8:ЭлементНастройкиОтчета>ВнешняяИнформационнаяБаза</v8:ЭлементНастройкиОтчета>
+				<v8:ДокументБД xsi:type="v8:CatalogRef.ДокументыБД">00000000-0000-0000-0000-000000000000</v8:ДокументБД>
+				<v8:ШаблонДокументаБД xsi:type="v8:CatalogRef.ВидыОтчетов">d3093484-db50-11e7-812d-005056012280</v8:ШаблонДокументаБД>
+				<v8:Организация xsi:type="v8:CatalogRef.Организации">00000000-0000-0000-0000-000000000000</v8:Организация>
+				<v8:Сценарий xsi:type="v8:CatalogRef.Сценарии">00000000-0000-0000-0000-000000000000</v8:Сценарий>
+				<v8:ПериодОтчета xsi:type="v8:CatalogRef.Периоды">00000000-0000-0000-0000-000000000000</v8:ПериодОтчета>
+				<v8:ВерсияОрганизационнойСтруктуры xsi:type="v8:CatalogRef.ВерсииРегламентовПодготовкиОтчетности">00000000-0000-0000-0000-000000000000</v8:ВерсияОрганизационнойСтруктуры>
+				<v8:УДАЛИТЬ_ВидОтчета xsi:nil="true"/>
+				<v8:ЗначениеЭлементаНастройкиОтчета xsi:type="v8:CatalogRef.ВнешниеИнформационныеБазы">3f98081c-cdcb-11e7-8123-005056011723</v8:ЗначениеЭлементаНастройкиОтчета>
+			</v8:Record>
+		</v8:InformationRegisterRecordSet.НастройкаОбработкиОтчетов>
+		<v8:CatalogObject.КлючиШкалы>
+			<v8:Ref xsi:type="v8:CatalogRef.КлючиШкалы">a2440f36-be43-11e7-811f-005056011723</v8:Ref>
+			<v8:DeletionMark>false</v8:DeletionMark>
+			<v8:Code>000000001</v8:Code>
+			<v8:Description/>
+			<v8:Периодичность>Месяц</v8:Периодичность>
+			<v8:ИтогиПоКварталам>false</v8:ИтогиПоКварталам>
+			<v8:ИтогиПоГодам>false</v8:ИтогиПоГодам>
+			<v8:ИтогиПоПолугодиям>false</v8:ИтогиПоПолугодиям>
+			<v8:ИтогиПоМесяцам>true</v8:ИтогиПоМесяцам>
+			<v8:ИтогиПоНеделям>false</v8:ИтогиПоНеделям>
+			<v8:НачалоПериода>2017-01-01T00:00:00</v8:НачалоПериода>
+			<v8:КонецПериода>2017-12-31T00:00:00</v8:КонецПериода>
+			<v8:ИтогиПоДням>false</v8:ИтогиПоДням>
+			<v8:Сдвиг>0</v8:Сдвиг>
+		</v8:CatalogObject.КлючиШкалы>
+		<v8:InformationRegisterRecordSet.НастройкиМасштабаВремени>
+			<v8:Filter>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Бланк</Name>
+					<Value xsi:type="v8:CatalogRef.БланкиОтчетов">5e957dd5-ec99-11e7-812f-005056012280</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">ВыбранныйПериод</Name>
+					<Value xsi:type="v8:CatalogRef.Периоды">00000000-0000-0000-0000-000000000000</Value>
+				</FilterItem>
+			</v8:Filter>
+			<v8:Record>
+				<v8:Бланк xsi:type="v8:CatalogRef.БланкиОтчетов">5e957dd5-ec99-11e7-812f-005056012280</v8:Бланк>
+				<v8:ВыбранныйПериод xsi:type="v8:CatalogRef.Периоды">00000000-0000-0000-0000-000000000000</v8:ВыбранныйПериод>
+				<v8:ДетализацияДни>false</v8:ДетализацияДни>
+				<v8:ДетализацияМесяцы>true</v8:ДетализацияМесяцы>
+				<v8:ДетализацияКварталы>false</v8:ДетализацияКварталы>
+				<v8:ДетализацияПолугодия>false</v8:ДетализацияПолугодия>
+				<v8:ДетализацияГоды>false</v8:ДетализацияГоды>
+				<v8:НаследоватьНастройкиРегламента>false</v8:НаследоватьНастройкиРегламента>
+				<v8:Масштаб>Месяц</v8:Масштаб>
+				<v8:ПредставлениеПериода>Краткое</v8:ПредставлениеПериода>
+				<v8:КлючПериода xsi:type="v8:CatalogRef.КлючиШкалы">a2440f36-be43-11e7-811f-005056011723</v8:КлючПериода>
+				<v8:Сдвиг>0</v8:Сдвиг>
+			</v8:Record>
+		</v8:InformationRegisterRecordSet.НастройкиМасштабаВремени>
+		<v8:InformationRegisterRecordSet.НастройкиСоставаАналитикиБланков>
+			<v8:Filter>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">БланкОтчета</Name>
+					<Value xsi:type="v8:CatalogRef.БланкиОтчетов">5e957dd5-ec99-11e7-812f-005056012280</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Показатель</Name>
+					<Value xsi:type="v8:CatalogRef.НастройкиСтруктурыБланка">00000000-0000-0000-0000-000000000000</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Назначение</Name>
+					<Value xsi:type="v8:EnumRef.ПредназначенияЭлементовАналитик">Проекты</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">НомерНастройки</Name>
+					<Value xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:UUID">00000000-0000-0000-0000-000000000000</Value>
+				</FilterItem>
+			</v8:Filter>
+			<v8:Record>
+				<v8:БланкОтчета xsi:type="v8:CatalogRef.БланкиОтчетов">5e957dd5-ec99-11e7-812f-005056012280</v8:БланкОтчета>
+				<v8:Показатель xsi:type="v8:CatalogRef.НастройкиСтруктурыБланка">00000000-0000-0000-0000-000000000000</v8:Показатель>
+				<v8:Назначение xsi:type="v8:EnumRef.ПредназначенияЭлементовАналитик">Проекты</v8:Назначение>
+				<v8:НомерНастройки>00000000-0000-0000-0000-000000000000</v8:НомерНастройки>
+				<v8:ЗначениеНастройки/>
+				<v8:ПредставлениеНастройки>Все элементы</v8:ПредставлениеНастройки>
+			</v8:Record>
+		</v8:InformationRegisterRecordSet.НастройкиСоставаАналитикиБланков>
+		<v8:InformationRegisterRecordSet.НастройкиСоставаАналитикиБланков>
+			<v8:Filter>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">БланкОтчета</Name>
+					<Value xsi:type="v8:CatalogRef.БланкиОтчетов">5e957dd5-ec99-11e7-812f-005056012280</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Показатель</Name>
+					<Value xsi:type="v8:CatalogRef.НастройкиСтруктурыБланка">00000000-0000-0000-0000-000000000000</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Назначение</Name>
+					<Value xsi:type="v8:EnumRef.ПредназначенияЭлементовАналитик">Сценарии</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">НомерНастройки</Name>
+					<Value xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:UUID">00000000-0000-0000-0000-000000000000</Value>
+				</FilterItem>
+			</v8:Filter>
+			<v8:Record>
+				<v8:БланкОтчета xsi:type="v8:CatalogRef.БланкиОтчетов">5e957dd5-ec99-11e7-812f-005056012280</v8:БланкОтчета>
+				<v8:Показатель xsi:type="v8:CatalogRef.НастройкиСтруктурыБланка">00000000-0000-0000-0000-000000000000</v8:Показатель>
+				<v8:Назначение xsi:type="v8:EnumRef.ПредназначенияЭлементовАналитик">Сценарии</v8:Назначение>
+				<v8:НомерНастройки>00000000-0000-0000-0000-000000000000</v8:НомерНастройки>
+				<v8:ЗначениеНастройки/>
+				<v8:ПредставлениеНастройки>Все элементы</v8:ПредставлениеНастройки>
+			</v8:Record>
+		</v8:InformationRegisterRecordSet.НастройкиСоставаАналитикиБланков>
+		<v8:InformationRegisterRecordSet.НастройкиСоставаАналитикиБланков>
+			<v8:Filter>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">БланкОтчета</Name>
+					<Value xsi:type="v8:CatalogRef.БланкиОтчетов">5e957dd5-ec99-11e7-812f-005056012280</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Показатель</Name>
+					<Value xsi:type="v8:CatalogRef.НастройкиСтруктурыБланка">00000000-0000-0000-0000-000000000000</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Назначение</Name>
+					<Value xsi:type="v8:EnumRef.ПредназначенияЭлементовАналитик">Организации</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">НомерНастройки</Name>
+					<Value xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:UUID">00000000-0000-0000-0000-000000000000</Value>
+				</FilterItem>
+			</v8:Filter>
+			<v8:Record>
+				<v8:БланкОтчета xsi:type="v8:CatalogRef.БланкиОтчетов">5e957dd5-ec99-11e7-812f-005056012280</v8:БланкОтчета>
+				<v8:Показатель xsi:type="v8:CatalogRef.НастройкиСтруктурыБланка">00000000-0000-0000-0000-000000000000</v8:Показатель>
+				<v8:Назначение xsi:type="v8:EnumRef.ПредназначенияЭлементовАналитик">Организации</v8:Назначение>
+				<v8:НомерНастройки>00000000-0000-0000-0000-000000000000</v8:НомерНастройки>
+				<v8:ЗначениеНастройки/>
+				<v8:ПредставлениеНастройки>Все элементы</v8:ПредставлениеНастройки>
+			</v8:Record>
+		</v8:InformationRegisterRecordSet.НастройкиСоставаАналитикиБланков>
+		<v8:InformationRegisterRecordSet.НастройкиСоставаАналитикиБланков>
+			<v8:Filter>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">БланкОтчета</Name>
+					<Value xsi:type="v8:CatalogRef.БланкиОтчетов">5e957dd5-ec99-11e7-812f-005056012280</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Показатель</Name>
+					<Value xsi:type="v8:CatalogRef.НастройкиСтруктурыБланка">00000000-0000-0000-0000-000000000000</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Назначение</Name>
+					<Value xsi:type="v8:EnumRef.ПредназначенияЭлементовАналитик">Валюты</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">НомерНастройки</Name>
+					<Value xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:UUID">00000000-0000-0000-0000-000000000000</Value>
+				</FilterItem>
+			</v8:Filter>
+			<v8:Record>
+				<v8:БланкОтчета xsi:type="v8:CatalogRef.БланкиОтчетов">5e957dd5-ec99-11e7-812f-005056012280</v8:БланкОтчета>
+				<v8:Показатель xsi:type="v8:CatalogRef.НастройкиСтруктурыБланка">00000000-0000-0000-0000-000000000000</v8:Показатель>
+				<v8:Назначение xsi:type="v8:EnumRef.ПредназначенияЭлементовАналитик">Валюты</v8:Назначение>
+				<v8:НомерНастройки>00000000-0000-0000-0000-000000000000</v8:НомерНастройки>
+				<v8:ЗначениеНастройки/>
+				<v8:ПредставлениеНастройки>Все элементы</v8:ПредставлениеНастройки>
+			</v8:Record>
+		</v8:InformationRegisterRecordSet.НастройкиСоставаАналитикиБланков>
+		<v8:InformationRegisterRecordSet.НастройкиСтруктурыБланка>
+			<v8:Filter>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Бланк</Name>
+					<Value xsi:type="v8:CatalogRef.БланкиОтчетов">5e957dd5-ec99-11e7-812f-005056012280</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Ось</Name>
+					<Value xsi:type="v8:EnumRef.ВидыНастроекБланковСводнойТаблицы">Строка</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Код</Name>
+					<Value xsi:type="xs:string">Фильтр_Показатели</Value>
+				</FilterItem>
+			</v8:Filter>
+			<v8:Record>
+				<v8:Бланк xsi:type="v8:CatalogRef.БланкиОтчетов">5e957dd5-ec99-11e7-812f-005056012280</v8:Бланк>
+				<v8:Ось>Строка</v8:Ось>
+				<v8:Код>Фильтр_Показатели</v8:Код>
+				<v8:Наименование>Строки</v8:Наименование>
+				<v8:ТипСтрока>СправочникСсылка.СтрокиОтчетов</v8:ТипСтрока>
+				<v8:ИндексКартинки>5</v8:ИндексКартинки>
+				<v8:НПП>1</v8:НПП>
+				<v8:ТипСубконто xsi:nil="true"/>
+				<v8:Редактируется>false</v8:Редактируется>
+				<v8:Представление/>
+				<v8:Сортировка/>
+				<v8:ГлобальнаяАналитика>false</v8:ГлобальнаяАналитика>
+				<v8:ПоддерживатьИерархию>false</v8:ПоддерживатьИерархию>
+			</v8:Record>
+		</v8:InformationRegisterRecordSet.НастройкиСтруктурыБланка>
+		<v8:InformationRegisterRecordSet.НастройкиСтруктурыБланка>
+			<v8:Filter>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Бланк</Name>
+					<Value xsi:type="v8:CatalogRef.БланкиОтчетов">5e957dd5-ec99-11e7-812f-005056012280</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Ось</Name>
+					<Value xsi:type="v8:EnumRef.ВидыНастроекБланковСводнойТаблицы">Страница</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Код</Name>
+					<Value xsi:type="xs:string">Фильтр_Валюты</Value>
+				</FilterItem>
+			</v8:Filter>
+			<v8:Record>
+				<v8:Бланк xsi:type="v8:CatalogRef.БланкиОтчетов">5e957dd5-ec99-11e7-812f-005056012280</v8:Бланк>
+				<v8:Ось>Страница</v8:Ось>
+				<v8:Код>Фильтр_Валюты</v8:Код>
+				<v8:Наименование>Валюты</v8:Наименование>
+				<v8:ТипСтрока>СправочникСсылка.Валюты</v8:ТипСтрока>
+				<v8:ИндексКартинки>1</v8:ИндексКартинки>
+				<v8:НПП>3</v8:НПП>
+				<v8:ТипСубконто xsi:type="v8:EnumRef.ПредназначенияЭлементовАналитик">Валюты</v8:ТипСубконто>
+				<v8:Редактируется>false</v8:Редактируется>
+				<v8:Представление/>
+				<v8:Сортировка/>
+				<v8:ГлобальнаяАналитика>true</v8:ГлобальнаяАналитика>
+				<v8:ПоддерживатьИерархию>false</v8:ПоддерживатьИерархию>
+			</v8:Record>
+		</v8:InformationRegisterRecordSet.НастройкиСтруктурыБланка>
+		<v8:InformationRegisterRecordSet.НастройкиСтруктурыБланка>
+			<v8:Filter>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Бланк</Name>
+					<Value xsi:type="v8:CatalogRef.БланкиОтчетов">5e957dd5-ec99-11e7-812f-005056012280</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Ось</Name>
+					<Value xsi:type="v8:EnumRef.ВидыНастроекБланковСводнойТаблицы">Страница</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Код</Name>
+					<Value xsi:type="xs:string">Фильтр_Организации</Value>
+				</FilterItem>
+			</v8:Filter>
+			<v8:Record>
+				<v8:Бланк xsi:type="v8:CatalogRef.БланкиОтчетов">5e957dd5-ec99-11e7-812f-005056012280</v8:Бланк>
+				<v8:Ось>Страница</v8:Ось>
+				<v8:Код>Фильтр_Организации</v8:Код>
+				<v8:Наименование>Организации</v8:Наименование>
+				<v8:ТипСтрока>СправочникСсылка.Организации</v8:ТипСтрока>
+				<v8:ИндексКартинки>1</v8:ИндексКартинки>
+				<v8:НПП>2</v8:НПП>
+				<v8:ТипСубконто xsi:type="v8:EnumRef.ПредназначенияЭлементовАналитик">Организации</v8:ТипСубконто>
+				<v8:Редактируется>false</v8:Редактируется>
+				<v8:Представление/>
+				<v8:Сортировка/>
+				<v8:ГлобальнаяАналитика>true</v8:ГлобальнаяАналитика>
+				<v8:ПоддерживатьИерархию>false</v8:ПоддерживатьИерархию>
+			</v8:Record>
+		</v8:InformationRegisterRecordSet.НастройкиСтруктурыБланка>
+		<v8:InformationRegisterRecordSet.НастройкиСтруктурыБланка>
+			<v8:Filter>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Бланк</Name>
+					<Value xsi:type="v8:CatalogRef.БланкиОтчетов">5e957dd5-ec99-11e7-812f-005056012280</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Ось</Name>
+					<Value xsi:type="v8:EnumRef.ВидыНастроекБланковСводнойТаблицы">Страница</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Код</Name>
+					<Value xsi:type="xs:string">Фильтр_Проекты</Value>
+				</FilterItem>
+			</v8:Filter>
+			<v8:Record>
+				<v8:Бланк xsi:type="v8:CatalogRef.БланкиОтчетов">5e957dd5-ec99-11e7-812f-005056012280</v8:Бланк>
+				<v8:Ось>Страница</v8:Ось>
+				<v8:Код>Фильтр_Проекты</v8:Код>
+				<v8:Наименование>Проекты</v8:Наименование>
+				<v8:ТипСтрока>СправочникСсылка.Проекты</v8:ТипСтрока>
+				<v8:ИндексКартинки>1</v8:ИндексКартинки>
+				<v8:НПП>4</v8:НПП>
+				<v8:ТипСубконто xsi:type="v8:EnumRef.ПредназначенияЭлементовАналитик">Проекты</v8:ТипСубконто>
+				<v8:Редактируется>false</v8:Редактируется>
+				<v8:Представление/>
+				<v8:Сортировка/>
+				<v8:ГлобальнаяАналитика>true</v8:ГлобальнаяАналитика>
+				<v8:ПоддерживатьИерархию>false</v8:ПоддерживатьИерархию>
+			</v8:Record>
+		</v8:InformationRegisterRecordSet.НастройкиСтруктурыБланка>
+		<v8:InformationRegisterRecordSet.НастройкиСтруктурыБланка>
+			<v8:Filter>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Бланк</Name>
+					<Value xsi:type="v8:CatalogRef.БланкиОтчетов">5e957dd5-ec99-11e7-812f-005056012280</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Ось</Name>
+					<Value xsi:type="v8:EnumRef.ВидыНастроекБланковСводнойТаблицы">Страница</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Код</Name>
+					<Value xsi:type="xs:string">Фильтр_Сценарии</Value>
+				</FilterItem>
+			</v8:Filter>
+			<v8:Record>
+				<v8:Бланк xsi:type="v8:CatalogRef.БланкиОтчетов">5e957dd5-ec99-11e7-812f-005056012280</v8:Бланк>
+				<v8:Ось>Страница</v8:Ось>
+				<v8:Код>Фильтр_Сценарии</v8:Код>
+				<v8:Наименование>Сценарии</v8:Наименование>
+				<v8:ТипСтрока>СправочникСсылка.Сценарии</v8:ТипСтрока>
+				<v8:ИндексКартинки>1</v8:ИндексКартинки>
+				<v8:НПП>1</v8:НПП>
+				<v8:ТипСубконто xsi:type="v8:EnumRef.ПредназначенияЭлементовАналитик">Сценарии</v8:ТипСубконто>
+				<v8:Редактируется>false</v8:Редактируется>
+				<v8:Представление/>
+				<v8:Сортировка/>
+				<v8:ГлобальнаяАналитика>true</v8:ГлобальнаяАналитика>
+				<v8:ПоддерживатьИерархию>false</v8:ПоддерживатьИерархию>
+			</v8:Record>
+		</v8:InformationRegisterRecordSet.НастройкиСтруктурыБланка>
+		<v8:InformationRegisterRecordSet.НастройкиСтруктурыБланка>
+			<v8:Filter>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Бланк</Name>
+					<Value xsi:type="v8:CatalogRef.БланкиОтчетов">5e957dd5-ec99-11e7-812f-005056012280</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Ось</Name>
+					<Value xsi:type="v8:EnumRef.ВидыНастроекБланковСводнойТаблицы">Колонка</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Код</Name>
+					<Value xsi:type="xs:string">Фильтр_Периоды</Value>
+				</FilterItem>
+			</v8:Filter>
+			<v8:Record>
+				<v8:Бланк xsi:type="v8:CatalogRef.БланкиОтчетов">5e957dd5-ec99-11e7-812f-005056012280</v8:Бланк>
+				<v8:Ось>Колонка</v8:Ось>
+				<v8:Код>Фильтр_Периоды</v8:Код>
+				<v8:Наименование>Периоды</v8:Наименование>
+				<v8:ТипСтрока>СправочникСсылка.Периоды</v8:ТипСтрока>
+				<v8:ИндексКартинки>0</v8:ИндексКартинки>
+				<v8:НПП>2</v8:НПП>
+				<v8:ТипСубконто xsi:type="v8:EnumRef.ПредназначенияЭлементовАналитик">Периоды</v8:ТипСубконто>
+				<v8:Редактируется>false</v8:Редактируется>
+				<v8:Представление/>
+				<v8:Сортировка/>
+				<v8:ГлобальнаяАналитика>true</v8:ГлобальнаяАналитика>
+				<v8:ПоддерживатьИерархию>false</v8:ПоддерживатьИерархию>
+			</v8:Record>
+		</v8:InformationRegisterRecordSet.НастройкиСтруктурыБланка>
+		<v8:InformationRegisterRecordSet.НастройкиСтруктурыБланка>
+			<v8:Filter>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Бланк</Name>
+					<Value xsi:type="v8:CatalogRef.БланкиОтчетов">5e957dd5-ec99-11e7-812f-005056012280</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Ось</Name>
+					<Value xsi:type="v8:EnumRef.ВидыНастроекБланковСводнойТаблицы">Колонка</Value>
+				</FilterItem>
+				<FilterItem xmlns="http://v8.1c.ru/8.1/data/enterprise">
+					<Name xsi:type="xs:string">Код</Name>
+					<Value xsi:type="xs:string">Фильтр_Показатели_Колонки</Value>
+				</FilterItem>
+			</v8:Filter>
+			<v8:Record>
+				<v8:Бланк xsi:type="v8:CatalogRef.БланкиОтчетов">5e957dd5-ec99-11e7-812f-005056012280</v8:Бланк>
+				<v8:Ось>Колонка</v8:Ось>
+				<v8:Код>Фильтр_Показатели_Колонки</v8:Код>
+				<v8:Наименование>Показатели</v8:Наименование>
+				<v8:ТипСтрока>СправочникСсылка.ПоказателиОтчетов</v8:ТипСтрока>
+				<v8:ИндексКартинки>2</v8:ИндексКартинки>
+				<v8:НПП>1</v8:НПП>
+				<v8:ТипСубконто xsi:nil="true"/>
+				<v8:Редактируется>false</v8:Редактируется>
+				<v8:Представление/>
+				<v8:Сортировка/>
+				<v8:ГлобальнаяАналитика>false</v8:ГлобальнаяАналитика>
+				<v8:ПоддерживатьИерархию>false</v8:ПоддерживатьИерархию>
+			</v8:Record>
+		</v8:InformationRegisterRecordSet.НастройкиСтруктурыБланка>
 	</V8Exch:Data>
 	<PredefinedData>
 		<ПланВидовХарактеристик.ВидыСубконтоКорпоративные>
-			<item Ссылка="cf79868a-be3a-11e7-811f-005056011723" ИмяПредопределенныхДанных="СправочникКонтрагенты"/>
-			<item Ссылка="cf798681-be3a-11e7-811f-005056011723" ИмяПредопределенныхДанных="СправочникДоговораКонтрагентов"/>
+			<item Ссылка="7cd3d8d4-e623-11e7-812d-005056012280" ИмяПредопределенныхДанных="СправочникКонтрагенты"/>
+			<item Ссылка="7cd3d8cb-e623-11e7-812d-005056012280" ИмяПредопределенныхДанных="СправочникДоговораКонтрагентов"/>
 		</ПланВидовХарактеристик.ВидыСубконтоКорпоративные>
 		<Справочник.ТипыБазДанных>
-			<item Ссылка="474d29b1-be3a-11e7-811f-005056011723" ИмяПредопределенныхДанных="ТекущаяИБ"/>
+			<item Ссылка="14e99103-e621-11e7-812d-005056012280" ИмяПредопределенныхДанных="ТекущаяИБ"/>
 		</Справочник.ТипыБазДанных>
 	</PredefinedData>
 </V8Exch:_1CV8DtUD>
