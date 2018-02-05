@@ -42,7 +42,7 @@
 			<ConfigurationExtensionCompatibilityMode>Version8_3_10</ConfigurationExtensionCompatibilityMode>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor/>
-			<Version>2018.01.23</Version>
+			<Version>2018.02.05</Version>
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
@@ -50,6 +50,7 @@
 			<CommonModule>АСЦ_ОбщийМодуль</CommonModule>
 			<CommonModule>АСЦ_UNICUS_Contracts</CommonModule>
 			<CommonModule>АСЦ_UNICUS_Acts</CommonModule>
+			<CommonModule>АСЦ_UNICUS_PnL</CommonModule>
 			<CommonModule>ИнтеграцияСВнешнимиСистемамиУХ</CommonModule>
 		</ChildObjects>
 	</Configuration>
