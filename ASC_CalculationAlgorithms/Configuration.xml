@@ -42,16 +42,30 @@
 			<ConfigurationExtensionCompatibilityMode>Version8_3_10</ConfigurationExtensionCompatibilityMode>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor/>
-			<Version>2018.02.05</Version>
+			<Version>2018.02.07</Version>
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<CommonPicture>СостоянияДокумента</CommonPicture>
 			<CommonModule>АСЦ_104АСП</CommonModule>
 			<CommonModule>АСЦ_ОбщийМодуль</CommonModule>
 			<CommonModule>АСЦ_UNICUS_Contracts</CommonModule>
 			<CommonModule>АСЦ_UNICUS_Acts</CommonModule>
 			<CommonModule>АСЦ_UNICUS_PnL</CommonModule>
 			<CommonModule>ИнтеграцияСВнешнимиСистемамиУХ</CommonModule>
+			<Catalog>СтатьиДоходов</Catalog>
+			<Catalog>Организации</Catalog>
+			<Catalog>Контрагенты</Catalog>
+			<Catalog>ДоговорыКонтрагентов</Catalog>
+			<Catalog>СтатьиДвиженияДенежныхСредств</Catalog>
+			<Catalog>ПодразделенияОрганизаций</Catalog>
+			<Catalog>Номенклатура</Catalog>
+			<Document>АСЦ_ОтчетПосредника</Document>
+			<Document>ОтчетКомитентуОПродажах</Document>
+			<Document>РеализацияТоваровУслуг</Document>
+			<Enum>ВидыДоговоровКонтрагентовУХ</Enum>
+			<Enum>ВидыДоговоровКонтрагентов</Enum>
+			<InformationRegister>ОсновныеДоговорыКонтрагента</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

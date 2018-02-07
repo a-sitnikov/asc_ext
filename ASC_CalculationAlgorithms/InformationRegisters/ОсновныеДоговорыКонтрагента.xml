@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<InformationRegister uuid="e9342482-b486-4e71-a47b-ea1ff40b2af0">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.ОсновныеДоговорыКонтрагента" category="Record">
+				<xr:TypeId>86f793fa-5be7-435d-8d3d-976cbec66ee2</xr:TypeId>
+				<xr:ValueId>d8e863ef-33c7-4160-a508-6c9bb42ae3ff</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.ОсновныеДоговорыКонтрагента" category="Manager">
+				<xr:TypeId>f57de37b-bcdb-4faa-8eb6-af1dd6ddb8f8</xr:TypeId>
+				<xr:ValueId>81f65084-a4cb-4ab2-b459-4cc84428b56c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.ОсновныеДоговорыКонтрагента" category="Selection">
+				<xr:TypeId>bc18e28f-1820-433d-92fa-444256bc60c0</xr:TypeId>
+				<xr:ValueId>48d153ce-919e-462c-b860-84b484959809</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.ОсновныеДоговорыКонтрагента" category="List">
+				<xr:TypeId>ef6598ec-6350-4509-ab38-21073b6156c5</xr:TypeId>
+				<xr:ValueId>324d9185-396f-470c-a050-1adc05be60d2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ОсновныеДоговорыКонтрагента" category="RecordSet">
+				<xr:TypeId>9c7c4a23-edbc-45ad-b8f1-4ed9bebbc25f</xr:TypeId>
+				<xr:ValueId>de9b31f7-e8c9-41d5-b8c7-bca144d4bf9f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ОсновныеДоговорыКонтрагента" category="RecordKey">
+				<xr:TypeId>49c357c9-2613-43ee-bbfd-e832039848ac</xr:TypeId>
+				<xr:ValueId>d4b4cac4-ebc9-4faa-afbb-f8221df3582a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ОсновныеДоговорыКонтрагента" category="RecordManager">
+				<xr:TypeId>75b77956-7b3d-4523-afa6-578ff3f54a45</xr:TypeId>
+				<xr:ValueId>04ae5038-691e-48ea-a286-eafab6669453</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ОсновныеДоговорыКонтрагента</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Dimension uuid="2a2066bb-fa4b-464f-883f-d3db15d59eec">
+				<Properties>
+					<Name>Организация</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="2f5d0b66-f933-4fad-a128-b3630d742805">
+				<Properties>
+					<Name>Контрагент</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

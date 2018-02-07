@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Document uuid="3a99b715-836e-4694-9adf-5cc8f89987a4">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ОтчетКомитентуОПродажах" category="Object">
+				<xr:TypeId>87535fe9-0c9a-4b01-be18-344a9ca5d198</xr:TypeId>
+				<xr:ValueId>0c87aff7-f8b7-4812-8824-e3ae19c332d0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ОтчетКомитентуОПродажах" category="Ref">
+				<xr:TypeId>ed6951f5-bf70-470b-a93a-cbc7db8b56dd</xr:TypeId>
+				<xr:ValueId>0ce09e59-2134-430a-9e5f-adad0f7a020f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ОтчетКомитентуОПродажах" category="Selection">
+				<xr:TypeId>cf85ce6b-8bb9-4dda-8394-5e985c2056c0</xr:TypeId>
+				<xr:ValueId>3469f4d6-3070-43ec-b126-f092b070cbbd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ОтчетКомитентуОПродажах" category="List">
+				<xr:TypeId>edb1051b-5db1-4bf3-bb82-cc594f132f23</xr:TypeId>
+				<xr:ValueId>bbb201f6-daaf-4690-bfad-1bc823ed1ea6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ОтчетКомитентуОПродажах" category="Manager">
+				<xr:TypeId>0d3aac52-2606-4874-be1a-8781ac0161e5</xr:TypeId>
+				<xr:ValueId>ce1fa9d9-e66b-4a21-948d-a87b784caa6a</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ОтчетКомитентуОПродажах</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects/>
+	</Document>
+</MetaDataObject>
