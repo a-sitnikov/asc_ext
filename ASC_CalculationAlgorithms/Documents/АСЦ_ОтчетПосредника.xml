@@ -183,6 +183,18 @@
 							</Type>
 						</Properties>
 					</Attribute>
+					<Attribute uuid="49daeac9-a0d7-475e-b2af-8f5a0fdcd9a7">
+						<Properties>
+							<Name>ДатаОплаты</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:dateTime</v8:Type>
+								<v8:DateQualifiers>
+									<v8:DateFractions>Date</v8:DateFractions>
+								</v8:DateQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
 				</ChildObjects>
 			</TabularSection>
 		</ChildObjects>

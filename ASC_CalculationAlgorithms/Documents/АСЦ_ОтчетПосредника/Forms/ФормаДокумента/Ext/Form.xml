@@ -323,12 +323,31 @@
 					<ContextMenu name="ПродажиСуммаКВКонтекстноеМеню" id="125"/>
 					<ExtendedTooltip name="ПродажиСуммаКВРасширеннаяПодсказка" id="126"/>
 				</InputField>
+				<InputField name="ПродажиДатаОплаты" id="130">
+					<DataPath>Объект.Продажи.ДатаОплаты</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПродажиДатаОплатыКонтекстноеМеню" id="131"/>
+					<ExtendedTooltip name="ПродажиДатаОплатыРасширеннаяПодсказка" id="132"/>
+				</InputField>
 			</ChildItems>
 		</Table>
-		<UsualGroup name="Группа1" id="83">
+		<UsualGroup name="ГруппаПодвал" id="83">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подвал</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подвал</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="84"/>
+			<ExtendedTooltip name="ГруппаПодвалРасширеннаяПодсказка" id="84"/>
 			<ChildItems>
 				<InputField name="Комментарий" id="5">
 					<DataPath>Объект.Комментарий</DataPath>
@@ -340,6 +359,8 @@
 				</InputField>
 				<InputField name="ИД_Юникус" id="80">
 					<DataPath>Объект.ID_Unicus</DataPath>
+					<Width>15</Width>
+					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ИД_ЮникусКонтекстноеМеню" id="81"/>
 					<ExtendedTooltip name="ИД_ЮникусРасширеннаяПодсказка" id="82"/>
 				</InputField>

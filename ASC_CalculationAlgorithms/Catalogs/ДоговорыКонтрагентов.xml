@@ -106,6 +106,23 @@
 					</Type>
 				</Properties>
 			</Attribute>
+			<TabularSection uuid="06792550-ad24-423b-8ce9-4f34aa121847">
+				<InternalInfo>
+					<xr:GeneratedType name="CatalogTabularSection.ДоговорыКонтрагентов.ДополнительныеРеквизиты" category="TabularSection">
+						<xr:TypeId>8746ed4c-df18-4089-9f82-530fe1fe1577</xr:TypeId>
+						<xr:ValueId>3a98e09c-b7ef-40b6-85af-6e0715cb96a2</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="CatalogTabularSectionRow.ДоговорыКонтрагентов.ДополнительныеРеквизиты" category="TabularSectionRow">
+						<xr:TypeId>1de7034f-f791-4aa2-b399-ff811267665a</xr:TypeId>
+						<xr:ValueId>44704a74-83b1-49e8-a9c0-6c4a36600ff2</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>ДополнительныеРеквизиты</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+				</Properties>
+				<ChildObjects/>
+			</TabularSection>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

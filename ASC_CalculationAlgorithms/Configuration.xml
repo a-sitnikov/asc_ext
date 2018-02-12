@@ -42,7 +42,7 @@
 			<ConfigurationExtensionCompatibilityMode>Version8_3_10</ConfigurationExtensionCompatibilityMode>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor/>
-			<Version>2018.02.07</Version>
+			<Version>2018.02.12</Version>
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
@@ -60,12 +60,19 @@
 			<Catalog>СтатьиДвиженияДенежныхСредств</Catalog>
 			<Catalog>ПодразделенияОрганизаций</Catalog>
 			<Catalog>Номенклатура</Catalog>
+			<Catalog>ПоказателиОтчетов</Catalog>
+			<Catalog>ВидыОтчетов</Catalog>
+			<Catalog>Банки</Catalog>
+			<Catalog>СоответствиеВнешнимИБ</Catalog>
+			<Catalog>ВнешниеИнформационныеБазы</Catalog>
 			<Document>АСЦ_ОтчетПосредника</Document>
 			<Document>ОтчетКомитентуОПродажах</Document>
 			<Document>РеализацияТоваровУслуг</Document>
 			<Enum>ВидыДоговоровКонтрагентовУХ</Enum>
 			<Enum>ВидыДоговоровКонтрагентов</Enum>
+			<Enum>ТипыЗначенийПоказателейОтчетов</Enum>
 			<InformationRegister>ОсновныеДоговорыКонтрагента</InformationRegister>
+			<InformationRegister>ИзмененныеОбъектыДляВыгрузки</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

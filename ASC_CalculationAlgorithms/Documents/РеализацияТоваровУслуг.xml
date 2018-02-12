@@ -27,6 +27,98 @@
 			<Name>РеализацияТоваровУслуг</Name>
 			<ObjectBelonging>Adopted</ObjectBelonging>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Attribute uuid="8595c642-264a-4de1-b48c-fe5949ef258c">
+				<Properties>
+					<Name>ДоговорКонтрагента</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ДоговорыКонтрагентов</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<TabularSection uuid="24fc7394-b830-4e77-9276-d29ecf10ef7b">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.РеализацияТоваровУслуг.Услуги" category="TabularSection">
+						<xr:TypeId>a968b046-ab80-450b-b56a-13cef6c3c6df</xr:TypeId>
+						<xr:ValueId>f4a17f77-4e21-4fa0-b3b0-ee567c1a55ed</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.РеализацияТоваровУслуг.Услуги" category="TabularSectionRow">
+						<xr:TypeId>0a56713b-5325-4bab-b3f7-52592df55dce</xr:TypeId>
+						<xr:ValueId>d7a62878-6a80-4bec-9db6-5488e8948e5c</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>Услуги</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="f99b185d-2c5a-4709-8468-f240cf71f2b8">
+						<Properties>
+							<Name>Сумма</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>15</v8:Digits>
+									<v8:FractionDigits>2</v8:FractionDigits>
+									<v8:AllowedSign>Any</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="8f73a47d-a9b5-4258-b899-75cc45065076">
+						<Properties>
+							<Name>Номенклатура</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<TabularSection uuid="6d966a9e-ab58-4d4f-a0fb-9c5d37fdb82c">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.РеализацияТоваровУслуг.АгентскиеУслуги" category="TabularSection">
+						<xr:TypeId>6538b7ae-46dc-492f-8bc2-0426608f1a13</xr:TypeId>
+						<xr:ValueId>4e3681e4-bbef-400d-b71a-d91da7b47e0d</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.РеализацияТоваровУслуг.АгентскиеУслуги" category="TabularSectionRow">
+						<xr:TypeId>ce5c316d-e2bc-4b83-8fe1-e68fb547a4de</xr:TypeId>
+						<xr:ValueId>38bfdadc-b734-4638-a7aa-c891ac2f993d</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>АгентскиеУслуги</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="76e3f1ff-3d9d-4694-b9e8-83c7c0273228">
+						<Properties>
+							<Name>Сумма</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>15</v8:Digits>
+									<v8:FractionDigits>2</v8:FractionDigits>
+									<v8:AllowedSign>Any</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="96eaf35e-f677-470b-b32c-b758bb09e719">
+						<Properties>
+							<Name>Номенклатура</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
 	</Document>
 </MetaDataObject>
