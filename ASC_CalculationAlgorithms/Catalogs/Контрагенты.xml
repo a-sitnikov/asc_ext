@@ -54,6 +54,24 @@
 					</Type>
 				</Properties>
 			</Attribute>
+			<Attribute uuid="63843cdd-a542-4058-bee9-0d6757b40c68">
+				<Properties>
+					<Name>ЮридическоеФизическоеЛицо</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>cfg:EnumRef.ЮридическоеФизическоеЛицо</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="c7b310b7-0029-4b0a-aed2-024d1f4150b4">
+				<Properties>
+					<Name>СтранаРегистрации</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СтраныМира</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

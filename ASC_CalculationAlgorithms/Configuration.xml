@@ -42,7 +42,7 @@
 			<ConfigurationExtensionCompatibilityMode>Version8_3_10</ConfigurationExtensionCompatibilityMode>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor/>
-			<Version>2018.02.12</Version>
+			<Version>2018.02.13</Version>
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
@@ -65,12 +65,14 @@
 			<Catalog>Банки</Catalog>
 			<Catalog>СоответствиеВнешнимИБ</Catalog>
 			<Catalog>ВнешниеИнформационныеБазы</Catalog>
+			<Catalog>СтраныМира</Catalog>
 			<Document>АСЦ_ОтчетПосредника</Document>
 			<Document>ОтчетКомитентуОПродажах</Document>
 			<Document>РеализацияТоваровУслуг</Document>
 			<Enum>ВидыДоговоровКонтрагентовУХ</Enum>
 			<Enum>ВидыДоговоровКонтрагентов</Enum>
 			<Enum>ТипыЗначенийПоказателейОтчетов</Enum>
+			<Enum>ЮридическоеФизическоеЛицо</Enum>
 			<InformationRegister>ОсновныеДоговорыКонтрагента</InformationRegister>
 			<InformationRegister>ИзмененныеОбъектыДляВыгрузки</InformationRegister>
 		</ChildObjects>
