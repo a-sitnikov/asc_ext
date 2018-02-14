@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<InformationRegister uuid="d0a680d8-a474-4c9f-9c87-6ed4585deb59">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.НастройкаОбработкиОтчетов" category="Record">
+				<xr:TypeId>667193f0-bd9c-4180-99c9-31240318d1f8</xr:TypeId>
+				<xr:ValueId>c3194331-8c27-4702-9c76-3a0335676fa4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.НастройкаОбработкиОтчетов" category="Manager">
+				<xr:TypeId>2726a5e9-46a4-49d5-be62-872435b931d0</xr:TypeId>
+				<xr:ValueId>260cc765-e8d3-4e91-a582-938cef97406d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.НастройкаОбработкиОтчетов" category="Selection">
+				<xr:TypeId>413bf431-e9fc-4f1f-892e-6539b16ecd00</xr:TypeId>
+				<xr:ValueId>3ffcd845-12cd-4157-8fe5-679e0d778c87</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.НастройкаОбработкиОтчетов" category="List">
+				<xr:TypeId>c169fd06-cf0c-4fe6-8fb9-fa99b0d606f0</xr:TypeId>
+				<xr:ValueId>17da4a53-eab0-4163-92a3-4598716d1ce1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.НастройкаОбработкиОтчетов" category="RecordSet">
+				<xr:TypeId>fb13e168-92f6-4d6c-8287-54e8e03fb899</xr:TypeId>
+				<xr:ValueId>1dbb3377-1677-459e-a4e4-011d9e0e9797</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.НастройкаОбработкиОтчетов" category="RecordKey">
+				<xr:TypeId>7353c390-9742-4bd8-9340-cf68ec30c3ea</xr:TypeId>
+				<xr:ValueId>3e12d4f5-45c3-401a-a00c-07d81066d13f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.НастройкаОбработкиОтчетов" category="RecordManager">
+				<xr:TypeId>99346a85-8946-49be-86ff-d628e56ac17f</xr:TypeId>
+				<xr:ValueId>ba9e8822-a6b4-4dab-b22e-2634959f1d87</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>НастройкаОбработкиОтчетов</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="74ad00ba-dcb5-4bfd-a4ad-51b3a8471a44">
+				<Properties>
+					<Name>ЗначениеЭлементаНастройкиОтчета</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="08e64b43-1bdf-4ffb-a299-6cf47fa579e3">
+				<Properties>
+					<Name>ЭлементНастройкиОтчета</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>cfg:EnumRef.ЭлементыНастройкиОтчета</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="a81c264a-a612-4f4f-8f00-4ce0c68cb400">
+				<Properties>
+					<Name>Организация</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="acaeddf1-747d-4fcb-bf59-3413059ca249">
+				<Properties>
+					<Name>ШаблонДокументаБД</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<InformationRegister uuid="e3cf2a1d-3d09-4ac4-9858-f11a5a3c4dfc">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.СоответствиеОбъектовТекущейИВнешнихИБ" category="Record">
+				<xr:TypeId>f204f588-fa33-4835-9ab2-0632dea23680</xr:TypeId>
+				<xr:ValueId>69914b26-29b3-4148-80d2-160483b069bd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.СоответствиеОбъектовТекущейИВнешнихИБ" category="Manager">
+				<xr:TypeId>400addbd-60d7-4055-bd08-4f8a8685a307</xr:TypeId>
+				<xr:ValueId>34a50e87-76aa-4a0c-b91e-451eb00cf0ff</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.СоответствиеОбъектовТекущейИВнешнихИБ" category="Selection">
+				<xr:TypeId>6e8c4274-4ae1-4ba1-941c-7833361685c6</xr:TypeId>
+				<xr:ValueId>82099658-2164-4579-abe9-1b361c43f2b2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.СоответствиеОбъектовТекущейИВнешнихИБ" category="List">
+				<xr:TypeId>80698082-783e-4bb5-b91c-5fa2394296c9</xr:TypeId>
+				<xr:ValueId>9f6a1796-6a4f-40b2-bcbf-1211928ff499</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.СоответствиеОбъектовТекущейИВнешнихИБ" category="RecordSet">
+				<xr:TypeId>0c0000c3-72df-4777-a6e6-b279770e7799</xr:TypeId>
+				<xr:ValueId>c6b01fb3-c03a-464c-9bbe-3fd0f61a5954</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.СоответствиеОбъектовТекущейИВнешнихИБ" category="RecordKey">
+				<xr:TypeId>16e9d512-473f-4278-a0be-96630cca385f</xr:TypeId>
+				<xr:ValueId>43048802-5c12-4e52-911d-cc8c9327e26c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.СоответствиеОбъектовТекущейИВнешнихИБ" category="RecordManager">
+				<xr:TypeId>ec190248-6ed6-40ff-b1f9-b78cc496d4a2</xr:TypeId>
+				<xr:ValueId>c2aaed33-47de-420b-82f0-de12b87536a0</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СоответствиеОбъектовТекущейИВнешнихИБ</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Dimension uuid="5b5c92c9-a868-4080-ac78-f75cb876fa7a">
+				<Properties>
+					<Name>ОбъектТекущейИБ</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="f0405af4-0b45-40b9-a00e-0dd5508d6484">
+				<Properties>
+					<Name>ОбъектВнешнейИБ</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="b506dd0b-4d8c-4026-bb76-8302f99753ec">
+				<Properties>
+					<Name>НастройкаСоответствия</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СоответствиеВнешнимИБ</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="cc74c130-7abd-444d-9e18-760b7dfa0ff8">
+				<Properties>
+					<Name>ИспользуемаяИБ</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВнешниеИнформационныеБазы</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>
