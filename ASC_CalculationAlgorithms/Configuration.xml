@@ -42,13 +42,14 @@
 			<ConfigurationExtensionCompatibilityMode>Version8_3_10</ConfigurationExtensionCompatibilityMode>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor/>
-			<Version>2018.02.13</Version>
+			<Version>2018.02.14</Version>
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
 			<CommonPicture>СостоянияДокумента</CommonPicture>
 			<CommonModule>АСЦ_104АСП</CommonModule>
 			<CommonModule>АСЦ_ОбщийМодуль</CommonModule>
+			<CommonModule>АСЦ_ПоискОбъектов</CommonModule>
 			<CommonModule>АСЦ_UNICUS_Contracts</CommonModule>
 			<CommonModule>АСЦ_UNICUS_Acts</CommonModule>
 			<CommonModule>АСЦ_UNICUS_PnL</CommonModule>
@@ -69,12 +70,18 @@
 			<Document>АСЦ_ОтчетПосредника</Document>
 			<Document>ОтчетКомитентуОПродажах</Document>
 			<Document>РеализацияТоваровУслуг</Document>
+			<Document>КорректировкаРеализации</Document>
 			<Enum>ВидыДоговоровКонтрагентовУХ</Enum>
 			<Enum>ВидыДоговоровКонтрагентов</Enum>
 			<Enum>ТипыЗначенийПоказателейОтчетов</Enum>
 			<Enum>ЮридическоеФизическоеЛицо</Enum>
+			<Enum>ЭлементыНастройкиОтчета</Enum>
 			<InformationRegister>ОсновныеДоговорыКонтрагента</InformationRegister>
 			<InformationRegister>ИзмененныеОбъектыДляВыгрузки</InformationRegister>
+			<InformationRegister>ДополнительныеСведения</InformationRegister>
+			<InformationRegister>НастройкаОбработкиОтчетов</InformationRegister>
+			<InformationRegister>СоответствиеОбъектовТекущейИВнешнихИБ</InformationRegister>
+			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
