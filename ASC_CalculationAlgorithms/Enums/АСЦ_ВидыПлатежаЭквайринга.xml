@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Enum uuid="989254d8-5a79-45bc-9900-e44ee55086ef">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.АСЦ_ВидыПлатежаЭквайринга" category="Ref">
+				<xr:TypeId>30d45d5c-2083-4329-a7f4-f268aa49f41f</xr:TypeId>
+				<xr:ValueId>638bff80-538f-4812-9efb-f851a60dc232</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.АСЦ_ВидыПлатежаЭквайринга" category="Manager">
+				<xr:TypeId>f60f127b-3624-4a1d-9150-02ea5e5d6038</xr:TypeId>
+				<xr:ValueId>33384294-f221-45a1-80a8-596dd0ae7121</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.АСЦ_ВидыПлатежаЭквайринга" category="List">
+				<xr:TypeId>e0fcfd46-23a7-4441-9a5a-689283e4f82b</xr:TypeId>
+				<xr:ValueId>c814587d-ad1c-4b68-908b-605386fca707</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>АСЦ_ВидыПлатежаЭквайринга</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="d2fff258-41c9-428d-ae79-3973bd4735b0">
+				<Properties>
+					<Name>Касса</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f19047e3-03d7-4248-bf6b-8a4d0e6bad67">
+				<Properties>
+					<Name>Терминал</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

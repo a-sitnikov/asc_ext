@@ -128,6 +128,15 @@
 							</Type>
 						</Properties>
 					</Attribute>
+					<Attribute uuid="ee697675-e49f-40af-8f68-260b161b9da8">
+						<Properties>
+							<Name>Корректировка</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>cfg:DocumentRef.КорректировкаРеализации</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
 					<Attribute uuid="c1281797-c0a8-4d25-b271-116b899ce8c5">
 						<Properties>
 							<Name>Контрагент</Name>
@@ -143,15 +152,6 @@
 							<ObjectBelonging>Adopted</ObjectBelonging>
 							<Type>
 								<v8:Type>cfg:CatalogRef.ДоговорыКонтрагентов</v8:Type>
-							</Type>
-						</Properties>
-					</Attribute>
-					<Attribute uuid="169b2c47-e4c6-43ee-9d37-3eb4deeb1fae">
-						<Properties>
-							<Name>Номенклатура</Name>
-							<ObjectBelonging>Adopted</ObjectBelonging>
-							<Type>
-								<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
 							</Type>
 						</Properties>
 					</Attribute>

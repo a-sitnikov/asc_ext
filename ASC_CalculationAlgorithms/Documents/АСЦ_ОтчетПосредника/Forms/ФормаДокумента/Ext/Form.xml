@@ -221,7 +221,7 @@
 				<ChildItems>
 					<Button name="ПродажиОткрытьРеализацию" id="104">
 						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.ОткрытьРеализацию</CommandName>
+						<CommandName>Form.Command.ОткрытьДокумент</CommandName>
 						<ExtendedTooltip name="ПродажиОткрытьРеализациюРасширеннаяПодсказка" id="105"/>
 					</Button>
 				</ChildItems>
@@ -258,41 +258,18 @@
 					<ContextMenu name="ПродажиНомерСтрокиКонтекстноеМеню" id="107"/>
 					<ExtendedTooltip name="ПродажиНомерСтрокиРасширеннаяПодсказка" id="108"/>
 				</LabelField>
-				<ColumnGroup name="ПродажиГруппаДокумент" id="99">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Продажи группа документ</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Продажи группа документ</v8:content>
-						</v8:item>
-					</ToolTip>
-					<Group>InCell</Group>
-					<ExtendedTooltip name="ПродажиГруппаДокументРасширеннаяПодсказка" id="100"/>
-					<ChildItems>
-						<PictureField name="ПродажиСостояниеДокумента" id="127">
-							<DataPath>Объект.Продажи.СостояниеДокумента</DataPath>
-							<TitleLocation>None</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<ValuesPicture>
-								<xr:Ref>CommonPicture.СостоянияДокумента</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
-							</ValuesPicture>
-							<ContextMenu name="ПродажиСостояниеДокументаКонтекстноеМеню" id="128"/>
-							<ExtendedTooltip name="ПродажиСостояниеДокументаРасширеннаяПодсказка" id="129"/>
-						</PictureField>
-						<InputField name="ПродажиДокумент" id="109">
-							<DataPath>Объект.Продажи.Документ</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ПродажиДокументКонтекстноеМеню" id="110"/>
-							<ExtendedTooltip name="ПродажиДокументРасширеннаяПодсказка" id="111"/>
-						</InputField>
-					</ChildItems>
-				</ColumnGroup>
+				<InputField name="ПродажиДокумент" id="109">
+					<DataPath>Объект.Продажи.Документ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПродажиДокументКонтекстноеМеню" id="110"/>
+					<ExtendedTooltip name="ПродажиДокументРасширеннаяПодсказка" id="111"/>
+				</InputField>
+				<InputField name="ПродажиКорректировка" id="133">
+					<DataPath>Объект.Продажи.Корректировка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПродажиКорректировкаКонтекстноеМеню" id="134"/>
+					<ExtendedTooltip name="ПродажиКорректировкаРасширеннаяПодсказка" id="135"/>
+				</InputField>
 				<InputField name="ПродажиКонтрагент" id="112">
 					<DataPath>Объект.Продажи.Контрагент</DataPath>
 					<EditMode>EnterOnInput</EditMode>
@@ -304,12 +281,6 @@
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ПродажиДоговорКонтрагентаКонтекстноеМеню" id="116"/>
 					<ExtendedTooltip name="ПродажиДоговорКонтрагентаРасширеннаяПодсказка" id="117"/>
-				</InputField>
-				<InputField name="ПродажиНоменклатура" id="118">
-					<DataPath>Объект.Продажи.Номенклатура</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ПродажиНоменклатураКонтекстноеМеню" id="119"/>
-					<ExtendedTooltip name="ПродажиНоменклатураРасширеннаяПодсказка" id="120"/>
 				</InputField>
 				<InputField name="ПродажиСуммаОплаты" id="121">
 					<DataPath>Объект.Продажи.СуммаОплаты</DataPath>
@@ -378,24 +349,7 @@
 				<Field>Объект.RegisterRecords</Field>
 			</UseAlways>
 			<Columns>
-				<AdditionalColumns table="Объект.Продажи">
-					<Column name="СостояниеДокумента" id="1">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Состояние документа</v8:content>
-							</v8:item>
-						</Title>
-						<Type>
-							<v8:Type>xs:decimal</v8:Type>
-							<v8:NumberQualifiers>
-								<v8:Digits>10</v8:Digits>
-								<v8:FractionDigits>0</v8:FractionDigits>
-								<v8:AllowedSign>Any</v8:AllowedSign>
-							</v8:NumberQualifiers>
-						</Type>
-					</Column>
-				</AdditionalColumns>
+				<AdditionalColumns table="Объект.Продажи"/>
 			</Columns>
 		</Attribute>
 		<Attribute name="ПараметрыПодключаемыхКоманд" id="4">
@@ -483,20 +437,20 @@
 			</ToolTip>
 			<ModifiesSavedData>true</ModifiesSavedData>
 		</Command>
-		<Command name="ОткрытьРеализацию" id="5">
+		<Command name="ОткрытьДокумент" id="5">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Открыть реализацию</v8:content>
+					<v8:content>Открыть документ</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Открыть реализацию</v8:content>
+					<v8:content>Открыть документ</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>ОткрытьРеализацию</Action>
+			<Action>ОткрытьДокумент</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>

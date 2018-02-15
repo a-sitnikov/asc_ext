@@ -42,7 +42,7 @@
 			<ConfigurationExtensionCompatibilityMode>Version8_3_10</ConfigurationExtensionCompatibilityMode>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor/>
-			<Version>2018.02.14</Version>
+			<Version>2018.02.15</Version>
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
@@ -67,15 +67,18 @@
 			<Catalog>СоответствиеВнешнимИБ</Catalog>
 			<Catalog>ВнешниеИнформационныеБазы</Catalog>
 			<Catalog>СтраныМира</Catalog>
+			<Catalog>БанковскиеСчета</Catalog>
 			<Document>АСЦ_ОтчетПосредника</Document>
 			<Document>ОтчетКомитентуОПродажах</Document>
 			<Document>РеализацияТоваровУслуг</Document>
 			<Document>КорректировкаРеализации</Document>
+			<Document>АСЦ_Платеж</Document>
 			<Enum>ВидыДоговоровКонтрагентовУХ</Enum>
 			<Enum>ВидыДоговоровКонтрагентов</Enum>
 			<Enum>ТипыЗначенийПоказателейОтчетов</Enum>
 			<Enum>ЮридическоеФизическоеЛицо</Enum>
 			<Enum>ЭлементыНастройкиОтчета</Enum>
+			<Enum>АСЦ_ВидыПлатежаЭквайринга</Enum>
 			<InformationRegister>ОсновныеДоговорыКонтрагента</InformationRegister>
 			<InformationRegister>ИзмененныеОбъектыДляВыгрузки</InformationRegister>
 			<InformationRegister>ДополнительныеСведения</InformationRegister>

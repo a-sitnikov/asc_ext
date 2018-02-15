@@ -154,38 +154,7 @@
 	|    tab.COL7 as КВ_руб,
 	|    tab.COL8 as КВ,
 	|    tab.COL9 as СуммаКПеречислению,
-  	|    tab.PAY_ID as ID,
-	|	(SELECT 
-	|        contract.PRODUCT_NAME
-	|     FROM    
-	|        V_ASC_CONTRACT contract
-	|     WHERE
-	|        contract.POLICY_NUMBER = CONCAT(tab.COL4, tab.COL5)
-	|        AND rownum = 1) AS PRODUCT_NAME,
-    |	(SELECT 
-	|		 CASE WHEN contract.INSUR_TYPE = 'пролонгация' 
-	|		 	THEN 1
-	|			ELSE 0
-	|		 END as Пролонгация
-	|     FROM    
-	|        V_ASC_CONTRACT contract
-	|     WHERE
-	|        contract.POLICY_NUMBER = CONCAT(tab.COL4, tab.COL5)
-	|        AND rownum = 1) AS Пролонгация,
-    |	(SELECT 
-	|        contract.TS_NEW
-	|     FROM    
-	|        V_ASC_CONTRACT contract
-	|     WHERE
-	|        contract.POLICY_NUMBER = CONCAT(tab.COL4, tab.COL5)
-	|        AND rownum = 1) AS TS_NEW,
-   	|	(SELECT 
-	|        contract.TSFO
-	|     FROM    
-	|        V_ASC_CONTRACT contract
-	|     WHERE
-	|        contract.POLICY_NUMBER = CONCAT(tab.COL4, tab.COL5)
-	|        AND rownum = 1) AS ТипПродажи
+  	|    tab.PAY_ID as ID
 	|FROM
 	|	(SELECT 
 	|   	ACT_ID, 
@@ -323,8 +292,6 @@
 				НоваяСтрока.ДоговорКонтрагента = АСЦ_ОбщийМодуль.НайтиДоговор(НоваяСтрока.Контрагент, ДокОбъект.Организация, СтрокаТЗ.Серия + СтрокаТЗ.Номер, Перечисления.ВидыДоговоровКонтрагентовУХ.СПокупателем);
 			КонецЕсли;	
 			
-			НаименованиеНоменклатуры = АСЦ_UNICUS_Contracts.ПолучитьНаименованиеноменклатуры(СтрокаТЗ.PRODUCT_NAME, СтрокаТЗ.Пролонгация, СтрокаТЗ.ТипПродажи, СтрокаТЗ.TS_NEW);
-			НоваяСтрока.Номенклатура = АСЦ_UNICUS_Contracts.ПолучитьНоменклатуру(НаименованиеНоменклатуры, СтрокаТЗ.PRODUCT_NAME, КэшДанных.Номенклатура);
 			НоваяСтрока.СуммаОплаты  = СтрокаТЗ.СтраховаяПремия;
 			НоваяСтрока.СуммаКВ      = СтрокаТЗ.КВ_руб;
 			НоваяСтрока.id           = СтрокаТЗ.ID;
