@@ -142,7 +142,7 @@
 																	<v8:content>Номер вх. документа</v8:content>
 																</v8:item>
 															</Title>
-															<Width>18</Width>
+															<Width>15</Width>
 															<AutoMaxWidth>false</AutoMaxWidth>
 															<MaxWidth>13</MaxWidth>
 															<HorizontalStretch>false</HorizontalStretch>
@@ -151,6 +151,8 @@
 														</InputField>
 														<InputField name="ДатаВходящегоДокумента" id="93">
 															<DataPath>Объект.ДатаВходящегоДокумента</DataPath>
+															<Width>10</Width>
+															<HorizontalStretch>false</HorizontalStretch>
 															<ContextMenu name="ДатаВходящегоДокументаКонтекстноеМеню" id="94"/>
 															<ExtendedTooltip name="ДатаВходящегоДокументаРасширеннаяПодсказка" id="111"/>
 														</InputField>

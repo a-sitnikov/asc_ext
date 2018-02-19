@@ -32,6 +32,12 @@
 					<ObjectBelonging>Adopted</ObjectBelonging>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="214ef6f4-8557-4137-964c-00f7909ef835">
+				<Properties>
+					<Name>Прочее</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+				</Properties>
+			</EnumValue>
 		</ChildObjects>
 	</Enum>
 </MetaDataObject>

@@ -42,7 +42,7 @@
 			<ConfigurationExtensionCompatibilityMode>Version8_3_10</ConfigurationExtensionCompatibilityMode>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor/>
-			<Version>2018.02.15</Version>
+			<Version>2018.02.19</Version>
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
@@ -50,9 +50,7 @@
 			<CommonModule>АСЦ_104АСП</CommonModule>
 			<CommonModule>АСЦ_ОбщийМодуль</CommonModule>
 			<CommonModule>АСЦ_ПоискОбъектов</CommonModule>
-			<CommonModule>АСЦ_UNICUS_Contracts</CommonModule>
-			<CommonModule>АСЦ_UNICUS_Acts</CommonModule>
-			<CommonModule>АСЦ_UNICUS_PnL</CommonModule>
+			<CommonModule>АСЦ_ОФУ_PnL</CommonModule>
 			<CommonModule>ИнтеграцияСВнешнимиСистемамиУХ</CommonModule>
 			<Catalog>СтатьиДоходов</Catalog>
 			<Catalog>Организации</Catalog>
