@@ -79,25 +79,26 @@
 					</Type>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="3651bcaa-71b3-457b-8716-4efda429c9fa">
-				<Properties>
-					<Name>ID_Unicus</Name>
-					<ObjectBelonging>Adopted</ObjectBelonging>
-					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>15</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-					</Type>
-				</Properties>
-			</Attribute>
 			<Attribute uuid="8c922c23-7931-4948-b970-4d034535e3cd">
 				<Properties>
 					<Name>ПодразделениеОрганизации</Name>
 					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Type>
 						<v8:Type>cfg:CatalogRef.ПодразделенияОрганизаций</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="d4c1d30b-19b4-4228-8c4a-b3c5c873f5b2">
+				<Properties>
+					<Name>ID_Unicus</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
 					</Type>
 				</Properties>
 			</Attribute>

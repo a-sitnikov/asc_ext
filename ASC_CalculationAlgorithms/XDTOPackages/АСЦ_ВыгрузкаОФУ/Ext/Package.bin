@@ -1,0 +1,38 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.ascgroup.ru/OFU">
+	<objectType name="Контрагент">
+		<property name="Наименование" type="xs:string" form="Attribute"/>
+		<property name="ИНН" type="xs:string" nillable="true" form="Attribute"/>
+		<property name="КПП" type="xs:string" nillable="true" form="Attribute"/>
+		<property name="Паспорт" type="xs:string" nillable="true" form="Attribute"/>
+	</objectType>
+	<objectType name="Организация">
+		<property name="ИНН" type="xs:string" nillable="false" form="Attribute"/>
+		<property name="КПП" type="xs:string" nillable="true" form="Attribute"/>
+		<property name="ГУИД" type="xs:string" form="Attribute"/>
+	</objectType>
+	<objectType name="Договор">
+		<property name="Наименование" type="xs:string" form="Attribute"/>
+		<property name="Дата" type="xs:date" form="Attribute"/>
+	</objectType>
+	<objectType name="Номенклатура">
+		<property name="Наименование" type="xs:string" form="Attribute"/>
+		<property name="НоменклатурнаяГруппа" type="xs:string" form="Attribute"/>
+	</objectType>
+	<objectType name="РТУ">
+		<property name="Тип" type="xs:string"/>
+		<property name="Дата" type="xs:dateTime"/>
+		<property name="Номер" type="xs:string"/>
+		<property xmlns:d3p1="http://www.ascgroup.ru/OFU" name="Организация" type="d3p1:Организация" form="Element"/>
+		<property xmlns:d3p1="http://www.ascgroup.ru/OFU" name="Контрагент" type="d3p1:Контрагент"/>
+		<property xmlns:d3p1="http://www.ascgroup.ru/OFU" name="Договор" type="d3p1:Договор"/>
+		<property xmlns:d3p1="http://www.ascgroup.ru/OFU" name="Страховая" type="d3p1:Контрагент"/>
+		<property name="ДЦ" type="xs:string"/>
+		<property xmlns:d3p1="http://www.ascgroup.ru/OFU" name="Номенклатура" type="d3p1:Номенклатура"/>
+		<property name="Сумма" type="xs:decimal"/>
+		<property name="СуммаКВ" type="xs:decimal"/>
+		<property name="id_unicus" type="xs:decimal"/>
+	</objectType>
+	<objectType name="СписокРТУ">
+		<property xmlns:d3p1="http://www.ascgroup.ru/OFU" name="Документы" type="d3p1:РТУ" lowerBound="0" upperBound="-1"/>
+	</objectType>
+</package>

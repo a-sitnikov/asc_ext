@@ -37,6 +37,19 @@
 					</Type>
 				</Properties>
 			</Attribute>
+			<Attribute uuid="55468458-4902-4317-9daa-635043b8e543">
+				<Properties>
+					<Name>Комментарий</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
 			<TabularSection uuid="24fc7394-b830-4e77-9276-d29ecf10ef7b">
 				<InternalInfo>
 					<xr:GeneratedType name="DocumentTabularSection.РеализацияТоваровУслуг.Услуги" category="TabularSection">

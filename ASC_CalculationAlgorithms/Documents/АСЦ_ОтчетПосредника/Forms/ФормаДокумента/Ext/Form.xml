@@ -329,7 +329,7 @@
 					<ExtendedTooltip name="КомментарийExtendedTooltip" id="31"/>
 				</InputField>
 				<InputField name="ИД_Юникус" id="80">
-					<DataPath>Объект.ID_Unicus</DataPath>
+					<DataPath>1/0:3651bcaa-71b3-457b-8716-4efda429c9fa</DataPath>
 					<Width>15</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ИД_ЮникусКонтекстноеМеню" id="81"/>
