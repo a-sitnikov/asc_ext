@@ -33,7 +33,7 @@
 						</v8:item>
 					</Synonym>
 					<Comment/>
-					<XDTOReturningValueType xmlns:d6p1="http://www.ascgroup.ru">d6p1:СписокРТУ</XDTOReturningValueType>
+					<XDTOReturningValueType xmlns:d6p1="http://www.ascgroup.ru/OFU">d6p1:СписокРТУ</XDTOReturningValueType>
 					<Nillable>false</Nillable>
 					<Transactioned>false</Transactioned>
 					<ProcedureName>Реализации</ProcedureName>
@@ -70,6 +70,21 @@
 							<TransferDirection>In</TransferDirection>
 						</Properties>
 					</Parameter>
+					<Parameter uuid="e7e5ea81-7945-4f8a-8dcd-a621bc89677e">
+						<Properties>
+							<Name>ОрганизацияГУИД</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Организация ГУИД</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
 				</ChildObjects>
 			</Operation>
 			<Operation uuid="b47f9fe3-f9db-499a-86c4-cc04162d475a">
@@ -82,7 +97,7 @@
 						</v8:item>
 					</Synonym>
 					<Comment/>
-					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<XDTOReturningValueType xmlns:d6p1="http://www.ascgroup.ru/OFU">d6p1:СписокОтчетовПосредника</XDTOReturningValueType>
 					<Nillable>false</Nillable>
 					<Transactioned>false</Transactioned>
 					<ProcedureName>ОтчетПосредника</ProcedureName>

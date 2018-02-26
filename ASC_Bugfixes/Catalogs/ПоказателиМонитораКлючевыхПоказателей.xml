@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Catalog uuid="070f61f3-7066-45c1-ae39-1ce83cca3420">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ПоказателиМонитораКлючевыхПоказателей" category="Object">
+				<xr:TypeId>bbd09bf5-9245-4215-81e8-d9187a469e1b</xr:TypeId>
+				<xr:ValueId>c7fc9777-0dae-45bd-b046-2e3137e3ac6f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ПоказателиМонитораКлючевыхПоказателей" category="Ref">
+				<xr:TypeId>5270dc69-0997-4b49-aa47-afbb44821871</xr:TypeId>
+				<xr:ValueId>8419f2d0-a1fd-45c0-a3a6-b61b5e3785b0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ПоказателиМонитораКлючевыхПоказателей" category="Selection">
+				<xr:TypeId>c025f094-8cc2-484a-b570-f55088cce781</xr:TypeId>
+				<xr:ValueId>e6e97ef5-55e1-45f8-9b7f-d52e4a0d6cd2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ПоказателиМонитораКлючевыхПоказателей" category="List">
+				<xr:TypeId>91b54ef5-ef0d-4920-968a-ed708e0b9b98</xr:TypeId>
+				<xr:ValueId>b7cff9df-5bdf-46e4-a08c-f1fa95c22ce1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ПоказателиМонитораКлючевыхПоказателей" category="Manager">
+				<xr:TypeId>14879141-93f2-4809-a825-5ed108b7a520</xr:TypeId>
+				<xr:ValueId>d9f6b6bd-bc60-41c4-b1b7-125b976f472d</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПоказателиМонитораКлючевыхПоказателей</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

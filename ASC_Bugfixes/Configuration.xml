@@ -42,11 +42,20 @@
 			<ConfigurationExtensionCompatibilityMode>Version8_3_10</ConfigurationExtensionCompatibilityMode>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor/>
-			<Version>2018.02.15</Version>
+			<Version>2018.02.26</Version>
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
 			<CommonPicture>СоздатьПроцесс</CommonPicture>
+			<CommonPicture>Сформировать</CommonPicture>
+			<CommonPicture>СтрелкаВниз</CommonPicture>
+			<CommonPicture>СостояниеТревожное</CommonPicture>
+			<CommonPicture>СтрелкаВверх</CommonPicture>
+			<CommonPicture>СостояниеХорошее</CommonPicture>
+			<CommonPicture>ЭлектронноеПисьмоИсходящее</CommonPicture>
+			<CommonPicture>СтрелкаВправо</CommonPicture>
+			<CommonPicture>СостояниеУдовлетворительное</CommonPicture>
+			<CommonPicture>ШаблоныРедактирование</CommonPicture>
 			<CommonModule>ИнтеграцияСВнешнимиСистемамиУХ</CommonModule>
 			<CommonModule>УправлениеСоединениямиВИБУХ</CommonModule>
 			<CommonModule>ОбщегоНазначенияУХ</CommonModule>
@@ -55,7 +64,19 @@
 			<CommonModule>СклонениеПредставленийОбъектов</CommonModule>
 			<Catalog>ТаблицыADO</Catalog>
 			<Catalog>ВидыОтчетов</Catalog>
+			<Catalog>ПроизвольныеОтчеты</Catalog>
+			<Catalog>Валюты</Catalog>
+			<Catalog>Организации</Catalog>
+			<Catalog>Сценарии</Catalog>
+			<Catalog>СохраненныеНастройки</Catalog>
+			<Catalog>ВнешниеИнформационныеБазы</Catalog>
+			<Catalog>Проекции</Catalog>
+			<Catalog>Цели</Catalog>
+			<Catalog>Пользователи</Catalog>
+			<Catalog>ПоказателиМонитораКлючевыхПоказателей</Catalog>
+			<Catalog>Периоды</Catalog>
 			<Document>НастраиваемыйОтчет</Document>
+			<Enum>Периодичность</Enum>
 			<DataProcessor>ВыгрузкаЗагрузкаМетодическихМоделей</DataProcessor>
 		</ChildObjects>
 	</Configuration>

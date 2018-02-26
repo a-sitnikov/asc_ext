@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Catalog uuid="28978ade-32ad-45ea-aa51-0fbdf3aa541b">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ПроизвольныеОтчеты" category="Object">
+				<xr:TypeId>b242c84e-ce18-4bdf-8670-29a048d4a9a5</xr:TypeId>
+				<xr:ValueId>bb06324e-79af-45d0-8e43-62a01d9403d6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ПроизвольныеОтчеты" category="Ref">
+				<xr:TypeId>4419e954-422d-424d-aef1-f398f1136adc</xr:TypeId>
+				<xr:ValueId>5885f0ce-3a97-4984-b47d-07901a2ee5a7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ПроизвольныеОтчеты" category="Selection">
+				<xr:TypeId>b013c0c9-137f-46dc-bd91-3b294c61ad54</xr:TypeId>
+				<xr:ValueId>9bc593a4-9f9a-4b0a-a940-729d2eb01a4b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ПроизвольныеОтчеты" category="List">
+				<xr:TypeId>f14fc8a5-89df-4765-86d2-96eefd82ec08</xr:TypeId>
+				<xr:ValueId>ea9c14f7-9fb4-4bd0-8fd8-751e3658ea33</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ПроизвольныеОтчеты" category="Manager">
+				<xr:TypeId>02497dbc-e70d-4eda-8a3a-746924197815</xr:TypeId>
+				<xr:ValueId>6609328f-2192-49e8-a64c-9d56d6dbe06e</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПроизвольныеОтчеты</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаОтображенияОтчетаУправляемая</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>
