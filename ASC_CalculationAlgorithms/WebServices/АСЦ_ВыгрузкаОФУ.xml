@@ -72,11 +72,26 @@
 					</Parameter>
 					<Parameter uuid="e7e5ea81-7945-4f8a-8dcd-a621bc89677e">
 						<Properties>
-							<Name>ОрганизацияГУИД</Name>
+							<Name>ОрганизацияИНН</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Организация ГУИД</v8:content>
+									<v8:content>Организация ИНН</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="726e86b2-04e1-4776-aaaa-e687a34df0b2">
+						<Properties>
+							<Name>ОрганизацияКПП</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Организация КПП</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
@@ -103,7 +118,68 @@
 					<ProcedureName>ОтчетПосредника</ProcedureName>
 					<DataLockControlMode>Managed</DataLockControlMode>
 				</Properties>
-				<ChildObjects/>
+				<ChildObjects>
+					<Parameter uuid="e8899811-d7f4-45de-a11b-9c0e8e757a6e">
+						<Properties>
+							<Name>ДатаНач</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дата нач</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:dateTime</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="e089a6b1-f0d2-4061-9b37-0512c73c085e">
+						<Properties>
+							<Name>ДатКон</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дат кон</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:dateTime</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="b61c0f2c-5323-47df-bd18-8d7a886a70cd">
+						<Properties>
+							<Name>ОрганизацияИНН</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Организация ИНН</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="34c3361f-5447-4bc7-96a5-22f07ff581f7">
+						<Properties>
+							<Name>ОрганизацияКПП</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Организация КПП</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
 			</Operation>
 		</ChildObjects>
 	</WebService>

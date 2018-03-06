@@ -297,6 +297,18 @@
 				<InputField name="Продажиid" id="130">
 					<DataPath>Объект.Продажи.id</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧГ=0</v8:content>
+						</v8:item>
+					</Format>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧГ=0</v8:content>
+						</v8:item>
+					</EditFormat>
 					<ContextMenu name="ПродажиidКонтекстноеМеню" id="131"/>
 					<ExtendedTooltip name="ПродажиidРасширеннаяПодсказка" id="132"/>
 				</InputField>
@@ -329,9 +341,15 @@
 					<ExtendedTooltip name="КомментарийExtendedTooltip" id="31"/>
 				</InputField>
 				<InputField name="ИД_Юникус" id="80">
-					<DataPath>1/0:3651bcaa-71b3-457b-8716-4efda429c9fa</DataPath>
+					<DataPath>Объект.ID_Unicus</DataPath>
 					<Width>15</Width>
 					<HorizontalStretch>false</HorizontalStretch>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧГ=0</v8:content>
+						</v8:item>
+					</EditFormat>
 					<ContextMenu name="ИД_ЮникусКонтекстноеМеню" id="81"/>
 					<ExtendedTooltip name="ИД_ЮникусРасширеннаяПодсказка" id="82"/>
 				</InputField>

@@ -1,565 +1,710 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<dataSource>
-		<name>ИсточникДанных1</name>
-		<dataSourceType>Local</dataSourceType>
-	</dataSource>
-	<dataSet xsi:type="DataSetUnion">
-		<name>Объединение</name>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Сумма</dataPath>
-			<field>Сумма</field>
-			<appearance>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>Формат</dcscor:parameter>
-					<dcscor:value xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ЧДЦ=2</v8:content>
-						</v8:item>
-					</dcscor:value>
-				</dcscor:item>
-			</appearance>
-			<inputParameters/>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Документ</dataPath>
-			<field>Документ</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Документ</v8:content>
-				</v8:item>
-			</title>
-			<appearance/>
-			<inputParameters/>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>VIN</dataPath>
-			<field>VIN</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>VIN</v8:content>
-				</v8:item>
-			</title>
-			<appearance/>
-			<inputParameters/>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ДоговорКонтрагента</dataPath>
-			<field>ДоговорКонтрагента</field>
-			<appearance/>
-			<inputParameters/>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Контрагент</dataPath>
-			<field>Контрагент</field>
-			<appearance/>
-			<inputParameters/>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Организация</dataPath>
-			<field>Организация</field>
-			<appearance/>
-			<inputParameters/>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>НоменклатурнаяГруппа</dataPath>
-			<field>НоменклатурнаяГруппа</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Номенклатурная группа</v8:content>
-				</v8:item>
-			</title>
-			<appearance/>
-			<inputParameters/>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Номенклатура</dataPath>
-			<field>Номенклатура</field>
-			<appearance/>
-			<inputParameters/>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаКВ</dataPath>
-			<field>СуммаКВ</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Сумма КВ</v8:content>
-				</v8:item>
-			</title>
-			<appearance>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>Формат</dcscor:parameter>
-					<dcscor:value xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ЧДЦ=2</v8:content>
-						</v8:item>
-					</dcscor:value>
-				</dcscor:item>
-			</appearance>
-			<inputParameters/>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Центр</dataPath>
-			<field>Центр</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Центр</v8:content>
-				</v8:item>
-			</title>
-			<appearance/>
-			<inputParameters>
-				<dcscor:item>
-					<dcscor:parameter>ПараметрыВыбора</dcscor:parameter>
-					<dcscor:value xsi:type="dcscor:ChoiceParameters">
-						<dcscor:item>
-							<dcscor:choiceParameter>Отбор.ИспользоватьВРегламентированномУчете</dcscor:choiceParameter>
-							<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
-						</dcscor:item>
-					</dcscor:value>
-				</dcscor:item>
-			</inputParameters>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Статья</dataPath>
-			<field>Статья</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Статья</v8:content>
-				</v8:item>
-			</title>
-			<appearance/>
-			<inputParameters/>
-		</field>
-		<item xsi:type="DataSetQuery">
-			<name>Реализация</name>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>Сумма</dataPath>
-				<field>Сумма</field>
-				<appearance>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>Формат</dcscor:parameter>
-						<dcscor:value xsi:type="v8:LocalStringType">
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>ЧДЦ=2</v8:content>
-							</v8:item>
-						</dcscor:value>
-					</dcscor:item>
-				</appearance>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>Документ</dataPath>
-				<field>Документ</field>
-				<title xsi:type="v8:LocalStringType">
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Документ</v8:content>
-					</v8:item>
-				</title>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>VIN</dataPath>
-				<field>VIN</field>
-				<title xsi:type="v8:LocalStringType">
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>VIN</v8:content>
-					</v8:item>
-				</title>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>ДоговорКонтрагента</dataPath>
-				<field>ДоговорКонтрагента</field>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>Контрагент</dataPath>
-				<field>Контрагент</field>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>Организация</dataPath>
-				<field>Организация</field>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>НоменклатурнаяГруппа</dataPath>
-				<field>НоменклатурнаяГруппа</field>
-				<title xsi:type="v8:LocalStringType">
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Номенклатурная группа</v8:content>
-					</v8:item>
-				</title>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>Номенклатура</dataPath>
-				<field>Номенклатура</field>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>СуммаКВ</dataPath>
-				<field>СуммаКВ</field>
-				<title xsi:type="v8:LocalStringType">
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Сумма КВ</v8:content>
-					</v8:item>
-				</title>
-				<appearance>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>Формат</dcscor:parameter>
-						<dcscor:value xsi:type="v8:LocalStringType">
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>ЧДЦ=2</v8:content>
-							</v8:item>
-						</dcscor:value>
-					</dcscor:item>
-				</appearance>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>Центр</dataPath>
-				<field>Центр</field>
-				<title xsi:type="v8:LocalStringType">
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Центр</v8:content>
-					</v8:item>
-				</title>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>Статья</dataPath>
-				<field>Статья</field>
-				<title xsi:type="v8:LocalStringType">
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Статья</v8:content>
-					</v8:item>
-				</title>
-			</field>
-			<dataSource>ИсточникДанных1</dataSource>
-			<query>ВЫБРАТЬ
-	ДокТЧ.Номенклатура КАК Номенклатура,
-	ДокТЧ.Номенклатура.НоменклатурнаяГруппа КАК НоменклатурнаяГруппа,
-	ДокТЧ.Содержание КАК VIN,
-	ДокТЧ.Сумма КАК СуммаКВ,
-	ДокТЧ.Сумма КАК Сумма,
-	ДокТЧ.Ссылка КАК Документ,
-	ДокТЧ.Ссылка.Контрагент КАК Контрагент,
-	ДокТЧ.Ссылка.ДоговорКонтрагента КАК ДоговорКонтрагента,
-	ДокТЧ.Ссылка.Организация КАК Организация,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО КАК Центр,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение КАК Статья
-ИЗ
-	Документ.РеализацияТоваровУслуг.Услуги КАК ДокТЧ
-ГДЕ
-	ДокТЧ.Ссылка.Дата МЕЖДУ &amp;Дата1 И &amp;Дата2
-	И ДокТЧ.Ссылка.Проведен
-
-ОБЪЕДИНИТЬ ВСЕ
-
-ВЫБРАТЬ
-	ДокТЧ.Номенклатура,
-	ДокТЧ.Номенклатура.НоменклатурнаяГруппа,
-	ДокТЧ.Содержание,
-	0,
-	ДокТЧ.Сумма,
-	ДокТЧ.Ссылка,
-	ДокТЧ.Ссылка.Контрагент,
-	ДокТЧ.Ссылка.ДоговорКонтрагента,
-	ДокТЧ.Ссылка.Организация,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение
-ИЗ
-	Документ.РеализацияТоваровУслуг.АгентскиеУслуги КАК ДокТЧ
-ГДЕ
-	ДокТЧ.Ссылка.Дата МЕЖДУ &amp;Дата1 И &amp;Дата2
-	И ДокТЧ.Ссылка.Проведен</query>
-		</item>
-		<item xsi:type="DataSetQuery">
-			<name>Корректировка</name>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>Центр</dataPath>
-				<field>Центр</field>
-				<title xsi:type="v8:LocalStringType">
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Центр</v8:content>
-					</v8:item>
-				</title>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>СуммаКВ</dataPath>
-				<field>СуммаКВ</field>
-				<title xsi:type="v8:LocalStringType">
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Сумма КВ</v8:content>
-					</v8:item>
-				</title>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>Сумма</dataPath>
-				<field>Сумма</field>
-				<title xsi:type="v8:LocalStringType">
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Сумма</v8:content>
-					</v8:item>
-				</title>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>Документ</dataPath>
-				<field>Документ</field>
-				<title xsi:type="v8:LocalStringType">
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Документ</v8:content>
-					</v8:item>
-				</title>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>VIN</dataPath>
-				<field>VIN</field>
-				<title xsi:type="v8:LocalStringType">
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>VIN</v8:content>
-					</v8:item>
-				</title>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>ДоговорКонтрагента</dataPath>
-				<field>ДоговорКонтрагента</field>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>Контрагент</dataPath>
-				<field>Контрагент</field>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>Организация</dataPath>
-				<field>Организация</field>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>НоменклатурнаяГруппа</dataPath>
-				<field>НоменклатурнаяГруппа</field>
-				<title xsi:type="v8:LocalStringType">
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Номенклатурная группа</v8:content>
-					</v8:item>
-				</title>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>Номенклатура</dataPath>
-				<field>Номенклатура</field>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>Статья</dataPath>
-				<field>Статья</field>
-				<title xsi:type="v8:LocalStringType">
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Статья</v8:content>
-					</v8:item>
-				</title>
-			</field>
-			<dataSource>ИсточникДанных1</dataSource>
-			<query>ВЫБРАТЬ
-	ДокТЧ.Номенклатура КАК Номенклатура,
-	ДокТЧ.Номенклатура.НоменклатурнаяГруппа КАК НоменклатурнаяГруппа,
-	ДокТЧ.Содержание КАК VIN,
-	ДокТЧ.Сумма - ДокТЧ.СуммаДоИзменения КАК СуммаКВ,
-	ДокТЧ.Сумма - ДокТЧ.СуммаДоИзменения КАК Сумма,
-	ДокТЧ.Ссылка КАК Документ,
-	ДокТЧ.Ссылка.Контрагент КАК Контрагент,
-	ДокТЧ.Ссылка.ДоговорКонтрагента КАК ДоговорКонтрагента,
-	ДокТЧ.Ссылка.Организация КАК Организация,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО КАК Центр,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение КАК Статья
-ИЗ
-	Документ.КорректировкаРеализации.Услуги КАК ДокТЧ
-ГДЕ
-	ДокТЧ.Ссылка.Дата МЕЖДУ &amp;Дата1 И &amp;Дата2
-	И ДокТЧ.Ссылка.Проведен
-
-ОБЪЕДИНИТЬ ВСЕ
-
-ВЫБРАТЬ
-	ДокТЧ.Номенклатура,
-	ДокТЧ.Номенклатура.НоменклатурнаяГруппа,
-	ДокТЧ.Содержание,
-	0,
-	ДокТЧ.Сумма - ДокТЧ.СуммаДоИзменения,
-	ДокТЧ.Ссылка,
-	ДокТЧ.Ссылка.Контрагент,
-	ДокТЧ.Ссылка.ДоговорКонтрагента,
-	ДокТЧ.Ссылка.Организация,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение КАК Статья
-ИЗ
-	Документ.КорректировкаРеализации.АгентскиеУслуги КАК ДокТЧ
-ГДЕ
-	ДокТЧ.Ссылка.Дата МЕЖДУ &amp;Дата1 И &amp;Дата2
-	И ДокТЧ.Ссылка.Проведен</query>
-		</item>
-	</dataSet>
-	<totalField>
-		<dataPath>Сумма</dataPath>
-		<expression>Сумма(Сумма)</expression>
-	</totalField>
-	<totalField>
-		<dataPath>СуммаКВ</dataPath>
-		<expression>Сумма(СуммаКВ)</expression>
-	</totalField>
-	<parameter>
-		<name>Период</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Период</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>v8:StandardPeriod</v8:Type>
-		</valueType>
-		<value xsi:type="v8:StandardPeriod">
-			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
-			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
-			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
-		</value>
-		<useRestriction>false</useRestriction>
-		<use>Always</use>
-	</parameter>
-	<parameter>
-		<name>Дата1</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Дата1</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>xs:dateTime</v8:Type>
-			<v8:DateQualifiers>
-				<v8:DateFractions>DateTime</v8:DateFractions>
-			</v8:DateQualifiers>
-		</valueType>
-		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
-		<useRestriction>true</useRestriction>
-		<expression>&amp;Период.ДатаНачала</expression>
-	</parameter>
-	<parameter>
-		<name>Дата2</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Дата2</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>xs:dateTime</v8:Type>
-			<v8:DateQualifiers>
-				<v8:DateFractions>DateTime</v8:DateFractions>
-			</v8:DateQualifiers>
-		</valueType>
-		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
-		<useRestriction>true</useRestriction>
-		<expression>&amp;Период.ДатаОкончания</expression>
-	</parameter>
-	<settingsVariant>
-		<dcsset:name>Расшифровка по страховкам</dcsset:name>
-		<dcsset:presentation xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Расшифровка по страховкам</v8:content>
-			</v8:item>
-		</dcsset:presentation>
-		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
-			<dcsset:selection>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Сумма</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>СуммаКВ</dcsset:field>
-				</dcsset:item>
-			</dcsset:selection>
-			<dcsset:filter>
-				<dcsset:item xsi:type="dcsset:FilterItemComparison">
-					<dcsset:use>false</dcsset:use>
-					<dcsset:left xsi:type="dcscor:Field">Центр</dcsset:left>
-					<dcsset:comparisonType>Equal</dcsset:comparisonType>
-					<dcsset:userSettingID>b03f191f-cbad-46de-9955-50255e792370</dcsset:userSettingID>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:FilterItemComparison">
-					<dcsset:use>false</dcsset:use>
-					<dcsset:left xsi:type="dcscor:Field">Номенклатура</dcsset:left>
-					<dcsset:comparisonType>Equal</dcsset:comparisonType>
-					<dcsset:viewMode>Normal</dcsset:viewMode>
-					<dcsset:userSettingID>5c3d1137-5db5-4227-9edb-cf51d9a9db70</dcsset:userSettingID>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:FilterItemComparison">
-					<dcsset:use>false</dcsset:use>
-					<dcsset:left xsi:type="dcscor:Field">НоменклатурнаяГруппа</dcsset:left>
-					<dcsset:comparisonType>Equal</dcsset:comparisonType>
-					<dcsset:viewMode>Normal</dcsset:viewMode>
-					<dcsset:userSettingID>a9f07a26-cb52-4171-8d70-41e482755301</dcsset:userSettingID>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:FilterItemComparison">
-					<dcsset:use>false</dcsset:use>
-					<dcsset:left xsi:type="dcscor:Field">ДоговорКонтрагента</dcsset:left>
-					<dcsset:comparisonType>Equal</dcsset:comparisonType>
-					<dcsset:viewMode>Normal</dcsset:viewMode>
-					<dcsset:userSettingID>7d6c2892-4ac3-4b33-9876-680137a1fee4</dcsset:userSettingID>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:FilterItemComparison">
-					<dcsset:use>false</dcsset:use>
-					<dcsset:left xsi:type="dcscor:Field">Организация</dcsset:left>
-					<dcsset:comparisonType>Equal</dcsset:comparisonType>
-					<dcsset:viewMode>Normal</dcsset:viewMode>
-					<dcsset:userSettingID>f717cdee-6231-4a4f-b52e-413e45674896</dcsset:userSettingID>
-				</dcsset:item>
-			</dcsset:filter>
-			<dcsset:dataParameters>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:use>false</dcscor:use>
-					<dcscor:parameter>Период</dcscor:parameter>
-					<dcscor:value xsi:type="v8:StandardPeriod">
-						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
-						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
-						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
-					</dcscor:value>
-					<dcsset:userSettingID>fcec75d7-f5e1-464a-9395-c4f82af1eb8e</dcsset:userSettingID>
-				</dcscor:item>
-			</dcsset:dataParameters>
-			<dcsset:order>
-				<dcsset:item xsi:type="dcsset:OrderItemField">
-					<dcsset:field>Статья.Код</dcsset:field>
-					<dcsset:orderType>Asc</dcsset:orderType>
-				</dcsset:item>
-			</dcsset:order>
-			<dcsset:item xsi:type="dcsset:StructureItemGroup">
-				<dcsset:groupItems>
-					<dcsset:item xsi:type="dcsset:GroupItemField">
-						<dcsset:field>Статья</dcsset:field>
-						<dcsset:groupType>Items</dcsset:groupType>
-						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
-						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
-					</dcsset:item>
-				</dcsset:groupItems>
-				<dcsset:order>
-					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-				</dcsset:order>
-				<dcsset:selection>
-					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
-				</dcsset:selection>
-			</dcsset:item>
-		</dcsset:settings>
-	</settingsVariant>
-</DataCompositionSchema>
+<V8Exch:_1CV8DtUD xmlns:V8Exch="http://www.1c.ru/V8/1CV8DtUD/" xmlns:core="http://v8.1c.ru/data" xmlns:v8="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<V8Exch:Data>
+		<v8:CatalogObject.Запросы>
+			<v8:Ref xsi:type="v8:CatalogRef.Запросы">566da9ea-17a3-11e8-812f-005056012280</v8:Ref>
+			<v8:DeletionMark>false</v8:DeletionMark>
+			<v8:Code>000000000001</v8:Code>
+			<v8:Description>Данные по страховкам</v8:Description>
+			<v8:Администратор xsi:type="v8:CatalogRef.Пользователи">b3fd3ad9-e626-11e7-812d-005056012280</v8:Администратор>
+			<v8:ДатаИзменения>2018-02-28T17:27:36</v8:ДатаИзменения>
+			<v8:ДоступныеПоля>AQEIAAAAAAAAAO+7v3siVSJ9</v8:ДоступныеПоля>
+			<v8:Описание/>
+			<v8:ОтборПлановыйПериод/>
+			<v8:ОтборПредыдущийПериод/>
+			<v8:ОтборТекущийПериод/>
+			<v8:ОтборыХранилище>AQEIAAAAAAAAAO+7v3siVSJ9</v8:ОтборыХранилище>
+			<v8:ПараметрыХранилище>AQEIAAAAAAAAAO+7v3siVSJ9</v8:ПараметрыХранилище>
+			<v8:ПодлежитПередачеВПодчиненныеУзлыПриОбменеПоОрганизации>false</v8:ПодлежитПередачеВПодчиненныеУзлыПриОбменеПоОрганизации>
+			<v8:СхемаКомпоновкиДанных>AQFJAAAAAAAAAO+7v3siIyIsZGMyOWY4NTctZmM0Zi00Y2QxLWE3Y2EtZThlNzFm
+Mzk1NWIzLA0KezB9LA0KezAsDQp7MX0sDQp7Mn0NCn0NCn0AAAAAuUoAAAAAAADv
+u788P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYtOCI/Pg0KPFNjaGVt
+YUZpbGUgeG1sbnM9IiIgeG1sbnM6eHM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEv
+WE1MU2NoZW1hIiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1M
+U2NoZW1hLWluc3RhbmNlIj4NCgk8ZGF0YUNvbXBvc2l0aW9uU2NoZW1hIHhtbG5z
+PSJodHRwOi8vdjguMWMucnUvOC4xL2RhdGEtY29tcG9zaXRpb24tc3lzdGVtL3Nj
+aGVtYSI+DQoJCTxkYXRhU291cmNlPg0KCQkJPG5hbWU+0JjRgdGC0L7Rh9C90LjQ
+utCU0LDQvdC90YvRhTE8L25hbWU+DQoJCQk8ZGF0YVNvdXJjZVR5cGU+TG9jYWw8
+L2RhdGFTb3VyY2VUeXBlPg0KCQk8L2RhdGFTb3VyY2U+DQoJCTxkYXRhU2V0IHhz
+aTp0eXBlPSJEYXRhU2V0VW5pb24iPg0KCQkJPG5hbWU+0J7QsdGK0LXQtNC40L3Q
+tdC90LjQtTwvbmFtZT4NCgkJCTxmaWVsZCB4c2k6dHlwZT0iRGF0YVNldEZpZWxk
+RmllbGQiPg0KCQkJCTxkYXRhUGF0aD7QodGD0LzQvNCwPC9kYXRhUGF0aD4NCgkJ
+CQk8ZmllbGQ+0KHRg9C80LzQsDwvZmllbGQ+DQoJCQkJPGFwcGVhcmFuY2U+DQoJ
+CQkJCTxpdGVtIHhtbG5zPSJodHRwOi8vdjguMWMucnUvOC4xL2RhdGEtY29tcG9z
+aXRpb24tc3lzdGVtL2NvcmUiIHhtbG5zOmRjc3NldD0iaHR0cDovL3Y4LjFjLnJ1
+LzguMS9kYXRhLWNvbXBvc2l0aW9uLXN5c3RlbS9zZXR0aW5ncyIgeHNpOnR5cGU9
+ImRjc3NldDpTZXR0aW5nc1BhcmFtZXRlclZhbHVlIj4NCgkJCQkJCTxwYXJhbWV0
+ZXI+0KTQvtGA0LzQsNGCPC9wYXJhbWV0ZXI+DQoJCQkJCQk8dmFsdWUgeHNpOnR5
+cGU9InhzOnN0cmluZyI+0KfQlNCmPTI8L3ZhbHVlPg0KCQkJCQk8L2l0ZW0+DQoJ
+CQkJPC9hcHBlYXJhbmNlPg0KCQkJPC9maWVsZD4NCgkJCTxmaWVsZCB4c2k6dHlw
+ZT0iRGF0YVNldEZpZWxkRmllbGQiPg0KCQkJCTxkYXRhUGF0aD7QlNC+0LrRg9C8
+0LXQvdGCPC9kYXRhUGF0aD4NCgkJCQk8ZmllbGQ+0JTQvtC60YPQvNC10L3Rgjwv
+ZmllbGQ+DQoJCQkJPHRpdGxlIHhtbG5zOmQ1cDE9Imh0dHA6Ly92OC4xYy5ydS84
+LjEvZGF0YS9jb3JlIiB4c2k6dHlwZT0iZDVwMTpMb2NhbFN0cmluZ1R5cGUiPg0K
+CQkJCQk8ZDVwMTppdGVtPg0KCQkJCQkJPGQ1cDE6bGFuZz5ydTwvZDVwMTpsYW5n
+Pg0KCQkJCQkJPGQ1cDE6Y29udGVudD7QlNC+0LrRg9C80LXQvdGCPC9kNXAxOmNv
+bnRlbnQ+DQoJCQkJCTwvZDVwMTppdGVtPg0KCQkJCTwvdGl0bGU+DQoJCQk8L2Zp
+ZWxkPg0KCQkJPGZpZWxkIHhzaTp0eXBlPSJEYXRhU2V0RmllbGRGaWVsZCI+DQoJ
+CQkJPGRhdGFQYXRoPlZJTjwvZGF0YVBhdGg+DQoJCQkJPGZpZWxkPlZJTjwvZmll
+bGQ+DQoJCQkJPHRpdGxlIHhtbG5zOmQ1cDE9Imh0dHA6Ly92OC4xYy5ydS84LjEv
+ZGF0YS9jb3JlIiB4c2k6dHlwZT0iZDVwMTpMb2NhbFN0cmluZ1R5cGUiPg0KCQkJ
+CQk8ZDVwMTppdGVtPg0KCQkJCQkJPGQ1cDE6bGFuZz5ydTwvZDVwMTpsYW5nPg0K
+CQkJCQkJPGQ1cDE6Y29udGVudD5WSU48L2Q1cDE6Y29udGVudD4NCgkJCQkJPC9k
+NXAxOml0ZW0+DQoJCQkJPC90aXRsZT4NCgkJCTwvZmllbGQ+DQoJCQk8ZmllbGQg
+eHNpOnR5cGU9IkRhdGFTZXRGaWVsZEZpZWxkIj4NCgkJCQk8ZGF0YVBhdGg+0JTQ
+vtCz0L7QstC+0YDQmtC+0L3RgtGA0LDQs9C10L3RgtCwPC9kYXRhUGF0aD4NCgkJ
+CQk8ZmllbGQ+0JTQvtCz0L7QstC+0YDQmtC+0L3RgtGA0LDQs9C10L3RgtCwPC9m
+aWVsZD4NCgkJCTwvZmllbGQ+DQoJCQk8ZmllbGQgeHNpOnR5cGU9IkRhdGFTZXRG
+aWVsZEZpZWxkIj4NCgkJCQk8ZGF0YVBhdGg+0JrQvtC90YLRgNCw0LPQtdC90YI8
+L2RhdGFQYXRoPg0KCQkJCTxmaWVsZD7QmtC+0L3RgtGA0LDQs9C10L3RgjwvZmll
+bGQ+DQoJCQk8L2ZpZWxkPg0KCQkJPGZpZWxkIHhzaTp0eXBlPSJEYXRhU2V0Rmll
+bGRGaWVsZCI+DQoJCQkJPGRhdGFQYXRoPtCe0YDQs9Cw0L3QuNC30LDRhtC40Y88
+L2RhdGFQYXRoPg0KCQkJCTxmaWVsZD7QntGA0LPQsNC90LjQt9Cw0YbQuNGPPC9m
+aWVsZD4NCgkJCTwvZmllbGQ+DQoJCQk8ZmllbGQgeHNpOnR5cGU9IkRhdGFTZXRG
+aWVsZEZpZWxkIj4NCgkJCQk8ZGF0YVBhdGg+0J3QvtC80LXQvdC60LvQsNGC0YPR
+gNC90LDRj9CT0YDRg9C/0L/QsDwvZGF0YVBhdGg+DQoJCQkJPGZpZWxkPtCd0L7Q
+vNC10L3QutC70LDRgtGD0YDQvdCw0Y/Qk9GA0YPQv9C/0LA8L2ZpZWxkPg0KCQkJ
+CTx0aXRsZSB4bWxuczpkNXAxPSJodHRwOi8vdjguMWMucnUvOC4xL2RhdGEvY29y
+ZSIgeHNpOnR5cGU9ImQ1cDE6TG9jYWxTdHJpbmdUeXBlIj4NCgkJCQkJPGQ1cDE6
+aXRlbT4NCgkJCQkJCTxkNXAxOmxhbmc+cnU8L2Q1cDE6bGFuZz4NCgkJCQkJCTxk
+NXAxOmNvbnRlbnQ+0J3QvtC80LXQvdC60LvQsNGC0YPRgNC90LDRjyDQs9GA0YPQ
+v9C/0LA8L2Q1cDE6Y29udGVudD4NCgkJCQkJPC9kNXAxOml0ZW0+DQoJCQkJPC90
+aXRsZT4NCgkJCTwvZmllbGQ+DQoJCQk8ZmllbGQgeHNpOnR5cGU9IkRhdGFTZXRG
+aWVsZEZpZWxkIj4NCgkJCQk8ZGF0YVBhdGg+0J3QvtC80LXQvdC60LvQsNGC0YPR
+gNCwPC9kYXRhUGF0aD4NCgkJCQk8ZmllbGQ+0J3QvtC80LXQvdC60LvQsNGC0YPR
+gNCwPC9maWVsZD4NCgkJCTwvZmllbGQ+DQoJCQk8ZmllbGQgeHNpOnR5cGU9IkRh
+dGFTZXRGaWVsZEZpZWxkIj4NCgkJCQk8ZGF0YVBhdGg+0KHRg9C80LzQsNCa0JI8
+L2RhdGFQYXRoPg0KCQkJCTxmaWVsZD7QodGD0LzQvNCw0JrQkjwvZmllbGQ+DQoJ
+CQkJPHRpdGxlIHhtbG5zOmQ1cDE9Imh0dHA6Ly92OC4xYy5ydS84LjEvZGF0YS9j
+b3JlIiB4c2k6dHlwZT0iZDVwMTpMb2NhbFN0cmluZ1R5cGUiPg0KCQkJCQk8ZDVw
+MTppdGVtPg0KCQkJCQkJPGQ1cDE6bGFuZz5ydTwvZDVwMTpsYW5nPg0KCQkJCQkJ
+PGQ1cDE6Y29udGVudD7QodGD0LzQvNCwINCa0JI8L2Q1cDE6Y29udGVudD4NCgkJ
+CQkJPC9kNXAxOml0ZW0+DQoJCQkJPC90aXRsZT4NCgkJCQk8YXBwZWFyYW5jZT4N
+CgkJCQkJPGl0ZW0geG1sbnM9Imh0dHA6Ly92OC4xYy5ydS84LjEvZGF0YS1jb21w
+b3NpdGlvbi1zeXN0ZW0vY29yZSIgeG1sbnM6ZGNzc2V0PSJodHRwOi8vdjguMWMu
+cnUvOC4xL2RhdGEtY29tcG9zaXRpb24tc3lzdGVtL3NldHRpbmdzIiB4c2k6dHlw
+ZT0iZGNzc2V0OlNldHRpbmdzUGFyYW1ldGVyVmFsdWUiPg0KCQkJCQkJPHBhcmFt
+ZXRlcj7QpNC+0YDQvNCw0YI8L3BhcmFtZXRlcj4NCgkJCQkJCTx2YWx1ZSB4c2k6
+dHlwZT0ieHM6c3RyaW5nIj7Qp9CU0KY9MjwvdmFsdWU+DQoJCQkJCTwvaXRlbT4N
+CgkJCQk8L2FwcGVhcmFuY2U+DQoJCQk8L2ZpZWxkPg0KCQkJPGZpZWxkIHhzaTp0
+eXBlPSJEYXRhU2V0RmllbGRGaWVsZCI+DQoJCQkJPGRhdGFQYXRoPtCm0LXQvdGC
+0YA8L2RhdGFQYXRoPg0KCQkJCTxmaWVsZD7QptC10L3RgtGAPC9maWVsZD4NCgkJ
+CQk8dGl0bGUgeG1sbnM6ZDVwMT0iaHR0cDovL3Y4LjFjLnJ1LzguMS9kYXRhL2Nv
+cmUiIHhzaTp0eXBlPSJkNXAxOkxvY2FsU3RyaW5nVHlwZSI+DQoJCQkJCTxkNXAx
+Oml0ZW0+DQoJCQkJCQk8ZDVwMTpsYW5nPnJ1PC9kNXAxOmxhbmc+DQoJCQkJCQk8
+ZDVwMTpjb250ZW50PtCm0LXQvdGC0YA8L2Q1cDE6Y29udGVudD4NCgkJCQkJPC9k
+NXAxOml0ZW0+DQoJCQkJPC90aXRsZT4NCgkJCQk8aW5wdXRQYXJhbWV0ZXJzPg0K
+CQkJCQk8aXRlbSB4bWxucz0iaHR0cDovL3Y4LjFjLnJ1LzguMS9kYXRhLWNvbXBv
+c2l0aW9uLXN5c3RlbS9jb3JlIj4NCgkJCQkJCTxwYXJhbWV0ZXI+0J/QsNGA0LDQ
+vNC10YLRgNGL0JLRi9Cx0L7RgNCwPC9wYXJhbWV0ZXI+DQoJCQkJCQk8dmFsdWUg
+eHNpOnR5cGU9IkNob2ljZVBhcmFtZXRlcnMiPg0KCQkJCQkJCTxpdGVtPg0KCQkJ
+CQkJCQk8Y2hvaWNlUGFyYW1ldGVyPtCe0YLQsdC+0YAu0JjRgdC/0L7Qu9GM0LfQ
+vtCy0LDRgtGM0JLQoNC10LPQu9Cw0LzQtdC90YLQuNGA0L7QstCw0L3QvdC+0LzQ
+o9GH0LXRgtC1PC9jaG9pY2VQYXJhbWV0ZXI+DQoJCQkJCQkJCTx2YWx1ZSB4c2k6
+dHlwZT0ieHM6Ym9vbGVhbiI+ZmFsc2U8L3ZhbHVlPg0KCQkJCQkJCTwvaXRlbT4N
+CgkJCQkJCTwvdmFsdWU+DQoJCQkJCTwvaXRlbT4NCgkJCQk8L2lucHV0UGFyYW1l
+dGVycz4NCgkJCTwvZmllbGQ+DQoJCQk8ZmllbGQgeHNpOnR5cGU9IkRhdGFTZXRG
+aWVsZEZpZWxkIj4NCgkJCQk8ZGF0YVBhdGg+0KHRgtCw0YLRjNGPPC9kYXRhUGF0
+aD4NCgkJCQk8ZmllbGQ+0KHRgtCw0YLRjNGPPC9maWVsZD4NCgkJCQk8dGl0bGUg
+eG1sbnM6ZDVwMT0iaHR0cDovL3Y4LjFjLnJ1LzguMS9kYXRhL2NvcmUiIHhzaTp0
+eXBlPSJkNXAxOkxvY2FsU3RyaW5nVHlwZSI+DQoJCQkJCTxkNXAxOml0ZW0+DQoJ
+CQkJCQk8ZDVwMTpsYW5nPnJ1PC9kNXAxOmxhbmc+DQoJCQkJCQk8ZDVwMTpjb250
+ZW50PtCh0YLQsNGC0YzRjzwvZDVwMTpjb250ZW50Pg0KCQkJCQk8L2Q1cDE6aXRl
+bT4NCgkJCQk8L3RpdGxlPg0KCQkJPC9maWVsZD4NCgkJCTxpdGVtIHhzaTp0eXBl
+PSJEYXRhU2V0UXVlcnkiPg0KCQkJCTxuYW1lPtCg0LXQsNC70LjQt9Cw0YbQuNGP
+PC9uYW1lPg0KCQkJCTxmaWVsZCB4c2k6dHlwZT0iRGF0YVNldEZpZWxkRmllbGQi
+Pg0KCQkJCQk8ZGF0YVBhdGg+0KHRg9C80LzQsDwvZGF0YVBhdGg+DQoJCQkJCTxm
+aWVsZD7QodGD0LzQvNCwPC9maWVsZD4NCgkJCQkJPGFwcGVhcmFuY2U+DQoJCQkJ
+CQk8aXRlbSB4bWxucz0iaHR0cDovL3Y4LjFjLnJ1LzguMS9kYXRhLWNvbXBvc2l0
+aW9uLXN5c3RlbS9jb3JlIiB4bWxuczpkY3NzZXQ9Imh0dHA6Ly92OC4xYy5ydS84
+LjEvZGF0YS1jb21wb3NpdGlvbi1zeXN0ZW0vc2V0dGluZ3MiIHhzaTp0eXBlPSJk
+Y3NzZXQ6U2V0dGluZ3NQYXJhbWV0ZXJWYWx1ZSI+DQoJCQkJCQkJPHBhcmFtZXRl
+cj7QpNC+0YDQvNCw0YI8L3BhcmFtZXRlcj4NCgkJCQkJCQk8dmFsdWUgeHNpOnR5
+cGU9InhzOnN0cmluZyI+0KfQlNCmPTI8L3ZhbHVlPg0KCQkJCQkJPC9pdGVtPg0K
+CQkJCQk8L2FwcGVhcmFuY2U+DQoJCQkJPC9maWVsZD4NCgkJCQk8ZmllbGQgeHNp
+OnR5cGU9IkRhdGFTZXRGaWVsZEZpZWxkIj4NCgkJCQkJPGRhdGFQYXRoPtCU0L7Q
+utGD0LzQtdC90YI8L2RhdGFQYXRoPg0KCQkJCQk8ZmllbGQ+0JTQvtC60YPQvNC1
+0L3RgjwvZmllbGQ+DQoJCQkJCTx0aXRsZSB4bWxuczpkNnAxPSJodHRwOi8vdjgu
+MWMucnUvOC4xL2RhdGEvY29yZSIgeHNpOnR5cGU9ImQ2cDE6TG9jYWxTdHJpbmdU
+eXBlIj4NCgkJCQkJCTxkNnAxOml0ZW0+DQoJCQkJCQkJPGQ2cDE6bGFuZz5ydTwv
+ZDZwMTpsYW5nPg0KCQkJCQkJCTxkNnAxOmNvbnRlbnQ+0JTQvtC60YPQvNC10L3R
+gjwvZDZwMTpjb250ZW50Pg0KCQkJCQkJPC9kNnAxOml0ZW0+DQoJCQkJCTwvdGl0
+bGU+DQoJCQkJPC9maWVsZD4NCgkJCQk8ZmllbGQgeHNpOnR5cGU9IkRhdGFTZXRG
+aWVsZEZpZWxkIj4NCgkJCQkJPGRhdGFQYXRoPlZJTjwvZGF0YVBhdGg+DQoJCQkJ
+CTxmaWVsZD5WSU48L2ZpZWxkPg0KCQkJCQk8dGl0bGUgeG1sbnM6ZDZwMT0iaHR0
+cDovL3Y4LjFjLnJ1LzguMS9kYXRhL2NvcmUiIHhzaTp0eXBlPSJkNnAxOkxvY2Fs
+U3RyaW5nVHlwZSI+DQoJCQkJCQk8ZDZwMTppdGVtPg0KCQkJCQkJCTxkNnAxOmxh
+bmc+cnU8L2Q2cDE6bGFuZz4NCgkJCQkJCQk8ZDZwMTpjb250ZW50PlZJTjwvZDZw
+MTpjb250ZW50Pg0KCQkJCQkJPC9kNnAxOml0ZW0+DQoJCQkJCTwvdGl0bGU+DQoJ
+CQkJPC9maWVsZD4NCgkJCQk8ZmllbGQgeHNpOnR5cGU9IkRhdGFTZXRGaWVsZEZp
+ZWxkIj4NCgkJCQkJPGRhdGFQYXRoPtCU0L7Qs9C+0LLQvtGA0JrQvtC90YLRgNCw
+0LPQtdC90YLQsDwvZGF0YVBhdGg+DQoJCQkJCTxmaWVsZD7QlNC+0LPQvtCy0L7R
+gNCa0L7QvdGC0YDQsNCz0LXQvdGC0LA8L2ZpZWxkPg0KCQkJCTwvZmllbGQ+DQoJ
+CQkJPGZpZWxkIHhzaTp0eXBlPSJEYXRhU2V0RmllbGRGaWVsZCI+DQoJCQkJCTxk
+YXRhUGF0aD7QmtC+0L3RgtGA0LDQs9C10L3RgjwvZGF0YVBhdGg+DQoJCQkJCTxm
+aWVsZD7QmtC+0L3RgtGA0LDQs9C10L3RgjwvZmllbGQ+DQoJCQkJPC9maWVsZD4N
+CgkJCQk8ZmllbGQgeHNpOnR5cGU9IkRhdGFTZXRGaWVsZEZpZWxkIj4NCgkJCQkJ
+PGRhdGFQYXRoPtCe0YDQs9Cw0L3QuNC30LDRhtC40Y88L2RhdGFQYXRoPg0KCQkJ
+CQk8ZmllbGQ+0J7RgNCz0LDQvdC40LfQsNGG0LjRjzwvZmllbGQ+DQoJCQkJPC9m
+aWVsZD4NCgkJCQk8ZmllbGQgeHNpOnR5cGU9IkRhdGFTZXRGaWVsZEZpZWxkIj4N
+CgkJCQkJPGRhdGFQYXRoPtCd0L7QvNC10L3QutC70LDRgtGD0YDQvdCw0Y/Qk9GA
+0YPQv9C/0LA8L2RhdGFQYXRoPg0KCQkJCQk8ZmllbGQ+0J3QvtC80LXQvdC60LvQ
+sNGC0YPRgNC90LDRj9CT0YDRg9C/0L/QsDwvZmllbGQ+DQoJCQkJCTx0aXRsZSB4
+bWxuczpkNnAxPSJodHRwOi8vdjguMWMucnUvOC4xL2RhdGEvY29yZSIgeHNpOnR5
+cGU9ImQ2cDE6TG9jYWxTdHJpbmdUeXBlIj4NCgkJCQkJCTxkNnAxOml0ZW0+DQoJ
+CQkJCQkJPGQ2cDE6bGFuZz5ydTwvZDZwMTpsYW5nPg0KCQkJCQkJCTxkNnAxOmNv
+bnRlbnQ+0J3QvtC80LXQvdC60LvQsNGC0YPRgNC90LDRjyDQs9GA0YPQv9C/0LA8
+L2Q2cDE6Y29udGVudD4NCgkJCQkJCTwvZDZwMTppdGVtPg0KCQkJCQk8L3RpdGxl
+Pg0KCQkJCTwvZmllbGQ+DQoJCQkJPGZpZWxkIHhzaTp0eXBlPSJEYXRhU2V0Rmll
+bGRGaWVsZCI+DQoJCQkJCTxkYXRhUGF0aD7QndC+0LzQtdC90LrQu9Cw0YLRg9GA
+0LA8L2RhdGFQYXRoPg0KCQkJCQk8ZmllbGQ+0J3QvtC80LXQvdC60LvQsNGC0YPR
+gNCwPC9maWVsZD4NCgkJCQk8L2ZpZWxkPg0KCQkJCTxmaWVsZCB4c2k6dHlwZT0i
+RGF0YVNldEZpZWxkRmllbGQiPg0KCQkJCQk8ZGF0YVBhdGg+0KHRg9C80LzQsNCa
+0JI8L2RhdGFQYXRoPg0KCQkJCQk8ZmllbGQ+0KHRg9C80LzQsNCa0JI8L2ZpZWxk
+Pg0KCQkJCQk8dGl0bGUgeG1sbnM6ZDZwMT0iaHR0cDovL3Y4LjFjLnJ1LzguMS9k
+YXRhL2NvcmUiIHhzaTp0eXBlPSJkNnAxOkxvY2FsU3RyaW5nVHlwZSI+DQoJCQkJ
+CQk8ZDZwMTppdGVtPg0KCQkJCQkJCTxkNnAxOmxhbmc+cnU8L2Q2cDE6bGFuZz4N
+CgkJCQkJCQk8ZDZwMTpjb250ZW50PtCh0YPQvNC80LAg0JrQkjwvZDZwMTpjb250
+ZW50Pg0KCQkJCQkJPC9kNnAxOml0ZW0+DQoJCQkJCTwvdGl0bGU+DQoJCQkJCTxh
+cHBlYXJhbmNlPg0KCQkJCQkJPGl0ZW0geG1sbnM9Imh0dHA6Ly92OC4xYy5ydS84
+LjEvZGF0YS1jb21wb3NpdGlvbi1zeXN0ZW0vY29yZSIgeG1sbnM6ZGNzc2V0PSJo
+dHRwOi8vdjguMWMucnUvOC4xL2RhdGEtY29tcG9zaXRpb24tc3lzdGVtL3NldHRp
+bmdzIiB4c2k6dHlwZT0iZGNzc2V0OlNldHRpbmdzUGFyYW1ldGVyVmFsdWUiPg0K
+CQkJCQkJCTxwYXJhbWV0ZXI+0KTQvtGA0LzQsNGCPC9wYXJhbWV0ZXI+DQoJCQkJ
+CQkJPHZhbHVlIHhzaTp0eXBlPSJ4czpzdHJpbmciPtCn0JTQpj0yPC92YWx1ZT4N
+CgkJCQkJCTwvaXRlbT4NCgkJCQkJPC9hcHBlYXJhbmNlPg0KCQkJCTwvZmllbGQ+
+DQoJCQkJPGZpZWxkIHhzaTp0eXBlPSJEYXRhU2V0RmllbGRGaWVsZCI+DQoJCQkJ
+CTxkYXRhUGF0aD7QptC10L3RgtGAPC9kYXRhUGF0aD4NCgkJCQkJPGZpZWxkPtCm
+0LXQvdGC0YA8L2ZpZWxkPg0KCQkJCQk8dGl0bGUgeG1sbnM6ZDZwMT0iaHR0cDov
+L3Y4LjFjLnJ1LzguMS9kYXRhL2NvcmUiIHhzaTp0eXBlPSJkNnAxOkxvY2FsU3Ry
+aW5nVHlwZSI+DQoJCQkJCQk8ZDZwMTppdGVtPg0KCQkJCQkJCTxkNnAxOmxhbmc+
+cnU8L2Q2cDE6bGFuZz4NCgkJCQkJCQk8ZDZwMTpjb250ZW50PtCm0LXQvdGC0YA8
+L2Q2cDE6Y29udGVudD4NCgkJCQkJCTwvZDZwMTppdGVtPg0KCQkJCQk8L3RpdGxl
+Pg0KCQkJCTwvZmllbGQ+DQoJCQkJPGZpZWxkIHhzaTp0eXBlPSJEYXRhU2V0Rmll
+bGRGaWVsZCI+DQoJCQkJCTxkYXRhUGF0aD7QodGC0LDRgtGM0Y88L2RhdGFQYXRo
+Pg0KCQkJCQk8ZmllbGQ+0KHRgtCw0YLRjNGPPC9maWVsZD4NCgkJCQkJPHRpdGxl
+IHhtbG5zOmQ2cDE9Imh0dHA6Ly92OC4xYy5ydS84LjEvZGF0YS9jb3JlIiB4c2k6
+dHlwZT0iZDZwMTpMb2NhbFN0cmluZ1R5cGUiPg0KCQkJCQkJPGQ2cDE6aXRlbT4N
+CgkJCQkJCQk8ZDZwMTpsYW5nPnJ1PC9kNnAxOmxhbmc+DQoJCQkJCQkJPGQ2cDE6
+Y29udGVudD7QodGC0LDRgtGM0Y88L2Q2cDE6Y29udGVudD4NCgkJCQkJCTwvZDZw
+MTppdGVtPg0KCQkJCQk8L3RpdGxlPg0KCQkJCTwvZmllbGQ+DQoJCQkJPGRhdGFT
+b3VyY2U+0JjRgdGC0L7Rh9C90LjQutCU0LDQvdC90YvRhTE8L2RhdGFTb3VyY2U+
+DQoJCQkJPHF1ZXJ5PtCS0KvQkdCg0JDQotCsCgnQlNC+0LrQotCnLtCd0L7QvNC1
+0L3QutC70LDRgtGD0YDQsCDQmtCQ0Jog0J3QvtC80LXQvdC60LvQsNGC0YPRgNCw
+LAoJ0JTQvtC60KLQpy7QndC+0LzQtdC90LrQu9Cw0YLRg9GA0LAu0J3QvtC80LXQ
+vdC60LvQsNGC0YPRgNC90LDRj9CT0YDRg9C/0L/QsCDQmtCQ0Jog0J3QvtC80LXQ
+vdC60LvQsNGC0YPRgNC90LDRj9CT0YDRg9C/0L/QsCwKCdCU0L7QutCi0Kcu0KHQ
+vtC00LXRgNC20LDQvdC40LUg0JrQkNCaIFZJTiwKCdCU0L7QutCi0Kcu0KHRg9C8
+0LzQsCDQmtCQ0Jog0KHRg9C80LzQsNCa0JIsCgnQlNC+0LrQotCnLtCh0YPQvNC8
+0LAg0JrQkNCaINCh0YPQvNC80LAsCgnQlNC+0LrQotCnLtCh0YHRi9C70LrQsCDQ
+mtCQ0Jog0JTQvtC60YPQvNC10L3RgiwKCdCU0L7QutCi0Kcu0KHRgdGL0LvQutCw
+LtCa0L7QvdGC0YDQsNCz0LXQvdGCINCa0JDQmiDQmtC+0L3RgtGA0LDQs9C10L3R
+giwKCdCU0L7QutCi0Kcu0KHRgdGL0LvQutCwLtCU0L7Qs9C+0LLQvtGA0JrQvtC9
+0YLRgNCw0LPQtdC90YLQsCDQmtCQ0Jog0JTQvtCz0L7QstC+0YDQmtC+0L3RgtGA
+0LDQs9C10L3RgtCwLAoJ0JTQvtC60KLQpy7QodGB0YvQu9C60LAu0J7RgNCz0LDQ
+vdC40LfQsNGG0LjRjyDQmtCQ0Jog0J7RgNCz0LDQvdC40LfQsNGG0LjRjywKCdCU
+0L7QutCi0Kcu0KHRgdGL0LvQutCwLtCU0L7Qs9C+0LLQvtGA0JrQvtC90YLRgNCw
+0LPQtdC90YLQsC7QntGB0L3QvtCy0L3QvtC50KbQpNCeINCa0JDQmiDQptC10L3R
+gtGALAoJ0JTQvtC60KLQpy7QodGB0YvQu9C60LAu0JTQvtCz0L7QstC+0YDQmtC+
+0L3RgtGA0LDQs9C10L3RgtCwLtCe0YHQvdC+0LLQvdCw0Y/QodGC0LDRgtGM0Y/Q
+mNGB0L/QvtC70L3QtdC90LjQtSDQmtCQ0Jog0KHRgtCw0YLRjNGPCtCY0JcKCdCU
+0L7QutGD0LzQtdC90YIu0KDQtdCw0LvQuNC30LDRhtC40Y/QotC+0LLQsNGA0L7Q
+stCj0YHQu9GD0LMu0KPRgdC70YPQs9C4INCa0JDQmiDQlNC+0LrQotCnCtCT0JTQ
+lQoJ0JTQvtC60KLQpy7QodGB0YvQu9C60LAu0JTQsNGC0LAg0JzQldCW0JTQoyAm
+YW1wO9CU0LDRgtCwMSDQmCAmYW1wO9CU0LDRgtCwMgoJ0Jgg0JTQvtC60KLQpy7Q
+odGB0YvQu9C60LAu0J/RgNC+0LLQtdC00LXQvQoK0J7QkdCq0JXQlNCY0J3QmNCi
+0Kwg0JLQodCVCgrQktCr0JHQoNCQ0KLQrAoJ0JTQvtC60KLQpy7QndC+0LzQtdC9
+0LrQu9Cw0YLRg9GA0LAsCgnQlNC+0LrQotCnLtCd0L7QvNC10L3QutC70LDRgtGD
+0YDQsC7QndC+0LzQtdC90LrQu9Cw0YLRg9GA0L3QsNGP0JPRgNGD0L/Qv9CwLAoJ
+0JTQvtC60KLQpy7QodC+0LTQtdGA0LbQsNC90LjQtSwKCTAsCgnQlNC+0LrQotCn
+LtCh0YPQvNC80LAsCgnQlNC+0LrQotCnLtCh0YHRi9C70LrQsCwKCdCU0L7QutCi
+0Kcu0KHRgdGL0LvQutCwLtCa0L7QvdGC0YDQsNCz0LXQvdGCLAoJ0JTQvtC60KLQ
+py7QodGB0YvQu9C60LAu0JTQvtCz0L7QstC+0YDQmtC+0L3RgtGA0LDQs9C10L3R
+gtCwLAoJ0JTQvtC60KLQpy7QodGB0YvQu9C60LAu0J7RgNCz0LDQvdC40LfQsNGG
+0LjRjywKCdCU0L7QutCi0Kcu0KHRgdGL0LvQutCwLtCU0L7Qs9C+0LLQvtGA0JrQ
+vtC90YLRgNCw0LPQtdC90YLQsC7QntGB0L3QvtCy0L3QvtC50KbQpNCeLAoJ0JTQ
+vtC60KLQpy7QodGB0YvQu9C60LAu0JTQvtCz0L7QstC+0YDQmtC+0L3RgtGA0LDQ
+s9C10L3RgtCwLtCe0YHQvdC+0LLQvdCw0Y/QodGC0LDRgtGM0Y/QmNGB0L/QvtC7
+0L3QtdC90LjQtQrQmNCXCgnQlNC+0LrRg9C80LXQvdGCLtCg0LXQsNC70LjQt9Cw
+0YbQuNGP0KLQvtCy0LDRgNC+0LLQo9GB0LvRg9CzLtCQ0LPQtdC90YLRgdC60LjQ
+tdCj0YHQu9GD0LPQuCDQmtCQ0Jog0JTQvtC60KLQpwrQk9CU0JUKCdCU0L7QutCi
+0Kcu0KHRgdGL0LvQutCwLtCU0LDRgtCwINCc0JXQltCU0KMgJmFtcDvQlNCw0YLQ
+sDEg0JggJmFtcDvQlNCw0YLQsDIKCdCYINCU0L7QutCi0Kcu0KHRgdGL0LvQutCw
+LtCf0YDQvtCy0LXQtNC10L08L3F1ZXJ5Pg0KCQkJPC9pdGVtPg0KCQkJPGl0ZW0g
+eHNpOnR5cGU9IkRhdGFTZXRRdWVyeSI+DQoJCQkJPG5hbWU+0JrQvtGA0YDQtdC6
+0YLQuNGA0L7QstC60LA8L25hbWU+DQoJCQkJPGZpZWxkIHhzaTp0eXBlPSJEYXRh
+U2V0RmllbGRGaWVsZCI+DQoJCQkJCTxkYXRhUGF0aD7QptC10L3RgtGAPC9kYXRh
+UGF0aD4NCgkJCQkJPGZpZWxkPtCm0LXQvdGC0YA8L2ZpZWxkPg0KCQkJCQk8dGl0
+bGUgeG1sbnM6ZDZwMT0iaHR0cDovL3Y4LjFjLnJ1LzguMS9kYXRhL2NvcmUiIHhz
+aTp0eXBlPSJkNnAxOkxvY2FsU3RyaW5nVHlwZSI+DQoJCQkJCQk8ZDZwMTppdGVt
+Pg0KCQkJCQkJCTxkNnAxOmxhbmc+cnU8L2Q2cDE6bGFuZz4NCgkJCQkJCQk8ZDZw
+MTpjb250ZW50PtCm0LXQvdGC0YA8L2Q2cDE6Y29udGVudD4NCgkJCQkJCTwvZDZw
+MTppdGVtPg0KCQkJCQk8L3RpdGxlPg0KCQkJCTwvZmllbGQ+DQoJCQkJPGZpZWxk
+IHhzaTp0eXBlPSJEYXRhU2V0RmllbGRGaWVsZCI+DQoJCQkJCTxkYXRhUGF0aD7Q
+odGD0LzQvNCw0JrQkjwvZGF0YVBhdGg+DQoJCQkJCTxmaWVsZD7QodGD0LzQvNCw
+0JrQkjwvZmllbGQ+DQoJCQkJCTx0aXRsZSB4bWxuczpkNnAxPSJodHRwOi8vdjgu
+MWMucnUvOC4xL2RhdGEvY29yZSIgeHNpOnR5cGU9ImQ2cDE6TG9jYWxTdHJpbmdU
+eXBlIj4NCgkJCQkJCTxkNnAxOml0ZW0+DQoJCQkJCQkJPGQ2cDE6bGFuZz5ydTwv
+ZDZwMTpsYW5nPg0KCQkJCQkJCTxkNnAxOmNvbnRlbnQ+0KHRg9C80LzQsCDQmtCS
+PC9kNnAxOmNvbnRlbnQ+DQoJCQkJCQk8L2Q2cDE6aXRlbT4NCgkJCQkJPC90aXRs
+ZT4NCgkJCQk8L2ZpZWxkPg0KCQkJCTxmaWVsZCB4c2k6dHlwZT0iRGF0YVNldEZp
+ZWxkRmllbGQiPg0KCQkJCQk8ZGF0YVBhdGg+0KHRg9C80LzQsDwvZGF0YVBhdGg+
+DQoJCQkJCTxmaWVsZD7QodGD0LzQvNCwPC9maWVsZD4NCgkJCQkJPHRpdGxlIHht
+bG5zOmQ2cDE9Imh0dHA6Ly92OC4xYy5ydS84LjEvZGF0YS9jb3JlIiB4c2k6dHlw
+ZT0iZDZwMTpMb2NhbFN0cmluZ1R5cGUiPg0KCQkJCQkJPGQ2cDE6aXRlbT4NCgkJ
+CQkJCQk8ZDZwMTpsYW5nPnJ1PC9kNnAxOmxhbmc+DQoJCQkJCQkJPGQ2cDE6Y29u
+dGVudD7QodGD0LzQvNCwPC9kNnAxOmNvbnRlbnQ+DQoJCQkJCQk8L2Q2cDE6aXRl
+bT4NCgkJCQkJPC90aXRsZT4NCgkJCQk8L2ZpZWxkPg0KCQkJCTxmaWVsZCB4c2k6
+dHlwZT0iRGF0YVNldEZpZWxkRmllbGQiPg0KCQkJCQk8ZGF0YVBhdGg+0JTQvtC6
+0YPQvNC10L3RgjwvZGF0YVBhdGg+DQoJCQkJCTxmaWVsZD7QlNC+0LrRg9C80LXQ
+vdGCPC9maWVsZD4NCgkJCQkJPHRpdGxlIHhtbG5zOmQ2cDE9Imh0dHA6Ly92OC4x
+Yy5ydS84LjEvZGF0YS9jb3JlIiB4c2k6dHlwZT0iZDZwMTpMb2NhbFN0cmluZ1R5
+cGUiPg0KCQkJCQkJPGQ2cDE6aXRlbT4NCgkJCQkJCQk8ZDZwMTpsYW5nPnJ1PC9k
+NnAxOmxhbmc+DQoJCQkJCQkJPGQ2cDE6Y29udGVudD7QlNC+0LrRg9C80LXQvdGC
+PC9kNnAxOmNvbnRlbnQ+DQoJCQkJCQk8L2Q2cDE6aXRlbT4NCgkJCQkJPC90aXRs
+ZT4NCgkJCQk8L2ZpZWxkPg0KCQkJCTxmaWVsZCB4c2k6dHlwZT0iRGF0YVNldEZp
+ZWxkRmllbGQiPg0KCQkJCQk8ZGF0YVBhdGg+VklOPC9kYXRhUGF0aD4NCgkJCQkJ
+PGZpZWxkPlZJTjwvZmllbGQ+DQoJCQkJCTx0aXRsZSB4bWxuczpkNnAxPSJodHRw
+Oi8vdjguMWMucnUvOC4xL2RhdGEvY29yZSIgeHNpOnR5cGU9ImQ2cDE6TG9jYWxT
+dHJpbmdUeXBlIj4NCgkJCQkJCTxkNnAxOml0ZW0+DQoJCQkJCQkJPGQ2cDE6bGFu
+Zz5ydTwvZDZwMTpsYW5nPg0KCQkJCQkJCTxkNnAxOmNvbnRlbnQ+VklOPC9kNnAx
+OmNvbnRlbnQ+DQoJCQkJCQk8L2Q2cDE6aXRlbT4NCgkJCQkJPC90aXRsZT4NCgkJ
+CQk8L2ZpZWxkPg0KCQkJCTxmaWVsZCB4c2k6dHlwZT0iRGF0YVNldEZpZWxkRmll
+bGQiPg0KCQkJCQk8ZGF0YVBhdGg+0JTQvtCz0L7QstC+0YDQmtC+0L3RgtGA0LDQ
+s9C10L3RgtCwPC9kYXRhUGF0aD4NCgkJCQkJPGZpZWxkPtCU0L7Qs9C+0LLQvtGA
+0JrQvtC90YLRgNCw0LPQtdC90YLQsDwvZmllbGQ+DQoJCQkJPC9maWVsZD4NCgkJ
+CQk8ZmllbGQgeHNpOnR5cGU9IkRhdGFTZXRGaWVsZEZpZWxkIj4NCgkJCQkJPGRh
+dGFQYXRoPtCa0L7QvdGC0YDQsNCz0LXQvdGCPC9kYXRhUGF0aD4NCgkJCQkJPGZp
+ZWxkPtCa0L7QvdGC0YDQsNCz0LXQvdGCPC9maWVsZD4NCgkJCQk8L2ZpZWxkPg0K
+CQkJCTxmaWVsZCB4c2k6dHlwZT0iRGF0YVNldEZpZWxkRmllbGQiPg0KCQkJCQk8
+ZGF0YVBhdGg+0J7RgNCz0LDQvdC40LfQsNGG0LjRjzwvZGF0YVBhdGg+DQoJCQkJ
+CTxmaWVsZD7QntGA0LPQsNC90LjQt9Cw0YbQuNGPPC9maWVsZD4NCgkJCQk8L2Zp
+ZWxkPg0KCQkJCTxmaWVsZCB4c2k6dHlwZT0iRGF0YVNldEZpZWxkRmllbGQiPg0K
+CQkJCQk8ZGF0YVBhdGg+0J3QvtC80LXQvdC60LvQsNGC0YPRgNC90LDRj9CT0YDR
+g9C/0L/QsDwvZGF0YVBhdGg+DQoJCQkJCTxmaWVsZD7QndC+0LzQtdC90LrQu9Cw
+0YLRg9GA0L3QsNGP0JPRgNGD0L/Qv9CwPC9maWVsZD4NCgkJCQkJPHRpdGxlIHht
+bG5zOmQ2cDE9Imh0dHA6Ly92OC4xYy5ydS84LjEvZGF0YS9jb3JlIiB4c2k6dHlw
+ZT0iZDZwMTpMb2NhbFN0cmluZ1R5cGUiPg0KCQkJCQkJPGQ2cDE6aXRlbT4NCgkJ
+CQkJCQk8ZDZwMTpsYW5nPnJ1PC9kNnAxOmxhbmc+DQoJCQkJCQkJPGQ2cDE6Y29u
+dGVudD7QndC+0LzQtdC90LrQu9Cw0YLRg9GA0L3QsNGPINCz0YDRg9C/0L/QsDwv
+ZDZwMTpjb250ZW50Pg0KCQkJCQkJPC9kNnAxOml0ZW0+DQoJCQkJCTwvdGl0bGU+
+DQoJCQkJPC9maWVsZD4NCgkJCQk8ZmllbGQgeHNpOnR5cGU9IkRhdGFTZXRGaWVs
+ZEZpZWxkIj4NCgkJCQkJPGRhdGFQYXRoPtCd0L7QvNC10L3QutC70LDRgtGD0YDQ
+sDwvZGF0YVBhdGg+DQoJCQkJCTxmaWVsZD7QndC+0LzQtdC90LrQu9Cw0YLRg9GA
+0LA8L2ZpZWxkPg0KCQkJCTwvZmllbGQ+DQoJCQkJPGZpZWxkIHhzaTp0eXBlPSJE
+YXRhU2V0RmllbGRGaWVsZCI+DQoJCQkJCTxkYXRhUGF0aD7QodGC0LDRgtGM0Y88
+L2RhdGFQYXRoPg0KCQkJCQk8ZmllbGQ+0KHRgtCw0YLRjNGPPC9maWVsZD4NCgkJ
+CQkJPHRpdGxlIHhtbG5zOmQ2cDE9Imh0dHA6Ly92OC4xYy5ydS84LjEvZGF0YS9j
+b3JlIiB4c2k6dHlwZT0iZDZwMTpMb2NhbFN0cmluZ1R5cGUiPg0KCQkJCQkJPGQ2
+cDE6aXRlbT4NCgkJCQkJCQk8ZDZwMTpsYW5nPnJ1PC9kNnAxOmxhbmc+DQoJCQkJ
+CQkJPGQ2cDE6Y29udGVudD7QodGC0LDRgtGM0Y88L2Q2cDE6Y29udGVudD4NCgkJ
+CQkJCTwvZDZwMTppdGVtPg0KCQkJCQk8L3RpdGxlPg0KCQkJCTwvZmllbGQ+DQoJ
+CQkJPGRhdGFTb3VyY2U+0JjRgdGC0L7Rh9C90LjQutCU0LDQvdC90YvRhTE8L2Rh
+dGFTb3VyY2U+DQoJCQkJPHF1ZXJ5PtCS0KvQkdCg0JDQotCsCgnQlNC+0LrQotCn
+LtCd0L7QvNC10L3QutC70LDRgtGD0YDQsCDQmtCQ0Jog0J3QvtC80LXQvdC60LvQ
+sNGC0YPRgNCwLAoJ0JTQvtC60KLQpy7QndC+0LzQtdC90LrQu9Cw0YLRg9GA0LAu
+0J3QvtC80LXQvdC60LvQsNGC0YPRgNC90LDRj9CT0YDRg9C/0L/QsCDQmtCQ0Jog
+0J3QvtC80LXQvdC60LvQsNGC0YPRgNC90LDRj9CT0YDRg9C/0L/QsCwKCdCU0L7Q
+utCi0Kcu0KHQvtC00LXRgNC20LDQvdC40LUg0JrQkNCaIFZJTiwKCdCU0L7QutCi
+0Kcu0KHRg9C80LzQsCAtINCU0L7QutCi0Kcu0KHRg9C80LzQsNCU0L7QmNC30LzQ
+tdC90LXQvdC40Y8g0JrQkNCaINCh0YPQvNC80LDQmtCSLAoJ0JTQvtC60KLQpy7Q
+odGD0LzQvNCwIC0g0JTQvtC60KLQpy7QodGD0LzQvNCw0JTQvtCY0LfQvNC10L3Q
+tdC90LjRjyDQmtCQ0Jog0KHRg9C80LzQsCwKCdCU0L7QutCi0Kcu0KHRgdGL0LvQ
+utCwINCa0JDQmiDQlNC+0LrRg9C80LXQvdGCLAoJ0JTQvtC60KLQpy7QodGB0YvQ
+u9C60LAu0JrQvtC90YLRgNCw0LPQtdC90YIg0JrQkNCaINCa0L7QvdGC0YDQsNCz
+0LXQvdGCLAoJ0JTQvtC60KLQpy7QodGB0YvQu9C60LAu0JTQvtCz0L7QstC+0YDQ
+mtC+0L3RgtGA0LDQs9C10L3RgtCwINCa0JDQmiDQlNC+0LPQvtCy0L7RgNCa0L7Q
+vdGC0YDQsNCz0LXQvdGC0LAsCgnQlNC+0LrQotCnLtCh0YHRi9C70LrQsC7QntGA
+0LPQsNC90LjQt9Cw0YbQuNGPINCa0JDQmiDQntGA0LPQsNC90LjQt9Cw0YbQuNGP
+LAoJ0JTQvtC60KLQpy7QodGB0YvQu9C60LAu0JTQvtCz0L7QstC+0YDQmtC+0L3R
+gtGA0LDQs9C10L3RgtCwLtCe0YHQvdC+0LLQvdC+0LnQptCk0J4g0JrQkNCaINCm
+0LXQvdGC0YAsCgnQlNC+0LrQotCnLtCh0YHRi9C70LrQsC7QlNC+0LPQvtCy0L7R
+gNCa0L7QvdGC0YDQsNCz0LXQvdGC0LAu0J7RgdC90L7QstC90LDRj9Ch0YLQsNGC
+0YzRj9CY0YHQv9C+0LvQvdC10L3QuNC1INCa0JDQmiDQodGC0LDRgtGM0Y8K0JjQ
+lwoJ0JTQvtC60YPQvNC10L3Rgi7QmtC+0YDRgNC10LrRgtC40YDQvtCy0LrQsNCg
+0LXQsNC70LjQt9Cw0YbQuNC4LtCj0YHQu9GD0LPQuCDQmtCQ0Jog0JTQvtC60KLQ
+pwrQk9CU0JUKCdCU0L7QutCi0Kcu0KHRgdGL0LvQutCwLtCU0LDRgtCwINCc0JXQ
+ltCU0KMgJmFtcDvQlNCw0YLQsDEg0JggJmFtcDvQlNCw0YLQsDIKCdCYINCU0L7Q
+utCi0Kcu0KHRgdGL0LvQutCwLtCf0YDQvtCy0LXQtNC10L0KCtCe0JHQqtCV0JTQ
+mNCd0JjQotCsINCS0KHQlQoK0JLQq9CR0KDQkNCi0KwKCdCU0L7QutCi0Kcu0J3Q
+vtC80LXQvdC60LvQsNGC0YPRgNCwLAoJ0JTQvtC60KLQpy7QndC+0LzQtdC90LrQ
+u9Cw0YLRg9GA0LAu0J3QvtC80LXQvdC60LvQsNGC0YPRgNC90LDRj9CT0YDRg9C/
+0L/QsCwKCdCU0L7QutCi0Kcu0KHQvtC00LXRgNC20LDQvdC40LUsCgkwLAoJ0JTQ
+vtC60KLQpy7QodGD0LzQvNCwIC0g0JTQvtC60KLQpy7QodGD0LzQvNCw0JTQvtCY
+0LfQvNC10L3QtdC90LjRjywKCdCU0L7QutCi0Kcu0KHRgdGL0LvQutCwLAoJ0JTQ
+vtC60KLQpy7QodGB0YvQu9C60LAu0JrQvtC90YLRgNCw0LPQtdC90YIsCgnQlNC+
+0LrQotCnLtCh0YHRi9C70LrQsC7QlNC+0LPQvtCy0L7RgNCa0L7QvdGC0YDQsNCz
+0LXQvdGC0LAsCgnQlNC+0LrQotCnLtCh0YHRi9C70LrQsC7QntGA0LPQsNC90LjQ
+t9Cw0YbQuNGPLAoJ0JTQvtC60KLQpy7QodGB0YvQu9C60LAu0JTQvtCz0L7QstC+
+0YDQmtC+0L3RgtGA0LDQs9C10L3RgtCwLtCe0YHQvdC+0LLQvdC+0LnQptCk0J4s
+CgnQlNC+0LrQotCnLtCh0YHRi9C70LrQsC7QlNC+0LPQvtCy0L7RgNCa0L7QvdGC
+0YDQsNCz0LXQvdGC0LAu0J7RgdC90L7QstC90LDRj9Ch0YLQsNGC0YzRj9CY0YHQ
+v9C+0LvQvdC10L3QuNC1INCa0JDQmiDQodGC0LDRgtGM0Y8K0JjQlwoJ0JTQvtC6
+0YPQvNC10L3Rgi7QmtC+0YDRgNC10LrRgtC40YDQvtCy0LrQsNCg0LXQsNC70LjQ
+t9Cw0YbQuNC4LtCQ0LPQtdC90YLRgdC60LjQtdCj0YHQu9GD0LPQuCDQmtCQ0Jog
+0JTQvtC60KLQpwrQk9CU0JUKCdCU0L7QutCi0Kcu0KHRgdGL0LvQutCwLtCU0LDR
+gtCwINCc0JXQltCU0KMgJmFtcDvQlNCw0YLQsDEg0JggJmFtcDvQlNCw0YLQsDIK
+CdCYINCU0L7QutCi0Kcu0KHRgdGL0LvQutCwLtCf0YDQvtCy0LXQtNC10L08L3F1
+ZXJ5Pg0KCQkJPC9pdGVtPg0KCQk8L2RhdGFTZXQ+DQoJCTxjYWxjdWxhdGVkRmll
+bGQ+DQoJCQk8ZGF0YVBhdGg+0JrQvtC70LjRh9C10YHRgtCy0L48L2RhdGFQYXRo
+Pg0KCQkJPGV4cHJlc3Npb24+MTwvZXhwcmVzc2lvbj4NCgkJCTx0aXRsZSB4bWxu
+czpkNHAxPSJodHRwOi8vdjguMWMucnUvOC4xL2RhdGEvY29yZSIgeHNpOnR5cGU9
+ImQ0cDE6TG9jYWxTdHJpbmdUeXBlIj4NCgkJCQk8ZDRwMTppdGVtPg0KCQkJCQk8
+ZDRwMTpsYW5nPnJ1PC9kNHAxOmxhbmc+DQoJCQkJCTxkNHAxOmNvbnRlbnQ+0JrQ
+vtC70LjRh9C10YHRgtCy0L48L2Q0cDE6Y29udGVudD4NCgkJCQk8L2Q0cDE6aXRl
+bT4NCgkJCTwvdGl0bGU+DQoJCTwvY2FsY3VsYXRlZEZpZWxkPg0KCQk8dG90YWxG
+aWVsZD4NCgkJCTxkYXRhUGF0aD7QodGD0LzQvNCwPC9kYXRhUGF0aD4NCgkJCTxl
+eHByZXNzaW9uPtCh0YPQvNC80LAo0KHRg9C80LzQsCk8L2V4cHJlc3Npb24+DQoJ
+CTwvdG90YWxGaWVsZD4NCgkJPHRvdGFsRmllbGQ+DQoJCQk8ZGF0YVBhdGg+0KHR
+g9C80LzQsNCa0JI8L2RhdGFQYXRoPg0KCQkJPGV4cHJlc3Npb24+0KHRg9C80LzQ
+sCjQodGD0LzQvNCw0JrQkik8L2V4cHJlc3Npb24+DQoJCTwvdG90YWxGaWVsZD4N
+CgkJPHRvdGFsRmllbGQ+DQoJCQk8ZGF0YVBhdGg+0JrQvtC70LjRh9C10YHRgtCy
+0L48L2RhdGFQYXRoPg0KCQkJPGV4cHJlc3Npb24+0JrQvtC70LjRh9C10YHRgtCy
+0L4o0KDQsNC30LvQuNGH0L3Ri9C1INCU0L7Qs9C+0LLQvtGA0JrQvtC90YLRgNCw
+0LPQtdC90YLQsCk8L2V4cHJlc3Npb24+DQoJCTwvdG90YWxGaWVsZD4NCgkJPHBh
+cmFtZXRlcj4NCgkJCTxuYW1lPtCf0LXRgNC40L7QtDwvbmFtZT4NCgkJCTx0aXRs
+ZSB4bWxuczpkNHAxPSJodHRwOi8vdjguMWMucnUvOC4xL2RhdGEvY29yZSIgeHNp
+OnR5cGU9ImQ0cDE6TG9jYWxTdHJpbmdUeXBlIj4NCgkJCQk8ZDRwMTppdGVtPg0K
+CQkJCQk8ZDRwMTpsYW5nPnJ1PC9kNHAxOmxhbmc+DQoJCQkJCTxkNHAxOmNvbnRl
+bnQ+0J/QtdGA0LjQvtC0PC9kNHAxOmNvbnRlbnQ+DQoJCQkJPC9kNHAxOml0ZW0+
+DQoJCQk8L3RpdGxlPg0KCQkJPHZhbHVlVHlwZT4NCgkJCQk8VHlwZSB4bWxucz0i
+aHR0cDovL3Y4LjFjLnJ1LzguMS9kYXRhL2NvcmUiPlN0YW5kYXJkUGVyaW9kPC9U
+eXBlPg0KCQkJPC92YWx1ZVR5cGU+DQoJCQk8dmFsdWUgeG1sbnM6ZDRwMT0iaHR0
+cDovL3Y4LjFjLnJ1LzguMS9kYXRhL2NvcmUiIHhzaTp0eXBlPSJkNHAxOlN0YW5k
+YXJkUGVyaW9kIj4NCgkJCQk8ZDRwMTp2YXJpYW50IHhzaTp0eXBlPSJkNHAxOlN0
+YW5kYXJkUGVyaW9kVmFyaWFudCI+Q3VzdG9tPC9kNHAxOnZhcmlhbnQ+DQoJCQkJ
+PGQ0cDE6c3RhcnREYXRlPjAwMDEtMDEtMDFUMDA6MDA6MDA8L2Q0cDE6c3RhcnRE
+YXRlPg0KCQkJCTxkNHAxOmVuZERhdGU+MDAwMS0wMS0wMVQwMDowMDowMDwvZDRw
+MTplbmREYXRlPg0KCQkJPC92YWx1ZT4NCgkJCTx1c2VSZXN0cmljdGlvbj5mYWxz
+ZTwvdXNlUmVzdHJpY3Rpb24+DQoJCQk8dXNlPkFsd2F5czwvdXNlPg0KCQk8L3Bh
+cmFtZXRlcj4NCgkJPHBhcmFtZXRlcj4NCgkJCTxuYW1lPtCU0LDRgtCwMTwvbmFt
+ZT4NCgkJCTx0aXRsZSB4bWxuczpkNHAxPSJodHRwOi8vdjguMWMucnUvOC4xL2Rh
+dGEvY29yZSIgeHNpOnR5cGU9ImQ0cDE6TG9jYWxTdHJpbmdUeXBlIj4NCgkJCQk8
+ZDRwMTppdGVtPg0KCQkJCQk8ZDRwMTpsYW5nPnJ1PC9kNHAxOmxhbmc+DQoJCQkJ
+CTxkNHAxOmNvbnRlbnQ+0JTQsNGC0LAxPC9kNHAxOmNvbnRlbnQ+DQoJCQkJPC9k
+NHAxOml0ZW0+DQoJCQk8L3RpdGxlPg0KCQkJPHZhbHVlVHlwZT4NCgkJCQk8VHlw
+ZSB4bWxucz0iaHR0cDovL3Y4LjFjLnJ1LzguMS9kYXRhL2NvcmUiPnhzOmRhdGVU
+aW1lPC9UeXBlPg0KCQkJCTxEYXRlUXVhbGlmaWVycyB4bWxucz0iaHR0cDovL3Y4
+LjFjLnJ1LzguMS9kYXRhL2NvcmUiPg0KCQkJCQk8RGF0ZUZyYWN0aW9ucz5EYXRl
+VGltZTwvRGF0ZUZyYWN0aW9ucz4NCgkJCQk8L0RhdGVRdWFsaWZpZXJzPg0KCQkJ
+PC92YWx1ZVR5cGU+DQoJCQk8dmFsdWUgeHNpOnR5cGU9InhzOmRhdGVUaW1lIj4w
+MDAxLTAxLTAxVDAwOjAwOjAwPC92YWx1ZT4NCgkJCTx1c2VSZXN0cmljdGlvbj50
+cnVlPC91c2VSZXN0cmljdGlvbj4NCgkJCTxleHByZXNzaW9uPiZhbXA70J/QtdGA
+0LjQvtC0LtCU0LDRgtCw0J3QsNGH0LDQu9CwPC9leHByZXNzaW9uPg0KCQk8L3Bh
+cmFtZXRlcj4NCgkJPHBhcmFtZXRlcj4NCgkJCTxuYW1lPtCU0LDRgtCwMjwvbmFt
+ZT4NCgkJCTx0aXRsZSB4bWxuczpkNHAxPSJodHRwOi8vdjguMWMucnUvOC4xL2Rh
+dGEvY29yZSIgeHNpOnR5cGU9ImQ0cDE6TG9jYWxTdHJpbmdUeXBlIj4NCgkJCQk8
+ZDRwMTppdGVtPg0KCQkJCQk8ZDRwMTpsYW5nPnJ1PC9kNHAxOmxhbmc+DQoJCQkJ
+CTxkNHAxOmNvbnRlbnQ+0JTQsNGC0LAyPC9kNHAxOmNvbnRlbnQ+DQoJCQkJPC9k
+NHAxOml0ZW0+DQoJCQk8L3RpdGxlPg0KCQkJPHZhbHVlVHlwZT4NCgkJCQk8VHlw
+ZSB4bWxucz0iaHR0cDovL3Y4LjFjLnJ1LzguMS9kYXRhL2NvcmUiPnhzOmRhdGVU
+aW1lPC9UeXBlPg0KCQkJCTxEYXRlUXVhbGlmaWVycyB4bWxucz0iaHR0cDovL3Y4
+LjFjLnJ1LzguMS9kYXRhL2NvcmUiPg0KCQkJCQk8RGF0ZUZyYWN0aW9ucz5EYXRl
+VGltZTwvRGF0ZUZyYWN0aW9ucz4NCgkJCQk8L0RhdGVRdWFsaWZpZXJzPg0KCQkJ
+PC92YWx1ZVR5cGU+DQoJCQk8dmFsdWUgeHNpOnR5cGU9InhzOmRhdGVUaW1lIj4w
+MDAxLTAxLTAxVDAwOjAwOjAwPC92YWx1ZT4NCgkJCTx1c2VSZXN0cmljdGlvbj50
+cnVlPC91c2VSZXN0cmljdGlvbj4NCgkJCTxleHByZXNzaW9uPiZhbXA70J/QtdGA
+0LjQvtC0LtCU0LDRgtCw0J7QutC+0L3Rh9Cw0L3QuNGPPC9leHByZXNzaW9uPg0K
+CQk8L3BhcmFtZXRlcj4NCgkJPHNldHRpbmdzVmFyaWFudD4NCgkJCTxuYW1lIHht
+bG5zPSJodHRwOi8vdjguMWMucnUvOC4xL2RhdGEtY29tcG9zaXRpb24tc3lzdGVt
+L3NldHRpbmdzIj7QoNCw0YHRiNC40YTRgNC+0LLQutCwINC/0L4g0YHRgtGA0LDR
+hdC+0LLQutCw0Lw8L25hbWU+DQoJCQk8cHJlc2VudGF0aW9uIHhtbG5zPSJodHRw
+Oi8vdjguMWMucnUvOC4xL2RhdGEtY29tcG9zaXRpb24tc3lzdGVtL3NldHRpbmdz
+IiB4bWxuczpkNHAxPSJodHRwOi8vdjguMWMucnUvOC4xL2RhdGEvY29yZSIgeHNp
+OnR5cGU9ImQ0cDE6TG9jYWxTdHJpbmdUeXBlIj4NCgkJCQk8ZDRwMTppdGVtPg0K
+CQkJCQk8ZDRwMTpsYW5nPnJ1PC9kNHAxOmxhbmc+DQoJCQkJCTxkNHAxOmNvbnRl
+bnQ+0KDQsNGB0YjQuNGE0YDQvtCy0LrQsCDQv9C+INGB0YLRgNCw0YXQvtCy0LrQ
+sNC8PC9kNHAxOmNvbnRlbnQ+DQoJCQkJPC9kNHAxOml0ZW0+DQoJCQk8L3ByZXNl
+bnRhdGlvbj4NCgkJPC9zZXR0aW5nc1ZhcmlhbnQ+DQoJPC9kYXRhQ29tcG9zaXRp
+b25TY2hlbWE+DQo8L1NjaGVtYUZpbGU+AQAAALUNAAAAAAAA77u/PD94bWwgdmVy
+c2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxTZXR0aW5ncyB4bWxucz0i
+aHR0cDovL3Y4LjFjLnJ1LzguMS9kYXRhLWNvbXBvc2l0aW9uLXN5c3RlbS9zZXR0
+aW5ncyIgeG1sbnM6ZGNzY29yPSJodHRwOi8vdjguMWMucnUvOC4xL2RhdGEtY29t
+cG9zaXRpb24tc3lzdGVtL2NvcmUiIHhtbG5zOnN0eWxlPSJodHRwOi8vdjguMWMu
+cnUvOC4xL2RhdGEvdWkvc3R5bGUiIHhtbG5zOnN5cz0iaHR0cDovL3Y4LjFjLnJ1
+LzguMS9kYXRhL3VpL2ZvbnRzL3N5c3RlbSIgeG1sbnM6djg9Imh0dHA6Ly92OC4x
+Yy5ydS84LjEvZGF0YS9jb3JlIiB4bWxuczp2OHVpPSJodHRwOi8vdjguMWMucnUv
+OC4xL2RhdGEvdWkiIHhtbG5zOndlYj0iaHR0cDovL3Y4LjFjLnJ1LzguMS9kYXRh
+L3VpL2NvbG9ycy93ZWIiIHhtbG5zOndpbj0iaHR0cDovL3Y4LjFjLnJ1LzguMS9k
+YXRhL3VpL2NvbG9ycy93aW5kb3dzIiB4bWxuczp4cz0iaHR0cDovL3d3dy53My5v
+cmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcv
+MjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiPg0KCTxzZWxlY3Rpb24+DQoJCTxpdGVt
+IHhzaTp0eXBlPSJTZWxlY3RlZEl0ZW1GaWVsZCI+DQoJCQk8ZmllbGQ+0JrQvtC7
+0LjRh9C10YHRgtCy0L48L2ZpZWxkPg0KCQk8L2l0ZW0+DQoJCTxpdGVtIHhzaTp0
+eXBlPSJTZWxlY3RlZEl0ZW1GaWVsZCI+DQoJCQk8ZmllbGQ+0KHRg9C80LzQsDwv
+ZmllbGQ+DQoJCTwvaXRlbT4NCgkJPGl0ZW0geHNpOnR5cGU9IlNlbGVjdGVkSXRl
+bUZpZWxkIj4NCgkJCTxmaWVsZD7QodGD0LzQvNCw0JrQkjwvZmllbGQ+DQoJCTwv
+aXRlbT4NCgk8L3NlbGVjdGlvbj4NCgk8ZmlsdGVyPg0KCQk8aXRlbSB4c2k6dHlw
+ZT0iRmlsdGVySXRlbUNvbXBhcmlzb24iPg0KCQkJPHVzZT5mYWxzZTwvdXNlPg0K
+CQkJPGxlZnQgeHNpOnR5cGU9ImRjc2NvcjpGaWVsZCI+0KbQtdC90YLRgDwvbGVm
+dD4NCgkJCTxjb21wYXJpc29uVHlwZT5FcXVhbDwvY29tcGFyaXNvblR5cGU+DQoJ
+CQk8dXNlclNldHRpbmdJRD5iMDNmMTkxZi1jYmFkLTQ2ZGUtOTk1NS01MDI1NWU3
+OTIzNzA8L3VzZXJTZXR0aW5nSUQ+DQoJCTwvaXRlbT4NCgkJPGl0ZW0geHNpOnR5
+cGU9IkZpbHRlckl0ZW1Db21wYXJpc29uIj4NCgkJCTx1c2U+ZmFsc2U8L3VzZT4N
+CgkJCTxsZWZ0IHhzaTp0eXBlPSJkY3Njb3I6RmllbGQiPtCd0L7QvNC10L3QutC7
+0LDRgtGD0YDQsDwvbGVmdD4NCgkJCTxjb21wYXJpc29uVHlwZT5FcXVhbDwvY29t
+cGFyaXNvblR5cGU+DQoJCQk8dmlld01vZGU+Tm9ybWFsPC92aWV3TW9kZT4NCgkJ
+CTx1c2VyU2V0dGluZ0lEPjVjM2QxMTM3LTVkYjUtNDIyNy05ZWRiLWNmNTFkOWE5
+ZGI3MDwvdXNlclNldHRpbmdJRD4NCgkJPC9pdGVtPg0KCQk8aXRlbSB4c2k6dHlw
+ZT0iRmlsdGVySXRlbUNvbXBhcmlzb24iPg0KCQkJPHVzZT5mYWxzZTwvdXNlPg0K
+CQkJPGxlZnQgeHNpOnR5cGU9ImRjc2NvcjpGaWVsZCI+0J3QvtC80LXQvdC60LvQ
+sNGC0YPRgNC90LDRj9CT0YDRg9C/0L/QsDwvbGVmdD4NCgkJCTxjb21wYXJpc29u
+VHlwZT5FcXVhbDwvY29tcGFyaXNvblR5cGU+DQoJCQk8dmlld01vZGU+Tm9ybWFs
+PC92aWV3TW9kZT4NCgkJCTx1c2VyU2V0dGluZ0lEPmE5ZjA3YTI2LWNiNTItNDE3
+MS04ZDcwLTQxZTQ4Mjc1NTMwMTwvdXNlclNldHRpbmdJRD4NCgkJPC9pdGVtPg0K
+CQk8aXRlbSB4c2k6dHlwZT0iRmlsdGVySXRlbUNvbXBhcmlzb24iPg0KCQkJPHVz
+ZT5mYWxzZTwvdXNlPg0KCQkJPGxlZnQgeHNpOnR5cGU9ImRjc2NvcjpGaWVsZCI+
+0JTQvtCz0L7QstC+0YDQmtC+0L3RgtGA0LDQs9C10L3RgtCwPC9sZWZ0Pg0KCQkJ
+PGNvbXBhcmlzb25UeXBlPkVxdWFsPC9jb21wYXJpc29uVHlwZT4NCgkJCTx2aWV3
+TW9kZT5Ob3JtYWw8L3ZpZXdNb2RlPg0KCQkJPHVzZXJTZXR0aW5nSUQ+N2Q2YzI4
+OTItNGFjMy00YjMzLTk4NzYtNjgwMTM3YTFmZWU0PC91c2VyU2V0dGluZ0lEPg0K
+CQk8L2l0ZW0+DQoJCTxpdGVtIHhzaTp0eXBlPSJGaWx0ZXJJdGVtQ29tcGFyaXNv
+biI+DQoJCQk8dXNlPmZhbHNlPC91c2U+DQoJCQk8bGVmdCB4c2k6dHlwZT0iZGNz
+Y29yOkZpZWxkIj7QntGA0LPQsNC90LjQt9Cw0YbQuNGPPC9sZWZ0Pg0KCQkJPGNv
+bXBhcmlzb25UeXBlPkVxdWFsPC9jb21wYXJpc29uVHlwZT4NCgkJCTx2aWV3TW9k
+ZT5Ob3JtYWw8L3ZpZXdNb2RlPg0KCQkJPHVzZXJTZXR0aW5nSUQ+ZjcxN2NkZWUt
+NjIzMS00YTRmLWI1MmUtNDEzZTQ1Njc0ODk2PC91c2VyU2V0dGluZ0lEPg0KCQk8
+L2l0ZW0+DQoJPC9maWx0ZXI+DQoJPGRhdGFQYXJhbWV0ZXJzPg0KCQk8ZGNzY29y
+Oml0ZW0geHNpOnR5cGU9IlNldHRpbmdzUGFyYW1ldGVyVmFsdWUiPg0KCQkJPGRj
+c2Nvcjp1c2U+ZmFsc2U8L2Rjc2Nvcjp1c2U+DQoJCQk8ZGNzY29yOnBhcmFtZXRl
+cj7Qn9C10YDQuNC+0LQ8L2Rjc2NvcjpwYXJhbWV0ZXI+DQoJCQk8ZGNzY29yOnZh
+bHVlIHhzaTp0eXBlPSJ2ODpTdGFuZGFyZFBlcmlvZCI+DQoJCQkJPHY4OnZhcmlh
+bnQgeHNpOnR5cGU9InY4OlN0YW5kYXJkUGVyaW9kVmFyaWFudCI+Q3VzdG9tPC92
+ODp2YXJpYW50Pg0KCQkJCTx2ODpzdGFydERhdGU+MDAwMS0wMS0wMVQwMDowMDow
+MDwvdjg6c3RhcnREYXRlPg0KCQkJCTx2ODplbmREYXRlPjAwMDEtMDEtMDFUMDA6
+MDA6MDA8L3Y4OmVuZERhdGU+DQoJCQk8L2Rjc2Nvcjp2YWx1ZT4NCgkJCTx1c2Vy
+U2V0dGluZ0lEPmZjZWM3NWQ3LWY1ZTEtNDY0YS05Mzk1LWM0ZjgyYWYxZWI4ZTwv
+dXNlclNldHRpbmdJRD4NCgkJPC9kY3Njb3I6aXRlbT4NCgk8L2RhdGFQYXJhbWV0
+ZXJzPg0KCTxvcmRlcj4NCgkJPGl0ZW0geHNpOnR5cGU9Ik9yZGVySXRlbUZpZWxk
+Ij4NCgkJCTxmaWVsZD7QodGC0LDRgtGM0Y8u0JrQvtC0PC9maWVsZD4NCgkJCTxv
+cmRlclR5cGU+QXNjPC9vcmRlclR5cGU+DQoJCTwvaXRlbT4NCgk8L29yZGVyPg0K
+CTxpdGVtIHhzaTp0eXBlPSJTdHJ1Y3R1cmVJdGVtR3JvdXAiPg0KCQk8Z3JvdXBJ
+dGVtcz4NCgkJCTxpdGVtIHhzaTp0eXBlPSJHcm91cEl0ZW1GaWVsZCI+DQoJCQkJ
+PGZpZWxkPtCh0YLQsNGC0YzRjzwvZmllbGQ+DQoJCQkJPGdyb3VwVHlwZT5JdGVt
+czwvZ3JvdXBUeXBlPg0KCQkJCTxwZXJpb2RBZGRpdGlvblR5cGU+Tm9uZTwvcGVy
+aW9kQWRkaXRpb25UeXBlPg0KCQkJCTxwZXJpb2RBZGRpdGlvbkJlZ2luIHhzaTp0
+eXBlPSJ4czpkYXRlVGltZSI+MDAwMS0wMS0wMVQwMDowMDowMDwvcGVyaW9kQWRk
+aXRpb25CZWdpbj4NCgkJCQk8cGVyaW9kQWRkaXRpb25FbmQgeHNpOnR5cGU9Inhz
+OmRhdGVUaW1lIj4wMDAxLTAxLTAxVDAwOjAwOjAwPC9wZXJpb2RBZGRpdGlvbkVu
+ZD4NCgkJCTwvaXRlbT4NCgkJPC9ncm91cEl0ZW1zPg0KCQk8b3JkZXI+DQoJCQk8
+aXRlbSB4c2k6dHlwZT0iT3JkZXJJdGVtQXV0byIvPg0KCQk8L29yZGVyPg0KCQk8
+c2VsZWN0aW9uPg0KCQkJPGl0ZW0geHNpOnR5cGU9IlNlbGVjdGVkSXRlbUF1dG8i
+Lz4NCgkJPC9zZWxlY3Rpb24+DQoJPC9pdGVtPg0KPC9TZXR0aW5ncz4CAAAABwEA
+AAAAAADvu788P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYtOCI/Pg0K
+PFNjaGVtYUZpbGUgeG1sbnM9IiIgeG1sbnM6eHM9Imh0dHA6Ly93d3cudzMub3Jn
+LzIwMDEvWE1MU2NoZW1hIiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIw
+MDEvWE1MU2NoZW1hLWluc3RhbmNlIj4NCgk8ZGF0YUNvbXBvc2l0aW9uU2NoZW1h
+IHhtbG5zPSJodHRwOi8vdjguMWMucnUvOC4xL2RhdGEtY29tcG9zaXRpb24tc3lz
+dGVtL3NjaGVtYSIvPg0KPC9TY2hlbWFGaWxlPg==</v8:СхемаКомпоновкиДанных>
+			<v8:ТекстЗапроса/>
+			<v8:ПотребительРасчета xsi:type="v8:CatalogRef.ПроизвольныеОтчеты">3f609a02-17a3-11e8-812f-005056012280</v8:ПотребительРасчета>
+			<v8:СпособИспользования/>
+		</v8:CatalogObject.Запросы>
+		<v8:CatalogObject.ПроизвольныеОтчеты>
+			<v8:IsFolder>false</v8:IsFolder>
+			<v8:Ref xsi:type="v8:CatalogRef.ПроизвольныеОтчеты">3f609a02-17a3-11e8-812f-005056012280</v8:Ref>
+			<v8:DeletionMark>false</v8:DeletionMark>
+			<v8:Owner xsi:type="v8:CatalogRef.ГруппыПользователей">64d4ace2-e620-11e7-812d-005056012280</v8:Owner>
+			<v8:Parent xsi:type="v8:CatalogRef.ПроизвольныеОтчеты">00000000-0000-0000-0000-000000000000</v8:Parent>
+			<v8:Code>000000000001</v8:Code>
+			<v8:Description>Расшифровка по страховкам</v8:Description>
+			<v8:АдминистраторОтчета xsi:type="v8:CatalogRef.Пользователи">b3fd3ad9-e626-11e7-812d-005056012280</v8:АдминистраторОтчета>
+			<v8:ВидПроизвольногоОтчета>0</v8:ВидПроизвольногоОтчета>
+			<v8:ДатаВерсииИсточникаДанных>0001-01-01T00:00:00</v8:ДатаВерсииИсточникаДанных>
+			<v8:ЗначенияНастроекПанелиПользователя>AQEIAAAAAAAAAO+7v3siVSJ9</v8:ЗначенияНастроекПанелиПользователя>
+			<v8:ИспользуемаяИБ xsi:type="v8:CatalogRef.ВнешниеИнформационныеБазы">00000000-0000-0000-0000-000000000000</v8:ИспользуемаяИБ>
+			<v8:ИсточникДанныхОтчета xsi:type="v8:CatalogRef.Запросы">566da9ea-17a3-11e8-812f-005056012280</v8:ИсточникДанныхОтчета>
+			<v8:НастройкаПериода/>
+			<v8:НастройкиСхемыКомпоновкиДанныхПоУмолчанию>AQE1AAAAAAAAAO+7v3siIyIsM2M3MmZmNTYtN2UwNC00Mzg1LWJjMDMtOTJkNGJk
+NmMzNTFjLA0KezB9DQp9AAAAAPQNAAAAAAAA77u/PD94bWwgdmVyc2lvbj0iMS4w
+IiBlbmNvZGluZz0iVVRGLTgiPz4NCjxTZXR0aW5ncyB4bWxucz0iaHR0cDovL3Y4
+LjFjLnJ1LzguMS9kYXRhLWNvbXBvc2l0aW9uLXN5c3RlbS9zZXR0aW5ncyIgeG1s
+bnM6ZGNzY29yPSJodHRwOi8vdjguMWMucnUvOC4xL2RhdGEtY29tcG9zaXRpb24t
+c3lzdGVtL2NvcmUiIHhtbG5zOnN0eWxlPSJodHRwOi8vdjguMWMucnUvOC4xL2Rh
+dGEvdWkvc3R5bGUiIHhtbG5zOnN5cz0iaHR0cDovL3Y4LjFjLnJ1LzguMS9kYXRh
+L3VpL2ZvbnRzL3N5c3RlbSIgeG1sbnM6djg9Imh0dHA6Ly92OC4xYy5ydS84LjEv
+ZGF0YS9jb3JlIiB4bWxuczp2OHVpPSJodHRwOi8vdjguMWMucnUvOC4xL2RhdGEv
+dWkiIHhtbG5zOndlYj0iaHR0cDovL3Y4LjFjLnJ1LzguMS9kYXRhL3VpL2NvbG9y
+cy93ZWIiIHhtbG5zOndpbj0iaHR0cDovL3Y4LjFjLnJ1LzguMS9kYXRhL3VpL2Nv
+bG9ycy93aW5kb3dzIiB4bWxuczp4cz0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9Y
+TUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxT
+Y2hlbWEtaW5zdGFuY2UiPg0KCTxzZWxlY3Rpb24+DQoJCTxpdGVtIHhzaTp0eXBl
+PSJTZWxlY3RlZEl0ZW1GaWVsZCI+DQoJCQk8ZmllbGQ+0JrQvtC70LjRh9C10YHR
+gtCy0L48L2ZpZWxkPg0KCQk8L2l0ZW0+DQoJCTxpdGVtIHhzaTp0eXBlPSJTZWxl
+Y3RlZEl0ZW1GaWVsZCI+DQoJCQk8ZmllbGQ+0KHRg9C80LzQsDwvZmllbGQ+DQoJ
+CTwvaXRlbT4NCgkJPGl0ZW0geHNpOnR5cGU9IlNlbGVjdGVkSXRlbUZpZWxkIj4N
+CgkJCTxmaWVsZD7QodGD0LzQvNCw0JrQkjwvZmllbGQ+DQoJCTwvaXRlbT4NCgk8
+L3NlbGVjdGlvbj4NCgk8ZmlsdGVyPg0KCQk8aXRlbSB4c2k6dHlwZT0iRmlsdGVy
+SXRlbUNvbXBhcmlzb24iPg0KCQkJPHVzZT5mYWxzZTwvdXNlPg0KCQkJPGxlZnQg
+eHNpOnR5cGU9ImRjc2NvcjpGaWVsZCI+0KbQtdC90YLRgDwvbGVmdD4NCgkJCTxj
+b21wYXJpc29uVHlwZT5FcXVhbDwvY29tcGFyaXNvblR5cGU+DQoJCQk8cmlnaHQg
+eG1sbnM6ZDRwMT0iaHR0cDovL3Y4LjFjLnJ1LzguMS9kYXRhL2VudGVycHJpc2Uv
+Y3VycmVudC1jb25maWciIHhzaTp0eXBlPSJkNHAxOkNhdGFsb2dSZWYu0J7RgNCz
+0LDQvdC40LfQsNGG0LjQuCI+MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAw
+MDAwMDAwPC9yaWdodD4NCgkJCTx1c2VyU2V0dGluZ0lEPjA2ZThhNWQ4LThkMDct
+NGRlMi05NzFiLTQ5ZGNhMDJmYjA3MDwvdXNlclNldHRpbmdJRD4NCgkJPC9pdGVt
+Pg0KCQk8aXRlbSB4c2k6dHlwZT0iRmlsdGVySXRlbUNvbXBhcmlzb24iPg0KCQkJ
+PHVzZT5mYWxzZTwvdXNlPg0KCQkJPGxlZnQgeHNpOnR5cGU9ImRjc2NvcjpGaWVs
+ZCI+0J7RgNCz0LDQvdC40LfQsNGG0LjRjzwvbGVmdD4NCgkJCTxjb21wYXJpc29u
+VHlwZT5FcXVhbDwvY29tcGFyaXNvblR5cGU+DQoJCQk8cmlnaHQgeG1sbnM6ZDRw
+MT0iaHR0cDovL3Y4LjFjLnJ1LzguMS9kYXRhL2VudGVycHJpc2UvY3VycmVudC1j
+b25maWciIHhzaTp0eXBlPSJkNHAxOkNhdGFsb2dSZWYu0J7RgNCz0LDQvdC40LfQ
+sNGG0LjQuCI+MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwPC9y
+aWdodD4NCgkJCTx1c2VyU2V0dGluZ0lEPmFlNTQwZjNjLTc2ODMtNDRjNS04NTY5
+LTZlMWRmYTc0MmM2ZjwvdXNlclNldHRpbmdJRD4NCgkJPC9pdGVtPg0KCQk8aXRl
+bSB4c2k6dHlwZT0iRmlsdGVySXRlbUNvbXBhcmlzb24iPg0KCQkJPHVzZT5mYWxz
+ZTwvdXNlPg0KCQkJPGxlZnQgeHNpOnR5cGU9ImRjc2NvcjpGaWVsZCI+0KHRgtCw
+0YLRjNGPPC9sZWZ0Pg0KCQkJPGNvbXBhcmlzb25UeXBlPkVxdWFsPC9jb21wYXJp
+c29uVHlwZT4NCgkJCTx1c2VyU2V0dGluZ0lEPmNjYTVjNjFiLTgyZjYtNDk5Ni04
+NDQwLTcxMWE0YzFmOTE0ODwvdXNlclNldHRpbmdJRD4NCgkJPC9pdGVtPg0KCQk8
+aXRlbSB4c2k6dHlwZT0iRmlsdGVySXRlbUNvbXBhcmlzb24iPg0KCQkJPHVzZT5m
+YWxzZTwvdXNlPg0KCQkJPGxlZnQgeHNpOnR5cGU9ImRjc2NvcjpGaWVsZCI+0J3Q
+vtC80LXQvdC60LvQsNGC0YPRgNC90LDRj9CT0YDRg9C/0L/QsDwvbGVmdD4NCgkJ
+CTxjb21wYXJpc29uVHlwZT5FcXVhbDwvY29tcGFyaXNvblR5cGU+DQoJCQk8cmln
+aHQgeG1sbnM6ZDRwMT0iaHR0cDovL3Y4LjFjLnJ1LzguMS9kYXRhL2VudGVycHJp
+c2UvY3VycmVudC1jb25maWciIHhzaTp0eXBlPSJkNHAxOkNhdGFsb2dSZWYu0J3Q
+vtC80LXQvdC60LvQsNGC0YPRgNC90YvQtdCT0YDRg9C/0L/RiyI+MDAwMDAwMDAt
+MDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwPC9yaWdodD4NCgkJCTx1c2VyU2V0
+dGluZ0lEPjk0ZTEzZjJiLTBiNjctNGVhOC1hZmJlLTNjNTczYzQ4MWQxMDwvdXNl
+clNldHRpbmdJRD4NCgkJPC9pdGVtPg0KCTwvZmlsdGVyPg0KCTxkYXRhUGFyYW1l
+dGVycz4NCgkJPGRjc2NvcjppdGVtIHhzaTp0eXBlPSJTZXR0aW5nc1BhcmFtZXRl
+clZhbHVlIj4NCgkJCTxkY3Njb3I6dXNlPmZhbHNlPC9kY3Njb3I6dXNlPg0KCQkJ
+PGRjc2NvcjpwYXJhbWV0ZXI+0J/QtdGA0LjQvtC0PC9kY3Njb3I6cGFyYW1ldGVy
+Pg0KCQkJPGRjc2Nvcjp2YWx1ZSB4c2k6dHlwZT0idjg6U3RhbmRhcmRQZXJpb2Qi
+Pg0KCQkJCTx2ODp2YXJpYW50IHhzaTp0eXBlPSJ2ODpTdGFuZGFyZFBlcmlvZFZh
+cmlhbnQiPkN1c3RvbTwvdjg6dmFyaWFudD4NCgkJCQk8djg6c3RhcnREYXRlPjAw
+MDEtMDEtMDFUMDA6MDA6MDA8L3Y4OnN0YXJ0RGF0ZT4NCgkJCQk8djg6ZW5kRGF0
+ZT4wMDAxLTAxLTAxVDAwOjAwOjAwPC92ODplbmREYXRlPg0KCQkJPC9kY3Njb3I6
+dmFsdWU+DQoJCQk8dXNlclNldHRpbmdJRD4wMmVjMjk0ZC0zNjI1LTRkYTMtYmYx
+Ni04YTA3Mjk1MzBlZGE8L3VzZXJTZXR0aW5nSUQ+DQoJCTwvZGNzY29yOml0ZW0+
+DQoJPC9kYXRhUGFyYW1ldGVycz4NCgk8aXRlbSB4c2k6dHlwZT0iU3RydWN0dXJl
+SXRlbUdyb3VwIj4NCgkJPGdyb3VwSXRlbXM+DQoJCQk8aXRlbSB4c2k6dHlwZT0i
+R3JvdXBJdGVtRmllbGQiPg0KCQkJCTxmaWVsZD7QodGC0LDRgtGM0Y88L2ZpZWxk
+Pg0KCQkJCTxncm91cFR5cGU+SXRlbXM8L2dyb3VwVHlwZT4NCgkJCQk8cGVyaW9k
+QWRkaXRpb25UeXBlPk5vbmU8L3BlcmlvZEFkZGl0aW9uVHlwZT4NCgkJCQk8cGVy
+aW9kQWRkaXRpb25CZWdpbiB4c2k6dHlwZT0ieHM6ZGF0ZVRpbWUiPjAwMDEtMDEt
+MDFUMDA6MDA6MDA8L3BlcmlvZEFkZGl0aW9uQmVnaW4+DQoJCQkJPHBlcmlvZEFk
+ZGl0aW9uRW5kIHhzaTp0eXBlPSJ4czpkYXRlVGltZSI+MDAwMS0wMS0wMVQwMDow
+MDowMDwvcGVyaW9kQWRkaXRpb25FbmQ+DQoJCQk8L2l0ZW0+DQoJCTwvZ3JvdXBJ
+dGVtcz4NCgkJPG9yZGVyPg0KCQkJPGl0ZW0geHNpOnR5cGU9Ik9yZGVySXRlbUF1
+dG8iLz4NCgkJPC9vcmRlcj4NCgkJPHNlbGVjdGlvbj4NCgkJCTxpdGVtIHhzaTp0
+eXBlPSJTZWxlY3RlZEl0ZW1BdXRvIi8+DQoJCTwvc2VsZWN0aW9uPg0KCTwvaXRl
+bT4NCgk8aXRlbXNVc2VyU2V0dGluZ0lEPmUxMTk1YWY2LTk1NTUtNGIxOC04NGQw
+LWQwMGJkOTc4YjhkODwvaXRlbXNVc2VyU2V0dGluZ0lEPg0KPC9TZXR0aW5ncz4=
+</v8:НастройкиСхемыКомпоновкиДанныхПоУмолчанию>
+			<v8:Описание/>
+			<v8:ОтрицательноеКрасным>false</v8:ОтрицательноеКрасным>
+			<v8:ОформлениеПоказателей>AQEIAAAAAAAAAO+7v3siVSJ9</v8:ОформлениеПоказателей>
+			<v8:ПараметрыПанелиПользователя>AQH8DwAAAAAAAO+7v3siIyIsNDIzODAxOWQtN2U0OS00ZmM5LTkxZGItYjZiOTUx
+ZDVjZjhlLA0KezUsDQp7DQp7IlMiLCLQlNC10YDQtdCy0L7QndCw0YHRgtGA0L7Q
+tdC60KHRgtCw0L3QtNCw0YDRgtC90YvRhdCh0YLRgNCw0L3QuNGGIn0sDQp7IiMi
+LGU2MDNjMGYyLTkyZmItNGQ0Ny04ZjM4LWE0NGEzODFjZjIzNSwNCnsxLA0KezMs
+DQp7MSwi0J/RgNC10LTRgdGC0LDQstC70LXQvdC40LUiLA0KeyJQYXR0ZXJuIiwN
+CnsiUyJ9DQp9LCIiLDB9LA0KezIsItCY0LzRjyIsDQp7IlBhdHRlcm4iLA0KeyJT
+In0NCn0sIiIsMH0sDQp7Mywi0JjRgdC/0L7Qu9GM0LfQvtCy0LDQvdC40LUiLA0K
+eyJQYXR0ZXJuIiwNCnsiQiJ9DQp9LCIiLDB9DQp9LA0KezIsMywwLDEsMSwyLDIs
+MywNCnsxLDQsDQp7MiwwLDMsDQp7IlMiLCLQn9GA0L7Qs9C90L7QtyJ9LA0KeyJT
+Iiwi0J/RgNC+0LPQvdC+0LcifSwNCnsiQiIsMH0sMH0sDQp7MiwxLDMsDQp7IlMi
+LCLQkNC90LDQu9C40YLQuNGH0LXRgdC60LjQtSDQvtGC0LHQvtGA0YsifSwNCnsi
+UyIsItCQ0L3QsNC70LjRgtC40YfQtdGB0LrQuNC10J7RgtCx0L7RgNGLIn0sDQp7
+IkIiLDB9LDEsDQp7MSw1LA0KezIsMiwzLA0KeyJTIiwi0J7Qs9GA0LDQvdC40YfQ
+tdC90LjQtSDQvdCwINC60L7Qu9C40YfQtdGB0YLQstC+INC30LDQv9C40YHQtdC5
+In0sDQp7IlMiLCLQmtC+0LvQuNGH0LXRgdGC0LLQvtCX0LDQv9C40YHQtdC5In0s
+DQp7IkIiLDF9LDB9LA0KezIsMywzLA0KeyJTIiwi0J/QvtGA0L7QsyDRgdGD0YnQ
+tdGB0YLQstC10L3QvdC+0YHRgtC4In0sDQp7IlMiLCLQn9C+0YDQvtCzIn0sDQp7
+IkIiLDF9LDB9LA0KezIsNCwzLA0KeyJTIiwi0JjQvdC00LjQutCw0YLQvtGA0Ysg
+KNGC0YDQtdC90LQsINGB0L7RgdGC0L7Rj9C90LjQtSkifSwNCnsiUyIsItCY0L3Q
+tNC40LrQsNGC0L7RgNGLIn0sDQp7IkIiLDF9LDB9LA0KezIsNSwzLA0KeyJTIiwi
+QUJDIC0g0JrQu9Cw0YHRgdC40YTQuNC60LDRhtC40Y8ifSwNCnsiUyIsIkFCQ9Ca
+0LvQsNGB0YHQuNGE0LjQutCw0YbQuNGPIn0sDQp7IkIiLDF9LDB9LA0KezIsNiwz
+LA0KeyJTIiwi0KHQutGA0YvRgtC40LUg0L3Rg9C70LXQstGL0YUg0YHRgtGA0L7Q
+uiDQuCDQutC+0LvQvtC90L7QuiJ9LA0KeyJTIiwi0KHQutGA0YvRgtGM0J3Rg9C7
+0LXQstGL0LUifSwNCnsiQiIsMX0sMH0NCn0NCn0sDQp7Miw3LDMsDQp7IlMiLCLQ
+n9C+0LvRjNC30L7QstCw0YLQtdC70YzRgdC60LjQtSDQvdCw0YHRgtGA0L7QudC6
+0LgifSwNCnsiUyIsItCa0L7QvNC/0L7QvdC+0LLRidC40LrQndCw0YHRgtGA0L7Q
+tdC60J/QvtC70YzQt9C+0LLQsNGC0LXQu9GM0YHQutC40LXQndCw0YHRgtGA0L7Q
+udC60LgifSwNCnsiQiIsMX0sMH0sDQp7Miw4LDMsDQp7IlMiLCLQodC+0YDRgtC4
+0YDQvtCy0LrQsCJ9LA0KeyJTIiwi0J/QvtGA0Y/QtNC+0LoifSwNCnsiQiIsMX0s
+MH0NCn0sLTEsOH0NCn0NCn0NCn0sDQp7DQp7IlMiLCLQntGC0LHQvtGA0YsifSwN
+CnsiIyIsYWNmNjE5MmUtODFjYS00NmVmLTkzYTYtNWE2OTY4Yjc4NjYzLA0Kezks
+DQp7MH0sDQp7MiwwLA0KezEsMH0sLTEsLTF9LA0KezAsMH0NCn0NCn0NCn0sDQp7
+DQp7IlMiLCLQodC/0LjRgdC+0LrQlNC+0YHRgtGD0L/QvdGL0YXQntGC0L3QvtGB
+0LjRgtC10LvRjNC90YvRhdCf0LXRgNC40L7QtNC+0LIifSwNCnsiIyIsNDc3MmIz
+YjQtZjRhMy00OWMwLWExYTUtOGNiNTk2MTUxMWEzLA0KezYsMWU1MTJhYWItMWI0
+MS00ZWY2LTkzNzUtZjAxMzdiZTlkZDkxLDAsMCwNCnszLA0KezFlNTEyYWFiLTFi
+NDEtNGVmNi05Mzc1LWYwMTM3YmU5ZGQ5MSwNCnsi0J/RgNC10LTRi9C00YPRidC4
+0LkiLDEsDQp7IlMiLCLQn9GA0LXQtNGL0LTRg9GJ0LjQuSJ9LA0KezQsMCwNCnsw
+fSwiIiwtMSwtMSwwLDAsIiJ9LDAsMCwiIn0NCn0sDQp7MWU1MTJhYWItMWI0MS00
+ZWY2LTkzNzUtZjAxMzdiZTlkZDkxLA0KeyLQotC10LrRg9GJ0LjQuSIsMSwNCnsi
+UyIsItCi0LXQutGD0YnQuNC5In0sDQp7NCwwLA0KezB9LCIiLC0xLC0xLDAsMCwi
+In0sMSwwLCIifQ0KfSwNCnsxZTUxMmFhYi0xYjQxLTRlZjYtOTM3NS1mMDEzN2Jl
+OWRkOTEsDQp7ItCh0LvQtdC00YPRjtGJ0LjQuSIsMSwNCnsiUyIsItCh0LvQtdC0
+0YPRjtGJ0LjQuSJ9LA0KezQsMCwNCnswfSwiIiwtMSwtMSwwLDAsIiJ9LDIsMCwi
+In0NCn0NCn0sDQp7IlBhdHRlcm4ifSwwLDJ9DQp9DQp9LA0Kew0KeyJTIiwi0J/R
+gNC+0LjQt9Cy0L7Qu9GM0L3Ri9C50J/QtdGA0LjQvtC0In0sDQp7IkIiLDF9DQp9
+LA0Kew0KeyJTIiwi0JTQvtGB0YLRg9C/0L3Ri9C10J/QtdGA0LjQvtC00LjRh9C9
+0L7RgdGC0LgifSwNCnsiIyIsYWNmNjE5MmUtODFjYS00NmVmLTkzYTYtNWE2OTY4
+Yjc4NjYzLA0KezksDQp7MywNCnswLCLQn9C10YDQuNC+0LTQuNGH0L3QvtGB0YLR
+jCIsDQp7IlBhdHRlcm4ifSwiIiwwfSwNCnsxLCLQoNCw0YHRgdGH0LjRgtGL0LLQ
+sNGC0YzQp9C10YDQtdC3IiwNCnsiUGF0dGVybiJ9LCIiLDB9LA0KezIsItCY0YHQ
+v9C+0LvRjNC30L7QstCw0L3QuNC1IiwNCnsiUGF0dGVybiJ9LCIiLDB9DQp9LA0K
+ezIsMywwLDAsMSwxLDIsMiwNCnsxLDgsDQp7MiwwLDMsDQp7IiMiLDk3ZjM4MDM0
+LTdjZjQtNDQxYy1iMGU1LTA0MTQ4MzRmOTVlYSwxMzAzOjhjNmE4MDhkNzUxOTMz
+ZGY0YmJhZTk1NThkZjJlM2FjfSwNCnsiIyIsOTdmMzgwMzQtN2NmNC00NDFjLWIw
+ZTUtMDQxNDgzNGY5NWVhLDEzMDM6OGM2YTgwOGQ3NTE5MzNkZjRiYmFlOTU1OGRm
+MmUzYWN9LA0KeyJCIiwxfSwwfSwNCnsyLDEsMywNCnsiIyIsOTdmMzgwMzQtN2Nm
+NC00NDFjLWIwZTUtMDQxNDgzNGY5NWVhLDEzMDM6ODA0YzRhYTJjNTU4ZDZiMjRj
+MTZlYjNiOTRiOGVjN2Z9LA0KeyIjIiw5N2YzODAzNC03Y2Y0LTQ0MWMtYjBlNS0w
+NDE0ODM0Zjk1ZWEsMTMwMzo4MDRjNGFhMmM1NThkNmIyNGMxNmViM2I5NGI4ZWM3
+Zn0sDQp7IkIiLDF9LDB9LA0KezIsMiwzLA0KeyIjIiw5N2YzODAzNC03Y2Y0LTQ0
+MWMtYjBlNS0wNDE0ODM0Zjk1ZWEsMTMwMzo5ZTQ5MzNjNmJiYjcwYzllNDgzNGY2
+NDZlZGIwODVkYX0sDQp7IiMiLDk3ZjM4MDM0LTdjZjQtNDQxYy1iMGU1LTA0MTQ4
+MzRmOTVlYSwxMzAzOjllNDkzM2M2YmJiNzBjOWU0ODM0ZjY0NmVkYjA4NWRhfSwN
+CnsiQiIsMX0sMH0sDQp7MiwzLDMsDQp7IiMiLDk3ZjM4MDM0LTdjZjQtNDQxYy1i
+MGU1LTA0MTQ4MzRmOTVlYSwxMzAzOjk1MTBkMTQ2OTFjM2IzMzY0YzIwNjhkYmM2
+MDVkYzdkfSwNCnsiIyIsOTdmMzgwMzQtN2NmNC00NDFjLWIwZTUtMDQxNDgzNGY5
+NWVhLDEzMDM6OTUxMGQxNDY5MWMzYjMzNjRjMjA2OGRiYzYwNWRjN2R9LA0KeyJC
+IiwxfSwwfSwNCnsyLDQsMywNCnsiIyIsOTdmMzgwMzQtN2NmNC00NDFjLWIwZTUt
+MDQxNDgzNGY5NWVhLDEzMDM6OTYwYTdmNjExZThmMDcxMjQ2NmZmZTk0NzczY2Nk
+MjZ9LA0KeyIjIiw5N2YzODAzNC03Y2Y0LTQ0MWMtYjBlNS0wNDE0ODM0Zjk1ZWEs
+MTMwMzo5NjBhN2Y2MTFlOGYwNzEyNDY2ZmZlOTQ3NzNjY2QyNn0sDQp7IkIiLDF9
+LDB9LA0KezIsNSwzLA0KeyIjIiw5N2YzODAzNC03Y2Y0LTQ0MWMtYjBlNS0wNDE0
+ODM0Zjk1ZWEsMTMwMzo4OTRmZTIwOWE0Yjk4ODQxNGQ4ODdhMTg4YThmODM4MH0s
+DQp7IiMiLDk3ZjM4MDM0LTdjZjQtNDQxYy1iMGU1LTA0MTQ4MzRmOTVlYSwxMzAz
+Ojg5NGZlMjA5YTRiOTg4NDE0ZDg4N2ExODhhOGY4MzgwfSwNCnsiQiIsMX0sMH0s
+DQp7Miw2LDMsDQp7IiMiLDk3ZjM4MDM0LTdjZjQtNDQxYy1iMGU1LTA0MTQ4MzRm
+OTVlYSwxMzAzOmIzNWJiODBkYjJkMGQ2YWY0ZDc0YWRjMjY2OWZkODZlfSwNCnsi
+IyIsOTdmMzgwMzQtN2NmNC00NDFjLWIwZTUtMDQxNDgzNGY5NWVhLDEzMDM6YjM1
+YmI4MGRiMmQwZDZhZjRkNzRhZGMyNjY5ZmQ4NmV9LA0KeyJCIiwxfSwwfSwNCnsy
+LDcsMywNCnsiIyIsOTdmMzgwMzQtN2NmNC00NDFjLWIwZTUtMDQxNDgzNGY5NWVh
+LDEzMDM6OGZhNTFkOGRkZTFlMjc2MDQwNDZmMDg1Y2U2NmFmMmV9LA0KeyIjIiw5
+N2YzODAzNC03Y2Y0LTQ0MWMtYjBlNS0wNDE0ODM0Zjk1ZWEsMTMwMzo4ZmE1MWQ4
+ZGRlMWUyNzYwNDA0NmYwODVjZTY2YWYyZX0sDQp7IkIiLDF9LDB9DQp9LDIsN30s
+DQp7MCwwfQ0KfQ0KfQ0KfQ0KfQ0KfQ==</v8:ПараметрыПанелиПользователя>
+			<v8:ПодлежитПередачеВПодчиненныеУзлыПриОбменеПоОрганизации>false</v8:ПодлежитПередачеВПодчиненныеУзлыПриОбменеПоОрганизации>
+			<v8:ПоказыватьБыстрыйОтбор>false</v8:ПоказыватьБыстрыйОтбор>
+			<v8:ПредставлениеЭлементаОтчета>Таблица</v8:ПредставлениеЭлементаОтчета>
+			<v8:РасширеннаяНастройка>true</v8:РасширеннаяНастройка>
+			<v8:Расшифровки>AQGAAgAAAAAAAO+7v3siIyIsYWNmNjE5MmUtODFjYS00NmVmLTkzYTYtNWE2OTY4
+Yjc4NjYzLA0KezksDQp7NSwNCnsxLCLQntGC0YfQtdGCIiwNCnsiUGF0dGVybiIs
+DQp7IiMiLDYzNjg4ZjE5LTk5Y2QtNDMwMC04YjdlLTFhZjFjMTFjOGUzN30sDQp7
+IiMiLGRlY2I3ZDE3LWNlMDUtNGU1NC05ZGZiLWY3ZTAzYTVmNjZhNX0NCn0sIiIs
+MH0sDQp7Miwi0JLQsNGA0LjQsNC90YLQntGC0YfQtdGC0LAiLA0KeyJQYXR0ZXJu
+IiwNCnsiIyIsN2M4M2JkYTAtZjI3Ni00YmVmLWI5NGUtNzMyYjQxZmNhMTc4fQ0K
+fSwiIiwwfSwNCnszLCLQoNCw0YHRiNC40YTRgNC+0LLRi9Cy0LDQtdC80YvQtdCf
+0L7Qu9GPIiwNCnsiUGF0dGVybiIsDQp7IiMiLDQ3NzJiM2I0LWY0YTMtNDljMC1h
+MWE1LThjYjU5NjE1MTFhM30NCn0sIiIsMH0sDQp7NCwi0J/RgNC10LTRgdGC0LDQ
+stC70LXQvdC40LUiLA0KeyJQYXR0ZXJuIiwNCnsiUyIsMjAwLDF9DQp9LCIiLDB9
+LA0KezUsItCf0L7QutCw0LfQsNGC0LXQu9GM0JzQvtC90LjRgtC+0YDQsCIsDQp7
+IlBhdHRlcm4iLA0KeyIjIiw5OGJiMGE2Zi0zYzQ2LTQ4N2EtOWM4Ni03MDVjM2Ez
+Mjg5NzN9DQp9LCIiLDB9DQp9LA0KezIsNSwwLDEsMSwyLDIsMywzLDQsNCw1LA0K
+ezEsMH0sLTEsLTF9LA0KezAsMH0NCn0NCn0=</v8:Расшифровки>
+			<v8:СхемаКомпоновкиДанных>AQEIAAAAAAAAAO+7v3siVSJ9</v8:СхемаКомпоновкиДанных>
+			<v8:ЦветаДиаграммы>AQEIAAAAAAAAAO+7v3siVSJ9</v8:ЦветаДиаграммы>
+			<v8:ОтображатьВВидеСхемы>false</v8:ОтображатьВВидеСхемы>
+			<v8:ОтображатьЦели>false</v8:ОтображатьЦели>
+			<v8:ГруппировкаМонитора>0</v8:ГруппировкаМонитора>
+		</v8:CatalogObject.ПроизвольныеОтчеты>
+	</V8Exch:Data>
+	<PredefinedData/>
+</V8Exch:_1CV8DtUD>

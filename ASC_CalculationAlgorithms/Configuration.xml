@@ -42,11 +42,14 @@
 			<ConfigurationExtensionCompatibilityMode>Version8_3_10</ConfigurationExtensionCompatibilityMode>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor>АСЦ</Vendor>
-			<Version>2018.02.26</Version>
+			<Version>2018.03.02</Version>
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
 			<CommonPicture>СостоянияДокумента</CommonPicture>
+			<CommonPicture>Скрепка</CommonPicture>
+			<CommonPicture>Отчеты</CommonPicture>
+			<CommonPicture>ЗаполнитьФорму</CommonPicture>
 			<CommonModule>АСЦ_104АСП</CommonModule>
 			<CommonModule>АСЦ_ОбщийМодуль</CommonModule>
 			<CommonModule>АСЦ_ПоискОбъектов</CommonModule>
@@ -54,6 +57,22 @@
 			<CommonModule>ИнтеграцияСВнешнимиСистемамиУХ</CommonModule>
 			<XDTOPackage>АСЦ_ВыгрузкаОФУ</XDTOPackage>
 			<WebService>АСЦ_ВыгрузкаОФУ</WebService>
+			<FunctionalOption>ИспользоватьНесколькоОрганизацийБухгалтерскийУчет</FunctionalOption>
+			<FunctionalOption>РазрешенаРаботаСНовостями</FunctionalOption>
+			<FunctionalOption>ВедетсяОтгрузкаБезПереходаПраваСобственности</FunctionalOption>
+			<FunctionalOption>ВедетсяУчетОсновныхСредств</FunctionalOption>
+			<DefinedType>ВладелецПрисоединенныхФайлов</DefinedType>
+			<DefinedType>ОснованияЭлектронныхДокументов</DefinedType>
+			<CommonCommand>ДополнительныеСведенияКоманднаяПанель</CommonCommand>
+			<CommonCommand>СтруктураПодчиненности</CommonCommand>
+			<CommonCommand>ПрисоединенныеФайлыБП</CommonCommand>
+			<CommonCommand>ПоказатьДвиженияДокумента</CommonCommand>
+			<CommonCommand>ОтправитьПоЭлектроннойПочте</CommonCommand>
+			<CommonCommand>ИсторияИзменений</CommonCommand>
+			<Constant>ВедетсяУчетОсновныхСредств</Constant>
+			<Constant>ИспользоватьНесколькоОрганизаций</Constant>
+			<Constant>ВедетсяОтгрузкаБезПереходаПраваСобственности</Constant>
+			<Constant>РазрешенаРаботаСНовостями</Constant>
 			<Catalog>СтатьиДоходов</Catalog>
 			<Catalog>Организации</Catalog>
 			<Catalog>Контрагенты</Catalog>
@@ -68,6 +87,9 @@
 			<Catalog>ВнешниеИнформационныеБазы</Catalog>
 			<Catalog>СтраныМира</Catalog>
 			<Catalog>БанковскиеСчета</Catalog>
+			<Catalog>Пользователи</Catalog>
+			<Catalog>Склады</Catalog>
+			<Catalog>Валюты</Catalog>
 			<Document>АСЦ_ОтчетПосредника</Document>
 			<Document>ОтчетКомитентуОПродажах</Document>
 			<Document>РеализацияТоваровУслуг</Document>
@@ -79,11 +101,19 @@
 			<Enum>ЮридическоеФизическоеЛицо</Enum>
 			<Enum>ЭлементыНастройкиОтчета</Enum>
 			<Enum>АСЦ_ВидыПлатежаЭквайринга</Enum>
+			<Enum>ВидыОперацийРеализацияТоваров</Enum>
+			<Enum>СтатусыДокументовРеализации</Enum>
+			<Enum>СтатусыСчетаФактуры</Enum>
+			<Enum>СостоянияВерсийЭД</Enum>
 			<InformationRegister>ОсновныеДоговорыКонтрагента</InformationRegister>
 			<InformationRegister>ИзмененныеОбъектыДляВыгрузки</InformationRegister>
 			<InformationRegister>ДополнительныеСведения</InformationRegister>
 			<InformationRegister>НастройкаОбработкиОтчетов</InformationRegister>
 			<InformationRegister>СоответствиеОбъектовТекущейИВнешнихИБ</InformationRegister>
+			<InformationRegister>НаличиеФайлов</InformationRegister>
+			<InformationRegister>СтатусыДокументов</InformationRegister>
+			<InformationRegister>ДокументыСОшибкамиПроверкиКонтрагентов</InformationRegister>
+			<InformationRegister>СостоянияЭД</InformationRegister>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
 		</ChildObjects>
 	</Configuration>

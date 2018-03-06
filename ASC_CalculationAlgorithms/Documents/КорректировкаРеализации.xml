@@ -46,6 +46,24 @@
 					</Type>
 				</Properties>
 			</Attribute>
+			<Attribute uuid="7d19261c-e4aa-4fa7-be23-c65308ad8ec0">
+				<Properties>
+					<Name>Организация</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="cf661ea0-d7d9-4e94-a199-b022770973da">
+				<Properties>
+					<Name>РучнаяКорректировка</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
 			<TabularSection uuid="204fb1ea-5b5b-4a7b-99e5-bc552e0a8be0">
 				<InternalInfo>
 					<xr:GeneratedType name="DocumentTabularSection.КорректировкаРеализации.Услуги" category="TabularSection">

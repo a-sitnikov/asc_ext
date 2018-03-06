@@ -4,7 +4,7 @@
 		<property name="Наименование" type="xs:string" form="Attribute"/>
 		<property name="ИНН" type="xs:string" nillable="true" form="Attribute"/>
 		<property name="КПП" type="xs:string" nillable="true" form="Attribute"/>
-		<property name="Паспорт" type="xs:string" nillable="true" form="Attribute"/>
+		<property name="Паспорт" type="xs:string" nillable="true" fixed="false" default="" form="Attribute"/>
 	</objectType>
 	<objectType name="Организация">
 		<property name="ГУИД" type="xs:string" form="Attribute"/>
@@ -14,9 +14,9 @@
 	<objectType name="Договор">
 		<property name="ГУИД" type="xs:string" form="Attribute"/>
 		<property name="Наименование" type="xs:string" form="Attribute"/>
-		<property name="Дата" type="xs:date" nillable="true" form="Attribute"/>
-		<property name="ДатаНачала" type="xs:date" nillable="true" form="Attribute"/>
-		<property name="СтрокДействия" type="xs:date" nillable="true" form="Attribute"/>
+		<property name="Дата" type="xs:date" nillable="true" default="0001-01-01" form="Attribute"/>
+		<property name="ДатаНачала" type="xs:date" nillable="true" default="0001-01-01" form="Attribute"/>
+		<property name="СрокДействия" type="xs:date" nillable="true" default="0001-01-01" form="Attribute"/>
 	</objectType>
 	<objectType name="Номенклатура">
 		<property name="Наименование" type="xs:string" form="Attribute"/>
@@ -27,7 +27,7 @@
 		<property name="Тип" form="Attribute"/>
 	</objectType>
 	<objectType name="РТУ">
-		<property name="ГИУД" type="xs:string"/>
+		<property name="ГУИД" type="xs:string"/>
 		<property name="Тип" type="xs:string"/>
 		<property xmlns:d3p1="http://www.ascgroup.ru/OFU" name="Основание" type="d3p1:Основание" nillable="true"/>
 		<property name="Дата" type="xs:dateTime"/>
@@ -46,7 +46,7 @@
 		<property xmlns:d3p1="http://www.ascgroup.ru/OFU" name="Документы" type="d3p1:РТУ" lowerBound="0" upperBound="-1"/>
 	</objectType>
 	<objectType name="ОтчетПосредника">
-		<property name="ГИУД" type="xs:string"/>
+		<property name="ГУИД" type="xs:string"/>
 		<property name="Дата" type="xs:dateTime"/>
 		<property name="Номер" type="xs:string"/>
 		<property xmlns:d3p1="http://www.ascgroup.ru/OFU" name="Организация" type="d3p1:Организация" form="Element"/>
@@ -59,6 +59,7 @@
 				<property xmlns:d5p1="http://www.ascgroup.ru/OFU" name="Договор" type="d5p1:Договор"/>
 				<property name="Сумма" type="xs:decimal"/>
 				<property name="СуммаКВ" type="xs:decimal"/>
+				<property name="id_unicus" type="xs:decimal"/>
 			</typeDef>
 		</property>
 	</objectType>
