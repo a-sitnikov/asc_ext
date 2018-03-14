@@ -100,6 +100,21 @@
 							<TransferDirection>In</TransferDirection>
 						</Properties>
 					</Parameter>
+					<Parameter uuid="8134c856-a0bb-48b1-87be-5e8b6effc69b">
+						<Properties>
+							<Name>ТолькоБУ</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Только БУ</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:boolean</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
 				</ChildObjects>
 			</Operation>
 			<Operation uuid="b47f9fe3-f9db-499a-86c4-cc04162d475a">
@@ -136,11 +151,11 @@
 					</Parameter>
 					<Parameter uuid="e089a6b1-f0d2-4061-9b37-0512c73c085e">
 						<Properties>
-							<Name>ДатКон</Name>
+							<Name>ДатаКон</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Дат кон</v8:content>
+									<v8:content>Дата кон</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
@@ -175,6 +190,21 @@
 							</Synonym>
 							<Comment/>
 							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="5e106ae7-e36d-41dd-879c-1b86f99015a7">
+						<Properties>
+							<Name>ТолькоБУ</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Только БУ</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:boolean</XDTOValueType>
 							<Nillable>true</Nillable>
 							<TransferDirection>In</TransferDirection>
 						</Properties>

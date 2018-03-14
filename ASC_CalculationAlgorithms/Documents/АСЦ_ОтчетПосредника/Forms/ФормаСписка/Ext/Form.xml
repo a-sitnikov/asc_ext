@@ -135,11 +135,6 @@
 					<ContextMenu name="НомерКонтекстноеМеню" id="7"/>
 					<ExtendedTooltip name="НомерExtendedTooltip" id="36"/>
 				</LabelField>
-				<LabelField name="Комментарий" id="8">
-					<DataPath>Список.Комментарий</DataPath>
-					<ContextMenu name="КомментарийКонтекстноеМеню" id="9"/>
-					<ExtendedTooltip name="КомментарийExtendedTooltip" id="37"/>
-				</LabelField>
 				<LabelField name="Организация" id="10">
 					<DataPath>Список.Организация</DataPath>
 					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="11"/>
@@ -155,13 +150,15 @@
 					<ContextMenu name="ДоговорКонтрагентаКонтекстноеМеню" id="15"/>
 					<ExtendedTooltip name="ДоговорКонтрагентаExtendedTooltip" id="40"/>
 				</LabelField>
-				<LabelField name="СчетУчетаРасчетовСКомитентом" id="16">
-					<DataPath>~Список.СчетУчетаРасчетовСКомитентом</DataPath>
-					<UserVisible>
-						<xr:Common>false</xr:Common>
-					</UserVisible>
-					<ContextMenu name="СчетУчетаРасчетовСКомитентомКонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="СчетУчетаРасчетовСКомитентомExtendedTooltip" id="41"/>
+				<LabelField name="Комментарий" id="8">
+					<DataPath>Список.Комментарий</DataPath>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="КомментарийExtendedTooltip" id="37"/>
+				</LabelField>
+				<LabelField name="ID_Unicus" id="52">
+					<DataPath>Список.ID_Unicus</DataPath>
+					<ContextMenu name="ID_UnicusКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ID_UnicusРасширеннаяПодсказка" id="54"/>
 				</LabelField>
 				<LabelField name="Ссылка" id="18">
 					<DataPath>Список.Ref</DataPath>

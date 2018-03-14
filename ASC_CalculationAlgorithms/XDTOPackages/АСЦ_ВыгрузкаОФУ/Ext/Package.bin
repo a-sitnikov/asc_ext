@@ -41,6 +41,7 @@
 		<property name="Сумма" type="xs:decimal"/>
 		<property name="СуммаКВ" type="xs:decimal"/>
 		<property name="id_unicus" type="xs:decimal"/>
+		<property name="БУ" type="xs:boolean" form="Attribute"/>
 	</objectType>
 	<objectType name="СписокРТУ">
 		<property xmlns:d3p1="http://www.ascgroup.ru/OFU" name="Документы" type="d3p1:РТУ" lowerBound="0" upperBound="-1"/>
@@ -60,6 +61,7 @@
 				<property name="Сумма" type="xs:decimal"/>
 				<property name="СуммаКВ" type="xs:decimal"/>
 				<property name="id_unicus" type="xs:decimal"/>
+				<property name="БУ" type="xs:boolean" form="Attribute"/>
 			</typeDef>
 		</property>
 	</objectType>

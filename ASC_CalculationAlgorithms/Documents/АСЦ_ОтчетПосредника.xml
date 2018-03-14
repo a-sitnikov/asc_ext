@@ -170,6 +170,20 @@
 							</Type>
 						</Properties>
 					</Attribute>
+					<Attribute uuid="2731a04a-c567-4268-9258-4897fbea4828">
+						<Properties>
+							<Name>ПроцентКВ</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>10</v8:Digits>
+									<v8:FractionDigits>2</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
 					<Attribute uuid="27aa08fb-cbc5-42ed-b3b1-631e738050fc">
 						<Properties>
 							<Name>СуммаКВ</Name>

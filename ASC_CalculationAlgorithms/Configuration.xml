@@ -42,7 +42,7 @@
 			<ConfigurationExtensionCompatibilityMode>Version8_3_10</ConfigurationExtensionCompatibilityMode>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor>АСЦ</Vendor>
-			<Version>2018.03.02</Version>
+			<Version>2018.03.07</Version>
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
@@ -55,6 +55,7 @@
 			<CommonModule>АСЦ_ПоискОбъектов</CommonModule>
 			<CommonModule>АСЦ_ОФУ_PnL</CommonModule>
 			<CommonModule>ИнтеграцияСВнешнимиСистемамиУХ</CommonModule>
+			<CommonModule>АСЦ_ВебСервисы</CommonModule>
 			<XDTOPackage>АСЦ_ВыгрузкаОФУ</XDTOPackage>
 			<WebService>АСЦ_ВыгрузкаОФУ</WebService>
 			<FunctionalOption>ИспользоватьНесколькоОрганизацийБухгалтерскийУчет</FunctionalOption>
