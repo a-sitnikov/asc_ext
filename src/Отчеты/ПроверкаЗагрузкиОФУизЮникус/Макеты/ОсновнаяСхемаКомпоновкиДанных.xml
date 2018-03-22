@@ -25,7 +25,6 @@
 					</NumberQualifiers>
 				</valueType>
 				<appearance/>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Сумма</dataPath>
@@ -39,7 +38,6 @@
 					</NumberQualifiers>
 				</valueType>
 				<appearance/>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Договор</dataPath>
@@ -58,7 +56,6 @@
 					</StringQualifiers>
 				</valueType>
 				<appearance/>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Дата</dataPath>
@@ -70,7 +67,6 @@
 					</DateQualifiers>
 				</valueType>
 				<appearance/>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СуммаЮникус</dataPath>
@@ -90,7 +86,6 @@
 					</NumberQualifiers>
 				</valueType>
 				<appearance/>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СуммаКВЮникус</dataPath>
@@ -110,7 +105,6 @@
 					</NumberQualifiers>
 				</valueType>
 				<appearance/>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Центр</dataPath>
@@ -147,7 +141,6 @@
 					</d5p1:item>
 				</title>
 				<appearance/>
-				<inputParameters/>
 			</field>
 			<item xsi:type="DataSetObject">
 				<name>ДанныеЮникус</name>
@@ -589,7 +582,6 @@
 				<d4p1:endDate>0001-01-01T00:00:00</d4p1:endDate>
 			</value>
 			<useRestriction>false</useRestriction>
-			<inputParameters/>
 			<denyIncompleteValues>true</denyIncompleteValues>
 			<use>Always</use>
 		</parameter>
@@ -610,7 +602,6 @@
 			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 			<useRestriction>true</useRestriction>
 			<expression>&amp;Период.ДатаНачала</expression>
-			<inputParameters/>
 		</parameter>
 		<parameter>
 			<name>Дата2</name>
@@ -629,7 +620,6 @@
 			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 			<useRestriction>true</useRestriction>
 			<expression>&amp;Период.ДатаОкончания</expression>
-			<inputParameters/>
 		</parameter>
 		<parameter>
 			<name>ПериодКорректировок</name>
@@ -675,7 +665,6 @@
 					</d5p1:item>
 				</presentation>
 			</availableValue>
-			<inputParameters/>
 			<use>Always</use>
 		</parameter>
 		<settingsVariant>
