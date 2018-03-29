@@ -25,6 +25,7 @@
 					</NumberQualifiers>
 				</valueType>
 				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Сумма</dataPath>
@@ -38,6 +39,7 @@
 					</NumberQualifiers>
 				</valueType>
 				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Договор</dataPath>
@@ -48,6 +50,11 @@
 						<d5p1:content>Договор</d5p1:content>
 					</d5p1:item>
 				</title>
+				<orderExpression>
+					<expression xmlns="http://v8.1c.ru/8.1/data-composition-system/common">ДоговорНаименование</expression>
+					<orderType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Asc</orderType>
+					<autoOrder xmlns="http://v8.1c.ru/8.1/data-composition-system/common">false</autoOrder>
+				</orderExpression>
 				<valueType>
 					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
 					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
@@ -56,6 +63,7 @@
 					</StringQualifiers>
 				</valueType>
 				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Дата</dataPath>
@@ -67,6 +75,7 @@
 					</DateQualifiers>
 				</valueType>
 				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СуммаЮникус</dataPath>
@@ -86,6 +95,7 @@
 					</NumberQualifiers>
 				</valueType>
 				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СуммаКВЮникус</dataPath>
@@ -105,6 +115,7 @@
 					</NumberQualifiers>
 				</valueType>
 				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Центр</dataPath>
@@ -138,6 +149,18 @@
 					<d5p1:item>
 						<d5p1:lang>ru</d5p1:lang>
 						<d5p1:content>Документ</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДокументРеализации</dataPath>
+				<field>ДокументРеализации</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Документ реализации</d5p1:content>
 					</d5p1:item>
 				</title>
 				<appearance/>
@@ -304,6 +327,14 @@
 				<field xsi:type="DataSetFieldField">
 					<dataPath>Дата</dataPath>
 					<field>Дата</field>
+					<valueType>
+						<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+						<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+							<Digits>0</Digits>
+							<FractionDigits>0</FractionDigits>
+							<AllowedSign>Any</AllowedSign>
+						</NumberQualifiers>
+					</valueType>
 					<appearance/>
 				</field>
 				<field xsi:type="DataSetFieldField">
@@ -350,6 +381,17 @@
 					</title>
 					<appearance/>
 				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ДокументРеализации</dataPath>
+					<field>ДокументРеализации</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Документ реализации</d6p1:content>
+						</d6p1:item>
+					</title>
+					<appearance/>
+				</field>
 				<dataSource>ИсточникДанных1</dataSource>
 				<query>ВЫБРАТЬ
 	НАЧАЛОПЕРИОДА(ДокТЧ.Ссылка.Дата, ДЕНЬ) КАК Дата,
@@ -357,6 +399,7 @@
 	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО КАК Центр,
 	ДокТЧ.Сумма КАК СуммаКВ,
 	ДокТЧ.Сумма КАК Сумма,
+	ДокТЧ.Ссылка КАК ДокументРеализации,
 	ДокТЧ.Ссылка КАК Документ,
 	0 КАК СуммаЮникус,
 	0 КАК СуммаКВЮникус
@@ -365,6 +408,7 @@
 	Договор,
 	Центр.*,
 	Документ.*,
+	ДокументРеализации.*,
 	СуммаКВ,
 	Сумма,
 	СуммаКВЮникус,
@@ -373,9 +417,10 @@
 	Документ.РеализацияТоваровУслуг.Услуги КАК ДокТЧ
 ГДЕ
 	ДокТЧ.Ссылка.Дата МЕЖДУ &amp;Дата1 И &amp;Дата2
-	И ДокТЧ.Ссылка.Проведен
+	И НЕ ДокТЧ.Ссылка.ПометкаУдаления
 {ГДЕ
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО.* КАК Центр}
+	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО.* КАК Центр,
+	ДокТЧ.Ссылка.* КАК ДокументРеализации}
 
 ОБЪЕДИНИТЬ ВСЕ
 
@@ -386,15 +431,17 @@
 	0,
 	ДокТЧ.Сумма,
 	ДокТЧ.Ссылка,
+	ДокТЧ.Ссылка,
 	0,
 	0
 ИЗ
 	Документ.РеализацияТоваровУслуг.АгентскиеУслуги КАК ДокТЧ
 ГДЕ
 	ДокТЧ.Ссылка.Дата МЕЖДУ &amp;Дата1 И &amp;Дата2
-	И ДокТЧ.Ссылка.Проведен
+	И НЕ ДокТЧ.Ссылка.ПометкаУдаления
 {ГДЕ
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО.* КАК Центр}</query>
+	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО.* КАК Центр,
+	ДокТЧ.Ссылка.* КАК ДокументРеализации}</query>
 				<autoFillFields>false</autoFillFields>
 			</item>
 			<item xsi:type="DataSetQuery">
@@ -481,18 +528,25 @@
 					</title>
 					<appearance/>
 				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ДокументРеализации</dataPath>
+					<field>ДокументРеализации</field>
+					<appearance/>
+				</field>
 				<dataSource>ИсточникДанных1</dataSource>
 				<query>ВЫБРАТЬ
 	ВЫБОР
 		КОГДА &amp;ПериодКорректировок = "Реализация"
 			ТОГДА НАЧАЛОПЕРИОДА(ДокТЧ.Ссылка.ДокументРеализации.Дата, ДЕНЬ)
-		ИНАЧЕ НАЧАЛОПЕРИОДА(ДокТЧ.Ссылка.Дата, ДЕНЬ)
+		КОГДА &amp;ПериодКорректировок = "Корректировка"
+			ТОГДА НАЧАЛОПЕРИОДА(ДокТЧ.Ссылка.Дата, ДЕНЬ)
 	КОНЕЦ КАК Дата,
 	ДокТЧ.Ссылка.ДоговорКонтрагента.Наименование КАК Договор,
 	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО КАК Центр,
 	ДокТЧ.Сумма - ДокТЧ.СуммаДоИзменения КАК СуммаКВ,
 	ДокТЧ.Сумма - ДокТЧ.СуммаДоИзменения КАК Сумма,
 	ДокТЧ.Ссылка КАК Документ,
+	ДокТЧ.Ссылка.ДокументРеализации КАК ДокументРеализации,
 	0 КАК СуммаЮникус,
 	0 КАК СуммаКВЮникус
 {ВЫБРАТЬ
@@ -500,6 +554,7 @@
 	Договор,
 	Центр.*,
 	Документ.*,
+	ДокументРеализации.*,
 	СуммаКВ,
 	Сумма,
 	СуммаКВЮникус,
@@ -514,9 +569,10 @@
 				ТОГДА ДокТЧ.Ссылка.Дата МЕЖДУ &amp;Дата1 И &amp;Дата2
 			ИНАЧЕ ЛОЖЬ
 		КОНЕЦ
-	И ДокТЧ.Ссылка.Проведен
+	И НЕ ДокТЧ.Ссылка.ПометкаУдаления
 {ГДЕ
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО.* КАК Центр}
+	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО.* КАК Центр,
+	ДокТЧ.Ссылка.ДокументРеализации.*}
 
 ОБЪЕДИНИТЬ ВСЕ
 
@@ -524,13 +580,15 @@
 	ВЫБОР
 		КОГДА &amp;ПериодКорректировок = "Реализация"
 			ТОГДА НАЧАЛОПЕРИОДА(ДокТЧ.Ссылка.ДокументРеализации.Дата, ДЕНЬ)
-		ИНАЧЕ НАЧАЛОПЕРИОДА(ДокТЧ.Ссылка.Дата, ДЕНЬ)
+		КОГДА &amp;ПериодКорректировок = "Корректировка"
+			ТОГДА НАЧАЛОПЕРИОДА(ДокТЧ.Ссылка.Дата, ДЕНЬ)
 	КОНЕЦ,
 	ДокТЧ.Ссылка.ДоговорКонтрагента.Наименование,
 	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО,
 	0,
 	ДокТЧ.Сумма - ДокТЧ.СуммаДоИзменения,
 	ДокТЧ.Ссылка,
+	ДокТЧ.Ссылка.ДокументРеализации,
 	0,
 	0
 ИЗ
@@ -543,12 +601,82 @@
 				ТОГДА ДокТЧ.Ссылка.Дата МЕЖДУ &amp;Дата1 И &amp;Дата2
 			ИНАЧЕ ЛОЖЬ
 		КОНЕЦ
-	И ДокТЧ.Ссылка.Проведен
+	И НЕ ДокТЧ.Ссылка.ПометкаУдаления
 {ГДЕ
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО.* КАК Центр}</query>
+	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО.* КАК Центр,
+	ДокТЧ.Ссылка.ДокументРеализации.*}</query>
 				<autoFillFields>false</autoFillFields>
 			</item>
 		</dataSet>
+		<dataSet xsi:type="DataSetQuery">
+			<name>Договоры</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДоговорНаименование</dataPath>
+				<field>ДоговорНаименование</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Договор наименование</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДоговорСсылка</dataPath>
+				<field>ДоговорСсылка</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Договор ссылка</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	Спр.Ссылка КАК ДоговорСсылка,
+	Спр.Наименование КАК ДоговорНаименование
+{ВЫБРАТЬ
+	ДоговорСсылка.*,
+	ДоговорНаименование}
+ИЗ
+	Справочник.ДоговорыКонтрагентов КАК Спр
+ГДЕ
+	НЕ Спр.ПометкаУдаления</query>
+			<autoFillFields>false</autoFillFields>
+		</dataSet>
+		<dataSetLink>
+			<sourceDataSet>Объединение</sourceDataSet>
+			<destinationDataSet>Договоры</destinationDataSet>
+			<sourceExpression>Договор</sourceExpression>
+			<destinationExpression>ДоговорНаименование</destinationExpression>
+		</dataSetLink>
+		<calculatedField>
+			<dataPath>ДоговорЗначение</dataPath>
+			<expression>ЕСТЬNULL(ДоговорСсылка, Договор)</expression>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Договор (ссылка)</d4p1:content>
+				</d4p1:item>
+			</title>
+			<orderExpression>
+				<expression xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Договор</expression>
+				<orderType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Asc</orderType>
+				<autoOrder xmlns="http://v8.1c.ru/8.1/data-composition-system/common">false</autoOrder>
+			</orderExpression>
+			<appearance/>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
+				<TypeId xmlns="http://v8.1c.ru/8.1/data/core">376807bc-0d88-4c06-9eb2-42b72b970afb</TypeId>
+				<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<Length>150</Length>
+					<AllowedLength>Variable</AllowedLength>
+				</StringQualifiers>
+			</valueType>
+		</calculatedField>
 		<totalField>
 			<dataPath>СуммаКВ</dataPath>
 			<expression>Сумма(СуммаКВ)</expression>
@@ -751,6 +879,7 @@
 			<viewMode>Normal</viewMode>
 			<userSettingID>eec1b32f-53ba-4316-925c-ee41d5eb08c8</userSettingID>
 		</item>
+		<userSettingID>e80e1b48-ea35-43a8-8b31-fa8d36745a31</userSettingID>
 	</filter>
 	<dataParameters>
 		<dcscor:item xsi:type="SettingsParameterValue">
@@ -769,6 +898,7 @@
 			<userSettingID>b15d10a9-9cd2-4daf-b92e-f6b9c7860d33</userSettingID>
 		</dcscor:item>
 	</dataParameters>
+	<order/>
 	<conditionalAppearance>
 		<item>
 			<selection>
@@ -852,7 +982,7 @@
 	<item xsi:type="StructureItemGroup">
 		<groupItems>
 			<item xsi:type="GroupItemField">
-				<field>Договор</field>
+				<field>ДоговорЗначение</field>
 				<groupType>Items</groupType>
 				<periodAdditionType>None</periodAdditionType>
 				<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
