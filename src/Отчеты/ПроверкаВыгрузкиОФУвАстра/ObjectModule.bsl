@@ -54,23 +54,23 @@
 	
 	ТекстЗапроса =
 	"SELECT
-	|	[CurrentDocument_ID]
-	|	,[Project_ID]
-	|	,[Center_ID]
-	|	,[BusinessTransaction_DocSubType_ID]
-	|	,[Firm_ID]
-	|	,[SupplierINN]
-	|	,[SupplierKPP]
-	|	,[PoliceNumber]
-	|	,[FCArticle_ID]
-	|	,[SaleInsuranceDate]
-	|	,[SummaSalel]
-	|	,[SummaKV]
-	|	,[DocumentStateName]
+	|	tab.CurrentDocument_ID
+	|	,tab.Project_ID
+	|	,tab.Center_ID
+	|	,tab.BusinessTransaction_DocSubType_ID
+	|	,tab.Firm_ID
+	|	,tab.SupplierINN
+	|	,tab.SupplierKPP
+	|	,tab.PoliceNumber
+	|	,tab.FCArticle_ID
+	|	,tab.SaleInsuranceDate
+	|	,tab.SummaSalel
+	|	,tab.SummaKV
+	|	,tab.DocumentStateName
 	|FROM 
-	|	[Cash_Flow_Update].[uho].[UHSaleInsurance]
+	|	uho.UHSaleInsurance as tab
 	|WHERE
-	|	[SaleInsuranceDate] BETWEEN &Дата1 AND &Дата2";
+	|	tab.SaleInsuranceDate BETWEEN &Дата1 AND &Дата2";
 	
 	ТекстЗапроса = СтрЗаменить(ТекстЗапроса, "&Дата1", ИнтеграцияСВнешнимиСистемамиУХ.АСЦ1_асцПолучитьТекстПараметра(Параметры.Дата1, "SQLOLEDB"));
 	ТекстЗапроса = СтрЗаменить(ТекстЗапроса, "&Дата2", ИнтеграцияСВнешнимиСистемамиУХ.АСЦ1_асцПолучитьТекстПараметра(Параметры.Дата2, "SQLOLEDB"));

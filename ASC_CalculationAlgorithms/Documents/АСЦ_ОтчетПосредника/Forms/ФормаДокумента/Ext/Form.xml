@@ -266,6 +266,9 @@
 				</InputField>
 				<InputField name="ПродажиКорректировка" id="133">
 					<DataPath>Объект.Продажи.Корректировка</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ПродажиКорректировкаКонтекстноеМеню" id="134"/>
 					<ExtendedTooltip name="ПродажиКорректировкаРасширеннаяПодсказка" id="135"/>
@@ -285,6 +288,7 @@
 				<InputField name="ПродажиСуммаОплаты" id="121">
 					<DataPath>Объект.Продажи.СуммаОплаты</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<FooterDataPath>Объект.Продажи.TotalСуммаОплаты</FooterDataPath>
 					<ContextMenu name="ПродажиСуммаОплатыКонтекстноеМеню" id="122"/>
 					<ExtendedTooltip name="ПродажиСуммаОплатыРасширеннаяПодсказка" id="123"/>
 					<Events>
@@ -303,11 +307,15 @@
 				<InputField name="ПродажиСуммаКВ" id="124">
 					<DataPath>Объект.Продажи.СуммаКВ</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<FooterDataPath>Объект.Продажи.TotalСуммаКВ</FooterDataPath>
 					<ContextMenu name="ПродажиСуммаКВКонтекстноеМеню" id="125"/>
 					<ExtendedTooltip name="ПродажиСуммаКВРасширеннаяПодсказка" id="126"/>
 				</InputField>
 				<InputField name="Продажиid" id="130">
 					<DataPath>Объект.Продажи.id</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
 					<EditMode>EnterOnInput</EditMode>
 					<Format>
 						<v8:item>
@@ -354,6 +362,9 @@
 				</InputField>
 				<InputField name="ИД_Юникус" id="80">
 					<DataPath>Объект.ID_Unicus</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
 					<Width>15</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<EditFormat>

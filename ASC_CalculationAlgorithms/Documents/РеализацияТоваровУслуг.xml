@@ -139,6 +139,12 @@
 					</Type>
 				</Properties>
 			</Attribute>
+			<Attribute uuid="37992590-ed64-4d0e-848d-8ead6ce292c6">
+				<Properties>
+					<Name>ДокументОснование</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+				</Properties>
+			</Attribute>
 			<Form>ФормаСписка</Form>
 			<TabularSection uuid="24fc7394-b830-4e77-9276-d29ecf10ef7b">
 				<InternalInfo>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Catalog uuid="e4886032-af9f-4bb6-ad25-2d6b1396ef2d">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.РегистрацииВНалоговомОргане" category="Object">
+				<xr:TypeId>393a53b6-16d3-4d23-857e-94f30cca8437</xr:TypeId>
+				<xr:ValueId>e4331390-5d0f-4af5-86fb-eb90b8569f50</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.РегистрацииВНалоговомОргане" category="Ref">
+				<xr:TypeId>e4e47529-9bf5-4085-8b6b-43d701647310</xr:TypeId>
+				<xr:ValueId>360ea7de-3e16-4ceb-8973-31d524da3faf</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.РегистрацииВНалоговомОргане" category="Selection">
+				<xr:TypeId>b21baa72-daf2-4019-9c70-ee3f844af470</xr:TypeId>
+				<xr:ValueId>cd65a938-17ac-467e-a017-879c24817391</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.РегистрацииВНалоговомОргане" category="List">
+				<xr:TypeId>265fbe66-f276-4286-b655-bcc0e26c5918</xr:TypeId>
+				<xr:ValueId>d71b5276-5b43-48c6-96d4-39986b9bf134</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.РегистрацииВНалоговомОргане" category="Manager">
+				<xr:TypeId>c3302456-664c-4491-862d-3cbfc1c1b0f4</xr:TypeId>
+				<xr:ValueId>da28b746-0291-444b-bd42-ebd27233cefa</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>РегистрацииВНалоговомОргане</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

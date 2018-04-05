@@ -26,9 +26,198 @@
 		<Properties>
 			<Name>ПроизвольныеОтчеты</Name>
 			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Hierarchical>true</Hierarchical>
+			<HierarchyType>HierarchyFoldersAndItems</HierarchyType>
+			<Owners>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГруппыПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Пользователи</xr:Item>
+			</Owners>
+			<CodeLength>12</CodeLength>
+			<DescriptionLength>100</DescriptionLength>
+			<CodeType>String</CodeType>
+			<CodeAllowedLength>Fixed</CodeAllowedLength>
 		</Properties>
 		<ChildObjects>
+			<Attribute uuid="49f1107c-bff5-4466-bea5-7adf51451682">
+				<Properties>
+					<Name>ЗначенияНастроекПанелиПользователя</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>v8:ValueStorage</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="323ed5d6-5e30-4883-a911-9a481d3e1c22">
+				<Properties>
+					<Name>ИсточникДанныхОтчета</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="4d7892d2-f17f-484f-b59b-0e04f6f2e468">
+				<Properties>
+					<Name>АдминистраторОтчета</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="015bfb66-419c-4d77-85d1-bd5a1d7044a9">
+				<Properties>
+					<Name>НастройкаПериода</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="4618a7c4-8a47-4e19-ab49-c46991e7000c">
+				<Properties>
+					<Name>Описание</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="9efab8e9-0ac9-4d59-bdc9-2411845ad60b">
+				<Properties>
+					<Name>ПоказыватьБыстрыйОтбор</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="4f803941-4a99-4579-953f-f2be5704ca4c">
+				<Properties>
+					<Name>ПодлежитПередачеВПодчиненныеУзлыПриОбменеПоОрганизации</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="d407f8da-e51a-41f5-85d4-18c20c84ff13">
+				<Properties>
+					<Name>ДатаВерсииИсточникаДанных</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="d7aaabe4-dc6e-431a-9d2e-215985dca992">
+				<Properties>
+					<Name>ОтрицательноеКрасным</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="887720c8-761c-441c-9d3b-b332da2c70ca">
+				<Properties>
+					<Name>РасширеннаяНастройка</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="93403ed5-3bcd-4bf6-b276-7b5cea6aabd2">
+				<Properties>
+					<Name>ЦветаДиаграммы</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>v8:ValueStorage</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="a5d0f7bf-2696-45b1-bafa-da4c4e674605">
+				<Properties>
+					<Name>ОформлениеПоказателей</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>v8:ValueStorage</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="74e7c648-4911-41fc-ac09-7b4c9c41bd6e">
+				<Properties>
+					<Name>СхемаКомпоновкиДанных</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>v8:ValueStorage</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="a4864e60-3d99-4c7e-addb-5602de49ce36">
+				<Properties>
+					<Name>ПредставлениеЭлементаОтчета</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>cfg:EnumRef.ПредставленияЭлементовОтчетов</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="01aeb8c6-84d5-4270-83c3-096387f15a9e">
+				<Properties>
+					<Name>НастройкиСхемыКомпоновкиДанныхПоУмолчанию</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>v8:ValueStorage</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="e00ef7c3-7252-48f3-8c98-304ac86afbeb">
+				<Properties>
+					<Name>Расшифровки</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>v8:ValueStorage</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="0bba5607-976a-4d22-8adb-4ef89c7b5478">
+				<Properties>
+					<Name>ВидПроизвольногоОтчета</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="6faec8b2-55e6-4787-aeb1-3017b95364bb">
+				<Properties>
+					<Name>ПараметрыПанелиПользователя</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>v8:ValueStorage</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
 			<Form>ФормаОтображенияОтчетаУправляемая</Form>
+			<Form>ФормаСписка_Управляемая</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

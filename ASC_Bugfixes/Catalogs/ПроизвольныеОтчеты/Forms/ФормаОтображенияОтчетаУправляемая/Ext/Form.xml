@@ -137,7 +137,6 @@
 										</v8:item>
 									</Title>
 									<HorizontalStretch>true</HorizontalStretch>
-									<ChoiceButton>false</ChoiceButton>
 									<ClearButton>false</ClearButton>
 									<SpinButton>false</SpinButton>
 									<OpenButton>true</OpenButton>
@@ -153,6 +152,9 @@
 									<ChoiceListButton>true</ChoiceListButton>
 									<ContextMenu name="СохраненнаяНастройкаКонтекстноеМеню" id="2"/>
 									<ExtendedTooltip name="СохраненнаяНастройкаExtendedTooltip" id="244"/>
+									<Events>
+										<Event name="StartChoice" callType="Override">АСЦ1_СохраненнаяНастройкаНачалоВыбораВместо</Event>
+									</Events>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>

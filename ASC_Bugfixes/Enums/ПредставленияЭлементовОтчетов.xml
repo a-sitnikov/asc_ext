@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Enum uuid="9f0616e4-3ef2-49ae-95f3-cd46eb7e4c8d">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ПредставленияЭлементовОтчетов" category="Ref">
+				<xr:TypeId>08206599-3770-4cd2-9766-97dc208b3b70</xr:TypeId>
+				<xr:ValueId>4dcf3063-3da2-4af3-b2bf-310f8c32bd7e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ПредставленияЭлементовОтчетов" category="Manager">
+				<xr:TypeId>70db67c4-fb7c-49cb-b7a1-bb46391da4a8</xr:TypeId>
+				<xr:ValueId>e8105529-07c6-43fa-8b96-f1ca8c2f7da8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ПредставленияЭлементовОтчетов" category="List">
+				<xr:TypeId>5fc5b577-9c81-44a2-b76b-7558fcd9a2ba</xr:TypeId>
+				<xr:ValueId>1cb55c4a-3a82-4241-8141-8bf172a047c8</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПредставленияЭлементовОтчетов</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="ceb55646-aa3c-4b3b-8564-939f32cc236a">
+				<Properties>
+					<Name>Диаграмма</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

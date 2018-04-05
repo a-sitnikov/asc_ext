@@ -1,0 +1,740 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Width>45</Width>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="Выбрать" id="10">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Item.Список.StandardCommand.Choose</CommandName>
+				<ExtendedTooltip name="ВыбратьExtendedTooltip" id="13"/>
+			</Button>
+			<Popup name="Дополнительно" id="42">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Дополнительно</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Дополнительно</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Picture>
+					<xr:Ref>CommonPicture.Подменю</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<CommandSource>FormCommandPanelGlobalCommands</CommandSource>
+				<Representation>PictureAndText</Representation>
+				<ExtendedTooltip name="ДополнительноРасширеннаяПодсказка" id="43"/>
+				<ChildItems>
+					<Button name="ФормаИзменитьФорму" id="47">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+						<ExtendedTooltip name="ФормаИзменитьФормуРасширеннаяПодсказка" id="48"/>
+					</Button>
+				</ChildItems>
+			</Popup>
+			<Button name="ФормаРегламентированныеУХ" id="26">
+				<Type>CommandBarButton</Type>
+				<OnlyInAllActions>true</OnlyInAllActions>
+				<CommandName>Form.Command.РегламентированныеУХ</CommandName>
+				<ExtendedTooltip name="ФормаРегламентированныеУХРасширеннаяПодсказка" id="27"/>
+			</Button>
+			<Popup name="РежимПросмотра" id="40">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Режим просмотра</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Режим просмотра</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Picture>
+					<xr:Ref>StdPicture.ListViewMode</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<Representation>PictureAndText</Representation>
+				<ExtendedTooltip name="РежимПросмотраРасширеннаяПодсказка" id="41"/>
+				<ChildItems>
+					<Button name="ФормаИерархическийСписок" id="34">
+						<Type>CommandBarButton</Type>
+						<CommandName>0:ffc5e8d5-40a7-4893-a590-49bd588f9466</CommandName>
+						<ExtendedTooltip name="ФормаИерархическийСписокРасширеннаяПодсказка" id="35"/>
+					</Button>
+					<Button name="ФормаСписок" id="36">
+						<Type>CommandBarButton</Type>
+						<CommandName>0:a2b927a1-35af-43e3-af73-4af22ac2c0fa</CommandName>
+						<ExtendedTooltip name="ФормаСписокРасширеннаяПодсказка" id="37"/>
+					</Button>
+					<Button name="ФормаДерево" id="38">
+						<Type>CommandBarButton</Type>
+						<CommandName>0:0b83270d-7f95-4cdd-93c3-342d7991fed5</CommandName>
+						<ExtendedTooltip name="ФормаДеревоРасширеннаяПодсказка" id="39"/>
+					</Button>
+				</ChildItems>
+			</Popup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer" callType="After">АСЦ1_ПриСозданииНаСервереПосле</Event>
+	</Events>
+	<ChildItems>
+		<Table name="Список" id="1">
+			<Representation>Tree</Representation>
+			<TitleLocation>Auto</TitleLocation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<ChoiceMode>true</ChoiceMode>
+			<RowSelectionMode>Row</RowSelectionMode>
+			<HorizontalLines>false</HorizontalLines>
+			<VerticalLines>false</VerticalLines>
+			<InitialTreeView>ExpandAllLevels</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="14"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="17">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="19"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="20">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="22"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="23">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="25"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<PictureField name="Основная" id="11">
+					<DataPath>Список.Основная</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<HeaderPicture>
+						<xr:Ref>CommonPicture.ОперацияВыполненаУспешно</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+						<xr:TransparentPixel x="4" y="2"/>
+					</HeaderPicture>
+					<Width>2</Width>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.ОперацияВыполненаУспешно</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+						<xr:TransparentPixel x="4" y="2"/>
+					</ValuesPicture>
+					<ContextMenu name="ОсновнаяКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="ОсновнаяExtendedTooltip" id="15"/>
+				</PictureField>
+				<LabelField name="Код" id="28">
+					<DataPath>Список.Code</DataPath>
+					<ContextMenu name="КодКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="30"/>
+				</LabelField>
+				<LabelField name="Наименование" id="4">
+					<DataPath>Список.Description</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="16"/>
+				</LabelField>
+				<LabelField name="ТипОрганизации" id="44">
+					<DataPath>Список.ТипОрганизации</DataPath>
+					<ContextMenu name="ТипОрганизацииКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ТипОрганизацииРасширеннаяПодсказка" id="46"/>
+				</LabelField>
+				<LabelField name="Ссылка" id="31">
+					<DataPath>Список.Ref</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="СсылкаКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="33"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.ЯвляетсяНалоговымРезидентом</Field>
+				<Field>Список.ЭлиминирующаяОрганизация</Field>
+				<Field>Список.ИспользоватьВРегламентированномУчете</Field>
+				<Field>Список.ИностранныйНалоговыйРезидент</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ВЫБОР
+		КОГДА &amp;ОсновнаяОрганизация = СправочникОрганизации.Ссылка
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК Основная,
+	//#Область УХ_Организации
+	СправочникОрганизации.ИспользоватьВРегламентированномУчете КАК ИспользоватьВРегламентированномУчете,
+	СправочникОрганизации.ИностранныйНалоговыйРезидент КАК ИностранныйНалоговыйРезидент,
+	СправочникОрганизации.ЭлиминирующаяОрганизация КАК ЭлиминирующаяОрганизация,
+	СправочникОрганизации.ИспользоватьВРегламентированномУчете
+		ИЛИ СправочникОрганизации.ИностранныйНалоговыйРезидент КАК ЯвляетсяНалоговымРезидентом,
+	ВЫБОР
+	КОГДА СправочникОрганизации.ИспользоватьВРегламентированномУчете
+		ТОГДА "Налоговый резидент РФ"
+	КОГДА СправочникОрганизации.ИностранныйНалоговыйРезидент
+		ТОГДА "Иностранный резидент"
+	КОГДА СправочникОрганизации.ЭлиминирующаяОрганизация
+		ТОГДА "Элиминация"
+	ИНАЧЕ "ЦФО"
+	КОНЕЦ КАК ТипОрганизации,	
+	//#КонецОбласти
+	СправочникОрганизации.Ссылка,
+	СправочникОрганизации.ПометкаУдаления,
+	СправочникОрганизации.Предопределенный,
+	СправочникОрганизации.Код,
+	СправочникОрганизации.Наименование,
+	СправочникОрганизации.Префикс,
+	СправочникОрганизации.ИНН,
+	СправочникОрганизации.КПП,
+	СправочникОрганизации.РегистрационныйНомерПФР,
+	СправочникОрганизации.ОбособленноеПодразделение,
+	СправочникОрганизации.ГоловнаяОрганизация,
+	СправочникОрганизации.НаименованиеПолное,
+	СправочникОрганизации.КодПоОКПО,
+	СправочникОрганизации.КодНалоговогоОргана,
+	СправочникОрганизации.ЮридическоеФизическоеЛицо,
+	СправочникОрганизации.ТерриториальныеУсловияПФР,
+	СправочникОрганизации.ОсновнойБанковскийСчет,
+	СправочникОрганизации.ВидСтавокЕСНиПФР,
+	СправочникОрганизации.НаименованиеПлательщикаПриПеречисленииВБюджет,
+	СправочникОрганизации.ИностраннаяОрганизация,
+	СправочникОрганизации.ДатаРегистрации,
+	СправочникОрганизации.КодОКОПФ,
+	СправочникОрганизации.НаименованиеОКОПФ,
+	СправочникОрганизации.КодОКФС,
+	СправочникОрганизации.НаименованиеОКФС,
+	СправочникОрганизации.СвидетельствоСерияНомер,
+	СправочникОрганизации.СвидетельствоДатаВыдачи,
+	СправочникОрганизации.СвидетельствоНаименованиеОргана,
+	СправочникОрганизации.СвидетельствоКодОргана,
+	СправочникОрганизации.СтранаРегистрации,
+	СправочникОрганизации.СтранаПостоянногоМестонахождения,
+	СправочникОрганизации.КодВСтранеРегистрации,
+	СправочникОрганизации.ОГРН,
+	СправочникОрганизации.НаименованиеИнострОрганизации,
+	СправочникОрганизации.РегистрационныйНомерФСС,
+	СправочникОрганизации.НаименованиеНалоговогоОргана,
+	СправочникОрганизации.КодОКВЭД,
+	СправочникОрганизации.НаименованиеОКВЭД,
+	СправочникОрганизации.КодОКОНХ,
+	СправочникОрганизации.ИндивидуальныйПредприниматель,
+	СправочникОрганизации.ОбменКодАбонента,
+	СправочникОрганизации.ОбменКаталогОтправкиДанныхОтчетности,
+	СправочникОрганизации.ОбменКаталогПрограммыЭлектроннойПочты,
+	СправочникОрганизации.РегистрацияВНалоговомОргане,
+	СправочникОрганизации.КодНалоговогоОрганаПолучателя,
+	СправочникОрганизации.НаименованиеСокращенное,
+	СправочникОрганизации.ВариантНаименованияДляПечатныхФорм,
+	СправочникОрганизации.НаименованиеТерриториальногоОрганаПФР,
+	СправочникОрганизации.УчетнаяЗаписьОбмена,
+	СправочникОрганизации.ВидОбменаСКонтролирующимиОрганами,
+	СправочникОрганизации.ПрименятьСевернуюНадбавку,
+	СправочникОрганизации.ПрименятьРайонныйКоэффициент,
+	СправочникОрганизации.РайонныйКоэффициент,
+	СправочникОрганизации.КонтактнаяИнформация.(
+		Ссылка,
+		НомерСтроки,
+		Тип,
+		Вид,
+		Представление,
+		ЗначенияПолей,
+		Страна,
+		Регион,
+		Город,
+		АдресЭП,
+		ДоменноеИмяСервера,
+		НомерТелефона,
+		НомерТелефонаБезКодов
+	)
+ИЗ
+	Справочник.Организации КАК СправочникОрганизации</QueryText>
+				<MainTable>Catalog.Организации</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Новости" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новости</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ОтображениеУХ" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображение УХ</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="РегламентированныеУХ" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Используемые в регл. учете</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выводить только организации, используемых в регламентированном учете.</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+		<Command name="ПоказатьКонтекстныеНовости" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новости</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список контекстных новостей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>false</xr:Common>
+			</Use>
+			<FunctionalOptions>
+				<Item>FunctionalOption.РазрешенаРаботаСНовостями</Item>
+			</FunctionalOptions>
+		</Command>
+	</Commands>
+	<BaseForm version="2.4">
+		<Width>45</Width>
+		<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+			<Autofill>false</Autofill>
+			<ChildItems>
+				<Button name="Выбрать" id="10">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Item.Список.StandardCommand.Choose</CommandName>
+					<ExtendedTooltip name="ВыбратьExtendedTooltip" id="13"/>
+				</Button>
+				<Popup name="Дополнительно" id="42">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительно</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительно</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture>
+						<xr:Ref>CommonPicture.Подменю</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<CommandSource>FormCommandPanelGlobalCommands</CommandSource>
+					<Representation>PictureAndText</Representation>
+					<ExtendedTooltip name="ДополнительноРасширеннаяПодсказка" id="43"/>
+					<ChildItems>
+						<Button name="ФормаИзменитьФорму" id="47">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+							<ExtendedTooltip name="ФормаИзменитьФормуРасширеннаяПодсказка" id="48"/>
+						</Button>
+					</ChildItems>
+				</Popup>
+				<Button name="ФормаРегламентированныеУХ" id="26">
+					<Type>CommandBarButton</Type>
+					<OnlyInAllActions>true</OnlyInAllActions>
+					<CommandName>Form.Command.РегламентированныеУХ</CommandName>
+					<ExtendedTooltip name="ФормаРегламентированныеУХРасширеннаяПодсказка" id="27"/>
+				</Button>
+				<Popup name="РежимПросмотра" id="40">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Режим просмотра</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Режим просмотра</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture>
+						<xr:Ref>StdPicture.ListViewMode</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Representation>PictureAndText</Representation>
+					<ExtendedTooltip name="РежимПросмотраРасширеннаяПодсказка" id="41"/>
+					<ChildItems>
+						<Button name="ФормаИерархическийСписок" id="34">
+							<Type>CommandBarButton</Type>
+							<CommandName>0:ffc5e8d5-40a7-4893-a590-49bd588f9466</CommandName>
+							<ExtendedTooltip name="ФормаИерархическийСписокРасширеннаяПодсказка" id="35"/>
+						</Button>
+						<Button name="ФормаСписок" id="36">
+							<Type>CommandBarButton</Type>
+							<CommandName>0:a2b927a1-35af-43e3-af73-4af22ac2c0fa</CommandName>
+							<ExtendedTooltip name="ФормаСписокРасширеннаяПодсказка" id="37"/>
+						</Button>
+						<Button name="ФормаДерево" id="38">
+							<Type>CommandBarButton</Type>
+							<CommandName>0:0b83270d-7f95-4cdd-93c3-342d7991fed5</CommandName>
+							<ExtendedTooltip name="ФормаДеревоРасширеннаяПодсказка" id="39"/>
+						</Button>
+					</ChildItems>
+				</Popup>
+			</ChildItems>
+		</AutoCommandBar>
+		<ChildItems>
+			<Table name="Список" id="1">
+				<Representation>Tree</Representation>
+				<TitleLocation>Auto</TitleLocation>
+				<CommandBarLocation>None</CommandBarLocation>
+				<DefaultItem>true</DefaultItem>
+				<ChoiceMode>true</ChoiceMode>
+				<RowSelectionMode>Row</RowSelectionMode>
+				<HorizontalLines>false</HorizontalLines>
+				<VerticalLines>false</VerticalLines>
+				<InitialTreeView>ExpandAllLevels</InitialTreeView>
+				<EnableStartDrag>true</EnableStartDrag>
+				<DataPath>Список</DataPath>
+				<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+				<AutoRefresh>false</AutoRefresh>
+				<AutoRefreshPeriod>60</AutoRefreshPeriod>
+				<Period>
+					<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+					<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+					<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+				</Period>
+				<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+				<RestoreCurrentRow>false</RestoreCurrentRow>
+				<TopLevelParent xsi:nil="true"/>
+				<ShowRoot>true</ShowRoot>
+				<AllowRootChoice>false</AllowRootChoice>
+				<UpdateOnDataChange>Auto</UpdateOnDataChange>
+				<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+				<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+					<Autofill>false</Autofill>
+				</AutoCommandBar>
+				<ExtendedTooltip name="СписокExtendedTooltip" id="14"/>
+				<SearchStringAddition name="СписокСтрокаПоиска" id="17">
+					<AdditionSource>
+						<Item>Список</Item>
+						<Type>SearchStringRepresentation</Type>
+					</AdditionSource>
+					<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="19"/>
+				</SearchStringAddition>
+				<ViewStatusAddition name="СписокСостояниеПросмотра" id="20">
+					<AdditionSource>
+						<Item>Список</Item>
+						<Type>ViewStatusRepresentation</Type>
+					</AdditionSource>
+					<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="22"/>
+				</ViewStatusAddition>
+				<SearchControlAddition name="СписокУправлениеПоиском" id="23">
+					<AdditionSource>
+						<Item>Список</Item>
+						<Type>SearchControl</Type>
+					</AdditionSource>
+					<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="25"/>
+				</SearchControlAddition>
+				<ChildItems>
+					<PictureField name="Основная" id="11">
+						<DataPath>Список.Основная</DataPath>
+						<TitleLocation>None</TitleLocation>
+						<HeaderPicture>
+							<xr:Ref>CommonPicture.ОперацияВыполненаУспешно</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+							<xr:TransparentPixel x="4" y="2"/>
+						</HeaderPicture>
+						<Width>2</Width>
+						<ValuesPicture>
+							<xr:Ref>CommonPicture.ОперацияВыполненаУспешно</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+							<xr:TransparentPixel x="4" y="2"/>
+						</ValuesPicture>
+						<ContextMenu name="ОсновнаяКонтекстноеМеню" id="12"/>
+						<ExtendedTooltip name="ОсновнаяExtendedTooltip" id="15"/>
+					</PictureField>
+					<LabelField name="Код" id="28">
+						<DataPath>Список.Code</DataPath>
+						<ContextMenu name="КодКонтекстноеМеню" id="29"/>
+						<ExtendedTooltip name="КодРасширеннаяПодсказка" id="30"/>
+					</LabelField>
+					<LabelField name="Наименование" id="4">
+						<DataPath>Список.Description</DataPath>
+						<DefaultItem>true</DefaultItem>
+						<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+						<ExtendedTooltip name="НаименованиеExtendedTooltip" id="16"/>
+					</LabelField>
+					<LabelField name="ТипОрганизации" id="44">
+						<DataPath>Список.ТипОрганизации</DataPath>
+						<ContextMenu name="ТипОрганизацииКонтекстноеМеню" id="45"/>
+						<ExtendedTooltip name="ТипОрганизацииРасширеннаяПодсказка" id="46"/>
+					</LabelField>
+					<LabelField name="Ссылка" id="31">
+						<DataPath>Список.Ref</DataPath>
+						<UserVisible>
+							<xr:Common>false</xr:Common>
+						</UserVisible>
+						<ContextMenu name="СсылкаКонтекстноеМеню" id="32"/>
+						<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="33"/>
+					</LabelField>
+				</ChildItems>
+			</Table>
+		</ChildItems>
+		<Attributes>
+			<Attribute name="Список" id="1">
+				<Type>
+					<v8:Type>cfg:DynamicList</v8:Type>
+				</Type>
+				<MainAttribute>true</MainAttribute>
+				<UseAlways>
+					<Field>Список.ЯвляетсяНалоговымРезидентом</Field>
+					<Field>Список.ЭлиминирующаяОрганизация</Field>
+					<Field>Список.ИспользоватьВРегламентированномУчете</Field>
+					<Field>Список.ИностранныйНалоговыйРезидент</Field>
+				</UseAlways>
+				<Settings xsi:type="DynamicList">
+					<ManualQuery>true</ManualQuery>
+					<DynamicDataRead>true</DynamicDataRead>
+					<QueryText>ВЫБРАТЬ
+	ВЫБОР
+		КОГДА &amp;ОсновнаяОрганизация = СправочникОрганизации.Ссылка
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК Основная,
+	//#Область УХ_Организации
+	СправочникОрганизации.ИспользоватьВРегламентированномУчете КАК ИспользоватьВРегламентированномУчете,
+	СправочникОрганизации.ИностранныйНалоговыйРезидент КАК ИностранныйНалоговыйРезидент,
+	СправочникОрганизации.ЭлиминирующаяОрганизация КАК ЭлиминирующаяОрганизация,
+	СправочникОрганизации.ИспользоватьВРегламентированномУчете
+		ИЛИ СправочникОрганизации.ИностранныйНалоговыйРезидент КАК ЯвляетсяНалоговымРезидентом,
+	ВЫБОР
+	КОГДА СправочникОрганизации.ИспользоватьВРегламентированномУчете
+		ТОГДА "Налоговый резидент РФ"
+	КОГДА СправочникОрганизации.ИностранныйНалоговыйРезидент
+		ТОГДА "Иностранный резидент"
+	КОГДА СправочникОрганизации.ЭлиминирующаяОрганизация
+		ТОГДА "Элиминация"
+	ИНАЧЕ "ЦФО"
+	КОНЕЦ КАК ТипОрганизации,	
+	//#КонецОбласти
+	СправочникОрганизации.Ссылка,
+	СправочникОрганизации.ПометкаУдаления,
+	СправочникОрганизации.Предопределенный,
+	СправочникОрганизации.Код,
+	СправочникОрганизации.Наименование,
+	СправочникОрганизации.Префикс,
+	СправочникОрганизации.ИНН,
+	СправочникОрганизации.КПП,
+	СправочникОрганизации.РегистрационныйНомерПФР,
+	СправочникОрганизации.ОбособленноеПодразделение,
+	СправочникОрганизации.ГоловнаяОрганизация,
+	СправочникОрганизации.НаименованиеПолное,
+	СправочникОрганизации.КодПоОКПО,
+	СправочникОрганизации.КодНалоговогоОргана,
+	СправочникОрганизации.ЮридическоеФизическоеЛицо,
+	СправочникОрганизации.ТерриториальныеУсловияПФР,
+	СправочникОрганизации.ОсновнойБанковскийСчет,
+	СправочникОрганизации.ВидСтавокЕСНиПФР,
+	СправочникОрганизации.НаименованиеПлательщикаПриПеречисленииВБюджет,
+	СправочникОрганизации.ИностраннаяОрганизация,
+	СправочникОрганизации.ДатаРегистрации,
+	СправочникОрганизации.КодОКОПФ,
+	СправочникОрганизации.НаименованиеОКОПФ,
+	СправочникОрганизации.КодОКФС,
+	СправочникОрганизации.НаименованиеОКФС,
+	СправочникОрганизации.СвидетельствоСерияНомер,
+	СправочникОрганизации.СвидетельствоДатаВыдачи,
+	СправочникОрганизации.СвидетельствоНаименованиеОргана,
+	СправочникОрганизации.СвидетельствоКодОргана,
+	СправочникОрганизации.СтранаРегистрации,
+	СправочникОрганизации.СтранаПостоянногоМестонахождения,
+	СправочникОрганизации.КодВСтранеРегистрации,
+	СправочникОрганизации.ОГРН,
+	СправочникОрганизации.НаименованиеИнострОрганизации,
+	СправочникОрганизации.РегистрационныйНомерФСС,
+	СправочникОрганизации.НаименованиеНалоговогоОргана,
+	СправочникОрганизации.КодОКВЭД,
+	СправочникОрганизации.НаименованиеОКВЭД,
+	СправочникОрганизации.КодОКОНХ,
+	СправочникОрганизации.ИндивидуальныйПредприниматель,
+	СправочникОрганизации.ОбменКодАбонента,
+	СправочникОрганизации.ОбменКаталогОтправкиДанныхОтчетности,
+	СправочникОрганизации.ОбменКаталогПрограммыЭлектроннойПочты,
+	СправочникОрганизации.РегистрацияВНалоговомОргане,
+	СправочникОрганизации.КодНалоговогоОрганаПолучателя,
+	СправочникОрганизации.НаименованиеСокращенное,
+	СправочникОрганизации.ВариантНаименованияДляПечатныхФорм,
+	СправочникОрганизации.НаименованиеТерриториальногоОрганаПФР,
+	СправочникОрганизации.УчетнаяЗаписьОбмена,
+	СправочникОрганизации.ВидОбменаСКонтролирующимиОрганами,
+	СправочникОрганизации.ПрименятьСевернуюНадбавку,
+	СправочникОрганизации.ПрименятьРайонныйКоэффициент,
+	СправочникОрганизации.РайонныйКоэффициент,
+	СправочникОрганизации.КонтактнаяИнформация.(
+		Ссылка,
+		НомерСтроки,
+		Тип,
+		Вид,
+		Представление,
+		ЗначенияПолей,
+		Страна,
+		Регион,
+		Город,
+		АдресЭП,
+		ДоменноеИмяСервера,
+		НомерТелефона,
+		НомерТелефонаБезКодов
+	)
+ИЗ
+	Справочник.Организации КАК СправочникОрганизации</QueryText>
+					<MainTable>Catalog.Организации</MainTable>
+					<ListSettings>
+						<dcsset:filter>
+							<dcsset:viewMode>Normal</dcsset:viewMode>
+							<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+						</dcsset:filter>
+						<dcsset:order>
+							<dcsset:viewMode>Normal</dcsset:viewMode>
+							<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+						</dcsset:order>
+						<dcsset:conditionalAppearance>
+							<dcsset:viewMode>Normal</dcsset:viewMode>
+							<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+						</dcsset:conditionalAppearance>
+						<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+						<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+					</ListSettings>
+				</Settings>
+			</Attribute>
+			<Attribute name="Новости" id="2">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Новости</v8:content>
+					</v8:item>
+				</Title>
+				<Type/>
+			</Attribute>
+			<Attribute name="ОтображениеУХ" id="3">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Отображение УХ</v8:content>
+					</v8:item>
+				</Title>
+				<Type/>
+			</Attribute>
+		</Attributes>
+		<Commands>
+			<Command name="РегламентированныеУХ" id="1">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Используемые в регл. учете</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выводить только организации, используемых в регламентированном учете.</v8:content>
+					</v8:item>
+				</ToolTip>
+			</Command>
+			<Command name="ПоказатьКонтекстныеНовости" id="2">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Новости</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Список контекстных новостей</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Use>
+					<xr:Common>false</xr:Common>
+				</Use>
+				<FunctionalOptions>
+					<Item>FunctionalOption.РазрешенаРаботаСНовостями</Item>
+				</FunctionalOptions>
+			</Command>
+		</Commands>
+	</BaseForm>
+</Form>

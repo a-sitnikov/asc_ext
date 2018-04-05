@@ -42,7 +42,7 @@
 			<ConfigurationExtensionCompatibilityMode>Version8_3_10</ConfigurationExtensionCompatibilityMode>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor/>
-			<Version>2018.02.26</Version>
+			<Version>2018.04.04</Version>
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
@@ -56,12 +56,19 @@
 			<CommonPicture>СтрелкаВправо</CommonPicture>
 			<CommonPicture>СостояниеУдовлетворительное</CommonPicture>
 			<CommonPicture>ШаблоныРедактирование</CommonPicture>
+			<CommonPicture>ОперацияВыполненаУспешно</CommonPicture>
+			<CommonPicture>Подменю</CommonPicture>
+			<CommonPicture>ДобавитьАналитическуюПанель</CommonPicture>
+			<CommonPicture>ТипыАналитическихПанелей</CommonPicture>
 			<CommonModule>ИнтеграцияСВнешнимиСистемамиУХ</CommonModule>
 			<CommonModule>УправлениеСоединениямиВИБУХ</CommonModule>
 			<CommonModule>ОбщегоНазначенияУХ</CommonModule>
 			<CommonModule>ИнтеграцияВИБПереопределяемыйУХ</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазыСлужебный</CommonModule>
 			<CommonModule>СклонениеПредставленийОбъектов</CommonModule>
+			<CommonModule>ТиповыеОтчеты_УправляемыйРежимУХ</CommonModule>
+			<FunctionalOption>РазрешенаРаботаСНовостями</FunctionalOption>
+			<Constant>РазрешенаРаботаСНовостями</Constant>
 			<Catalog>ТаблицыADO</Catalog>
 			<Catalog>ВидыОтчетов</Catalog>
 			<Catalog>ПроизвольныеОтчеты</Catalog>
@@ -75,8 +82,20 @@
 			<Catalog>Пользователи</Catalog>
 			<Catalog>ПоказателиМонитораКлючевыхПоказателей</Catalog>
 			<Catalog>Периоды</Catalog>
+			<Catalog>СтраныМира</Catalog>
+			<Catalog>ФизическиеЛица</Catalog>
+			<Catalog>ВидыКонтактнойИнформации</Catalog>
+			<Catalog>РегистрацииВНалоговомОргане</Catalog>
+			<Catalog>УдалитьТерриториальныеУсловияПФР</Catalog>
+			<Catalog>БанковскиеСчета</Catalog>
+			<Catalog>ГруппыПользователей</Catalog>
 			<Document>НастраиваемыйОтчет</Document>
 			<Enum>Периодичность</Enum>
+			<Enum>ТипыКонтактнойИнформации</Enum>
+			<Enum>УдалитьВидыСтавокЕСНиПФР</Enum>
+			<Enum>ВариантыНаименованияДляПечатныхФорм</Enum>
+			<Enum>ЮридическоеФизическоеЛицо</Enum>
+			<Enum>ПредставленияЭлементовОтчетов</Enum>
 			<DataProcessor>ВыгрузкаЗагрузкаМетодическихМоделей</DataProcessor>
 		</ChildObjects>
 	</Configuration>
