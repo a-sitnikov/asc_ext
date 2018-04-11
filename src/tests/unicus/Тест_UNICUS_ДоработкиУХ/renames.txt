@@ -1,0 +1,7 @@
+﻿0b3acaa0-852b-4a89-8a76-b9adccc1558a.0\info-->und\0b3acaa0-852b-4a89-8a76-b9adccc1558a.0\info
+0b3acaa0-852b-4a89-8a76-b9adccc1558a.0\text-->ObjectModule.bsl
+bd8ede81-78dd-4348-a01c-0f0a677a319f-->und\bd8ede81-78dd-4348-a01c-0f0a677a319f
+copyinfo-->und\copyinfo
+root-->und\root
+version-->und\version
+versions-->und\versions

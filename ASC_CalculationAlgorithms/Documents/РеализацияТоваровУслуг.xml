@@ -145,7 +145,6 @@
 					<ObjectBelonging>Adopted</ObjectBelonging>
 				</Properties>
 			</Attribute>
-			<Form>ФормаСписка</Form>
 			<TabularSection uuid="24fc7394-b830-4e77-9276-d29ecf10ef7b">
 				<InternalInfo>
 					<xr:GeneratedType name="DocumentTabularSection.РеализацияТоваровУслуг.Услуги" category="TabularSection">

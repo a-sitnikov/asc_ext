@@ -25,7 +25,6 @@
 					</NumberQualifiers>
 				</valueType>
 				<appearance/>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Сумма</dataPath>
@@ -39,7 +38,6 @@
 					</NumberQualifiers>
 				</valueType>
 				<appearance/>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Договор</dataPath>
@@ -63,7 +61,6 @@
 					</StringQualifiers>
 				</valueType>
 				<appearance/>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Дата</dataPath>
@@ -75,7 +72,6 @@
 					</DateQualifiers>
 				</valueType>
 				<appearance/>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СуммаЮникус</dataPath>
@@ -95,7 +91,6 @@
 					</NumberQualifiers>
 				</valueType>
 				<appearance/>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СуммаКВЮникус</dataPath>
@@ -115,7 +110,6 @@
 					</NumberQualifiers>
 				</valueType>
 				<appearance/>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Центр</dataPath>
@@ -152,7 +146,6 @@
 					</d5p1:item>
 				</title>
 				<appearance/>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ДокументРеализации</dataPath>
@@ -620,7 +613,6 @@
 					</d5p1:item>
 				</title>
 				<appearance/>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ДоговорСсылка</dataPath>
@@ -632,7 +624,6 @@
 					</d5p1:item>
 				</title>
 				<appearance/>
-				<inputParameters/>
 			</field>
 			<dataSource>ИсточникДанных1</dataSource>
 			<query>ВЫБРАТЬ
@@ -868,8 +859,7 @@
 			<use>false</use>
 			<left xsi:type="dcscor:Field">Центр</left>
 			<comparisonType>Equal</comparisonType>
-			<viewMode>Normal</viewMode>
-			<userSettingID>d23486d3-db73-4f79-809d-48c2c56aae87</userSettingID>
+			<userSettingID>12084f9f-47d3-42a8-bb64-806befd69232</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
@@ -879,6 +869,7 @@
 			<viewMode>Normal</viewMode>
 			<userSettingID>eec1b32f-53ba-4316-925c-ee41d5eb08c8</userSettingID>
 		</item>
+		<viewMode>Normal</viewMode>
 		<userSettingID>e80e1b48-ea35-43a8-8b31-fa8d36745a31</userSettingID>
 	</filter>
 	<dataParameters>
@@ -894,11 +885,10 @@
 		</dcscor:item>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:parameter>ПериодКорректировок</dcscor:parameter>
-			<dcscor:value xsi:type="xs:string">Реализация</dcscor:value>
+			<dcscor:value xsi:type="xs:string">Корректировка</dcscor:value>
 			<userSettingID>b15d10a9-9cd2-4daf-b92e-f6b9c7860d33</userSettingID>
 		</dcscor:item>
 	</dataParameters>
-	<order/>
 	<conditionalAppearance>
 		<item>
 			<selection>
@@ -978,7 +968,12 @@
 			<useInFilter>DontUse</useInFilter>
 		</item>
 	</conditionalAppearance>
-	<outputParameters/>
+	<outputParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+			<dcscor:value xsi:type="DataCompositionTextOutputType">DontOutput</dcscor:value>
+		</dcscor:item>
+	</outputParameters>
 	<item xsi:type="StructureItemGroup">
 		<groupItems>
 			<item xsi:type="GroupItemField">
@@ -1044,6 +1039,8 @@
 		</selection>
 		<outputParameters/>
 	</item>
+	<itemsViewMode>Normal</itemsViewMode>
+	<itemsUserSettingID>36d3277a-147a-43fd-89f9-b3097507e97d</itemsUserSettingID>
 </Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
 <SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>

@@ -234,6 +234,26 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
+			<Command uuid="ef136e62-fc37-4c45-8603-c8a0be7c4812">
+				<Properties>
+					<Name>АСЦ_ОтчетПосредникаСписок</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчеты посредника (АСЦ)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>NavigationPanelOrdinary</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+				</Properties>
+			</Command>
 		</ChildObjects>
 	</Document>
 </MetaDataObject>
