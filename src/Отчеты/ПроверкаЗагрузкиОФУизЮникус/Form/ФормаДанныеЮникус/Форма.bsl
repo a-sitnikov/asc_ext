@@ -25,10 +25,7 @@
 	|FROM
 	|	unicusweb.V_ASC_PAY_CONTRACT
 	|WHERE
-	|	CASE WHEN POLICY_NUMBER LIKE POLICY_SERIA || '%'
-	|		THEN REPLACE(POLICY_NUMBER, ' ', '')
-	|		ELSE REPLACE(POLICY_SERIA, ' ', '') || REPLACE(POLICY_NUMBER, ' ', '')
-	|	END = '" + СокрЛП(Договор) + "'
+	|	POLICY_NUMBER = '" + СокрЛП(Договор) + "'
 	|ORDER BY
 	|	PAY_DATE Desc";
 	
@@ -60,6 +57,12 @@
 	КонецЕсли;	
 	Элементы.ТекстОшибкиContact.Видимость = (МассивОшибокContact.Количество() > 0);
 	
+	МассивPayID = Новый Массив;
+	Для каждого СтрокаТЗ из ТалицаОплаты Цикл
+		МассивPayID.Добавить(Формат(СтрокаТЗ.PAY_ID, "ЧГ=0"));
+	КонецЦикла;	
+	PayId = СтрСоединить(МассивPayID, ", ");
+	
 	ТекстЗапроса =
 	"SELECT
 	|	*
@@ -72,9 +75,9 @@
 	|		 FROM
 	|			unicusweb.V_ASC_ACT
 	|		 WHERE
-	|			COL4 || COL5 = '" + Договор + "')
+	|			PAY_ID IN (" + PayID + "))
 	|	AND (COL1 IS NOT NULL 
-	|		 OR COL4 || COL5 = '" + Договор + "')";
+	|		 OR PAY_ID IN (" + PayID + "))";
 	
 	СтрокаСоединения = ОбщегоНазначения.ЗначениеРеквизитаОбъекта(База, "СтрокаПодключения");
 	
@@ -88,7 +91,7 @@
 		
 		СтрокаТЗ.Ошибка = 1;
 		
-		Если ЗначениеЗаполнено(СтрокаТЗ.COL4)
+		Если НЕ ЗначениеЗаполнено(СтрокаТЗ.PAY_ID)
 			И НЕ ЗначениеЗаполнено(СтрокаТЗ.DATE_SIGN) Тогда
 			
 			СтрокаТЗ.Ошибка = 0;

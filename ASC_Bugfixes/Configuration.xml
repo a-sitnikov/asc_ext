@@ -42,7 +42,7 @@
 			<ConfigurationExtensionCompatibilityMode>Version8_3_10</ConfigurationExtensionCompatibilityMode>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor/>
-			<Version>2018.04.04</Version>
+			<Version>2018.04.24</Version>
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
@@ -67,6 +67,7 @@
 			<CommonModule>ОбновлениеИнформационнойБазыСлужебный</CommonModule>
 			<CommonModule>СклонениеПредставленийОбъектов</CommonModule>
 			<CommonModule>ТиповыеОтчеты_УправляемыйРежимУХ</CommonModule>
+			<CommonModule>УправлениеДоступомСлужебный</CommonModule>
 			<FunctionalOption>РазрешенаРаботаСНовостями</FunctionalOption>
 			<Constant>РазрешенаРаботаСНовостями</Constant>
 			<Catalog>ТаблицыADO</Catalog>

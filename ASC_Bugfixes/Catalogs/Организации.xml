@@ -385,14 +385,6 @@
 				<Properties>
 					<Name>РайонныйКоэффициент</Name>
 					<ObjectBelonging>Adopted</ObjectBelonging>
-					<Type>
-						<v8:Type>xs:decimal</v8:Type>
-						<v8:NumberQualifiers>
-							<v8:Digits>3</v8:Digits>
-							<v8:FractionDigits>2</v8:FractionDigits>
-							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-						</v8:NumberQualifiers>
-					</Type>
 				</Properties>
 			</Attribute>
 			<Attribute uuid="1b49b033-1c66-48ef-b930-5be7bfd8d8a4">
