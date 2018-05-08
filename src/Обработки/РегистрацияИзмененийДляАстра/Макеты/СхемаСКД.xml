@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema">
+		<dataSource>
+			<name>ИсточникДанных1</name>
+			<dataSourceType>Local</dataSourceType>
+		</dataSource>
+		<dataSet xsi:type="DataSetUnion">
+			<name>Объединение</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДЦ</dataPath>
+				<field>ДЦ</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>ДЦ</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>База</dataPath>
+				<field>База</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>База</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Документ</dataPath>
+				<field>Документ</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Документ</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<item xsi:type="DataSetQuery">
+				<name>РТУ</name>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ДЦ</dataPath>
+					<field>ДЦ</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>ДЦ</d6p1:content>
+						</d6p1:item>
+					</title>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>База</dataPath>
+					<field>База</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>База</d6p1:content>
+						</d6p1:item>
+					</title>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Документ</dataPath>
+					<field>Документ</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Документ</d6p1:content>
+						</d6p1:item>
+					</title>
+					<appearance/>
+				</field>
+				<dataSource>ИсточникДанных1</dataSource>
+				<query>ВЫБРАТЬ
+	Док.Ссылка КАК Документ,
+	ВЫРАЗИТЬ(СвойствоДЦ.Значение КАК Справочник.Организации) КАК ДЦ,
+	ВЫРАЗИТЬ(РегНастройки.ЗначениеЭлементаНастройкиОтчета КАК Справочник.ВнешниеИнформационныеБазы) КАК База
+{ВЫБРАТЬ
+	Документ.*,
+	ДЦ.*,
+	База.*}
+ИЗ
+	Документ.РеализацияТоваровУслуг КАК Док
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ДополнительныеСведения КАК СвойствоДЦ
+		ПО Док.Ссылка = СвойствоДЦ.Объект
+			И (СвойствоДЦ.Свойство.Имя = "ДЦ")
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.НастройкаОбработкиОтчетов КАК РегНастройки
+		ПО (РегНастройки.ЭлементНастройкиОтчета = ЗНАЧЕНИЕ(Перечисление.ЭлементыНастройкиОтчета.ВнешняяИнформационнаяБаза))
+			И (РегНастройки.Организация = СвойствоДЦ.Значение)
+			И (РегНастройки.ШаблонДокументаБД = НЕОПРЕДЕЛЕНО)
+{ГДЕ
+	Док.Ссылка.* КАК Документ,
+	(ВЫРАЗИТЬ(СвойствоДЦ.Значение КАК Справочник.Организации)).* КАК ДЦ,
+	(ВЫРАЗИТЬ(РегНастройки.ЗначениеЭлементаНастройкиОтчета КАК Справочник.ВнешниеИнформационныеБазы)).* КАК База}</query>
+				<autoFillFields>false</autoFillFields>
+			</item>
+			<item xsi:type="DataSetQuery">
+				<name>Корректировка</name>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ДЦ</dataPath>
+					<field>ДЦ</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>ДЦ</d6p1:content>
+						</d6p1:item>
+					</title>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>База</dataPath>
+					<field>База</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>База</d6p1:content>
+						</d6p1:item>
+					</title>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Документ</dataPath>
+					<field>Документ</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Документ</d6p1:content>
+						</d6p1:item>
+					</title>
+					<appearance/>
+				</field>
+				<dataSource>ИсточникДанных1</dataSource>
+				<query>ВЫБРАТЬ
+	Док.Ссылка КАК Документ,
+	ВЫРАЗИТЬ(СвойствоДЦ.Значение КАК Справочник.Организации) КАК ДЦ,
+	ВЫРАЗИТЬ(РегНастройки.ЗначениеЭлементаНастройкиОтчета КАК Справочник.ВнешниеИнформационныеБазы) КАК База
+{ВЫБРАТЬ
+	Документ.*,
+	ДЦ.*,
+	База.*}
+ИЗ
+	Документ.КорректировкаРеализации КАК Док
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ДополнительныеСведения КАК СвойствоДЦ
+		ПО Док.ДокументРеализации = СвойствоДЦ.Объект
+			И (СвойствоДЦ.Свойство.Имя = "ДЦ")
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.НастройкаОбработкиОтчетов КАК РегНастройки
+		ПО (РегНастройки.ЭлементНастройкиОтчета = ЗНАЧЕНИЕ(Перечисление.ЭлементыНастройкиОтчета.ВнешняяИнформационнаяБаза))
+			И (РегНастройки.Организация = СвойствоДЦ.Значение)
+			И (РегНастройки.ШаблонДокументаБД = НЕОПРЕДЕЛЕНО)
+{ГДЕ
+	Док.Ссылка.* КАК Документ,
+	(ВЫРАЗИТЬ(СвойствоДЦ.Значение КАК Справочник.Организации)).* КАК ДЦ,
+	(ВЫРАЗИТЬ(РегНастройки.ЗначениеЭлементаНастройкиОтчета КАК Справочник.ВнешниеИнформационныеБазы)).* КАК База}</query>
+				<autoFillFields>false</autoFillFields>
+			</item>
+		</dataSet>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="xs:string">Основной</presentation>
+		</settingsVariant>
+	</dataCompositionSchema>
+</SchemaFile>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<field>Документ</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ДЦ</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>База</field>
+		</item>
+	</selection>
+	<order>
+		<item xsi:type="OrderItemField">
+			<field>Документ</field>
+			<orderType>Asc</orderType>
+		</item>
+	</order>
+	<outputParameters/>
+	<item xsi:type="StructureItemGroup">
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+		<outputParameters/>
+	</item>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
+</SchemaFile>
