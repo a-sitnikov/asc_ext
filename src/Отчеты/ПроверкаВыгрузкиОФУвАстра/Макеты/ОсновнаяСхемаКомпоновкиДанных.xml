@@ -20,6 +20,7 @@
 					<TypeId xmlns="http://v8.1c.ru/8.1/data/core">e5a069cc-4bb6-4856-b35b-18350aff5c45</TypeId>
 				</valueType>
 				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ДЦ</dataPath>
@@ -34,6 +35,17 @@
 					<TypeId xmlns="http://v8.1c.ru/8.1/data/core">e5a069cc-4bb6-4856-b35b-18350aff5c45</TypeId>
 				</valueType>
 				<appearance/>
+				<inputParameters>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core">
+						<parameter>ПараметрыВыбора</parameter>
+						<value xsi:type="ChoiceParameters">
+							<item>
+								<choiceParameter>Отбор.ИспользоватьВРегламентированномУчете</choiceParameter>
+								<value xsi:type="xs:boolean">false</value>
+							</item>
+						</value>
+					</item>
+				</inputParameters>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Статья</dataPath>
@@ -48,6 +60,7 @@
 					<TypeId xmlns="http://v8.1c.ru/8.1/data/core">46176421-6369-48fb-8f9f-8fdf711ba954</TypeId>
 				</valueType>
 				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СуммаАстра</dataPath>
@@ -67,6 +80,7 @@
 					</NumberQualifiers>
 				</valueType>
 				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СуммаКВАстра</dataPath>
@@ -86,6 +100,7 @@
 					</NumberQualifiers>
 				</valueType>
 				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Документ</dataPath>
@@ -97,6 +112,7 @@
 					</d5p1:item>
 				</title>
 				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СуммаКВ</dataPath>
@@ -116,6 +132,7 @@
 					</NumberQualifiers>
 				</valueType>
 				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Сумма</dataPath>
@@ -129,6 +146,7 @@
 					</NumberQualifiers>
 				</valueType>
 				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Договор</dataPath>
@@ -147,6 +165,7 @@
 					</StringQualifiers>
 				</valueType>
 				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Дата</dataPath>
@@ -158,6 +177,7 @@
 					</DateQualifiers>
 				</valueType>
 				<appearance/>
+				<inputParameters/>
 			</field>
 			<item xsi:type="DataSetObject">
 				<name>ДанныеАстра</name>
@@ -250,6 +270,44 @@
 							<d6p1:content>Документ</d6p1:content>
 						</d6p1:item>
 					</title>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Сумма</dataPath>
+					<field>Сумма</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Сумма</d6p1:content>
+						</d6p1:item>
+					</title>
+					<valueType>
+						<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+						<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+							<Digits>0</Digits>
+							<FractionDigits>0</FractionDigits>
+							<AllowedSign>Any</AllowedSign>
+						</NumberQualifiers>
+					</valueType>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>СуммаКВ</dataPath>
+					<field>СуммаКВ</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Сумма КВ</d6p1:content>
+						</d6p1:item>
+					</title>
+					<valueType>
+						<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+						<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+							<Digits>15</Digits>
+							<FractionDigits>2</FractionDigits>
+							<AllowedSign>Any</AllowedSign>
+						</NumberQualifiers>
+					</valueType>
 					<appearance/>
 				</field>
 				<dataSource>ИсточникДанных1</dataSource>
@@ -674,6 +732,21 @@
 			<field>ТекстОшибки</field>
 		</item>
 	</selection>
+	<filter>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ДЦ</left>
+			<comparisonType>Equal</comparisonType>
+			<userSettingID>69ea5926-688f-4a26-b028-12e439055101</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">Организация</left>
+			<comparisonType>Equal</comparisonType>
+			<viewMode>Normal</viewMode>
+			<userSettingID>e3863da5-8e8d-43a4-b4a8-78d0d094eb99</userSettingID>
+		</item>
+	</filter>
 	<dataParameters>
 		<dcscor:item xsi:type="SettingsParameterValue">
 			<dcscor:use>false</dcscor:use>
