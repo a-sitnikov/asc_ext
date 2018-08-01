@@ -27,6 +27,16 @@
 			<Name>Номенклатура</Name>
 			<ObjectBelonging>Adopted</ObjectBelonging>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Attribute uuid="192adc37-d954-44a5-af21-e8ae4b8d77c3">
+				<Properties>
+					<Name>НоменклатурнаяГруппа</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>cfg:CatalogRef.НоменклатурныеГруппы</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

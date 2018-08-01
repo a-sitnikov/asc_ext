@@ -42,7 +42,7 @@
 			<ConfigurationExtensionCompatibilityMode>Version8_3_10</ConfigurationExtensionCompatibilityMode>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor>АСЦ</Vendor>
-			<Version>2018.07.16</Version>
+			<Version>2018.08.01</Version>
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
@@ -65,16 +65,19 @@
 			<Role>АСЦ_ДобавлениеИзменениеОтчетПосредника</Role>
 			<Role>АСЦ_ДобавлениеИзменениеКорректировкаРеализации</Role>
 			<Role>АСЦ_ДобавлениеИзменениеОтчетКомитенту</Role>
-			<Role>АСЦ_ПолныеПрава</Role>
 			<Role>АСЦ_ВебСервисВыгрузкаОФУ</Role>
 			<Role>АСЦ_ДобавлениеИзменениеПлановыхПроцентовКВ</Role>
 			<Role>АСЦ_ПодсистемаНачислениеКВ</Role>
+			<Role>ПолныеПрава</Role>
+			<Role>АСЦ_ЧтениеПлановоеНачислениеКВ</Role>
+			<Role>АСЦ_ДобавлениеИзменениеПлановоеНачислениеКВ</Role>
 			<CommonModule>АСЦ_104АСП</CommonModule>
 			<CommonModule>АСЦ_ОбщийМодуль</CommonModule>
 			<CommonModule>АСЦ_ПоискОбъектов</CommonModule>
 			<CommonModule>АСЦ_ОФУ_PnL</CommonModule>
 			<CommonModule>ИнтеграцияСВнешнимиСистемамиУХ</CommonModule>
 			<CommonModule>АСЦ_ВебСервисы</CommonModule>
+			<CommonModule>АСЦ_ВыгрузкаВАстра</CommonModule>
 			<XDTOPackage>АСЦ_ВыгрузкаОФУ</XDTOPackage>
 			<WebService>АСЦ_ВыгрузкаОФУ</WebService>
 			<FunctionalOption>ИспользоватьНесколькоОрганизацийБухгалтерскийУчет</FunctionalOption>
@@ -120,6 +123,8 @@
 			<Catalog>СтраныМира</Catalog>
 			<Catalog>Периоды</Catalog>
 			<Catalog>АСЦ_ВидыОперацийПлановоеНачислениеКВ</Catalog>
+			<Catalog>АСЦ_ЦФО</Catalog>
+			<Catalog>НоменклатурныеГруппы</Catalog>
 			<Document>АСЦ_ОтчетПосредника</Document>
 			<Document>ОтчетКомитентуОПродажах</Document>
 			<Document>РеализацияТоваровУслуг</Document>

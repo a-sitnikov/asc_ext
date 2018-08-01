@@ -67,17 +67,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.АСЦ_ОтчетПосредника.Attribute.ПодразделениеОрганизации</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Document.АСЦ_ОтчетПосредника.Attribute.Комментарий</name>
 		<right>
 			<name>View</name>
@@ -238,17 +227,6 @@
 	</object>
 	<object>
 		<name>Document.АСЦ_ОтчетПосредника.TabularSection.Продажи</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.АСЦ_ОтчетПосредника.Attribute.ID_Unicus</name>
 		<right>
 			<name>View</name>
 			<value>true</value>

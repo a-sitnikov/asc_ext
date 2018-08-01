@@ -25,6 +25,7 @@
 			<Shortcut/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<CommandParameterType>
+				<v8:Type>cfg:DocumentRef.АСЦ_ОтчетПосредника</v8:Type>
 				<v8:Type>cfg:DocumentRef.АСЦ_ПлановоеНачислениеКВ</v8:Type>
 				<v8:Type>cfg:DocumentRef.АСЦ_ОтчетПосредникаУпр</v8:Type>
 			</CommandParameterType>

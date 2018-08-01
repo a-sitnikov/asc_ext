@@ -128,13 +128,13 @@
 					<ExtendedTooltip name="ВидОперацииРасширеннаяПодсказка" id="47"/>
 				</LabelField>
 				<LabelField name="Дата" id="16">
-					<DataPath>Список.Date</DataPath>
+					<DataPath>Список.Дата</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<ContextMenu name="ДатаКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="18"/>
 				</LabelField>
 				<LabelField name="Номер" id="19">
-					<DataPath>Список.Number</DataPath>
+					<DataPath>Список.Номер</DataPath>
 					<ContextMenu name="НомерКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="21"/>
 				</LabelField>
@@ -158,13 +158,18 @@
 					<ContextMenu name="ДатаКонКонтекстноеМеню" id="32"/>
 					<ExtendedTooltip name="ДатаКонРасширеннаяПодсказка" id="33"/>
 				</LabelField>
+				<LabelField name="Статья" id="54">
+					<DataPath>Список.Статья</DataPath>
+					<ContextMenu name="СтатьяКонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="СтатьяРасширеннаяПодсказка" id="56"/>
+				</LabelField>
 				<LabelField name="Комментарий" id="48">
 					<DataPath>Список.Комментарий</DataPath>
 					<ContextMenu name="КомментарийКонтекстноеМеню" id="49"/>
 					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="50"/>
 				</LabelField>
 				<LabelField name="Ссылка" id="51">
-					<DataPath>Список.Ref</DataPath>
+					<DataPath>~Список.Ref</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
@@ -181,11 +186,32 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<UseAlways>
-				<Field>Список.Ref</Field>
+				<Field>~Список.Ref</Field>
+				<Field>Список.Ссылка</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
-				<ManualQuery>false</ManualQuery>
+				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ДокументАСЦ_ОтчетПосредникаУпр.Ссылка КАК Ссылка,
+	ДокументАСЦ_ОтчетПосредникаУпр.ПометкаУдаления КАК ПометкаУдаления,
+	ДокументАСЦ_ОтчетПосредникаУпр.Номер КАК Номер,
+	ДокументАСЦ_ОтчетПосредникаУпр.Дата КАК Дата,
+	ДокументАСЦ_ОтчетПосредникаУпр.Проведен КАК Проведен,
+	ДокументАСЦ_ОтчетПосредникаУпр.Организация КАК Организация,
+	ДокументАСЦ_ОтчетПосредникаУпр.Контрагент КАК Контрагент,
+	ДокументАСЦ_ОтчетПосредникаУпр.ДатаНач КАК ДатаНач,
+	ДокументАСЦ_ОтчетПосредникаУпр.ДатаКон КАК ДатаКон,
+	ДокументАСЦ_ОтчетПосредникаУпр.Комментарий КАК Комментарий,
+	ДокументАСЦ_ОтчетПосредникаУпр.ВидОперации КАК ВидОперации,
+	ДокументАСЦ_ОтчетПосредникаУпр.ВнешнийНомер КАК ВнешнийНомер,
+	ДокументАСЦ_ОтчетПосредникаУпр.ВнешнийИД КАК ВнешнийИД,
+	АСЦ_ОтчетПосредникаУпрПродажи.Статья КАК Статья
+ИЗ
+	Документ.АСЦ_ОтчетПосредникаУпр КАК ДокументАСЦ_ОтчетПосредникаУпр
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.АСЦ_ОтчетПосредникаУпр.Продажи КАК АСЦ_ОтчетПосредникаУпрПродажи
+		ПО АСЦ_ОтчетПосредникаУпрПродажи.Ссылка = ДокументАСЦ_ОтчетПосредникаУпр.Ссылка
+			И (АСЦ_ОтчетПосредникаУпрПродажи.НомерСтроки = 1)</QueryText>
 				<MainTable>Document.АСЦ_ОтчетПосредникаУпр</MainTable>
 				<ListSettings>
 					<dcsset:filter>

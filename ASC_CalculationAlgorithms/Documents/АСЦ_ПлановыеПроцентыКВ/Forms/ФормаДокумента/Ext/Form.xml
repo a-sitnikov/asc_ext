@@ -138,6 +138,37 @@
 							</Button>
 						</ChildItems>
 					</Popup>
+					<Popup name="ТаблицаГруппаExcel" id="160">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Excel</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Таблица группа excel</v8:content>
+							</v8:item>
+						</ToolTip>
+						<Picture>
+							<xr:Ref>CommonPicture.ЗагрузитьИзExcel2007</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ТаблицаГруппаExcelРасширеннаяПодсказка" id="161"/>
+						<ChildItems>
+							<Button name="ТаблицаВыгрузитьВExcel" id="162">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ВыгрузитьВExcel</CommandName>
+								<ExtendedTooltip name="ТаблицаВыгрузитьВExcelРасширеннаяПодсказка" id="163"/>
+							</Button>
+							<Button name="ТаблицаЗагрузитьИзExcel" id="164">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ЗагрузитьИзExcel</CommandName>
+								<ExtendedTooltip name="ТаблицаЗагрузитьИзExcelРасширеннаяПодсказка" id="165"/>
+							</Button>
+						</ChildItems>
+					</Popup>
 				</ChildItems>
 			</AutoCommandBar>
 			<ExtendedTooltip name="ТаблицаРасширеннаяПодсказка" id="84"/>
@@ -168,13 +199,19 @@
 			<ChildItems>
 				<InputField name="ТаблицаКонтрагент" id="97">
 					<DataPath>Таблица.Контрагент</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Банк</v8:content>
+						</v8:item>
+					</Title>
 					<EditMode>EnterOnInput</EditMode>
 					<AutoMarkIncomplete>true</AutoMarkIncomplete>
 					<ContextMenu name="ТаблицаКонтрагентКонтекстноеМеню" id="98"/>
 					<ExtendedTooltip name="ТаблицаКонтрагентРасширеннаяПодсказка" id="99"/>
 				</InputField>
-				<InputField name="ТаблицаДЦ" id="94">
-					<DataPath>Таблица.ДЦ</DataPath>
+				<InputField name="ТаблицаПродавецАвто" id="94">
+					<DataPath>Таблица.ПродавецАвто</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ClearButton>true</ClearButton>
 					<OpenButton>false</OpenButton>
@@ -182,15 +219,50 @@
 						<app:item name="Отбор.ИспользоватьВРегламентированномУчете">
 							<app:value xsi:type="FormChoiceListDesTimeValue">
 								<Presentation/>
-								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:boolean">true</Value>
 							</app:value>
 						</app:item>
 					</ChoiceParameters>
-					<ContextMenu name="ТаблицаДЦКонтекстноеМеню" id="95"/>
-					<ExtendedTooltip name="ТаблицаДЦРасширеннаяПодсказка" id="96"/>
+					<ContextMenu name="ТаблицаПродавецАвтоКонтекстноеМеню" id="95"/>
+					<ExtendedTooltip name="ТаблицаПродавецАвтоРасширеннаяПодсказка" id="96"/>
 					<Events>
-						<Event name="OnChange">ТаблицаДЦПриИзменении</Event>
+						<Event name="OnChange">ТаблицаПродавецАвтоПриИзменении</Event>
 					</Events>
+				</InputField>
+				<InputField name="ТаблицаТипАвто" id="166">
+					<DataPath>Таблица.ТипАвто</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Новый</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">Новый</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>БУ</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">БУ</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ТаблицаТипАвтоКонтекстноеМеню" id="167"/>
+					<ExtendedTooltip name="ТаблицаТипАвтоРасширеннаяПодсказка" id="168"/>
 				</InputField>
 				<InputField name="ТаблицаПроцент1" id="100">
 					<DataPath>Таблица.Процент1</DataPath>
@@ -342,12 +414,13 @@
 			<Type>
 				<v8:Type>v8:ValueTable</v8:Type>
 			</Type>
+			<SavedData>true</SavedData>
 			<Columns>
-				<Column name="ДЦ" id="1">
+				<Column name="ПродавецАвто" id="1">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ДЦ</v8:content>
+							<v8:content>Продавец авто</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -835,6 +908,21 @@
 						</v8:DateQualifiers>
 					</Type>
 				</Column>
+				<Column name="ТипАвто" id="40">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип авто</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="СостояниеДокумента" id="3">
@@ -873,11 +961,11 @@
 				<v8:Type>v8:ValueTable</v8:Type>
 			</Type>
 			<Columns>
-				<Column name="ДЦ" id="1">
+				<Column name="Организация" id="1">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ДЦ</v8:content>
+							<v8:content>Организация</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -931,6 +1019,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПересчитатьДокументыИзмененные</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
 		</Command>
 		<Command name="ЗаполнитьПроцентВСтроке" id="2">
 			<Title>
@@ -950,6 +1039,7 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ЗаполнитьПроцентВСтроке</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
 		</Command>
 		<Command name="ПересчитатьДокументыВсе" id="3">
 			<Title>
@@ -965,6 +1055,38 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПересчитатьДокументыВсе</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="ВыгрузитьВExcel" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить в excel</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыгрузитьВExcel</Action>
+		</Command>
+		<Command name="ЗагрузитьИзExcel" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из excel</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьИзExcel</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
 		</Command>
 	</Commands>
 </Form>

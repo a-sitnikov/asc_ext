@@ -123,6 +123,17 @@
 							<ContextMenu name="КонтрагентКонтекстноеМеню" id="11"/>
 							<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="12"/>
 						</InputField>
+						<InputField name="НоменклатурнаяГруппа" id="162">
+							<DataPath>Объект.НоменклатурнаяГруппа</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Продукт</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НоменклатурнаяГруппаКонтекстноеМеню" id="163"/>
+							<ExtendedTooltip name="НоменклатурнаяГруппаРасширеннаяПодсказка" id="164"/>
+						</InputField>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаШапкаПраво" id="88">
@@ -145,6 +156,7 @@
 					<ChildItems>
 						<InputField name="ВидОперации" id="112">
 							<DataPath>Объект.ВидОперации</DataPath>
+							<CreateButton>false</CreateButton>
 							<ContextMenu name="ВидОперацииКонтекстноеМеню" id="113"/>
 							<ExtendedTooltip name="ВидОперацииРасширеннаяПодсказка" id="114"/>
 							<Events>
@@ -276,6 +288,8 @@
 				<ExtendedTooltip name="ПродажиУправлениеПоискомРасширеннаяПодсказка" id="34"/>
 			</SearchControlAddition>
 			<Events>
+				<Event name="Selection">ПродажиВыбор</Event>
+				<Event name="BeforeAddRow">ПродажиПередНачаломДобавления</Event>
 				<Event name="ChoiceProcessing">ПродажиОбработкаВыбора</Event>
 			</Events>
 			<ChildItems>
@@ -294,21 +308,66 @@
 						</v8:item>
 					</Title>
 					<EditMode>EnterOnInput</EditMode>
+					<ChoiceParameterLinks>
+						<xr:Link>
+							<xr:Name>Отбор.ВидОперации</xr:Name>
+							<xr:DataPath xsi:type="xs:string">Объект.ВидОперации</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+						<xr:Link>
+							<xr:Name>Отбор.Комитент</xr:Name>
+							<xr:DataPath xsi:type="xs:string">Объект.Контрагент</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+						<xr:Link>
+							<xr:Name>Отбор.Организация</xr:Name>
+							<xr:DataPath xsi:type="xs:string">Объект.Организация</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+					</ChoiceParameterLinks>
 					<ContextMenu name="ПродажиДокументКонтекстноеМеню" id="39"/>
 					<ExtendedTooltip name="ПродажиДокументРасширеннаяПодсказка" id="40"/>
 					<Events>
 						<Event name="OnChange">ПродажиДокументПриИзменении</Event>
 					</Events>
 				</InputField>
+				<InputField name="ПродажиКонтрагент" id="82">
+					<DataPath>Объект.Продажи.Контрагент</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Покупатель</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПродажиКонтрагентКонтекстноеМеню" id="83"/>
+					<ExtendedTooltip name="ПродажиКонтрагентРасширеннаяПодсказка" id="84"/>
+					<Events>
+						<Event name="OnChange">ПродажиКонтрагентПриИзменении</Event>
+						<Event name="StartChoice">ПродажиКонтрагентНачалоВыбора</Event>
+					</Events>
+				</InputField>
 				<InputField name="ПродажиДЦ" id="138">
 					<DataPath>Объект.Продажи.ДЦ</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<ChoiceForm>Catalog.Организации.Form.АСЦ_ФормаВыбораДЦ</ChoiceForm>
 					<ContextMenu name="ПродажиДЦКонтекстноеМеню" id="139"/>
 					<ExtendedTooltip name="ПродажиДЦРасширеннаяПодсказка" id="140"/>
+				</InputField>
+				<InputField name="ПродажиЦФО" id="159">
+					<DataPath>Объект.Продажи.ЦФО</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CreateButton>false</CreateButton>
+					<ContextMenu name="ПродажиЦФОКонтекстноеМеню" id="160"/>
+					<ExtendedTooltip name="ПродажиЦФОРасширеннаяПодсказка" id="161"/>
+					<Events>
+						<Event name="OnChange">ПродажиЦФОПриИзменении</Event>
+					</Events>
 				</InputField>
 				<InputField name="ПродажиСтатья" id="143">
 					<DataPath>Объект.Продажи.Статья</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<CreateButton>false</CreateButton>
 					<ContextMenu name="ПродажиСтатьяКонтекстноеМеню" id="144"/>
 					<ExtendedTooltip name="ПродажиСтатьяРасширеннаяПодсказка" id="145"/>
 				</InputField>
@@ -340,20 +399,8 @@
 							<ContextMenu name="ПродажиРеализацияКонтекстноеМеню" id="128"/>
 							<ExtendedTooltip name="ПродажиРеализацияРасширеннаяПодсказка" id="129"/>
 						</InputField>
-						<LabelField name="ПродажиРеализацияКонтрагент" id="82">
-							<DataPath>Объект.Продажи.Реализация.Контрагент</DataPath>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Покупатель</v8:content>
-								</v8:item>
-							</Title>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ПродажиРеализацияКонтрагентКонтекстноеМеню" id="83"/>
-							<ExtendedTooltip name="ПродажиРеализацияКонтрагентРасширеннаяПодсказка" id="84"/>
-						</LabelField>
-						<LabelField name="ПродажиРеализацияОрганизация" id="106">
-							<DataPath>Объект.Продажи.Реализация.Организация</DataPath>
+						<InputField name="ПродажиРеализацияОрганизация" id="106">
+							<DataPath>Объект.Продажи.РеализацияОрганизация</DataPath>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -363,15 +410,15 @@
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="ПродажиРеализацияОрганизацияКонтекстноеМеню" id="107"/>
 							<ExtendedTooltip name="ПродажиРеализацияОрганизацияРасширеннаяПодсказка" id="108"/>
-						</LabelField>
+						</InputField>
 					</ChildItems>
 				</ColumnGroup>
-				<LabelField name="ПродажиДокументVIN" id="124">
-					<DataPath>Объект.Продажи.Документ.VIN</DataPath>
+				<InputField name="ПродажиVIN" id="124">
+					<DataPath>Объект.Продажи.VIN</DataPath>
 					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ПродажиДокументVINКонтекстноеМеню" id="125"/>
-					<ExtendedTooltip name="ПродажиДокументVINРасширеннаяПодсказка" id="126"/>
-				</LabelField>
+					<ContextMenu name="ПродажиVINКонтекстноеМеню" id="125"/>
+					<ExtendedTooltip name="ПродажиVINРасширеннаяПодсказка" id="126"/>
+				</InputField>
 				<InputField name="ПродажиСуммаПлан" id="115">
 					<DataPath>Объект.Продажи.СуммаПлан</DataPath>
 					<ReadOnly>true</ReadOnly>
@@ -448,6 +495,16 @@
 						<Event name="OnChange">ПродажиСуммаКВПриИзменении</Event>
 					</Events>
 				</InputField>
+				<InputField name="ПродажиКорректировка" id="156">
+					<DataPath>Объект.Продажи.Корректировка</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПродажиКорректировкаКонтекстноеМеню" id="157"/>
+					<ExtendedTooltip name="ПродажиКорректировкаРасширеннаяПодсказка" id="158"/>
+				</InputField>
 			</ChildItems>
 		</Table>
 		<InputField name="Комментарий" id="19">
@@ -500,7 +557,41 @@
 				<Field>Объект.RegisterRecords</Field>
 			</UseAlways>
 			<Columns>
-				<AdditionalColumns table="Объект.Продажи"/>
+				<AdditionalColumns table="Объект.Продажи">
+					<Column name="Корректировка" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Корректировка</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>cfg:DocumentRef.АСЦ_ПлановоеНачислениеКВ</v8:Type>
+						</Type>
+					</Column>
+					<Column name="КонтрагентСтрока" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Контрагент строка</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ДокументВыбранПовторно" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Документ выбран повторно</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+				</AdditionalColumns>
 			</Columns>
 		</Attribute>
 		<Attribute name="Период" id="2">

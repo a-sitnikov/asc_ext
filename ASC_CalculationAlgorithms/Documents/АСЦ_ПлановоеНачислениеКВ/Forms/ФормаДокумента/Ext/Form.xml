@@ -70,8 +70,14 @@
 				</PictureField>
 			</ChildItems>
 		</UsualGroup>
+		<InputField name="ДатаКредитнойСделки" id="109">
+			<DataPath>Объект.ДатаКредитнойСделки</DataPath>
+			<ContextMenu name="ДатаКредитнойСделкиКонтекстноеМеню" id="110"/>
+			<ExtendedTooltip name="ДатаКредитнойСделкиРасширеннаяПодсказка" id="111"/>
+		</InputField>
 		<InputField name="ВидОперации" id="65">
 			<DataPath>Объект.ВидОперации</DataPath>
+			<CreateButton>false</CreateButton>
 			<ContextMenu name="ВидОперацииКонтекстноеМеню" id="66"/>
 			<ExtendedTooltip name="ВидОперацииРасширеннаяПодсказка" id="67"/>
 			<Events>
@@ -83,6 +89,12 @@
 			<Hiperlink>true</Hiperlink>
 			<ContextMenu name="ОснованиеКонтекстноеМеню" id="43"/>
 			<ExtendedTooltip name="ОснованиеРасширеннаяПодсказка" id="44"/>
+		</LabelField>
+		<LabelField name="ОтчетПосредника" id="96">
+			<DataPath>Объект.ОтчетПосредника</DataPath>
+			<Hiperlink>true</Hiperlink>
+			<ContextMenu name="ОтчетПосредникаКонтекстноеМеню" id="97"/>
+			<ExtendedTooltip name="ОтчетПосредникаРасширеннаяПодсказка" id="98"/>
 		</LabelField>
 		<UsualGroup name="ГруппаОрганизация" id="71">
 			<Title>
@@ -118,6 +130,7 @@
 		</UsualGroup>
 		<InputField name="ДЦ" id="45">
 			<DataPath>Объект.ДЦ</DataPath>
+			<ChoiceForm>Catalog.Организации.Form.АСЦ_ФормаВыбораДЦ</ChoiceForm>
 			<ContextMenu name="ДЦКонтекстноеМеню" id="46"/>
 			<ExtendedTooltip name="ДЦРасширеннаяПодсказка" id="47"/>
 		</InputField>
@@ -175,16 +188,16 @@
 					<ContextMenu name="РеализацияКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="РеализацияРасширеннаяПодсказка" id="21"/>
 				</InputField>
-				<InputField name="Продавец" id="62">
-					<DataPath>Объект.Реализация.Организация</DataPath>
+				<InputField name="РеализацияОрганизация" id="62">
+					<DataPath>Объект.РеализацияОрганизация</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Продавец</v8:content>
 						</v8:item>
 					</Title>
-					<ContextMenu name="ПродавецКонтекстноеМеню" id="63"/>
-					<ExtendedTooltip name="ПродавецРасширеннаяПодсказка" id="64"/>
+					<ContextMenu name="РеализацияОрганизацияКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="РеализацияОрганизацияРасширеннаяПодсказка" id="64"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -202,8 +215,18 @@
 				<Event name="OnChange">НоменклатураПриИзменении</Event>
 			</Events>
 		</InputField>
+		<InputField name="ЦФО" id="99">
+			<DataPath>Объект.ЦФО</DataPath>
+			<CreateButton>false</CreateButton>
+			<ContextMenu name="ЦФОКонтекстноеМеню" id="100"/>
+			<ExtendedTooltip name="ЦФОРасширеннаяПодсказка" id="101"/>
+			<Events>
+				<Event name="OnChange">ЦФОПриИзменении</Event>
+			</Events>
+		</InputField>
 		<InputField name="Статья" id="68">
 			<DataPath>Объект.Статья</DataPath>
+			<CreateButton>false</CreateButton>
 			<ContextMenu name="СтатьяКонтекстноеМеню" id="69"/>
 			<ExtendedTooltip name="СтатьяРасширеннаяПодсказка" id="70"/>
 		</InputField>
@@ -296,6 +319,11 @@
 					<DataPath>Объект.ВнешнийНомер</DataPath>
 					<ContextMenu name="ВнешнийНомерКонтекстноеМеню" id="94"/>
 					<ExtendedTooltip name="ВнешнийНомерРасширеннаяПодсказка" id="95"/>
+				</InputField>
+				<InputField name="ВнешнийГУИДРеализации" id="106">
+					<DataPath>Объект.ВнешнийГУИДРеализации</DataPath>
+					<ContextMenu name="ВнешнийГУИДРеализацииКонтекстноеМеню" id="107"/>
+					<ExtendedTooltip name="ВнешнийГУИДРеализацииРасширеннаяПодсказка" id="108"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>

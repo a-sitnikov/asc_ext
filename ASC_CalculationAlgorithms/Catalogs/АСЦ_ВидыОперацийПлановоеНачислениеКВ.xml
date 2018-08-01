@@ -73,42 +73,6 @@
 					</Type>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="232d7d9f-aafa-41f6-ad24-b0c0e1fb358c">
-				<Properties>
-					<Name>УчетПоДоговорам</Name>
-					<ObjectBelonging>Adopted</ObjectBelonging>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="f09893cf-fb34-4d21-93ce-a44b1e6a0ef7">
-				<Properties>
-					<Name>ПривязыватьКРеализации</Name>
-					<ObjectBelonging>Adopted</ObjectBelonging>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="adb26b5b-0e9b-4020-b136-9e4d750b872a">
-				<Properties>
-					<Name>УчетПоНоменклатуре</Name>
-					<ObjectBelonging>Adopted</ObjectBelonging>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="29bfd312-4a06-4fb3-bf8e-7194e4ba50bf">
-				<Properties>
-					<Name>СводныйУчет</Name>
-					<ObjectBelonging>Adopted</ObjectBelonging>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Properties>
-			</Attribute>
 			<Attribute uuid="1e7af79a-4d86-46ac-b367-f0f0434e9914">
 				<Properties>
 					<Name>ОтражатьВБУ</Name>
@@ -118,6 +82,69 @@
 					</Type>
 				</Properties>
 			</Attribute>
+			<TabularSection uuid="6ceeba78-557e-4dfb-83e8-a88d6511c4ae">
+				<InternalInfo>
+					<xr:GeneratedType name="CatalogTabularSection.АСЦ_ВидыОперацийПлановоеНачислениеКВ.ДоступныеЦФО" category="TabularSection">
+						<xr:TypeId>652130e5-b1c6-45e2-ab98-7d7880e39ac5</xr:TypeId>
+						<xr:ValueId>1cf72367-493f-49f0-bb69-6f63f158613d</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="CatalogTabularSectionRow.АСЦ_ВидыОперацийПлановоеНачислениеКВ.ДоступныеЦФО" category="TabularSectionRow">
+						<xr:TypeId>796b3e34-b3b3-49c3-aeb2-7d0456d26f94</xr:TypeId>
+						<xr:ValueId>0bf0b0af-d1c4-4f91-96ba-72a0b26ddf38</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>ДоступныеЦФО</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="e569c88f-c26f-4b1d-bd13-33332068515b">
+						<Properties>
+							<Name>ЦФО</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>cfg:CatalogRef.АСЦ_ЦФО</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="a47a774c-7197-4748-b330-3a4844114e3e">
+						<Properties>
+							<Name>Статья</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>cfg:CatalogRef.СтатьиДоходовИРасходов</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<TabularSection uuid="95a20f0b-c6d4-4107-bae7-ebe7f59b700a">
+				<InternalInfo>
+					<xr:GeneratedType name="CatalogTabularSection.АСЦ_ВидыОперацийПлановоеНачислениеКВ.ДоступныеСтатьи" category="TabularSection">
+						<xr:TypeId>403a1b3a-b43c-4fb0-a929-f7df4ad99af0</xr:TypeId>
+						<xr:ValueId>839308f7-ef45-4f96-bd92-921a35d8977b</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="CatalogTabularSectionRow.АСЦ_ВидыОперацийПлановоеНачислениеКВ.ДоступныеСтатьи" category="TabularSectionRow">
+						<xr:TypeId>ca1430fb-7a7f-40fe-b3af-8c26d802e666</xr:TypeId>
+						<xr:ValueId>13a9e8cc-8d4f-4671-9550-6faf1257740a</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>ДоступныеСтатьи</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="20ec2a17-72c8-46b3-a073-dd28b9bd0a0a">
+						<Properties>
+							<Name>Статья</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>cfg:CatalogRef.СтатьиДоходовИРасходов</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
 			<Form>ФормаЭлемента</Form>
 			<Form>ФормаСписка</Form>
 		</ChildObjects>

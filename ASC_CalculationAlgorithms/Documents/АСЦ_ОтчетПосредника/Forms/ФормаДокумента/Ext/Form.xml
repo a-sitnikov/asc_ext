@@ -161,9 +161,6 @@
 							<MaxWidth>36</MaxWidth>
 							<ContextMenu name="ДоговорКонтрагентаКонтекстноеМеню" id="12"/>
 							<ExtendedTooltip name="ДоговорКонтрагентаExtendedTooltip" id="28"/>
-							<Events>
-								<Event name="OnChange">ДоговорКонтрагентаПриИзменении</Event>
-							</Events>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
@@ -196,9 +193,14 @@
 							</Events>
 						</InputField>
 						<InputField name="ПодразделениеОрганизации" id="87">
-							<DataPath>Объект.ПодразделениеОрганизации</DataPath>
+							<DataPath>1/0:8c922c23-7931-4948-b970-4d034535e3cd</DataPath>
 							<ContextMenu name="ПодразделениеОрганизацииКонтекстноеМеню" id="88"/>
 							<ExtendedTooltip name="ПодразделениеОрганизацииРасширеннаяПодсказка" id="89"/>
+						</InputField>
+						<InputField name="ОтчетПосредникаУпр" id="139">
+							<DataPath>Объект.ОтчетПосредникаУпр</DataPath>
+							<ContextMenu name="ОтчетПосредникаУпрКонтекстноеМеню" id="140"/>
+							<ExtendedTooltip name="ОтчетПосредникаУпрРасширеннаяПодсказка" id="141"/>
 						</InputField>
 						<InputField name="ОтчетКомитентуОПродажах" id="75">
 							<DataPath>Объект.ОтчетКомитентуОПродажах</DataPath>
@@ -261,29 +263,29 @@
 					<ContextMenu name="ПродажиНомерСтрокиКонтекстноеМеню" id="107"/>
 					<ExtendedTooltip name="ПродажиНомерСтрокиРасширеннаяПодсказка" id="108"/>
 				</LabelField>
-				<InputField name="ПродажиДокумент" id="109">
-					<DataPath>Объект.Продажи.Документ</DataPath>
+				<InputField name="ПродажиДокументУпр" id="109">
+					<DataPath>Объект.Продажи.ДокументУпр</DataPath>
 					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ПродажиДокументКонтекстноеМеню" id="110"/>
-					<ExtendedTooltip name="ПродажиДокументРасширеннаяПодсказка" id="111"/>
+					<ContextMenu name="ПродажиДокументУпрКонтекстноеМеню" id="110"/>
+					<ExtendedTooltip name="ПродажиДокументУпрРасширеннаяПодсказка" id="111"/>
 				</InputField>
-				<InputField name="ПродажиКорректировка" id="133">
-					<DataPath>Объект.Продажи.Корректировка</DataPath>
+				<InputField name="ПродажиДокументБУ" id="133">
+					<DataPath>Объект.Продажи.ДокументБУ</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
 					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ПродажиКорректировкаКонтекстноеМеню" id="134"/>
-					<ExtendedTooltip name="ПродажиКорректировкаРасширеннаяПодсказка" id="135"/>
+					<ContextMenu name="ПродажиДокументБУКонтекстноеМеню" id="134"/>
+					<ExtendedTooltip name="ПродажиДокументБУРасширеннаяПодсказка" id="135"/>
 				</InputField>
 				<InputField name="ПродажиКонтрагент" id="112">
-					<DataPath>Объект.Продажи.Контрагент</DataPath>
+					<DataPath>1/0:ca4fdbc6-4898-47d7-ba14-e364e2f5f458/0:c1281797-c0a8-4d25-b271-116b899ce8c5</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ПродажиКонтрагентКонтекстноеМеню" id="113"/>
 					<ExtendedTooltip name="ПродажиКонтрагентРасширеннаяПодсказка" id="114"/>
 				</InputField>
 				<InputField name="ПродажиДоговорКонтрагента" id="115">
-					<DataPath>Объект.Продажи.ДоговорКонтрагента</DataPath>
+					<DataPath>1/0:ca4fdbc6-4898-47d7-ba14-e364e2f5f458/0:39f9a752-5bdc-4803-9a03-0276220c47a0</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ПродажиДоговорКонтрагентаКонтекстноеМеню" id="116"/>
 					<ExtendedTooltip name="ПродажиДоговорКонтрагентаРасширеннаяПодсказка" id="117"/>
@@ -315,7 +317,7 @@
 					<ExtendedTooltip name="ПродажиСуммаКВРасширеннаяПодсказка" id="126"/>
 				</InputField>
 				<InputField name="Продажиid" id="130">
-					<DataPath>Объект.Продажи.id</DataPath>
+					<DataPath>1/0:ca4fdbc6-4898-47d7-ba14-e364e2f5f458/0:81a62430-e515-472c-a362-260041b56964</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
@@ -364,7 +366,7 @@
 					<ExtendedTooltip name="КомментарийExtendedTooltip" id="31"/>
 				</InputField>
 				<InputField name="ИД_Юникус" id="80">
-					<DataPath>Объект.ID_Unicus</DataPath>
+					<DataPath>1/0:d4c1d30b-19b4-4228-8c4a-b3c5c873f5b2</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>

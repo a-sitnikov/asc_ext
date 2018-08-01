@@ -121,6 +121,15 @@
 					</Type>
 				</Properties>
 			</Attribute>
+			<Attribute uuid="72dbe516-862b-4950-9b15-1031e1292f86">
+				<Properties>
+					<Name>НоменклатурнаяГруппа</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>cfg:CatalogRef.НоменклатурныеГруппы</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
 			<Form>ФормаСписка</Form>
 			<Form>ФормаДокумента</Form>
 			<TabularSection uuid="f1909781-5f79-4ede-acfb-fa84f0147186">
@@ -157,7 +166,7 @@
 								<v8:NumberQualifiers>
 									<v8:Digits>15</v8:Digits>
 									<v8:FractionDigits>2</v8:FractionDigits>
-									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+									<v8:AllowedSign>Any</v8:AllowedSign>
 								</v8:NumberQualifiers>
 							</Type>
 						</Properties>
@@ -185,7 +194,7 @@
 								<v8:NumberQualifiers>
 									<v8:Digits>15</v8:Digits>
 									<v8:FractionDigits>2</v8:FractionDigits>
-									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+									<v8:AllowedSign>Any</v8:AllowedSign>
 								</v8:NumberQualifiers>
 							</Type>
 						</Properties>
@@ -256,6 +265,51 @@
 							<ObjectBelonging>Adopted</ObjectBelonging>
 							<Type>
 								<v8:Type>cfg:CatalogRef.СтатьиДоходовИРасходов</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="e9ede946-d46e-49df-b5a7-a216be6ed574">
+						<Properties>
+							<Name>ЦФО</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>cfg:CatalogRef.АСЦ_ЦФО</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="be99f411-75e8-4a30-9871-0af77f02f6f6">
+						<Properties>
+							<Name>VIN</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>20</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="fe8585bc-8425-4e1d-a52a-8bfdc5ea6397">
+						<Properties>
+							<Name>Контрагент</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>150</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="8f27aebc-22b4-41da-ab23-03521c66d7ee">
+						<Properties>
+							<Name>РеализацияОрганизация</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>cfg:CatalogRef.Организации</v8:Type>
 							</Type>
 						</Properties>
 					</Attribute>

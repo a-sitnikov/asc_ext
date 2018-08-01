@@ -80,29 +80,6 @@
 					</Type>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="8c922c23-7931-4948-b970-4d034535e3cd">
-				<Properties>
-					<Name>ПодразделениеОрганизации</Name>
-					<ObjectBelonging>Adopted</ObjectBelonging>
-					<Type>
-						<v8:Type>cfg:CatalogRef.ПодразделенияОрганизаций</v8:Type>
-					</Type>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="d4c1d30b-19b4-4228-8c4a-b3c5c873f5b2">
-				<Properties>
-					<Name>ID_Unicus</Name>
-					<ObjectBelonging>Adopted</ObjectBelonging>
-					<Type>
-						<v8:Type>xs:decimal</v8:Type>
-						<v8:NumberQualifiers>
-							<v8:Digits>15</v8:Digits>
-							<v8:FractionDigits>0</v8:FractionDigits>
-							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-						</v8:NumberQualifiers>
-					</Type>
-				</Properties>
-			</Attribute>
 			<Attribute uuid="5701500e-3502-4c27-80aa-6c9f79070c8a">
 				<Properties>
 					<Name>СуммаКВ</Name>
@@ -131,6 +108,15 @@
 					</Type>
 				</Properties>
 			</Attribute>
+			<Attribute uuid="3291f11d-6420-4890-86cf-9309aee19e9c">
+				<Properties>
+					<Name>ОтчетПосредникаУпр</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>cfg:DocumentRef.АСЦ_ОтчетПосредникаУпр</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
 			<Form>ФормаСписка</Form>
 			<Form>ФормаДокумента</Form>
 			<TabularSection uuid="ca4fdbc6-4898-47d7-ba14-e364e2f5f458">
@@ -149,42 +135,6 @@
 					<ObjectBelonging>Adopted</ObjectBelonging>
 				</Properties>
 				<ChildObjects>
-					<Attribute uuid="63a290de-23b4-43ca-a0a3-5b0a0ba9ed6e">
-						<Properties>
-							<Name>Документ</Name>
-							<ObjectBelonging>Adopted</ObjectBelonging>
-							<Type>
-								<v8:Type>cfg:DocumentRef.РеализацияТоваровУслуг</v8:Type>
-							</Type>
-						</Properties>
-					</Attribute>
-					<Attribute uuid="ee697675-e49f-40af-8f68-260b161b9da8">
-						<Properties>
-							<Name>Корректировка</Name>
-							<ObjectBelonging>Adopted</ObjectBelonging>
-							<Type>
-								<v8:Type>cfg:DocumentRef.КорректировкаРеализации</v8:Type>
-							</Type>
-						</Properties>
-					</Attribute>
-					<Attribute uuid="c1281797-c0a8-4d25-b271-116b899ce8c5">
-						<Properties>
-							<Name>Контрагент</Name>
-							<ObjectBelonging>Adopted</ObjectBelonging>
-							<Type>
-								<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
-							</Type>
-						</Properties>
-					</Attribute>
-					<Attribute uuid="39f9a752-5bdc-4803-9a03-0276220c47a0">
-						<Properties>
-							<Name>ДоговорКонтрагента</Name>
-							<ObjectBelonging>Adopted</ObjectBelonging>
-							<Type>
-								<v8:Type>cfg:CatalogRef.ДоговорыКонтрагентов</v8:Type>
-							</Type>
-						</Properties>
-					</Attribute>
 					<Attribute uuid="8e3051fb-bfa5-4bbf-af5f-32ddfc7e2796">
 						<Properties>
 							<Name>СуммаОплаты</Name>
@@ -227,10 +177,22 @@
 							</Type>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="81a62430-e515-472c-a362-260041b56964">
+					<Attribute uuid="10990461-d93c-492c-8e08-c63821b5f7df">
 						<Properties>
-							<Name>id</Name>
+							<Name>ДокументУпр</Name>
 							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>cfg:DocumentRef.АСЦ_ПлановоеНачислениеКВ</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="032fc318-6897-4e34-98c2-c0e9a6b4c2ea">
+						<Properties>
+							<Name>ДокументБУ</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>cfg:DocumentRef.РеализацияТоваровУслуг</v8:Type>
+							</Type>
 						</Properties>
 					</Attribute>
 				</ChildObjects>

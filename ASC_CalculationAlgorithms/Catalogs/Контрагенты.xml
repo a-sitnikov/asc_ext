@@ -72,6 +72,19 @@
 					</Type>
 				</Properties>
 			</Attribute>
+			<Attribute uuid="ea0ccb07-fc71-4357-bdf5-5d7737f53ac0">
+				<Properties>
+					<Name>ДокументУдостоверяющийЛичность</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>250</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

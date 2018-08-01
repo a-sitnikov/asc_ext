@@ -82,7 +82,7 @@
 				<ChildObjects>
 					<Attribute uuid="d5b8608c-09c9-4ac4-992d-7e4d7f7dc158">
 						<Properties>
-							<Name>ДЦ</Name>
+							<Name>ПродавецАвто</Name>
 							<ObjectBelonging>Adopted</ObjectBelonging>
 							<Type>
 								<v8:Type>cfg:CatalogRef.Организации</v8:Type>
@@ -124,8 +124,23 @@
 							</Type>
 						</Properties>
 					</Attribute>
+					<Attribute uuid="80452249-fd79-4ad2-854d-6860dcad541f">
+						<Properties>
+							<Name>ТипАвто</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>1</v8:Digits>
+									<v8:FractionDigits>0</v8:FractionDigits>
+									<v8:AllowedSign>Any</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
 				</ChildObjects>
 			</TabularSection>
+			<Template>Макет</Template>
 			<Command uuid="6f6274bf-796e-4245-8c74-e69b580cbc8f">
 				<Properties>
 					<Name>АСЦ_ПлановыеПроцентыКВ</Name>
