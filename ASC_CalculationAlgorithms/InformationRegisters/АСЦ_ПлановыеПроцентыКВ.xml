@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<InformationRegister uuid="5b6a2cfe-400c-4d28-88e4-29ed9bcffdde">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.АСЦ_ПлановыеПроцентыКВ" category="Record">
+				<xr:TypeId>1d7cc046-27a6-40da-aaad-6c12028f4a40</xr:TypeId>
+				<xr:ValueId>82af5e9e-cff1-4c57-b7a3-3b2d9c79e6c6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.АСЦ_ПлановыеПроцентыКВ" category="Manager">
+				<xr:TypeId>2307f72e-3bc9-48c9-a656-e77675f36e87</xr:TypeId>
+				<xr:ValueId>1da72630-2c65-410e-ac9f-8a215e1f2834</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.АСЦ_ПлановыеПроцентыКВ" category="Selection">
+				<xr:TypeId>40ba3c2b-89d9-402a-8ec2-460c15cf69d9</xr:TypeId>
+				<xr:ValueId>d446ab64-e68f-409b-87fe-ebd7198602ba</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.АСЦ_ПлановыеПроцентыКВ" category="List">
+				<xr:TypeId>62a59317-07f5-422e-9420-f98df346214c</xr:TypeId>
+				<xr:ValueId>7c3c7699-b54d-4c6d-8ecb-ca5bd86ae7a8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.АСЦ_ПлановыеПроцентыКВ" category="RecordSet">
+				<xr:TypeId>57f6b8f7-6034-4891-8416-d788289b6812</xr:TypeId>
+				<xr:ValueId>d1b72fd9-58ad-4fb9-859e-6d9b09db8272</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.АСЦ_ПлановыеПроцентыКВ" category="RecordKey">
+				<xr:TypeId>1399c5cc-7e41-437e-806a-c569622e3b26</xr:TypeId>
+				<xr:ValueId>fc28488f-f05a-4542-8772-7c1f29d6bff2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.АСЦ_ПлановыеПроцентыКВ" category="RecordManager">
+				<xr:TypeId>7f051709-5b93-4dcc-b270-3b8ca4fa031c</xr:TypeId>
+				<xr:ValueId>446488c2-14eb-4165-b384-38d93c92bbdf</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>АСЦ_ПлановыеПроцентыКВ</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<InformationRegisterPeriodicity>Month</InformationRegisterPeriodicity>
+			<WriteMode>RecorderSubordinate</WriteMode>
+		</Properties>
+		<ChildObjects/>
+	</InformationRegister>
+</MetaDataObject>

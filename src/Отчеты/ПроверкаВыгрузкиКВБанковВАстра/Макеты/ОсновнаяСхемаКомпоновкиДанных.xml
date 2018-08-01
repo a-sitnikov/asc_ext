@@ -1,0 +1,800 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema">
+		<dataSource>
+			<name>ИсточникДанных1</name>
+			<dataSourceType>Local</dataSourceType>
+		</dataSource>
+		<dataSet xsi:type="DataSetUnion">
+			<name>Объединение</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДЦ</dataPath>
+				<field>ДЦ</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>ДЦ</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<TypeId xmlns="http://v8.1c.ru/8.1/data/core">e5a069cc-4bb6-4856-b35b-18350aff5c45</TypeId>
+				</valueType>
+				<appearance/>
+				<inputParameters>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core">
+						<parameter>ПараметрыВыбора</parameter>
+						<value xsi:type="ChoiceParameters">
+							<item>
+								<choiceParameter>Отбор.ИспользоватьВРегламентированномУчете</choiceParameter>
+								<value xsi:type="xs:boolean">false</value>
+							</item>
+						</value>
+					</item>
+				</inputParameters>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Статья</dataPath>
+				<field>Статья</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Статья</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<TypeId xmlns="http://v8.1c.ru/8.1/data/core">46176421-6369-48fb-8f9f-8fdf711ba954</TypeId>
+				</valueType>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаКВАстра</dataPath>
+				<field>СуммаКВАстра</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Сумма КВ Астра</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>15</Digits>
+						<FractionDigits>2</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Документ</dataPath>
+				<field>Документ</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Документ</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<use>false</use>
+						<parameter>МинимальнаяШирина</parameter>
+						<value xsi:type="xs:decimal">20</value>
+					</item>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<use>false</use>
+						<parameter>МаксимальнаяШирина</parameter>
+						<value xsi:type="xs:decimal">20</value>
+					</item>
+				</appearance>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаКВ</dataPath>
+				<field>СуммаКВ</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Сумма КВ</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>15</Digits>
+						<FractionDigits>2</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Реализация</dataPath>
+				<field>Реализация</field>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<use>false</use>
+						<parameter>МаксимальнаяШирина</parameter>
+						<value xsi:type="xs:decimal">20</value>
+					</item>
+				</appearance>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаКВФактАстра</dataPath>
+				<field>СуммаКВФактАстра</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Сумма КВ факт Астра</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>15</Digits>
+						<FractionDigits>2</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаКВФакт</dataPath>
+				<field>СуммаКвФакт</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Сумма КВ факт</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>15</Digits>
+						<FractionDigits>2</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<item xsi:type="DataSetObject">
+				<name>ДанныеАстра</name>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ДЦ</dataPath>
+					<field>ДЦ</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>ДЦ</d6p1:content>
+						</d6p1:item>
+					</title>
+					<valueType>
+						<TypeId xmlns="http://v8.1c.ru/8.1/data/core">e5a069cc-4bb6-4856-b35b-18350aff5c45</TypeId>
+					</valueType>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Статья</dataPath>
+					<field>Статья</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Статья</d6p1:content>
+						</d6p1:item>
+					</title>
+					<valueType>
+						<TypeId xmlns="http://v8.1c.ru/8.1/data/core">46176421-6369-48fb-8f9f-8fdf711ba954</TypeId>
+					</valueType>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>СуммаКВФактАстра</dataPath>
+					<field>СуммаКВФактАстра</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Сумма КВФакт астра</d6p1:content>
+						</d6p1:item>
+					</title>
+					<valueType>
+						<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+						<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+							<Digits>15</Digits>
+							<FractionDigits>2</FractionDigits>
+							<AllowedSign>Any</AllowedSign>
+						</NumberQualifiers>
+					</valueType>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>СуммаКВАстра</dataPath>
+					<field>СуммаКВАстра</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Сумма КВАстра</d6p1:content>
+						</d6p1:item>
+					</title>
+					<valueType>
+						<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+						<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+							<Digits>15</Digits>
+							<FractionDigits>2</FractionDigits>
+							<AllowedSign>Any</AllowedSign>
+						</NumberQualifiers>
+					</valueType>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Документ</dataPath>
+					<field>Документ</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Документ</d6p1:content>
+						</d6p1:item>
+					</title>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>СуммаКВФакт</dataPath>
+					<field>СуммаКВФакт</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Сумма КВФакт</d6p1:content>
+						</d6p1:item>
+					</title>
+					<valueType>
+						<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+						<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+							<Digits>0</Digits>
+							<FractionDigits>0</FractionDigits>
+							<AllowedSign>Any</AllowedSign>
+						</NumberQualifiers>
+					</valueType>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>СуммаКВ</dataPath>
+					<field>СуммаКВ</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Сумма КВ</d6p1:content>
+						</d6p1:item>
+					</title>
+					<valueType>
+						<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+						<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+							<Digits>15</Digits>
+							<FractionDigits>2</FractionDigits>
+							<AllowedSign>Any</AllowedSign>
+						</NumberQualifiers>
+					</valueType>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Реализация</dataPath>
+					<field>Реализация</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Реализация</d6p1:content>
+						</d6p1:item>
+					</title>
+					<valueType>
+						<TypeId xmlns="http://v8.1c.ru/8.1/data/core">b66fce8c-a030-4906-89c6-db40d78acdd7</TypeId>
+					</valueType>
+					<appearance/>
+				</field>
+				<dataSource>ИсточникДанных1</dataSource>
+				<objectName>Данные</objectName>
+			</item>
+			<item xsi:type="DataSetQuery">
+				<name>ДанныеТекущейИБ</name>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Документ</dataPath>
+					<field>Документ</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Документ</d6p1:content>
+						</d6p1:item>
+					</title>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ДЦ</dataPath>
+					<field>ДЦ</field>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Реализация</dataPath>
+					<field>Реализация</field>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>СуммаКВ</dataPath>
+					<field>СуммаКВ</field>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Статья</dataPath>
+					<field>Статья</field>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>СуммаКВФакт</dataPath>
+					<field>СуммаКВФакт</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Сумма КВФакт</d6p1:content>
+						</d6p1:item>
+					</title>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>СуммаКВАстра</dataPath>
+					<field>СуммаКВАстра</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Сумма КВАстра</d6p1:content>
+						</d6p1:item>
+					</title>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>СуммаКВФактАстра</dataPath>
+					<field>СуммаКВФактАстра</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Сумма КВФакт астра</d6p1:content>
+						</d6p1:item>
+					</title>
+					<appearance/>
+				</field>
+				<dataSource>ИсточникДанных1</dataSource>
+				<query>ВЫБРАТЬ
+	Док.Ссылка КАК Документ,
+	Док.Реализация КАК Реализация,
+	Док.ДЦ КАК ДЦ,
+	Док.Статья КАК Статья,
+	ВЫБОР
+		КОГДА Док.ОтчетПосредника = ЗНАЧЕНИЕ(Документ.АСЦ_ОтчетПосредникаУпр.ПустаяСсылка)
+			ТОГДА Док.СуммаКВ
+		ИНАЧЕ Док.Основание.СуммаКВ
+	КОНЕЦ КАК СуммаКВ,
+	ВЫБОР
+		КОГДА Док.ОтчетПосредника = ЗНАЧЕНИЕ(Документ.АСЦ_ОтчетПосредникаУпр.ПустаяСсылка)
+			ТОГДА 0
+		ИНАЧЕ Док.СуммаКВ
+	КОНЕЦ КАК СуммаКВФакт,
+	0 КАК СуммаКВАстра,
+	0 КАК СуммаКВФактАстра
+{ВЫБРАТЬ
+	Документ.*,
+	Реализация.*,
+	ДЦ.*,
+	Статья.*,
+	СуммаКВ,
+	СуммаКВФакт,
+	СуммаКВАстра,
+	СуммаКВФактАстра}
+ИЗ
+	Документ.АСЦ_ПлановоеНачислениеКВ КАК Док
+ГДЕ
+	Док.Дата МЕЖДУ &amp;Дата1 И &amp;Дата2
+	И Док.ВидОперации.НастройкаСоотвествияВыгрузкаАстра.Наименование = "КВ банков"
+	И НЕ Док.ПометкаУдаления
+{ГДЕ
+	Док.Ссылка.* КАК Документ,
+	Док.ДЦ.*,
+	Док.Статья.*,
+	Док.СуммаКВ,
+	Док.Реализация.*}</query>
+				<autoFillFields>false</autoFillFields>
+			</item>
+		</dataSet>
+		<dataSet xsi:type="DataSetQuery">
+			<name>Ошибки</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ТекстОшибки</dataPath>
+				<field>ТекстОшибки</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Текст ошибки</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>МаксимальнаяШирина</parameter>
+						<value xsi:type="xs:decimal">50</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Документ</dataPath>
+				<field>Документ</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Документ</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	Рег.Элемент КАК Документ,
+	ВЫРАЗИТЬ(Рег.АСЦ_Комментарий КАК СТРОКА(500)) КАК ТекстОшибки
+{ВЫБРАТЬ
+	Документ.*,
+	ТекстОшибки}
+ИЗ
+	РегистрСведений.ИзмененныеОбъектыДляВыгрузки КАК Рег
+ГДЕ
+	Рег.ИспользуемаяИБ = &amp;База
+	И Рег.НастройкаСоответствия.Наименование = "КВ банков"
+{ГДЕ
+	Рег.Элемент.* КАК Документ}</query>
+			<autoFillFields>false</autoFillFields>
+		</dataSet>
+		<dataSetLink>
+			<sourceDataSet>Объединение</sourceDataSet>
+			<destinationDataSet>Ошибки</destinationDataSet>
+			<sourceExpression>Документ</sourceExpression>
+			<destinationExpression>Документ</destinationExpression>
+		</dataSetLink>
+		<totalField>
+			<dataPath>СуммаКВАстра</dataPath>
+			<expression>Сумма(СуммаКВАстра)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>СуммаКВ</dataPath>
+			<expression>Сумма(СуммаКВ)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>СуммаКВФакт</dataPath>
+			<expression>Сумма(СуммаКВФакт)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>СуммаКВФактАстра</dataPath>
+			<expression>Сумма(СуммаКВФактАстра)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>ТекстОшибки</dataPath>
+			<expression>Максимум(ТекстОшибки)</expression>
+			<group>Документ</group>
+		</totalField>
+		<parameter>
+			<name>Период</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Период</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">StandardPeriod</Type>
+			</valueType>
+			<value xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:StandardPeriod">
+				<d4p1:variant xsi:type="d4p1:StandardPeriodVariant">Custom</d4p1:variant>
+				<d4p1:startDate>0001-01-01T00:00:00</d4p1:startDate>
+				<d4p1:endDate>0001-01-01T00:00:00</d4p1:endDate>
+			</value>
+			<useRestriction>false</useRestriction>
+			<denyIncompleteValues>true</denyIncompleteValues>
+			<use>Always</use>
+		</parameter>
+		<parameter>
+			<name>Дата1</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Дата1</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>true</useRestriction>
+			<expression>&amp;Период.ДатаНачала</expression>
+		</parameter>
+		<parameter>
+			<name>Дата2</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Дата2</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>true</useRestriction>
+			<expression>&amp;Период.ДатаОкончания</expression>
+		</parameter>
+		<parameter>
+			<name>База</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>База</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<TypeId xmlns="http://v8.1c.ru/8.1/data/core">1a1c15c9-4e3e-445d-96fd-a48dce6bceab</TypeId>
+			</valueType>
+			<value xsi:nil="true"/>
+			<useRestriction>false</useRestriction>
+			<use>Always</use>
+		</parameter>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Проверка выгрузки КВ банков в Астра</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Проверка выгрузки КВ банков в Астра</d4p1:content>
+				</d4p1:item>
+			</presentation>
+		</settingsVariant>
+	</dataCompositionSchema>
+</SchemaFile>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemFolder">
+			<lwsTitle>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма КВ</v8:content>
+				</v8:item>
+			</lwsTitle>
+			<item xsi:type="SelectedItemField">
+				<field>СуммаКВ</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>УХ</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>СуммаКВАстра</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Астра</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<placement>Auto</placement>
+		</item>
+		<item xsi:type="SelectedItemFolder">
+			<lwsTitle>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма КВ факт</v8:content>
+				</v8:item>
+			</lwsTitle>
+			<item xsi:type="SelectedItemField">
+				<field>СуммаКВФакт</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>УХ</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>СуммаКВФактАстра</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Астра</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<placement>Auto</placement>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ТекстОшибки</field>
+		</item>
+	</selection>
+	<filter>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ДЦ</left>
+			<comparisonType>Equal</comparisonType>
+			<userSettingID>69ea5926-688f-4a26-b028-12e439055101</userSettingID>
+		</item>
+	</filter>
+	<dataParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>Период</dcscor:parameter>
+			<dcscor:value xsi:type="v8:StandardPeriod">
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</dcscor:value>
+			<userSettingID>f7ffcd9f-b52d-428c-90f3-4ee520a05adb</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>База</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
+			<userSettingID>a659214e-557d-488a-983f-79818765fe7c</userSettingID>
+		</dcscor:item>
+	</dataParameters>
+	<conditionalAppearance>
+		<item>
+			<selection>
+				<item>
+					<field>Сумма</field>
+				</item>
+				<item>
+					<field>СуммаАстра</field>
+				</item>
+				<item>
+					<field>СуммаКВ</field>
+				</item>
+				<item>
+					<field>СуммаКВАстра</field>
+				</item>
+			</selection>
+			<filter/>
+			<appearance>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">13</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</item>
+		<item>
+			<selection>
+				<item>
+					<field>СуммаКВФакт</field>
+				</item>
+				<item>
+					<field>СуммаКВФактАстра</field>
+				</item>
+			</selection>
+			<filter>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">СуммаКВФакт</left>
+					<comparisonType>NotEqual</comparisonType>
+					<right xsi:type="dcscor:Field">СуммаКВФактАстра</right>
+				</item>
+			</filter>
+			<appearance>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>ЦветТекста</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+				</dcscor:item>
+			</appearance>
+			<useInFieldsHeader>DontUse</useInFieldsHeader>
+			<useInHeader>DontUse</useInHeader>
+			<useInParameters>DontUse</useInParameters>
+			<useInFilter>DontUse</useInFilter>
+		</item>
+		<item>
+			<selection>
+				<item>
+					<field>СуммаКВ</field>
+				</item>
+				<item>
+					<field>СуммаКВАстра</field>
+				</item>
+			</selection>
+			<filter>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">СуммаКВ</left>
+					<comparisonType>NotEqual</comparisonType>
+					<right xsi:type="dcscor:Field">СуммаКВАстра</right>
+				</item>
+			</filter>
+			<appearance>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>ЦветТекста</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+				</dcscor:item>
+			</appearance>
+			<useInFieldsHeader>DontUse</useInFieldsHeader>
+			<useInHeader>DontUse</useInHeader>
+			<useInParameters>DontUse</useInParameters>
+			<useInFilter>DontUse</useInFilter>
+		</item>
+		<item>
+			<selection>
+				<item>
+					<field>ТекстОшибки</field>
+				</item>
+			</selection>
+			<filter/>
+			<appearance>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">50</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>МаксимальнаяВысота</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">50</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</item>
+	</conditionalAppearance>
+	<outputParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>МакетОформления</dcscor:parameter>
+			<dcscor:value xsi:type="xs:string">Основной</dcscor:value>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>АвтоПозицияРесурсов</dcscor:parameter>
+			<dcscor:value xsi:type="DataCompositionResourcesAutoPosition">DontUse</dcscor:value>
+		</dcscor:item>
+	</outputParameters>
+	<item xsi:type="StructureItemGroup">
+		<groupItems>
+			<item xsi:type="GroupItemField">
+				<field>Статья</field>
+				<groupType>Items</groupType>
+				<periodAdditionType>None</periodAdditionType>
+				<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+				<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+			</item>
+		</groupItems>
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+		<outputParameters/>
+		<item xsi:type="StructureItemGroup">
+			<groupItems>
+				<item xsi:type="GroupItemField">
+					<field>Документ</field>
+					<groupType>Items</groupType>
+					<periodAdditionType>None</periodAdditionType>
+					<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+					<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+				</item>
+			</groupItems>
+			<order>
+				<item xsi:type="OrderItemAuto"/>
+			</order>
+			<selection>
+				<item xsi:type="SelectedItemField">
+					<field>Документ</field>
+				</item>
+				<item xsi:type="SelectedItemAuto"/>
+				<item xsi:type="SelectedItemField">
+					<field>ТекстОшибки</field>
+				</item>
+			</selection>
+			<outputParameters/>
+		</item>
+	</item>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
+</SchemaFile>

@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<UsualGroup name="ГруппаДвижения" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Движения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа движения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаДвиженияРасширеннаяПодсказка" id="7"/>
+			<ChildItems>
+				<InputField name="СсылкаДвиженияСумма" id="8">
+					<DataPath>Объект.ДвиженияСумма</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выручка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Способ расчета выручки для отчета PnL</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Сумма оплаты</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">Сумма</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Сумма КВ</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">СуммаКВ</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="СсылкаДвиженияСуммаКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="СсылкаДвиженияСуммаРасширеннаяПодсказка" id="10"/>
+				</InputField>
+				<CheckBoxField name="ФормироватьКорректировки" id="16">
+					<DataPath>Объект.ФормироватьКорректировки</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ "Отчет посредника Упр" будет формировать корректировочные документы "Плановое начисление КВ", а сам движений делать не будет</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ФормироватьКорректировкиКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ФормироватьКорректировкиРасширеннаяПодсказка" id="18">
+						<AutoMaxWidth>false</AutoMaxWidth>
+						<MaxWidth>56</MaxWidth>
+					</ExtendedTooltip>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаАстра" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Астра</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа астра</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаАстраРасширеннаяПодсказка" id="12"/>
+			<ChildItems>
+				<InputField name="НастройкаСоотвествияВыгрузкаАстра" id="13">
+					<DataPath>Объект.НастройкаСоотвествияВыгрузкаАстра</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка соотвествия</v8:content>
+						</v8:item>
+					</Title>
+					<TitleHeight>2</TitleHeight>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вариант выгрузки данных в Астра</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+					<OpenButton>false</OpenButton>
+					<ContextMenu name="НастройкаСоотвествияВыгрузкаАстраКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="НастройкаСоотвествияВыгрузкаАстраРасширеннаяПодсказка" id="15"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНастройки" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<CheckBoxField name="ФиксированнаяСебестоимость" id="21">
+					<DataPath>Объект.ФиксированнаяСебестоимость</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ФиксированнаяСебестоимостьКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ФиксированнаяСебестоимостьРасширеннаяПодсказка" id="23">
+						<AutoMaxWidth>false</AutoMaxWidth>
+						<MaxWidth>60</MaxWidth>
+					</ExtendedTooltip>
+				</CheckBoxField>
+				<CheckBoxField name="СводныйУчет" id="33">
+					<DataPath>Объект.СводныйУчет</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СводныйУчетКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="СводныйУчетРасширеннаяПодсказка" id="35">
+						<AutoMaxWidth>false</AutoMaxWidth>
+					</ExtendedTooltip>
+					<Events>
+						<Event name="OnChange">СводныйУчетПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="УчетПоДоговорам" id="24">
+					<DataPath>Объект.УчетПоДоговорам</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="УчетПоДоговорамКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="УчетПоДоговорамРасширеннаяПодсказка" id="26"/>
+				</CheckBoxField>
+				<CheckBoxField name="УчетПоНоменклатуре" id="30">
+					<DataPath>Объект.УчетПоНоменклатуре</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="УчетПоНоменклатуреКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="УчетПоНоменклатуреРасширеннаяПодсказка" id="32"/>
+				</CheckBoxField>
+				<CheckBoxField name="ПривязыватьКРеализации" id="27">
+					<DataPath>Объект.ПривязыватьКРеализации</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПривязыватьКРеализацииКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ПривязыватьКРеализацииРасширеннаяПодсказка" id="29"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаБухУчет" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бух учет</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа бух учет</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаБухУчетРасширеннаяПодсказка" id="40"/>
+			<ChildItems>
+				<CheckBoxField name="ОтражатьВБУ" id="36">
+					<DataPath>Объект.ОтражатьВБУ</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОтражатьВБУКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="ОтражатьВБУРасширеннаяПодсказка" id="38"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.АСЦ_ВидыОперацийПлановоеНачислениеКВ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

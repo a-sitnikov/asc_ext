@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -2242,10 +2242,10 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<Save>
-				<Field>Объект.ГруппироватьСтроки</Field>
-				<Field>Объект.ГруппироватьПоИерархииСтрок</Field>
-				<Field>Объект.ВидОтчета</Field>
 				<Field>Объект.БланкОтчета</Field>
+				<Field>Объект.ВидОтчета</Field>
+				<Field>Объект.ГруппироватьПоИерархииСтрок</Field>
+				<Field>Объект.ГруппироватьСтроки</Field>
 			</Save>
 		</Attribute>
 		<Attribute name="ОтборПоЭкземплярам" id="2">
@@ -3747,6 +3747,7 @@
 					<v8:content>Инициализация отчетов</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КоманднаяПанельСтрокиПереместитьВверх" id="2">
 			<Title>
@@ -3761,6 +3762,7 @@
 					<v8:content>Строки переместить вверх</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КоманднаяПанельСтрокиПереместитьВниз" id="3">
 			<Title>
@@ -3775,6 +3777,7 @@
 					<v8:content>Строки переместить вниз</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КоманднаяПанельКолонкиПереместитьВверх" id="4">
 			<Title>
@@ -3789,6 +3792,7 @@
 					<v8:content>Колонки переместить вверх</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КоманднаяПанельКолонкиПереместитьВниз" id="5">
 			<Title>
@@ -3803,6 +3807,7 @@
 					<v8:content>Колонки переместить вниз</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ПрименитьМасштабНажатие" id="6">
 			<Title>
@@ -3817,6 +3822,7 @@
 					<v8:content>Применить выбранный масштаб</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КоманднаяПанельВычислениеУстановитьВсе" id="7">
 			<Title>
@@ -3831,6 +3837,7 @@
 					<v8:content>Вычисление установить все</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КоманднаяПанельВычислениеСнятьВсе" id="8">
 			<Title>
@@ -3845,6 +3852,7 @@
 					<v8:content>Вычисление снять все</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="СтрокиВКолонки" id="9">
 			<Title>
@@ -3859,6 +3867,7 @@
 					<v8:content>Строки в колонки</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КолонкиВСтроки" id="10">
 			<Title>
@@ -3873,6 +3882,7 @@
 					<v8:content>Колонки в строки</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="СтрокиВКолонкиВсе" id="11">
 			<Title>
@@ -3887,6 +3897,7 @@
 					<v8:content>Строки в колонки все</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КолонкиВСтрокиВсе" id="12">
 			<Title>
@@ -3901,6 +3912,7 @@
 					<v8:content>Колонки в строки все</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыПоПравилуОбработки" id="13">
 			<Title>
@@ -3916,6 +3928,7 @@
 				</v8:item>
 			</ToolTip>
 			<Shortcut>Alt+E</Shortcut>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыСвернутьПоАналитикамОтчетов" id="14">
 			<Title>
@@ -3931,6 +3944,7 @@
 				</v8:item>
 			</ToolTip>
 			<Shortcut>Alt+A</Shortcut>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыСвернутьПоПериоду" id="15">
 			<Title>
@@ -3946,6 +3960,7 @@
 				</v8:item>
 			</ToolTip>
 			<Shortcut>Alt+P</Shortcut>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыКонсолидироватьПериметр" id="16">
 			<Title>
@@ -3961,6 +3976,7 @@
 				</v8:item>
 			</ToolTip>
 			<Shortcut>Alt+O</Shortcut>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыРедактирование" id="17">
 			<Title>
@@ -3975,6 +3991,7 @@
 					<v8:content>Редактирование</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыВычислятьПриИзменении" id="18">
 			<Title>
@@ -3989,6 +4006,7 @@
 					<v8:content>Вычислять при изменении</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыВычислитьСейчас" id="19">
 			<Title>
@@ -4003,6 +4021,7 @@
 					<v8:content>Вычислить сейчас</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыПроверитьНеВыводить" id="20">
 			<Title>
@@ -4017,6 +4036,7 @@
 					<v8:content>Проверить не выводить</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыПроверитьТолькоОшибочные" id="21">
 			<Title>
@@ -4031,6 +4051,7 @@
 					<v8:content>Проверить только ошибочные</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыПроверитьВсе" id="22">
 			<Title>
@@ -4045,6 +4066,7 @@
 					<v8:content>Проверить все</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыСостояниеСогласования" id="23">
 			<Title>
@@ -4059,6 +4081,7 @@
 					<v8:content>Состояние согласования</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыМаршрутСогласования" id="24">
 			<Title>
@@ -4073,6 +4096,7 @@
 					<v8:content>Маршрут согласования</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыИсторияСогласования" id="25">
 			<Title>
@@ -4087,6 +4111,7 @@
 					<v8:content>История согласования</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыОткрытьФормуОтчета" id="26">
 			<Title>
@@ -4101,6 +4126,7 @@
 					<v8:content>Открыть форму отчета</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыРучныеКорректировки" id="27">
 			<Title>
@@ -4115,6 +4141,7 @@
 					<v8:content>Ручные корректировки</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыИзменитьИРаспределить" id="28">
 			<Title>
@@ -4129,6 +4156,7 @@
 					<v8:content>Изменить и распределить</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыКнопкаЗаполнитьПоОбразцу" id="29">
 			<Title>
@@ -4143,6 +4171,7 @@
 					<v8:content>Кнопка заполнить по образцу</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыКомментарии" id="30">
 			<Title>
@@ -4157,6 +4186,7 @@
 					<v8:content>Комментарии</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыЧтениеНеактуальныхЗаписей" id="31">
 			<Title>
@@ -4171,6 +4201,7 @@
 					<v8:content>Чтение неактуальных записей</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыНеВноситьИзменения" id="32">
 			<Title>
@@ -4185,6 +4216,7 @@
 					<v8:content>Не вносить изменения</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыВключитьРасширеннуюДиагностику" id="33">
 			<Title>
@@ -4199,6 +4231,7 @@
 					<v8:content>Включить расширенную диагностику</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыСохраненныеДанные" id="34">
 			<Title>
@@ -4213,6 +4246,7 @@
 					<v8:content>Сохраненные данные</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыОтчетыИсточники" id="35">
 			<Title>
@@ -4227,6 +4261,7 @@
 					<v8:content>Отчеты источники</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыСценарныйАнализ" id="36">
 			<Title>
@@ -4241,6 +4276,7 @@
 					<v8:content>Сценарный анализ</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыОтчетОКорректировках" id="37">
 			<Title>
@@ -4255,6 +4291,7 @@
 					<v8:content>Отчет о корректировках</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыКонсолидированныйОтчетСОперациями" id="38">
 			<Title>
@@ -4269,6 +4306,7 @@
 					<v8:content>Консолидированный отчет с операциями</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыРасшифровкаПересчетаКурсов" id="39">
 			<Title>
@@ -4283,6 +4321,7 @@
 					<v8:content>Расшифровка пересчета курсов</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыЗначенияПоказателейОтчетов" id="40">
 			<Title>
@@ -4297,6 +4336,7 @@
 					<v8:content>Значения показателей отчетов</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыОтменить" id="41">
 			<Title>
@@ -4311,6 +4351,7 @@
 					<v8:content>Отменить</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыПовторить" id="42">
 			<Title>
@@ -4325,6 +4366,7 @@
 					<v8:content>Повторить</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КоманднаяПанельРедактированиеДобавитьСтрокуРаскрытия" id="43">
 			<Title>
@@ -4339,6 +4381,7 @@
 					<v8:content>Добавить строку раскрытия</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КоманднаяПанельРедактированиеРедактироватьАналитики" id="44">
 			<Title>
@@ -4353,6 +4396,7 @@
 					<v8:content>Редактировать аналитики</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КоманднаяПанельРедактированиеУдалитьСтрокуРаскрытия" id="45">
 			<Title>
@@ -4367,6 +4411,7 @@
 					<v8:content>Удалить строку раскрытия</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ГруппыСтрокНажатие" id="46">
 			<Title>
@@ -4381,6 +4426,7 @@
 					<v8:content>Группы строк нажатие</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ГруппыКолонокНажатие" id="47">
 			<Title>
@@ -4395,6 +4441,7 @@
 					<v8:content>Группы колонок нажатие</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КоманднаяПанельНавигаторЗаголовки" id="48">
 			<Title>
@@ -4409,6 +4456,7 @@
 					<v8:content>Навигатор заголовки</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КоманднаяПанельНавигаторНавигатор" id="49">
 			<Title>
@@ -4423,6 +4471,7 @@
 					<v8:content>Навигатор</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="РаспределитьЗначения" id="50">
 			<Title>
@@ -4437,6 +4486,7 @@
 					<v8:content>Распределить значения</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КоманднаяПанельРаспределениеДиаграмма" id="51">
 			<Title>
@@ -4451,6 +4501,7 @@
 					<v8:content>Распределение диаграмма</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ПанельОрганизацииОрганизации" id="52">
 			<Title>
@@ -4465,6 +4516,7 @@
 					<v8:content>Панель организации организации</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ПанельПериодыПериоды" id="53">
 			<Title>
@@ -4479,6 +4531,7 @@
 					<v8:content>Панель периоды периоды</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ПанельСценарииСценарии" id="54">
 			<Title>
@@ -4493,6 +4546,7 @@
 					<v8:content>Панель сценарии сценарии</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ПанельАналитикиАналитики" id="55">
 			<Title>
@@ -4507,6 +4561,7 @@
 					<v8:content>Панель аналитики аналитики</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОбновитьДанныеФормы" id="56">
 			<Title>
@@ -4521,6 +4576,7 @@
 					<v8:content>Обновить данные формы</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КоманднаяПанельРедактированиеЗаписать" id="57">
 			<Title>
@@ -4535,6 +4591,7 @@
 					<v8:content>Записать</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ИзменитьПоказатели" id="58">
 			<Title>
@@ -4549,6 +4606,7 @@
 					<v8:content>Изменить показатели</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ИзмениитьПоказателиОтДостигнутого" id="59">
 			<Title>
@@ -4567,6 +4625,7 @@
 				<xr:Ref>CommonPicture.КруговоротСостояний</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОткрытьФакторныйАнализ" id="60">
 			<Title>
@@ -4585,6 +4644,7 @@
 				<xr:Ref>CommonPicture.Иерархия</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="РаспределитьПоОрганизациям" id="61">
 			<Title>
@@ -4603,6 +4663,7 @@
 				<xr:Ref>CommonPicture.СвязиМеждуОтчетами</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="РаспределитьПоПериодам" id="62">
 			<Title>
@@ -4621,6 +4682,7 @@
 				<xr:Ref>StdPicture.ScheduledJob</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОчиститьЗначениеПоказателя" id="63">
 			<Title>
@@ -4639,6 +4701,7 @@
 				<xr:Ref>CommonPicture.ОчиститьСодержимое</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КомментироватьПоказатель" id="64">
 			<Title>
@@ -4657,6 +4720,7 @@
 				<xr:Ref>CommonPicture.Комментарий</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="СкопироватьЗначениеПоказателя" id="65">
 			<Title>
@@ -4671,6 +4735,7 @@
 					<v8:content>Скопировать значение показателя</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ВосстановитьЗначениеИзБуфера" id="66">
 			<Title>
@@ -4689,6 +4754,7 @@
 				<xr:Ref>CommonPicture.Вставить</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОткрытьФакторныйАнализМоделиование" id="68">
 			<Title>
@@ -4707,6 +4773,7 @@
 				<xr:Ref>CommonPicture.ТриРазноцветныхКубика</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ИнициализацияИСозданиеОтчетов" id="69">
 			<Title>
@@ -4721,6 +4788,7 @@
 					<v8:content>Инициализация отчетов</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="тестПоказатьТабДок" id="67">
 			<Title>
@@ -4736,6 +4804,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action callType="After">тестПоказатьТабДокПосле</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
 	<Parameters>
@@ -4864,7 +4933,7 @@
 			</Type>
 		</Parameter>
 	</Parameters>
-	<BaseForm version="2.4">
+	<BaseForm version="2.6">
 		<Title>
 			<v8:item>
 				<v8:lang>ru</v8:lang>
@@ -7096,10 +7165,10 @@
 				</Type>
 				<MainAttribute>true</MainAttribute>
 				<Save>
-					<Field>Объект.ГруппироватьСтроки</Field>
-					<Field>Объект.ГруппироватьПоИерархииСтрок</Field>
-					<Field>Объект.ВидОтчета</Field>
 					<Field>Объект.БланкОтчета</Field>
+					<Field>Объект.ВидОтчета</Field>
+					<Field>Объект.ГруппироватьПоИерархииСтрок</Field>
+					<Field>Объект.ГруппироватьСтроки</Field>
 				</Save>
 			</Attribute>
 			<Attribute name="ОтборПоЭкземплярам" id="2">
@@ -8601,6 +8670,7 @@
 						<v8:content>Инициализация отчетов</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="КоманднаяПанельСтрокиПереместитьВверх" id="2">
 				<Title>
@@ -8615,6 +8685,7 @@
 						<v8:content>Строки переместить вверх</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="КоманднаяПанельСтрокиПереместитьВниз" id="3">
 				<Title>
@@ -8629,6 +8700,7 @@
 						<v8:content>Строки переместить вниз</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="КоманднаяПанельКолонкиПереместитьВверх" id="4">
 				<Title>
@@ -8643,6 +8715,7 @@
 						<v8:content>Колонки переместить вверх</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="КоманднаяПанельКолонкиПереместитьВниз" id="5">
 				<Title>
@@ -8657,6 +8730,7 @@
 						<v8:content>Колонки переместить вниз</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ПрименитьМасштабНажатие" id="6">
 				<Title>
@@ -8671,6 +8745,7 @@
 						<v8:content>Применить выбранный масштаб</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="КоманднаяПанельВычислениеУстановитьВсе" id="7">
 				<Title>
@@ -8685,6 +8760,7 @@
 						<v8:content>Вычисление установить все</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="КоманднаяПанельВычислениеСнятьВсе" id="8">
 				<Title>
@@ -8699,6 +8775,7 @@
 						<v8:content>Вычисление снять все</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="СтрокиВКолонки" id="9">
 				<Title>
@@ -8713,6 +8790,7 @@
 						<v8:content>Строки в колонки</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="КолонкиВСтроки" id="10">
 				<Title>
@@ -8727,6 +8805,7 @@
 						<v8:content>Колонки в строки</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="СтрокиВКолонкиВсе" id="11">
 				<Title>
@@ -8741,6 +8820,7 @@
 						<v8:content>Строки в колонки все</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="КолонкиВСтрокиВсе" id="12">
 				<Title>
@@ -8755,6 +8835,7 @@
 						<v8:content>Колонки в строки все</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыПоПравилуОбработки" id="13">
 				<Title>
@@ -8770,6 +8851,7 @@
 					</v8:item>
 				</ToolTip>
 				<Shortcut>Alt+E</Shortcut>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыСвернутьПоАналитикамОтчетов" id="14">
 				<Title>
@@ -8785,6 +8867,7 @@
 					</v8:item>
 				</ToolTip>
 				<Shortcut>Alt+A</Shortcut>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыСвернутьПоПериоду" id="15">
 				<Title>
@@ -8800,6 +8883,7 @@
 					</v8:item>
 				</ToolTip>
 				<Shortcut>Alt+P</Shortcut>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыКонсолидироватьПериметр" id="16">
 				<Title>
@@ -8815,6 +8899,7 @@
 					</v8:item>
 				</ToolTip>
 				<Shortcut>Alt+O</Shortcut>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыРедактирование" id="17">
 				<Title>
@@ -8829,6 +8914,7 @@
 						<v8:content>Редактирование</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыВычислятьПриИзменении" id="18">
 				<Title>
@@ -8843,6 +8929,7 @@
 						<v8:content>Вычислять при изменении</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыВычислитьСейчас" id="19">
 				<Title>
@@ -8857,6 +8944,7 @@
 						<v8:content>Вычислить сейчас</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыПроверитьНеВыводить" id="20">
 				<Title>
@@ -8871,6 +8959,7 @@
 						<v8:content>Проверить не выводить</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыПроверитьТолькоОшибочные" id="21">
 				<Title>
@@ -8885,6 +8974,7 @@
 						<v8:content>Проверить только ошибочные</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыПроверитьВсе" id="22">
 				<Title>
@@ -8899,6 +8989,7 @@
 						<v8:content>Проверить все</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыСостояниеСогласования" id="23">
 				<Title>
@@ -8913,6 +9004,7 @@
 						<v8:content>Состояние согласования</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыМаршрутСогласования" id="24">
 				<Title>
@@ -8927,6 +9019,7 @@
 						<v8:content>Маршрут согласования</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыИсторияСогласования" id="25">
 				<Title>
@@ -8941,6 +9034,7 @@
 						<v8:content>История согласования</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыОткрытьФормуОтчета" id="26">
 				<Title>
@@ -8955,6 +9049,7 @@
 						<v8:content>Открыть форму отчета</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыРучныеКорректировки" id="27">
 				<Title>
@@ -8969,6 +9064,7 @@
 						<v8:content>Ручные корректировки</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыИзменитьИРаспределить" id="28">
 				<Title>
@@ -8983,6 +9079,7 @@
 						<v8:content>Изменить и распределить</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыКнопкаЗаполнитьПоОбразцу" id="29">
 				<Title>
@@ -8997,6 +9094,7 @@
 						<v8:content>Кнопка заполнить по образцу</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыКомментарии" id="30">
 				<Title>
@@ -9011,6 +9109,7 @@
 						<v8:content>Комментарии</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыЧтениеНеактуальныхЗаписей" id="31">
 				<Title>
@@ -9025,6 +9124,7 @@
 						<v8:content>Чтение неактуальных записей</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыНеВноситьИзменения" id="32">
 				<Title>
@@ -9039,6 +9139,7 @@
 						<v8:content>Не вносить изменения</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыВключитьРасширеннуюДиагностику" id="33">
 				<Title>
@@ -9053,6 +9154,7 @@
 						<v8:content>Включить расширенную диагностику</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыСохраненныеДанные" id="34">
 				<Title>
@@ -9067,6 +9169,7 @@
 						<v8:content>Сохраненные данные</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыОтчетыИсточники" id="35">
 				<Title>
@@ -9081,6 +9184,7 @@
 						<v8:content>Отчеты источники</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыСценарныйАнализ" id="36">
 				<Title>
@@ -9095,6 +9199,7 @@
 						<v8:content>Сценарный анализ</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыОтчетОКорректировках" id="37">
 				<Title>
@@ -9109,6 +9214,7 @@
 						<v8:content>Отчет о корректировках</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыКонсолидированныйОтчетСОперациями" id="38">
 				<Title>
@@ -9123,6 +9229,7 @@
 						<v8:content>Консолидированный отчет с операциями</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыРасшифровкаПересчетаКурсов" id="39">
 				<Title>
@@ -9137,6 +9244,7 @@
 						<v8:content>Расшифровка пересчета курсов</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыЗначенияПоказателейОтчетов" id="40">
 				<Title>
@@ -9151,6 +9259,7 @@
 						<v8:content>Значения показателей отчетов</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыОтменить" id="41">
 				<Title>
@@ -9165,6 +9274,7 @@
 						<v8:content>Отменить</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыПовторить" id="42">
 				<Title>
@@ -9179,6 +9289,7 @@
 						<v8:content>Повторить</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="КоманднаяПанельРедактированиеДобавитьСтрокуРаскрытия" id="43">
 				<Title>
@@ -9193,6 +9304,7 @@
 						<v8:content>Добавить строку раскрытия</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="КоманднаяПанельРедактированиеРедактироватьАналитики" id="44">
 				<Title>
@@ -9207,6 +9319,7 @@
 						<v8:content>Редактировать аналитики</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="КоманднаяПанельРедактированиеУдалитьСтрокуРаскрытия" id="45">
 				<Title>
@@ -9221,6 +9334,7 @@
 						<v8:content>Удалить строку раскрытия</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ГруппыСтрокНажатие" id="46">
 				<Title>
@@ -9235,6 +9349,7 @@
 						<v8:content>Группы строк нажатие</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ГруппыКолонокНажатие" id="47">
 				<Title>
@@ -9249,6 +9364,7 @@
 						<v8:content>Группы колонок нажатие</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="КоманднаяПанельНавигаторЗаголовки" id="48">
 				<Title>
@@ -9263,6 +9379,7 @@
 						<v8:content>Навигатор заголовки</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="КоманднаяПанельНавигаторНавигатор" id="49">
 				<Title>
@@ -9277,6 +9394,7 @@
 						<v8:content>Навигатор</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="РаспределитьЗначения" id="50">
 				<Title>
@@ -9291,6 +9409,7 @@
 						<v8:content>Распределить значения</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="КоманднаяПанельРаспределениеДиаграмма" id="51">
 				<Title>
@@ -9305,6 +9424,7 @@
 						<v8:content>Распределение диаграмма</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ПанельОрганизацииОрганизации" id="52">
 				<Title>
@@ -9319,6 +9439,7 @@
 						<v8:content>Панель организации организации</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ПанельПериодыПериоды" id="53">
 				<Title>
@@ -9333,6 +9454,7 @@
 						<v8:content>Панель периоды периоды</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ПанельСценарииСценарии" id="54">
 				<Title>
@@ -9347,6 +9469,7 @@
 						<v8:content>Панель сценарии сценарии</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ПанельАналитикиАналитики" id="55">
 				<Title>
@@ -9361,6 +9484,7 @@
 						<v8:content>Панель аналитики аналитики</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ОбновитьДанныеФормы" id="56">
 				<Title>
@@ -9375,6 +9499,7 @@
 						<v8:content>Обновить данные формы</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="КоманднаяПанельРедактированиеЗаписать" id="57">
 				<Title>
@@ -9389,6 +9514,7 @@
 						<v8:content>Записать</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ИзменитьПоказатели" id="58">
 				<Title>
@@ -9403,6 +9529,7 @@
 						<v8:content>Изменить показатели</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ИзмениитьПоказателиОтДостигнутого" id="59">
 				<Title>
@@ -9421,6 +9548,7 @@
 					<xr:Ref>CommonPicture.КруговоротСостояний</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ОткрытьФакторныйАнализ" id="60">
 				<Title>
@@ -9439,6 +9567,7 @@
 					<xr:Ref>CommonPicture.Иерархия</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="РаспределитьПоОрганизациям" id="61">
 				<Title>
@@ -9457,6 +9586,7 @@
 					<xr:Ref>CommonPicture.СвязиМеждуОтчетами</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="РаспределитьПоПериодам" id="62">
 				<Title>
@@ -9475,6 +9605,7 @@
 					<xr:Ref>StdPicture.ScheduledJob</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ОчиститьЗначениеПоказателя" id="63">
 				<Title>
@@ -9493,6 +9624,7 @@
 					<xr:Ref>CommonPicture.ОчиститьСодержимое</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="КомментироватьПоказатель" id="64">
 				<Title>
@@ -9511,6 +9643,7 @@
 					<xr:Ref>CommonPicture.Комментарий</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="СкопироватьЗначениеПоказателя" id="65">
 				<Title>
@@ -9525,6 +9658,7 @@
 						<v8:content>Скопировать значение показателя</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ВосстановитьЗначениеИзБуфера" id="66">
 				<Title>
@@ -9543,6 +9677,7 @@
 					<xr:Ref>CommonPicture.Вставить</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ОткрытьФакторныйАнализМоделиование" id="68">
 				<Title>
@@ -9561,6 +9696,7 @@
 					<xr:Ref>CommonPicture.ТриРазноцветныхКубика</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ИнициализацияИСозданиеОтчетов" id="69">
 				<Title>
@@ -9575,6 +9711,7 @@
 						<v8:content>Инициализация отчетов</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 		</Commands>
 		<Parameters>

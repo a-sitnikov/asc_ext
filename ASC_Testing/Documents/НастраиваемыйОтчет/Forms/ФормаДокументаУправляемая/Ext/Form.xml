@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
 	<AutoTitle>false</AutoTitle>
 	<AutoFillCheck>false</AutoFillCheck>
 	<CommandBarLocation>Top</CommandBarLocation>
@@ -3780,6 +3780,7 @@
 					<v8:content>При создании на сервере</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ЗаполнитьАвтоматически" id="2">
 			<Title>
@@ -3795,6 +3796,7 @@
 				</v8:item>
 			</ToolTip>
 			<Shortcut>Alt+E</Shortcut>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыРедактирование" id="3">
 			<Title>
@@ -3809,6 +3811,7 @@
 					<v8:content>Редактирование</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыОтменить" id="4">
 			<Title>
@@ -3827,6 +3830,7 @@
 				<xr:Ref>CommonPicture.ОтменитьОперацию</xr:Ref>
 				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыПовторить" id="5">
 			<Title>
@@ -3845,6 +3849,7 @@
 				<xr:Ref>CommonPicture.ПовторитьОперацию</xr:Ref>
 				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ЗаписатьВФорме" id="9">
 			<Title>
@@ -3859,6 +3864,7 @@
 					<v8:content>Записать в форме</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ЗаписатьИЗакрыть" id="10">
 			<Title>
@@ -3873,6 +3879,7 @@
 					<v8:content>Записать и закрыть</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КнопкаДобавитьНажатие" id="11">
 			<Title>
@@ -3887,6 +3894,7 @@
 					<v8:content>Кнопка добавить нажатие</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыНаДиске" id="12">
 			<Title>
@@ -3903,6 +3911,7 @@
 			</ToolTip>
 			<Shortcut>Alt+F</Shortcut>
 			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыВСправочнике" id="13">
 			<Title>
@@ -3918,6 +3927,7 @@
 				</v8:item>
 			</ToolTip>
 			<Shortcut>Alt+S</Shortcut>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыСвернутьПоАналитикамОтчетов" id="14">
 			<Title>
@@ -3933,6 +3943,7 @@
 				</v8:item>
 			</ToolTip>
 			<Shortcut>Alt+A</Shortcut>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыСвернутьПоПериоду" id="15">
 			<Title>
@@ -3948,6 +3959,7 @@
 				</v8:item>
 			</ToolTip>
 			<Shortcut>Alt+P</Shortcut>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыКонсолидироватьПериметр" id="16">
 			<Title>
@@ -3963,6 +3975,7 @@
 				</v8:item>
 			</ToolTip>
 			<Shortcut>Alt+O</Shortcut>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыВычислятьПриИзменении" id="17">
 			<Title>
@@ -3977,6 +3990,7 @@
 					<v8:content>Вычислять при изменении</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыВычислитьСейчас" id="18">
 			<Title>
@@ -3991,6 +4005,7 @@
 					<v8:content>Вычислить сейчас</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыОчистить" id="19">
 			<Title>
@@ -4010,6 +4025,7 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 				<xr:TransparentPixel x="14" y="14"/>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыПроверить" id="20">
 			<Title>
@@ -4024,6 +4040,7 @@
 					<v8:content>Проверить</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыПроверитьТолькоОшибочные" id="21">
 			<Title>
@@ -4038,6 +4055,7 @@
 					<v8:content>Проверить только ошибочные</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыПроверитьВсе" id="22">
 			<Title>
@@ -4052,6 +4070,7 @@
 					<v8:content>Проверить все</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОтобразитьРаскрытие" id="23">
 			<Title>
@@ -4066,6 +4085,7 @@
 					<v8:content>Отобразить раскрытие</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="РасшифровкаБланк" id="30">
 			<Title>
@@ -4080,6 +4100,7 @@
 					<v8:content>Расшифровка бланк</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="РасшифровкаДерево" id="31">
 			<Title>
@@ -4094,6 +4115,7 @@
 					<v8:content>Расшифровка дерево</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ПечатьВТекущемВиде" id="32">
 			<Title>
@@ -4112,6 +4134,7 @@
 				<xr:Ref>StdPicture.Print</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОбработкаОтчетаПоУмолчанию" id="33">
 			<Title>
@@ -4132,6 +4155,7 @@
 				<xr:TransparentPixel x="14" y="8"/>
 			</Picture>
 			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ЗаполнитьПоУмолчанию" id="34">
 			<Title>
@@ -4151,6 +4175,7 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 				<xr:TransparentPixel x="14" y="8"/>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыЧтениеНеактуальныхЗаписей" id="35">
 			<Title>
@@ -4171,6 +4196,7 @@
 				<xr:TransparentPixel x="12" y="14"/>
 			</Picture>
 			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыНеВноситьИзменения" id="36">
 			<Title>
@@ -4190,6 +4216,7 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 				<xr:TransparentPixel x="8" y="5"/>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="РаботаСВерсиями" id="37">
 			<Title>
@@ -4209,6 +4236,7 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 				<xr:TransparentPixel x="14" y="5"/>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОтобразитьПротокол" id="38">
 			<Title>
@@ -4229,6 +4257,7 @@
 				<xr:TransparentPixel x="12" y="2"/>
 			</Picture>
 			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыКорректировка" id="39">
 			<Title>
@@ -4247,6 +4276,7 @@
 				<xr:Ref>CommonPicture.Дельта</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыИсходныйИмпортированныйФайл" id="40">
 			<Title>
@@ -4261,6 +4291,7 @@
 					<v8:content>Исходный импортированный файл</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОтчетОКорректировкахПоВыделеннымПоказателям" id="41">
 			<Title>
@@ -4275,6 +4306,7 @@
 					<v8:content>Отчет о корректировках по выделенным показателям</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОтчетОКорректировкахПоВсемПоказателям" id="42">
 			<Title>
@@ -4289,6 +4321,7 @@
 					<v8:content>Отчет о корректировках по всем показателям</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОбновитьДанные" id="43">
 			<Title>
@@ -4308,6 +4341,7 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыРаскрытиеВБланке" id="44">
 			<Title>
@@ -4327,6 +4361,7 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 				<xr:TransparentPixel x="0" y="13"/>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ПанельБланкаУстановитьФильтр" id="45">
 			<Title>
@@ -4346,6 +4381,7 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 				<xr:TransparentPixel x="1" y="12"/>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ПанельБланкОтключитьОтбор" id="46">
 			<Title>
@@ -4364,6 +4400,7 @@
 				<xr:Ref>StdPicture.ClearFilter</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ПанельБланкаУстановитьФильтрПоВсемОшибочнымКС" id="47">
 			<Title>
@@ -4383,6 +4420,7 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 				<xr:TransparentPixel x="12" y="1"/>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ПанельБланкаСортироватьВозр" id="49">
 			<Title>
@@ -4401,6 +4439,7 @@
 				<xr:Ref>StdPicture.SortListAsc</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ПанельБланкаСортироватьУбыв" id="50">
 			<Title>
@@ -4419,6 +4458,7 @@
 				<xr:Ref>StdPicture.SortListDesc</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДобавитьСтрокуРаскрытия" id="48">
 			<Title>
@@ -4437,6 +4477,7 @@
 				<xr:Ref>StdPicture.CreateListItem</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="СкопироватьСтрокуРаскрытия" id="51">
 			<Title>
@@ -4455,6 +4496,7 @@
 				<xr:Ref>StdPicture.CloneListItem</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="УдалитьСтрокуРаскрытия" id="52">
 			<Title>
@@ -4473,6 +4515,7 @@
 				<xr:Ref>StdPicture.Delete</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ИзменитьСтрокуРаскрытия" id="53">
 			<Title>
@@ -4491,6 +4534,7 @@
 				<xr:Ref>StdPicture.Change</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОбновитьДерево" id="6">
 			<Title>
@@ -4509,6 +4553,7 @@
 				<xr:Ref>StdPicture.Refresh</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ЗагрузитьАналитики" id="7">
 			<Title>
@@ -4527,6 +4572,7 @@
 				<xr:Ref>CommonPicture.ЗагрузитьСписок</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="СохранитьКак" id="8">
 			<Title>
@@ -4545,6 +4591,7 @@
 				<xr:Ref>CommonPicture.Выгрузить</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="РедактироватьСтруктуруОтчета" id="54">
 			<Title>
@@ -4563,6 +4610,7 @@
 				<xr:Ref>CommonPicture.Настройки</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КомментироватьПоказатель" id="55">
 			<Title>
@@ -4581,6 +4629,7 @@
 				<xr:Ref>CommonPicture.Комментарий</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОткрытьФакторныйАнализ" id="56">
 			<Title>
@@ -4599,6 +4648,7 @@
 				<xr:Ref>CommonPicture.Иерархия</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОткрытьФакторныйАнализМоделиование" id="57">
 			<Title>
@@ -4617,6 +4667,7 @@
 				<xr:Ref>CommonPicture.ТриРазноцветныхКубика</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ИзменитьПоказатели" id="58">
 			<Title>
@@ -4635,6 +4686,7 @@
 				<xr:Ref>CommonPicture.Процент</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="СкопироватьЗначениеПоказателя" id="59">
 			<Title>
@@ -4654,6 +4706,7 @@
 				<xr:Ref>CommonPicture.СкопироватьВБуферОбмена</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ВосстановитьЗначениеИзБуфера" id="60">
 			<Title>
@@ -4673,6 +4726,7 @@
 				<xr:Ref>CommonPicture.ВставитьИзБуфераОбмена</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОчиститьЗначениеПоказателя" id="61">
 			<Title>
@@ -4691,6 +4745,7 @@
 				<xr:Ref>CommonPicture.ОчиститьСодержимое</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ЗакрытьПанельИзменения" id="62">
 			<Title>
@@ -4709,6 +4764,7 @@
 				<xr:Ref>CommonPicture.Умножение</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="РассчитатьЗначенияПоказателей" id="63">
 			<Title>
@@ -4727,6 +4783,7 @@
 				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ИзмениитьПоказателиОтДостигнутого" id="64">
 			<Title>
@@ -4745,6 +4802,7 @@
 				<xr:Ref>CommonPicture.КруговоротСостояний</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="РаспределитьПоПериодам" id="65">
 			<Title>
@@ -4763,6 +4821,7 @@
 				<xr:Ref>StdPicture.ScheduledJob</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="РаспределитьПоОрганизациям" id="66">
 			<Title>
@@ -4781,6 +4840,7 @@
 				<xr:Ref>CommonPicture.СвязиМеждуОтчетами</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОбновитьСУчетомВерсий" id="67">
 			<Title>
@@ -4799,6 +4859,7 @@
 				<xr:Ref>StdPicture.Reread</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыСвернутьПоПроектам" id="68">
 			<Title>
@@ -4813,6 +4874,7 @@
 					<v8:content>Свернуть по проектам</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДействияФормыСвернутьПоОрганизациямПроекта" id="69">
 			<Title>
@@ -4827,6 +4889,7 @@
 					<v8:content>Свернуть по организациям проекта</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ЗаписатьИПродолжить" id="70">
 			<Title>
@@ -4845,6 +4908,7 @@
 				<xr:Ref>StdPicture.Write</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ВвестиДокументКорректировки" id="71">
 			<Title>
@@ -4863,6 +4927,7 @@
 				<xr:Ref>CommonPicture.РучнаяКорректировка</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ПроизводительностьЗаполнение" id="72">
 			<Title>
@@ -4877,6 +4942,7 @@
 					<v8:content>Производительность заполнение</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ПроизводительностьВычисление" id="74">
 			<Title>
@@ -4891,6 +4957,7 @@
 					<v8:content>Производительность вычисление</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ТрассировкаРекурсивногоРасчета" id="75">
 			<Title>
@@ -4905,6 +4972,7 @@
 					<v8:content>Трассировка рекурсивного расчета</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ЗафиксироватьТаблицуБланк" id="76">
 			<Title>
@@ -4923,6 +4991,7 @@
 				<xr:Ref>StdPicture.FixTable</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="НепустыеСтроки" id="24">
 			<Title>
@@ -4941,6 +5010,7 @@
 				<xr:Ref>CommonPicture.НепустыеСтроки</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="НепустыеКолонки" id="25">
 			<Title>
@@ -4959,6 +5029,7 @@
 				<xr:Ref>CommonPicture.НепустыеКолонки</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ЗаполнитьПрочимСпособом" id="28">
 			<Title>
@@ -4974,6 +5045,7 @@
 				</v8:item>
 			</ToolTip>
 			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОткрытьНастройки" id="29">
 			<Title>
@@ -4993,6 +5065,7 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
 	<Parameters>
@@ -5047,7 +5120,7 @@
 			<Type/>
 		</Parameter>
 	</Parameters>
-	<BaseForm version="2.4">
+	<BaseForm version="2.6">
 		<AutoTitle>false</AutoTitle>
 		<AutoFillCheck>false</AutoFillCheck>
 		<CommandBarLocation>Top</CommandBarLocation>
@@ -8825,6 +8898,7 @@
 						<v8:content>При создании на сервере</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ЗаполнитьАвтоматически" id="2">
 				<Title>
@@ -8840,6 +8914,7 @@
 					</v8:item>
 				</ToolTip>
 				<Shortcut>Alt+E</Shortcut>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыРедактирование" id="3">
 				<Title>
@@ -8854,6 +8929,7 @@
 						<v8:content>Редактирование</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыОтменить" id="4">
 				<Title>
@@ -8872,6 +8948,7 @@
 					<xr:Ref>CommonPicture.ОтменитьОперацию</xr:Ref>
 					<xr:LoadTransparent>false</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыПовторить" id="5">
 				<Title>
@@ -8890,6 +8967,7 @@
 					<xr:Ref>CommonPicture.ПовторитьОперацию</xr:Ref>
 					<xr:LoadTransparent>false</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ЗаписатьВФорме" id="9">
 				<Title>
@@ -8904,6 +8982,7 @@
 						<v8:content>Записать в форме</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ЗаписатьИЗакрыть" id="10">
 				<Title>
@@ -8918,6 +8997,7 @@
 						<v8:content>Записать и закрыть</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="КнопкаДобавитьНажатие" id="11">
 				<Title>
@@ -8932,6 +9012,7 @@
 						<v8:content>Кнопка добавить нажатие</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыНаДиске" id="12">
 				<Title>
@@ -8948,6 +9029,7 @@
 				</ToolTip>
 				<Shortcut>Alt+F</Shortcut>
 				<ModifiesSavedData>true</ModifiesSavedData>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыВСправочнике" id="13">
 				<Title>
@@ -8963,6 +9045,7 @@
 					</v8:item>
 				</ToolTip>
 				<Shortcut>Alt+S</Shortcut>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыСвернутьПоАналитикамОтчетов" id="14">
 				<Title>
@@ -8978,6 +9061,7 @@
 					</v8:item>
 				</ToolTip>
 				<Shortcut>Alt+A</Shortcut>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыСвернутьПоПериоду" id="15">
 				<Title>
@@ -8993,6 +9077,7 @@
 					</v8:item>
 				</ToolTip>
 				<Shortcut>Alt+P</Shortcut>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыКонсолидироватьПериметр" id="16">
 				<Title>
@@ -9008,6 +9093,7 @@
 					</v8:item>
 				</ToolTip>
 				<Shortcut>Alt+O</Shortcut>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыВычислятьПриИзменении" id="17">
 				<Title>
@@ -9022,6 +9108,7 @@
 						<v8:content>Вычислять при изменении</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыВычислитьСейчас" id="18">
 				<Title>
@@ -9036,6 +9123,7 @@
 						<v8:content>Вычислить сейчас</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыОчистить" id="19">
 				<Title>
@@ -9055,6 +9143,7 @@
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 					<xr:TransparentPixel x="14" y="14"/>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыПроверить" id="20">
 				<Title>
@@ -9069,6 +9158,7 @@
 						<v8:content>Проверить</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыПроверитьТолькоОшибочные" id="21">
 				<Title>
@@ -9083,6 +9173,7 @@
 						<v8:content>Проверить только ошибочные</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыПроверитьВсе" id="22">
 				<Title>
@@ -9097,6 +9188,7 @@
 						<v8:content>Проверить все</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ОтобразитьРаскрытие" id="23">
 				<Title>
@@ -9111,6 +9203,7 @@
 						<v8:content>Отобразить раскрытие</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="РасшифровкаБланк" id="30">
 				<Title>
@@ -9125,6 +9218,7 @@
 						<v8:content>Расшифровка бланк</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="РасшифровкаДерево" id="31">
 				<Title>
@@ -9139,6 +9233,7 @@
 						<v8:content>Расшифровка дерево</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ПечатьВТекущемВиде" id="32">
 				<Title>
@@ -9157,6 +9252,7 @@
 					<xr:Ref>StdPicture.Print</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ОбработкаОтчетаПоУмолчанию" id="33">
 				<Title>
@@ -9177,6 +9273,7 @@
 					<xr:TransparentPixel x="14" y="8"/>
 				</Picture>
 				<Representation>TextPicture</Representation>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ЗаполнитьПоУмолчанию" id="34">
 				<Title>
@@ -9196,6 +9293,7 @@
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 					<xr:TransparentPixel x="14" y="8"/>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыЧтениеНеактуальныхЗаписей" id="35">
 				<Title>
@@ -9216,6 +9314,7 @@
 					<xr:TransparentPixel x="12" y="14"/>
 				</Picture>
 				<ModifiesSavedData>true</ModifiesSavedData>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыНеВноситьИзменения" id="36">
 				<Title>
@@ -9235,6 +9334,7 @@
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 					<xr:TransparentPixel x="8" y="5"/>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="РаботаСВерсиями" id="37">
 				<Title>
@@ -9254,6 +9354,7 @@
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 					<xr:TransparentPixel x="14" y="5"/>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ОтобразитьПротокол" id="38">
 				<Title>
@@ -9274,6 +9375,7 @@
 					<xr:TransparentPixel x="12" y="2"/>
 				</Picture>
 				<Representation>TextPicture</Representation>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыКорректировка" id="39">
 				<Title>
@@ -9292,6 +9394,7 @@
 					<xr:Ref>CommonPicture.Дельта</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыИсходныйИмпортированныйФайл" id="40">
 				<Title>
@@ -9306,6 +9409,7 @@
 						<v8:content>Исходный импортированный файл</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ОтчетОКорректировкахПоВыделеннымПоказателям" id="41">
 				<Title>
@@ -9320,6 +9424,7 @@
 						<v8:content>Отчет о корректировках по выделенным показателям</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ОтчетОКорректировкахПоВсемПоказателям" id="42">
 				<Title>
@@ -9334,6 +9439,7 @@
 						<v8:content>Отчет о корректировках по всем показателям</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ОбновитьДанные" id="43">
 				<Title>
@@ -9353,6 +9459,7 @@
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
 				<Representation>Picture</Representation>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыРаскрытиеВБланке" id="44">
 				<Title>
@@ -9372,6 +9479,7 @@
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 					<xr:TransparentPixel x="0" y="13"/>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ПанельБланкаУстановитьФильтр" id="45">
 				<Title>
@@ -9391,6 +9499,7 @@
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 					<xr:TransparentPixel x="1" y="12"/>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ПанельБланкОтключитьОтбор" id="46">
 				<Title>
@@ -9409,6 +9518,7 @@
 					<xr:Ref>StdPicture.ClearFilter</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ПанельБланкаУстановитьФильтрПоВсемОшибочнымКС" id="47">
 				<Title>
@@ -9428,6 +9538,7 @@
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 					<xr:TransparentPixel x="12" y="1"/>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ПанельБланкаСортироватьВозр" id="49">
 				<Title>
@@ -9446,6 +9557,7 @@
 					<xr:Ref>StdPicture.SortListAsc</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ПанельБланкаСортироватьУбыв" id="50">
 				<Title>
@@ -9464,6 +9576,7 @@
 					<xr:Ref>StdPicture.SortListDesc</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДобавитьСтрокуРаскрытия" id="48">
 				<Title>
@@ -9482,6 +9595,7 @@
 					<xr:Ref>StdPicture.CreateListItem</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="СкопироватьСтрокуРаскрытия" id="51">
 				<Title>
@@ -9500,6 +9614,7 @@
 					<xr:Ref>StdPicture.CloneListItem</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="УдалитьСтрокуРаскрытия" id="52">
 				<Title>
@@ -9518,6 +9633,7 @@
 					<xr:Ref>StdPicture.Delete</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ИзменитьСтрокуРаскрытия" id="53">
 				<Title>
@@ -9536,6 +9652,7 @@
 					<xr:Ref>StdPicture.Change</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ОбновитьДерево" id="6">
 				<Title>
@@ -9554,6 +9671,7 @@
 					<xr:Ref>StdPicture.Refresh</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ЗагрузитьАналитики" id="7">
 				<Title>
@@ -9572,6 +9690,7 @@
 					<xr:Ref>CommonPicture.ЗагрузитьСписок</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="СохранитьКак" id="8">
 				<Title>
@@ -9590,6 +9709,7 @@
 					<xr:Ref>CommonPicture.Выгрузить</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="РедактироватьСтруктуруОтчета" id="54">
 				<Title>
@@ -9608,6 +9728,7 @@
 					<xr:Ref>CommonPicture.Настройки</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="КомментироватьПоказатель" id="55">
 				<Title>
@@ -9626,6 +9747,7 @@
 					<xr:Ref>CommonPicture.Комментарий</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ОткрытьФакторныйАнализ" id="56">
 				<Title>
@@ -9644,6 +9766,7 @@
 					<xr:Ref>CommonPicture.Иерархия</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ОткрытьФакторныйАнализМоделиование" id="57">
 				<Title>
@@ -9662,6 +9785,7 @@
 					<xr:Ref>CommonPicture.ТриРазноцветныхКубика</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ИзменитьПоказатели" id="58">
 				<Title>
@@ -9680,6 +9804,7 @@
 					<xr:Ref>CommonPicture.Процент</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="СкопироватьЗначениеПоказателя" id="59">
 				<Title>
@@ -9699,6 +9824,7 @@
 					<xr:Ref>CommonPicture.СкопироватьВБуферОбмена</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ВосстановитьЗначениеИзБуфера" id="60">
 				<Title>
@@ -9718,6 +9844,7 @@
 					<xr:Ref>CommonPicture.ВставитьИзБуфераОбмена</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ОчиститьЗначениеПоказателя" id="61">
 				<Title>
@@ -9736,6 +9863,7 @@
 					<xr:Ref>CommonPicture.ОчиститьСодержимое</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ЗакрытьПанельИзменения" id="62">
 				<Title>
@@ -9754,6 +9882,7 @@
 					<xr:Ref>CommonPicture.Умножение</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="РассчитатьЗначенияПоказателей" id="63">
 				<Title>
@@ -9772,6 +9901,7 @@
 					<xr:Ref>StdPicture.GenerateReport</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ИзмениитьПоказателиОтДостигнутого" id="64">
 				<Title>
@@ -9790,6 +9920,7 @@
 					<xr:Ref>CommonPicture.КруговоротСостояний</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="РаспределитьПоПериодам" id="65">
 				<Title>
@@ -9808,6 +9939,7 @@
 					<xr:Ref>StdPicture.ScheduledJob</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="РаспределитьПоОрганизациям" id="66">
 				<Title>
@@ -9826,6 +9958,7 @@
 					<xr:Ref>CommonPicture.СвязиМеждуОтчетами</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ОбновитьСУчетомВерсий" id="67">
 				<Title>
@@ -9844,6 +9977,7 @@
 					<xr:Ref>StdPicture.Reread</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыСвернутьПоПроектам" id="68">
 				<Title>
@@ -9858,6 +9992,7 @@
 						<v8:content>Свернуть по проектам</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДействияФормыСвернутьПоОрганизациямПроекта" id="69">
 				<Title>
@@ -9872,6 +10007,7 @@
 						<v8:content>Свернуть по организациям проекта</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ЗаписатьИПродолжить" id="70">
 				<Title>
@@ -9890,6 +10026,7 @@
 					<xr:Ref>StdPicture.Write</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ВвестиДокументКорректировки" id="71">
 				<Title>
@@ -9908,6 +10045,7 @@
 					<xr:Ref>CommonPicture.РучнаяКорректировка</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ПроизводительностьЗаполнение" id="72">
 				<Title>
@@ -9922,6 +10060,7 @@
 						<v8:content>Производительность заполнение</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ПроизводительностьВычисление" id="74">
 				<Title>
@@ -9936,6 +10075,7 @@
 						<v8:content>Производительность вычисление</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ТрассировкаРекурсивногоРасчета" id="75">
 				<Title>
@@ -9950,6 +10090,7 @@
 						<v8:content>Трассировка рекурсивного расчета</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ЗафиксироватьТаблицуБланк" id="76">
 				<Title>
@@ -9968,6 +10109,7 @@
 					<xr:Ref>StdPicture.FixTable</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="НепустыеСтроки" id="24">
 				<Title>
@@ -9986,6 +10128,7 @@
 					<xr:Ref>CommonPicture.НепустыеСтроки</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="НепустыеКолонки" id="25">
 				<Title>
@@ -10004,6 +10147,7 @@
 					<xr:Ref>CommonPicture.НепустыеКолонки</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ЗаполнитьПрочимСпособом" id="28">
 				<Title>
@@ -10019,6 +10163,7 @@
 					</v8:item>
 				</ToolTip>
 				<ModifiesSavedData>true</ModifiesSavedData>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ОткрытьНастройки" id="29">
 				<Title>
@@ -10038,6 +10183,7 @@
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
 				<ModifiesSavedData>true</ModifiesSavedData>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 		</Commands>
 		<Parameters>

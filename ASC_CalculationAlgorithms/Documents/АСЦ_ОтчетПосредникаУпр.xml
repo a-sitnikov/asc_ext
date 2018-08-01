@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<Document uuid="5e2eb74a-0e4c-4567-8067-e419bd0e6693">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.АСЦ_ОтчетПосредникаУпр" category="Object">
+				<xr:TypeId>1b22db4d-52c8-4c68-bae1-bfc83d8d921d</xr:TypeId>
+				<xr:ValueId>023715e7-1af4-437e-b010-b91245eab03f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.АСЦ_ОтчетПосредникаУпр" category="Ref">
+				<xr:TypeId>b07f0eea-fa7c-4e14-9326-bbef10ed12a6</xr:TypeId>
+				<xr:ValueId>63616550-4a68-4dd3-af45-78666d2b86a6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.АСЦ_ОтчетПосредникаУпр" category="Selection">
+				<xr:TypeId>a182c462-8314-4db3-8190-536733d1b8a6</xr:TypeId>
+				<xr:ValueId>1e084a39-e675-49e8-a253-b510ca489c7f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.АСЦ_ОтчетПосредникаУпр" category="List">
+				<xr:TypeId>7e86034a-0b3a-48f0-8cad-403a55492cd7</xr:TypeId>
+				<xr:ValueId>e3158aba-3c33-4f7c-b028-626803545480</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.АСЦ_ОтчетПосредникаУпр" category="Manager">
+				<xr:TypeId>518625e3-deca-4098-a6dc-d76e91f4b9bc</xr:TypeId>
+				<xr:ValueId>69f27038-0338-429b-ba55-ed0daeeb17fa</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>АСЦ_ОтчетПосредникаУпр</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<DefaultObjectForm>Document.АСЦ_ОтчетПосредникаУпр.Form.ФормаДокумента</DefaultObjectForm>
+			<DefaultListForm>Document.АСЦ_ОтчетПосредникаУпр.Form.ФормаСписка</DefaultListForm>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="8e6ac804-4d0a-4c3a-b01a-88c452cedc13">
+				<Properties>
+					<Name>Организация</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="88f0cdf3-26c0-493f-93af-a1634ae2d92b">
+				<Properties>
+					<Name>Контрагент</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="749ac2e3-1c67-41c3-a777-56e9806e07e5">
+				<Properties>
+					<Name>ДатаНач</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="31b5dc75-46d2-4fec-9304-fe730cb73597">
+				<Properties>
+					<Name>ДатаКон</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="f8397d49-8ae6-4ad3-829c-49b0629f94dc">
+				<Properties>
+					<Name>Комментарий</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="3aa222ed-8957-4d16-af6f-17c1c140599a">
+				<Properties>
+					<Name>ВидОперации</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>cfg:CatalogRef.АСЦ_ВидыОперацийПлановоеНачислениеКВ</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="ba18ed7c-3a3d-4554-a783-c10ff46be7df">
+				<Properties>
+					<Name>ВнешнийНомер</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="957a6eb9-343f-4d3d-876d-f425bc8725ed">
+				<Properties>
+					<Name>ВнешнийИД</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>36</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаСписка</Form>
+			<Form>ФормаДокумента</Form>
+			<TabularSection uuid="f1909781-5f79-4ede-acfb-fa84f0147186">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.АСЦ_ОтчетПосредникаУпр.Продажи" category="TabularSection">
+						<xr:TypeId>173f468e-3129-42e1-ad85-f5a700d6eedb</xr:TypeId>
+						<xr:ValueId>4f516472-33e2-4a9d-b4af-c1a7b53ec339</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.АСЦ_ОтчетПосредникаУпр.Продажи" category="TabularSectionRow">
+						<xr:TypeId>59c029b6-cd0d-4663-84f7-8f6d17569ee7</xr:TypeId>
+						<xr:ValueId>9f20724a-33b0-42d5-ab07-719eada07b54</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>Продажи</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="6f5fcc67-d795-4171-9995-371fbefa7308">
+						<Properties>
+							<Name>Документ</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>cfg:DocumentRef.АСЦ_ПлановоеНачислениеКВ</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="72047830-973a-4115-be22-7c582b2d9a37">
+						<Properties>
+							<Name>Сумма</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>15</v8:Digits>
+									<v8:FractionDigits>2</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="11247520-f154-42ce-8be8-72d6d6fc73e2">
+						<Properties>
+							<Name>ПроцентКВ</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>10</v8:Digits>
+									<v8:FractionDigits>2</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="be48fae2-bd95-4642-9d2e-e069bba8a859">
+						<Properties>
+							<Name>СуммаКВ</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>15</v8:Digits>
+									<v8:FractionDigits>2</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="4bcc6286-b19b-47ff-aefd-27a27d7f4983">
+						<Properties>
+							<Name>СуммаПлан</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>15</v8:Digits>
+									<v8:FractionDigits>2</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="0e24a7a2-e919-4b4e-96f3-efbe9750cbd0">
+						<Properties>
+							<Name>ПроцентКВПлан</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>10</v8:Digits>
+									<v8:FractionDigits>2</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="a54e7183-2776-424b-8ef7-e94cf57b6fc8">
+						<Properties>
+							<Name>СуммаКВПлан</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>15</v8:Digits>
+									<v8:FractionDigits>2</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="7bfd6f71-0ab9-454b-8a10-ad54ad91d587">
+						<Properties>
+							<Name>Реализация</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>cfg:DocumentRef.РеализацияТоваровУслуг</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="18f6a2cb-4a7c-469a-9b17-9383c8fafc3d">
+						<Properties>
+							<Name>ДЦ</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="0b43f82f-3a3e-4cb2-9c3c-6e935fe93b13">
+						<Properties>
+							<Name>Статья</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>cfg:CatalogRef.СтатьиДоходовИРасходов</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<Command uuid="cd766e12-12b8-4eb6-b5a4-9882e2a5c432">
+				<Properties>
+					<Name>АСЦ_ОтчетПосредникаУпр</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>АСЦ Отчет посредника (упр)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>NavigationPanelOrdinary</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+				</Properties>
+			</Command>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<Catalog uuid="a4a273b0-bdaf-4869-ac84-d16d2c9b06e3">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.СтатьиДвиженияРесурсов" category="Object">
+				<xr:TypeId>ebce063e-d360-4307-ba4a-318cb09b79d3</xr:TypeId>
+				<xr:ValueId>7c563f65-6da0-4378-945a-fb8345a111bd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.СтатьиДвиженияРесурсов" category="Ref">
+				<xr:TypeId>2caf6613-2e5b-4332-a0e7-cdc8fa3f7827</xr:TypeId>
+				<xr:ValueId>6be0fb03-1c4c-4567-81e2-f42905dc0056</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.СтатьиДвиженияРесурсов" category="Selection">
+				<xr:TypeId>9ed85f03-57a0-4653-9c61-da9946463487</xr:TypeId>
+				<xr:ValueId>d0305bcc-3c76-40af-ae15-50ec12c400bd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.СтатьиДвиженияРесурсов" category="List">
+				<xr:TypeId>6180562e-f584-40a6-82e7-d0fdd6880d67</xr:TypeId>
+				<xr:ValueId>8bb9265c-e9af-46c2-8204-aaa7b026f521</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.СтатьиДвиженияРесурсов" category="Manager">
+				<xr:TypeId>c72f1955-b077-40b4-bd54-b51371d576ea</xr:TypeId>
+				<xr:ValueId>0d8b8123-c0e8-472a-97b9-63fa3514c112</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СтатьиДвиженияРесурсов</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

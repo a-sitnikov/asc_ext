@@ -117,58 +117,6 @@
 				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>ДокументРеализации</dataPath>
-				<field>ДокументРеализации</field>
-				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Документ реализации</d5p1:content>
-					</d5p1:item>
-				</title>
-				<valueType>
-					<TypeId xmlns="http://v8.1c.ru/8.1/data/core">b66fce8c-a030-4906-89c6-db40d78acdd7</TypeId>
-				</valueType>
-				<appearance/>
-				<inputParameters/>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>Тип</dataPath>
-				<field>Тип</field>
-				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Тип</d5p1:content>
-					</d5p1:item>
-				</title>
-				<valueType>
-					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
-					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
-						<Length>50</Length>
-						<AllowedLength>Variable</AllowedLength>
-					</StringQualifiers>
-				</valueType>
-				<appearance/>
-				<availableValue>
-					<value xsi:type="xs:string">Реализация</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Реализация</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<availableValue>
-					<value xsi:type="xs:string">Корректировка</value>
-					<presentation xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Корректировка</d6p1:content>
-						</d6p1:item>
-					</presentation>
-				</availableValue>
-				<inputParameters/>
-			</field>
-			<field xsi:type="DataSetFieldField">
 				<dataPath>ДЦ</dataPath>
 				<field>ДЦ</field>
 				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
@@ -190,763 +138,22 @@
 					</item>
 				</inputParameters>
 			</field>
-			<item xsi:type="DataSetQuery">
-				<name>Реализация</name>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>Сумма</dataPath>
-					<field>Сумма</field>
-					<appearance>
-						<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
-							<parameter>Формат</parameter>
-							<value xsi:type="xs:string">ЧДЦ=2</value>
-						</item>
-					</appearance>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>Документ</dataPath>
-					<field>Документ</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Документ</d6p1:content>
-						</d6p1:item>
-					</title>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>VIN</dataPath>
-					<field>VIN</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>VIN</d6p1:content>
-						</d6p1:item>
-					</title>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>ДоговорКонтрагента</dataPath>
-					<field>ДоговорКонтрагента</field>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>Контрагент</dataPath>
-					<field>Контрагент</field>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>Организация</dataPath>
-					<field>Организация</field>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>НоменклатурнаяГруппа</dataPath>
-					<field>НоменклатурнаяГруппа</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Номенклатурная группа</d6p1:content>
-						</d6p1:item>
-					</title>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>Номенклатура</dataPath>
-					<field>Номенклатура</field>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>СуммаКВ</dataPath>
-					<field>СуммаКВ</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Сумма КВ</d6p1:content>
-						</d6p1:item>
-					</title>
-					<appearance>
-						<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
-							<parameter>Формат</parameter>
-							<value xsi:type="xs:string">ЧДЦ=2</value>
-						</item>
-					</appearance>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>Статья</dataPath>
-					<field>Статья</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Статья</d6p1:content>
-						</d6p1:item>
-					</title>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>Дата</dataPath>
-					<field>Дата</field>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>ДокументРеализации</dataPath>
-					<field>ДокументРеализации</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Документ реализации</d6p1:content>
-						</d6p1:item>
-					</title>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>Тип</dataPath>
-					<field>Тип</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Тип</d6p1:content>
-						</d6p1:item>
-					</title>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>ДЦ</dataPath>
-					<field>ДЦ</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>ДЦ</d6p1:content>
-						</d6p1:item>
-					</title>
-					<appearance/>
-				</field>
-				<dataSource>ИсточникДанных1</dataSource>
-				<query>ВЫБРАТЬ
-	"Реализация" КАК Тип,
-	ДокТЧ.Ссылка КАК Документ,
-	ДокТЧ.Ссылка КАК ДокументРеализации,
-	ДокТЧ.Ссылка.Дата КАК Дата,
-	ДокТЧ.Номенклатура КАК Номенклатура,
-	ДокТЧ.Номенклатура.НоменклатурнаяГруппа КАК НоменклатурнаяГруппа,
-	ВЫРАЗИТЬ(СвойствоVIN.Значение КАК СТРОКА(20)) КАК VIN,
-	ДокТЧ.Сумма КАК СуммаКВ,
-	ДокТЧ.Сумма КАК Сумма,
-	ДокТЧ.Ссылка.Контрагент КАК Контрагент,
-	ДокТЧ.Ссылка.ДоговорКонтрагента КАК ДоговорКонтрагента,
-	ДокТЧ.Ссылка.Организация КАК Организация,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО КАК ДЦ,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение КАК Статья
-{ВЫБРАТЬ
-	Тип,
-	Документ.*,
-	ДокументРеализации.*,
-	Дата,
-	Номенклатура.*,
-	НоменклатурнаяГруппа.*,
-	VIN,
-	СуммаКВ,
-	Сумма,
-	Контрагент.*,
-	ДоговорКонтрагента.*,
-	Организация.*,
-	ДЦ.*,
-	Статья.*}
-ИЗ
-	Документ.РеализацияТоваровУслуг.Услуги КАК ДокТЧ
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДополнительныеСведения КАК СвойствоVIN
-		ПО (СвойствоVIN.Объект = ДокТЧ.Ссылка)
-			И (СвойствоVIN.Свойство.Имя = "VIN")
-ГДЕ
-	ДокТЧ.Ссылка.Дата МЕЖДУ &amp;Дата1 И &amp;Дата2
-	И ДокТЧ.Ссылка.Проведен
-	И ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение В ИЕРАРХИИ(&amp;СтатьяДоходов)
-	И ДокТЧ.Ссылка.ДокументОснование = НЕОПРЕДЕЛЕНО
-{ГДЕ
-	("Реализация") КАК Тип,
-	ДокТЧ.Ссылка.* КАК Документ,
-	ДокТЧ.Номенклатура.*,
-	ДокТЧ.Номенклатура.НоменклатурнаяГруппа.* КАК НоменклатурнаяГруппа,
-	(ВЫРАЗИТЬ(СвойствоVIN.Значение КАК СТРОКА(20))) КАК VIN,
-	ДокТЧ.Сумма,
-	ДокТЧ.Ссылка.Контрагент.* КАК Контрагент,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.* КАК ДоговорКонтрагента,
-	ДокТЧ.Ссылка.Организация.* КАК Организация,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО.* КАК ДЦ,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение.* КАК Статья}
-
-ОБЪЕДИНИТЬ ВСЕ
-
-ВЫБРАТЬ
-	"Реализация",
-	ДокТЧ.Ссылка,
-	ДокТЧ.Ссылка,
-	ДокТЧ.Ссылка.Дата,
-	ДокТЧ.Номенклатура,
-	ДокТЧ.Номенклатура.НоменклатурнаяГруппа,
-	ВЫРАЗИТЬ(СвойствоVIN.Значение КАК СТРОКА(20)),
-	0,
-	ДокТЧ.Сумма,
-	ДокТЧ.Ссылка.Контрагент,
-	ДокТЧ.Ссылка.ДоговорКонтрагента,
-	ДокТЧ.Ссылка.Организация,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение
-ИЗ
-	Документ.РеализацияТоваровУслуг.АгентскиеУслуги КАК ДокТЧ
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДополнительныеСведения КАК СвойствоVIN
-		ПО (СвойствоVIN.Объект = ДокТЧ.Ссылка)
-			И (СвойствоVIN.Свойство.Имя = "VIN")
-ГДЕ
-	ДокТЧ.Ссылка.Дата МЕЖДУ &amp;Дата1 И &amp;Дата2
-	И ДокТЧ.Ссылка.Проведен
-	И ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение В ИЕРАРХИИ(&amp;СтатьяДоходов)
-	И ДокТЧ.Ссылка.ДокументОснование = НЕОПРЕДЕЛЕНО
-{ГДЕ
-	("Реализация") КАК Тип,
-	ДокТЧ.Ссылка.* КАК Документ,
-	ДокТЧ.Номенклатура.*,
-	ДокТЧ.Номенклатура.НоменклатурнаяГруппа.* КАК НоменклатурнаяГруппа,
-	(ВЫРАЗИТЬ(СвойствоVIN.Значение КАК СТРОКА(20))) КАК VIN,
-	ДокТЧ.Сумма,
-	ДокТЧ.Ссылка.Контрагент.* КАК Контрагент,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.* КАК ДоговорКонтрагента,
-	ДокТЧ.Ссылка.Организация.* КАК Организация,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО.* КАК ДЦ,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение.* КАК Статья}</query>
-				<autoFillFields>false</autoFillFields>
-			</item>
-			<item xsi:type="DataSetQuery">
-				<name>Корректировка</name>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>СуммаКВ</dataPath>
-					<field>СуммаКВ</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Сумма КВ</d6p1:content>
-						</d6p1:item>
-					</title>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>Сумма</dataPath>
-					<field>Сумма</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Сумма</d6p1:content>
-						</d6p1:item>
-					</title>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>Документ</dataPath>
-					<field>Документ</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Документ</d6p1:content>
-						</d6p1:item>
-					</title>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>VIN</dataPath>
-					<field>VIN</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>VIN</d6p1:content>
-						</d6p1:item>
-					</title>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>ДоговорКонтрагента</dataPath>
-					<field>ДоговорКонтрагента</field>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>Контрагент</dataPath>
-					<field>Контрагент</field>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>Организация</dataPath>
-					<field>Организация</field>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>НоменклатурнаяГруппа</dataPath>
-					<field>НоменклатурнаяГруппа</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Номенклатурная группа</d6p1:content>
-						</d6p1:item>
-					</title>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>Номенклатура</dataPath>
-					<field>Номенклатура</field>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>Статья</dataPath>
-					<field>Статья</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Статья</d6p1:content>
-						</d6p1:item>
-					</title>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>Дата</dataPath>
-					<field>Дата</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Дата</d6p1:content>
-						</d6p1:item>
-					</title>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>ДокументРеализации</dataPath>
-					<field>ДокументРеализации</field>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>Тип</dataPath>
-					<field>Тип</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Тип</d6p1:content>
-						</d6p1:item>
-					</title>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>ДЦ</dataPath>
-					<field>ДЦ</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>ДЦ</d6p1:content>
-						</d6p1:item>
-					</title>
-					<appearance/>
-				</field>
-				<dataSource>ИсточникДанных1</dataSource>
-				<query>ВЫБРАТЬ
-	"Корректировка" КАК Тип,
-	ДокТЧ.Ссылка КАК Документ,
-	ВЫБОР
-		КОГДА ДокТЧ.Ссылка.ДокументРеализации ССЫЛКА Документ.РеализацияТоваровУслуг
-			ТОГДА ВЫРАЗИТЬ(ДокТЧ.Ссылка.ДокументРеализации КАК Документ.РеализацияТоваровУслуг)
-	КОНЕЦ КАК ДокументРеализации,
-	ВЫБОР
-		КОГДА &amp;ПериодКорректировок = "Реализация"
-			ТОГДА ВЫБОР
-					КОГДА ДокТЧ.Ссылка.ДокументРеализации ССЫЛКА Документ.РеализацияТоваровУслуг
-						ТОГДА ВЫРАЗИТЬ(ДокТЧ.Ссылка.ДокументРеализации КАК Документ.РеализацияТоваровУслуг).Дата
-				КОНЕЦ
-		ИНАЧЕ ДокТЧ.Ссылка.Дата
-	КОНЕЦ КАК Дата,
-	ДокТЧ.Номенклатура КАК Номенклатура,
-	ДокТЧ.Номенклатура.НоменклатурнаяГруппа КАК НоменклатурнаяГруппа,
-	ВЫРАЗИТЬ(СвойствоVIN.Значение КАК СТРОКА(20)) КАК VIN,
-	ДокТЧ.Сумма - ДокТЧ.СуммаДоИзменения КАК СуммаКВ,
-	ДокТЧ.Сумма - ДокТЧ.СуммаДоИзменения КАК Сумма,
-	ДокТЧ.Ссылка.Контрагент КАК Контрагент,
-	ДокТЧ.Ссылка.ДоговорКонтрагента КАК ДоговорКонтрагента,
-	ДокТЧ.Ссылка.Организация КАК Организация,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО КАК ДЦ,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение КАК Статья
-{ВЫБРАТЬ
-	Тип,
-	Документ.*,
-	ДокументРеализации.*,
-	Дата,
-	Номенклатура.*,
-	НоменклатурнаяГруппа.*,
-	VIN,
-	СуммаКВ,
-	Сумма,
-	Контрагент.*,
-	ДоговорКонтрагента.*,
-	Организация.*,
-	ДЦ.*,
-	Статья.*}
-ИЗ
-	Документ.КорректировкаРеализации.Услуги КАК ДокТЧ
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДополнительныеСведения КАК СвойствоVIN
-		ПО (СвойствоVIN.Объект = ДокТЧ.Ссылка.ДокументРеализации)
-			И (СвойствоVIN.Свойство.Имя = "VIN")
-ГДЕ
-	ВЫБОР
-			КОГДА &amp;ПериодКорректировок = "Реализация"
-				ТОГДА ВЫБОР
-						КОГДА ДокТЧ.Ссылка.ДокументРеализации ССЫЛКА Документ.РеализацияТоваровУслуг
-							ТОГДА ВЫРАЗИТЬ(ДокТЧ.Ссылка.ДокументРеализации КАК Документ.РеализацияТоваровУслуг).Дата
-					КОНЕЦ МЕЖДУ &amp;Дата1 И &amp;Дата2
-			КОГДА &amp;ПериодКорректировок = "Корректировка"
-				ТОГДА ДокТЧ.Ссылка.Дата МЕЖДУ &amp;Дата1 И &amp;Дата2
-			ИНАЧЕ ЛОЖЬ
-		КОНЕЦ
-	И ДокТЧ.Ссылка.Проведен
-	И ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение В ИЕРАРХИИ(&amp;СтатьяДоходов)
-{ГДЕ
-	("Корректировка") КАК Тип,
-	ДокТЧ.Ссылка.* КАК Документ,
-	(ВЫБОР
-			КОГДА ДокТЧ.Ссылка.ДокументРеализации ССЫЛКА Документ.РеализацияТоваровУслуг
-				ТОГДА ВЫРАЗИТЬ(ДокТЧ.Ссылка.ДокументРеализации КАК Документ.РеализацияТоваровУслуг)
-		КОНЕЦ).* КАК ДокументРеализации,
-	ДокТЧ.Номенклатура.*,
-	ДокТЧ.Номенклатура.НоменклатурнаяГруппа.* КАК НоменклатурнаяГруппа,
-	(ВЫРАЗИТЬ(СвойствоVIN.Значение КАК СТРОКА(20))) КАК VIN,
-	ДокТЧ.Сумма,
-	ДокТЧ.Ссылка.Контрагент.* КАК Контрагент,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.* КАК ДоговорКонтрагента,
-	ДокТЧ.Ссылка.Организация.* КАК Организация,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО.* КАК ДЦ,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение.* КАК Статья}
-
-ОБЪЕДИНИТЬ ВСЕ
-
-ВЫБРАТЬ
-	"Корректировка",
-	ДокТЧ.Ссылка,
-	ВЫБОР
-		КОГДА ДокТЧ.Ссылка.ДокументРеализации ССЫЛКА Документ.РеализацияТоваровУслуг
-			ТОГДА ВЫРАЗИТЬ(ДокТЧ.Ссылка.ДокументРеализации КАК Документ.РеализацияТоваровУслуг)
-	КОНЕЦ,
-	ВЫБОР
-		КОГДА &amp;ПериодКорректировок = "Реализация"
-			ТОГДА ВЫБОР
-					КОГДА ДокТЧ.Ссылка.ДокументРеализации ССЫЛКА Документ.РеализацияТоваровУслуг
-						ТОГДА ВЫРАЗИТЬ(ДокТЧ.Ссылка.ДокументРеализации КАК Документ.РеализацияТоваровУслуг).Дата
-				КОНЕЦ
-		ИНАЧЕ ДокТЧ.Ссылка.Дата
-	КОНЕЦ,
-	ДокТЧ.Номенклатура,
-	ДокТЧ.Номенклатура.НоменклатурнаяГруппа,
-	ВЫРАЗИТЬ(СвойствоVIN.Значение КАК СТРОКА(20)),
-	0,
-	ДокТЧ.Сумма - ДокТЧ.СуммаДоИзменения,
-	ДокТЧ.Ссылка.Контрагент,
-	ДокТЧ.Ссылка.ДоговорКонтрагента,
-	ДокТЧ.Ссылка.Организация,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение
-ИЗ
-	Документ.КорректировкаРеализации.АгентскиеУслуги КАК ДокТЧ
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДополнительныеСведения КАК СвойствоVIN
-		ПО (СвойствоVIN.Объект = ДокТЧ.Ссылка.ДокументРеализации)
-			И (СвойствоVIN.Свойство.Имя = "VIN")
-ГДЕ
-	ВЫБОР
-			КОГДА &amp;ПериодКорректировок = "Реализация"
-				ТОГДА ВЫБОР
-						КОГДА ДокТЧ.Ссылка.ДокументРеализации ССЫЛКА Документ.РеализацияТоваровУслуг
-							ТОГДА ВЫРАЗИТЬ(ДокТЧ.Ссылка.ДокументРеализации КАК Документ.РеализацияТоваровУслуг).Дата
-					КОНЕЦ МЕЖДУ &amp;Дата1 И &amp;Дата2
-			КОГДА &amp;ПериодКорректировок = "Корректировка"
-				ТОГДА ДокТЧ.Ссылка.Дата МЕЖДУ &amp;Дата1 И &amp;Дата2
-			ИНАЧЕ ЛОЖЬ
-		КОНЕЦ
-	И ДокТЧ.Ссылка.Проведен
-	И ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение В ИЕРАРХИИ(&amp;СтатьяДоходов)
-{ГДЕ
-	("Корректировка") КАК Тип,
-	ДокТЧ.Ссылка.* КАК Документ,
-	(ВЫБОР
-			КОГДА ДокТЧ.Ссылка.ДокументРеализации ССЫЛКА Документ.РеализацияТоваровУслуг
-				ТОГДА ВЫРАЗИТЬ(ДокТЧ.Ссылка.ДокументРеализации КАК Документ.РеализацияТоваровУслуг)
-		КОНЕЦ).* КАК ДокументРеализации,
-	ДокТЧ.Номенклатура.*,
-	ДокТЧ.Номенклатура.НоменклатурнаяГруппа.* КАК НоменклатурнаяГруппа,
-	(ВЫРАЗИТЬ(СвойствоVIN.Значение КАК СТРОКА(20))) КАК VIN,
-	ДокТЧ.Сумма,
-	ДокТЧ.Ссылка.Контрагент.* КАК Контрагент,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.* КАК ДоговорКонтрагента,
-	ДокТЧ.Ссылка.Организация.* КАК Организация,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО.* КАК ДЦ,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение.* КАК Статья}</query>
-				<autoFillFields>false</autoFillFields>
-			</item>
-			<item xsi:type="DataSetQuery">
-				<name>РеализацияКорректировка</name>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>Сумма</dataPath>
-					<field>Сумма</field>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>Документ</dataPath>
-					<field>Документ</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Документ</d6p1:content>
-						</d6p1:item>
-					</title>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>VIN</dataPath>
-					<field>VIN</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>VIN</d6p1:content>
-						</d6p1:item>
-					</title>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>ДоговорКонтрагента</dataPath>
-					<field>ДоговорКонтрагента</field>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>Тип</dataPath>
-					<field>Тип</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Тип</d6p1:content>
-						</d6p1:item>
-					</title>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>Контрагент</dataPath>
-					<field>Контрагент</field>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>Организация</dataPath>
-					<field>Организация</field>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>Статья</dataPath>
-					<field>Статья</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Статья</d6p1:content>
-						</d6p1:item>
-					</title>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>НоменклатурнаяГруппа</dataPath>
-					<field>НоменклатурнаяГруппа</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Номенклатурная группа</d6p1:content>
-						</d6p1:item>
-					</title>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>Номенклатура</dataPath>
-					<field>Номенклатура</field>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>ДокументРеализации</dataPath>
-					<field>ДокументРеализации</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Документ реализации</d6p1:content>
-						</d6p1:item>
-					</title>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>ДЦ</dataPath>
-					<field>ДЦ</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>ДЦ</d6p1:content>
-						</d6p1:item>
-					</title>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>Дата</dataPath>
-					<field>Дата</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Дата</d6p1:content>
-						</d6p1:item>
-					</title>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>СуммаКВ</dataPath>
-					<field>СуммаКВ</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Сумма КВ</d6p1:content>
-						</d6p1:item>
-					</title>
-					<appearance/>
-				</field>
-				<dataSource>ИсточникДанных1</dataSource>
-				<query>ВЫБРАТЬ
-	"Реализация" КАК Тип,
-	ДокТЧ.Ссылка КАК Документ,
-	ВЫБОР
-		КОГДА ДокТЧ.Ссылка.ДокументОснование ССЫЛКА Документ.РеализацияТоваровУслуг
-			ТОГДА ВЫРАЗИТЬ(ДокТЧ.Ссылка.ДокументОснование КАК Документ.РеализацияТоваровУслуг)
-	КОНЕЦ КАК ДокументРеализации,
-	ВЫБОР
-		КОГДА &amp;ПериодКорректировок = "Реализация"
-			ТОГДА ВЫБОР
-					КОГДА ДокТЧ.Ссылка.ДокументОснование ССЫЛКА Документ.РеализацияТоваровУслуг
-						ТОГДА ВЫРАЗИТЬ(ДокТЧ.Ссылка.ДокументОснование КАК Документ.РеализацияТоваровУслуг).Дата
-				КОНЕЦ
-		ИНАЧЕ ДокТЧ.Ссылка.Дата
-	КОНЕЦ КАК Дата,
-	ДокТЧ.Номенклатура КАК Номенклатура,
-	ДокТЧ.Номенклатура.НоменклатурнаяГруппа КАК НоменклатурнаяГруппа,
-	ВЫРАЗИТЬ(СвойствоVIN.Значение КАК СТРОКА(20)) КАК VIN,
-	ДокТЧ.Сумма КАК СуммаКВ,
-	ДокТЧ.Сумма КАК Сумма,
-	ДокТЧ.Ссылка.Контрагент КАК Контрагент,
-	ДокТЧ.Ссылка.ДоговорКонтрагента КАК ДоговорКонтрагента,
-	ДокТЧ.Ссылка.Организация КАК Организация,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО КАК ДЦ,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение КАК Статья
-{ВЫБРАТЬ
-	Тип,
-	Документ.*,
-	ДокументРеализации.*,
-	Дата,
-	Номенклатура.*,
-	НоменклатурнаяГруппа.*,
-	VIN,
-	СуммаКВ,
-	Сумма,
-	Контрагент.*,
-	ДоговорКонтрагента.*,
-	Организация.*,
-	ДЦ.*,
-	Статья.*}
-ИЗ
-	Документ.РеализацияТоваровУслуг.Услуги КАК ДокТЧ
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДополнительныеСведения КАК СвойствоVIN
-		ПО (СвойствоVIN.Объект = ДокТЧ.Ссылка)
-			И (СвойствоVIN.Свойство.Имя = "VIN")
-ГДЕ
-	ВЫБОР
-			КОГДА &amp;ПериодКорректировок = "Реализация"
-				ТОГДА ВЫБОР
-						КОГДА ДокТЧ.Ссылка.ДокументОснование ССЫЛКА Документ.РеализацияТоваровУслуг
-							ТОГДА ВЫРАЗИТЬ(ДокТЧ.Ссылка.ДокументОснование КАК Документ.РеализацияТоваровУслуг).Дата
-					КОНЕЦ МЕЖДУ &amp;Дата1 И &amp;Дата2
-			КОГДА &amp;ПериодКорректировок = "Корректировка"
-				ТОГДА ДокТЧ.Ссылка.Дата МЕЖДУ &amp;Дата1 И &amp;Дата2
-			ИНАЧЕ ЛОЖЬ
-		КОНЕЦ
-	И ДокТЧ.Ссылка.Проведен
-	И ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение В ИЕРАРХИИ(&amp;СтатьяДоходов)
-	И ДокТЧ.Ссылка.ДокументОснование &lt;&gt; НЕОПРЕДЕЛЕНО
-{ГДЕ
-	("Реализация") КАК Тип,
-	ДокТЧ.Ссылка.* КАК Документ,
-	(ВЫБОР
-			КОГДА ДокТЧ.Ссылка.ДокументОснование ССЫЛКА Документ.РеализацияТоваровУслуг
-				ТОГДА ВЫРАЗИТЬ(ДокТЧ.Ссылка.ДокументОснование КАК Документ.РеализацияТоваровУслуг)
-		КОНЕЦ).* КАК ДокументРеализации,
-	ДокТЧ.Номенклатура.*,
-	ДокТЧ.Номенклатура.НоменклатурнаяГруппа.* КАК НоменклатурнаяГруппа,
-	(ВЫРАЗИТЬ(СвойствоVIN.Значение КАК СТРОКА(20))) КАК VIN,
-	ДокТЧ.Сумма,
-	ДокТЧ.Ссылка.Контрагент.* КАК Контрагент,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.* КАК ДоговорКонтрагента,
-	ДокТЧ.Ссылка.Организация.* КАК Организация,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО.* КАК ДЦ,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение.* КАК Статья}
-
-ОБЪЕДИНИТЬ ВСЕ
-
-ВЫБРАТЬ
-	"Реализация",
-	ДокТЧ.Ссылка,
-	ВЫБОР
-		КОГДА ДокТЧ.Ссылка.ДокументОснование ССЫЛКА Документ.РеализацияТоваровУслуг
-			ТОГДА ВЫРАЗИТЬ(ДокТЧ.Ссылка.ДокументОснование КАК Документ.РеализацияТоваровУслуг)
-	КОНЕЦ,
-	ВЫБОР
-		КОГДА &amp;ПериодКорректировок = "Реализация"
-			ТОГДА ВЫБОР
-					КОГДА ДокТЧ.Ссылка.ДокументОснование ССЫЛКА Документ.РеализацияТоваровУслуг
-						ТОГДА ВЫРАЗИТЬ(ДокТЧ.Ссылка.ДокументОснование КАК Документ.РеализацияТоваровУслуг).Дата
-				КОНЕЦ
-		ИНАЧЕ ДокТЧ.Ссылка.Дата
-	КОНЕЦ,
-	ДокТЧ.Номенклатура,
-	ДокТЧ.Номенклатура.НоменклатурнаяГруппа,
-	ВЫРАЗИТЬ(СвойствоVIN.Значение КАК СТРОКА(20)),
-	0,
-	ДокТЧ.Сумма,
-	ДокТЧ.Ссылка.Контрагент,
-	ДокТЧ.Ссылка.ДоговорКонтрагента,
-	ДокТЧ.Ссылка.Организация,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение
-ИЗ
-	Документ.РеализацияТоваровУслуг.АгентскиеУслуги КАК ДокТЧ
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДополнительныеСведения КАК СвойствоVIN
-		ПО (СвойствоVIN.Объект = ДокТЧ.Ссылка)
-			И (СвойствоVIN.Свойство.Имя = "VIN")
-ГДЕ
-	ВЫБОР
-			КОГДА &amp;ПериодКорректировок = "Реализация"
-				ТОГДА ВЫБОР
-						КОГДА ДокТЧ.Ссылка.ДокументОснование ССЫЛКА Документ.РеализацияТоваровУслуг
-							ТОГДА ВЫРАЗИТЬ(ДокТЧ.Ссылка.ДокументОснование КАК Документ.РеализацияТоваровУслуг).Дата
-					КОНЕЦ МЕЖДУ &amp;Дата1 И &amp;Дата2
-			КОГДА &amp;ПериодКорректировок = "Корректировка"
-				ТОГДА ДокТЧ.Ссылка.Дата МЕЖДУ &amp;Дата1 И &amp;Дата2
-			ИНАЧЕ ЛОЖЬ
-		КОНЕЦ
-	И ДокТЧ.Ссылка.Проведен
-	И ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение В ИЕРАРХИИ(&amp;СтатьяДоходов)
-	И ДокТЧ.Ссылка.ДокументОснование &lt;&gt; НЕОПРЕДЕЛЕНО
-{ГДЕ
-	("Реализация") КАК Тип,
-	ДокТЧ.Ссылка.* КАК Документ,
-	(ВЫБОР
-			КОГДА ДокТЧ.Ссылка.ДокументОснование ССЫЛКА Документ.РеализацияТоваровУслуг
-				ТОГДА ВЫРАЗИТЬ(ДокТЧ.Ссылка.ДокументОснование КАК Документ.РеализацияТоваровУслуг)
-		КОНЕЦ).* КАК ДокументРеализации,
-	ДокТЧ.Номенклатура.*,
-	ДокТЧ.Номенклатура.НоменклатурнаяГруппа.* КАК НоменклатурнаяГруппа,
-	(ВЫРАЗИТЬ(СвойствоVIN.Значение КАК СТРОКА(20))) КАК VIN,
-	ДокТЧ.Сумма,
-	ДокТЧ.Ссылка.Контрагент.* КАК Контрагент,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.* КАК ДоговорКонтрагента,
-	ДокТЧ.Ссылка.Организация.* КАК Организация,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО.* КАК ДЦ,
-	ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение.* КАК Статья}</query>
-				<autoFillFields>false</autoFillFields>
-			</item>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Комитент</dataPath>
+				<field>Комитент</field>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоПродаж</dataPath>
+				<field>КоличествоПродаж</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Количество продаж</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+			</field>
 			<item xsi:type="DataSetQuery">
 				<name>Статьи</name>
 				<field xsi:type="DataSetFieldField">
@@ -959,7 +166,6 @@
 						</d6p1:item>
 					</title>
 					<appearance/>
-					<inputParameters/>
 				</field>
 				<field xsi:type="DataSetFieldField">
 					<dataPath>ДЦ</dataPath>
@@ -990,73 +196,265 @@
 	СпрДЦ.Ссылка.* КАК ДЦ}</query>
 				<autoFillFields>false</autoFillFields>
 			</item>
-		</dataSet>
-		<dataSet xsi:type="DataSetQuery">
-			<name>Договор</name>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>Страховая</dataPath>
-				<field>Страховая</field>
-				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Страховая</d5p1:content>
-					</d5p1:item>
-				</title>
-				<appearance/>
-				<inputParameters/>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>ДоговорКонтрагента</dataPath>
-				<field>ДоговорКонтрагента</field>
-				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Договор контрагента</d5p1:content>
-					</d5p1:item>
-				</title>
-				<appearance/>
-				<inputParameters/>
-			</field>
-			<dataSource>ИсточникДанных1</dataSource>
-			<query>ВЫБРАТЬ
-	ДоговорыКонтрагентовДополнительныеРеквизиты.Ссылка КАК ДоговорКонтрагента,
-	ДоговорыКонтрагентовДополнительныеРеквизиты.Значение КАК Страховая
+			<item xsi:type="DataSetQuery">
+				<name>Регистр</name>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Документ</dataPath>
+					<field>Документ</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Документ</d6p1:content>
+						</d6p1:item>
+					</title>
+					<role>
+						<periodNumber xmlns="http://v8.1c.ru/8.1/data-composition-system/common">1</periodNumber>
+						<periodType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Main</periodType>
+					</role>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>НоменклатурнаяГруппа</dataPath>
+					<field>НоменклатурнаяГруппа</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Номенклатурная группа</d6p1:content>
+						</d6p1:item>
+					</title>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Дата</dataPath>
+					<field>Дата</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Дата</d6p1:content>
+						</d6p1:item>
+					</title>
+					<role>
+						<periodNumber xmlns="http://v8.1c.ru/8.1/data-composition-system/common">2</periodNumber>
+						<periodType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Main</periodType>
+					</role>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Номенклатура</dataPath>
+					<field>Номенклатура</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Номенклатура</d6p1:content>
+						</d6p1:item>
+					</title>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>VIN</dataPath>
+					<field>VIN</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>VIN</d6p1:content>
+						</d6p1:item>
+					</title>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ДЦ</dataPath>
+					<field>ДЦ</field>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Контрагент</dataPath>
+					<field>Контрагент</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Контрагент</d6p1:content>
+						</d6p1:item>
+					</title>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Организация</dataPath>
+					<field>Организация</field>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Статья</dataPath>
+					<field>Статья</field>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Сумма</dataPath>
+					<field>Сумма</field>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>СуммаКВ</dataPath>
+					<field>СуммаКВ</field>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ДоговорКонтрагента</dataPath>
+					<field>ДоговорКонтрагента</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Договор контрагента</d6p1:content>
+						</d6p1:item>
+					</title>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Комитент</dataPath>
+					<field>Комитент</field>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>КоличествоПродаж</dataPath>
+					<field>КоличествоПродаж</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Количество продаж</d6p1:content>
+						</d6p1:item>
+					</title>
+					<appearance/>
+				</field>
+				<dataSource>ИсточникДанных1</dataSource>
+				<query>ВЫБРАТЬ
+	Рег.Регистратор КАК Документ,
+	ВЫБОР
+		КОГДА Рег.Документ.ЭтоКорректировка
+			ТОГДА Рег.Документ.Основание
+	КОНЕЦ КАК ДокументРеализации,
+	ВЫБОР
+		КОГДА Рег.Документ.ЭтоКорректировка
+			ТОГДА Рег.Документ.Основание.Дата
+		ИНАЧЕ Рег.Период
+	КОНЕЦ КАК Дата,
+	Рег.Документ.Номенклатура КАК Номенклатура,
+	Рег.Документ.Номенклатура.НоменклатурнаяГруппа КАК НоменклатурнаяГруппа,
+	Рег.Документ.VIN КАК VIN,
+	Рег.Комитент КАК Комитент,
+	Рег.Документ.Контрагент КАК Контрагент,
+	Рег.Документ.ДоговорКонтрагента КАК ДоговорКонтрагента,
+	Рег.Организация КАК Организация,
+	Рег.ДЦ КАК ДЦ,
+	Рег.Статья КАК Статья,
+	Рег.Сумма КАК Сумма,
+	Рег.СуммаКВ КАК СуммаКВ,
+	ВЫБОР
+		КОГДА Рег.Документ.ЭтоКорректировка
+				И Рег.Сумма = 0
+			ТОГДА -1
+		КОГДА Рег.Документ.Основание &lt;&gt; ЗНАЧЕНИЕ(Документ.АСЦ_ПлановоеНачислениеКВ.ПустаяСсылка)
+				И Рег.Сумма &lt;&gt; 0
+			ТОГДА 0
+		ИНАЧЕ 1
+	КОНЕЦ КАК КоличествоПродаж
 {ВЫБРАТЬ
+	Документ.*,
+	Дата,
+	Номенклатура.*,
+	НоменклатурнаяГруппа.*,
+	VIN,
+	Комитент.*,
+	Контрагент.*,
+	Организация.*,
+	ДЦ.*,
+	Статья.*,
+	Сумма,
+	СуммаКВ,
 	ДоговорКонтрагента.*,
-	Страховая.*}
+	КоличествоПродаж}
 ИЗ
-	Справочник.ДоговорыКонтрагентов.ДополнительныеРеквизиты КАК ДоговорыКонтрагентовДополнительныеРеквизиты
+	РегистрНакопления.АСЦ_НачисленноеКВ КАК Рег
 ГДЕ
-	ДоговорыКонтрагентовДополнительныеРеквизиты.Свойство.Имя = "Страховая"</query>
-			<autoFillFields>false</autoFillFields>
+	ВЫБОР
+			КОГДА Рег.Документ.ЭтоКорректировка
+				ТОГДА Рег.Документ.Основание.Дата
+			ИНАЧЕ Рег.Период
+		КОНЕЦ МЕЖДУ &amp;Дата1 И &amp;Дата2
+	И &amp;ПериодКорректировок = "Реализация"
+{ГДЕ
+	Рег.Регистратор.* КАК Документ,
+	Рег.Документ.Номенклатура.* КАК Номенклатура,
+	Рег.Документ.Номенклатура.НоменклатурнаяГруппа.* КАК НоменклатурнаяГруппа,
+	Рег.Документ.VIN КАК VIN,
+	Рег.Документ.Контрагент.* КАК Контрагент,
+	Рег.Документ.ДоговорКонтрагента.* КАК ДоговорКонтрагента,
+	Рег.Организация.*,
+	Рег.ДЦ.*,
+	Рег.Статья.*,
+	Рег.Сумма,
+	Рег.СуммаКВ,
+	Рег.Комитент.*}
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Рег.Регистратор,
+	ВЫБОР
+		КОГДА Рег.Документ.ЭтоКорректировка
+			ТОГДА Рег.Документ.Основание
+	КОНЕЦ,
+	Рег.Период,
+	Рег.Документ.Номенклатура,
+	Рег.Документ.Номенклатура.НоменклатурнаяГруппа,
+	Рег.Документ.VIN,
+	Рег.Комитент,
+	Рег.Документ.Контрагент,
+	Рег.Документ.ДоговорКонтрагента,
+	Рег.Организация,
+	Рег.ДЦ,
+	Рег.Статья,
+	Рег.Сумма,
+	Рег.СуммаКВ,
+	ВЫБОР
+		КОГДА Рег.Документ.ЭтоКорректировка
+				И Рег.Сумма = 0
+			ТОГДА -1
+		КОГДА Рег.Документ.Основание &lt;&gt; ЗНАЧЕНИЕ(Документ.АСЦ_ПлановоеНачислениеКВ.ПустаяСсылка)
+				И Рег.Сумма &lt;&gt; 0
+			ТОГДА 0
+		ИНАЧЕ 1
+	КОНЕЦ
+ИЗ
+	РегистрНакопления.АСЦ_НачисленноеКВ КАК Рег
+ГДЕ
+	Рег.Период МЕЖДУ &amp;Дата1 И &amp;Дата2
+	И &amp;ПериодКорректировок = "Корректировка"
+{ГДЕ
+	Рег.Регистратор.* КАК Документ,
+	Рег.Документ.Номенклатура.* КАК Номенклатура,
+	Рег.Документ.Номенклатура.НоменклатурнаяГруппа.* КАК НоменклатурнаяГруппа,
+	Рег.Документ.VIN КАК VIN,
+	Рег.Документ.Контрагент.* КАК Контрагент,
+	Рег.Документ.ДоговорКонтрагента.* КАК ДоговорКонтрагента,
+	Рег.Организация.*,
+	Рег.ДЦ.*,
+	Рег.Статья.*,
+	Рег.Сумма,
+	Рег.СуммаКВ,
+	Рег.Комитент.*}</query>
+				<autoFillFields>false</autoFillFields>
+			</item>
 		</dataSet>
-		<dataSetLink>
-			<sourceDataSet>Объединение</sourceDataSet>
-			<destinationDataSet>Договор</destinationDataSet>
-			<sourceExpression>ДоговорКонтрагента</sourceExpression>
-			<destinationExpression>ДоговорКонтрагента</destinationExpression>
-		</dataSetLink>
 		<calculatedField>
-			<dataPath>Количество</dataPath>
+			<dataPath>КоличествоДоговоров</dataPath>
 			<expression>1</expression>
 			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
 				<d4p1:item>
 					<d4p1:lang>ru</d4p1:lang>
-					<d4p1:content>Количество</d4p1:content>
+					<d4p1:content>Количество договоров</d4p1:content>
 				</d4p1:item>
 			</title>
 			<appearance/>
-		</calculatedField>
-		<calculatedField>
-			<dataPath>КоличествоВсего</dataPath>
-			<expression>1</expression>
-			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
-				<d4p1:item>
-					<d4p1:lang>ru</d4p1:lang>
-					<d4p1:content>Количество всего</d4p1:content>
-				</d4p1:item>
-			</title>
-			<appearance/>
+			<inputParameters/>
 		</calculatedField>
 		<calculatedField>
 			<dataPath>ПроцентКВ</dataPath>
@@ -1081,6 +479,19 @@
 					<AllowedSign>Nonnegative</AllowedSign>
 				</NumberQualifiers>
 			</valueType>
+			<inputParameters/>
+		</calculatedField>
+		<calculatedField>
+			<dataPath>КоличествоДокументов</dataPath>
+			<expression>1</expression>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Количество документов</d4p1:content>
+				</d4p1:item>
+			</title>
+			<appearance/>
+			<inputParameters/>
 		</calculatedField>
 		<totalField>
 			<dataPath>Сумма</dataPath>
@@ -1091,17 +502,20 @@
 			<expression>Сумма(СуммаКВ)</expression>
 		</totalField>
 		<totalField>
-			<dataPath>Количество</dataPath>
-			<expression>Количество(Различные ВЫБОР КОГДА Тип = "Реализация" ТОГДА ДоговорКонтрагента КОНЕЦ ) - 
-Количество(Различные ВЫБОР КОГДА Тип = "Сторно" ТОГДА ДоговорКонтрагента КОНЕЦ )</expression>
+			<dataPath>ПроцентКВ</dataPath>
+			<expression>100 * Сумма(СуммаКВ) / Сумма(Сумма)</expression>
 		</totalField>
 		<totalField>
-			<dataPath>КоличествоВсего</dataPath>
+			<dataPath>КоличествоДоговоров</dataPath>
 			<expression>Количество(Различные ДоговорКонтрагента)</expression>
 		</totalField>
 		<totalField>
-			<dataPath>ПроцентКВ</dataPath>
-			<expression>100 * Сумма(СуммаКВ) / Сумма(Сумма)</expression>
+			<dataPath>КоличествоДокументов</dataPath>
+			<expression>Количество(Различные Документ)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>КоличествоПродаж</dataPath>
+			<expression>Сумма(КоличествоПродаж)</expression>
 		</totalField>
 		<parameter>
 			<name>Период</name>
@@ -1120,6 +534,7 @@
 				<d4p1:endDate>0001-01-01T00:00:00</d4p1:endDate>
 			</value>
 			<useRestriction>false</useRestriction>
+			<inputParameters/>
 			<use>Always</use>
 		</parameter>
 		<parameter>
@@ -1139,6 +554,7 @@
 			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 			<useRestriction>true</useRestriction>
 			<expression>&amp;Период.ДатаНачала</expression>
+			<inputParameters/>
 		</parameter>
 		<parameter>
 			<name>Дата2</name>
@@ -1157,6 +573,7 @@
 			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 			<useRestriction>true</useRestriction>
 			<expression>&amp;Период.ДатаОкончания</expression>
+			<inputParameters/>
 		</parameter>
 		<parameter>
 			<name>ПериодКорректировок</name>
@@ -1202,6 +619,7 @@
 					</d5p1:item>
 				</presentation>
 			</availableValue>
+			<inputParameters/>
 			<use>Always</use>
 		</parameter>
 		<parameter>
@@ -1218,6 +636,7 @@
 			</valueType>
 			<value xsi:type="xs:string">c1d1ab85-5039-4f27-acbf-ecf823ddfd4e</value>
 			<useRestriction>true</useRestriction>
+			<inputParameters/>
 		</parameter>
 		<settingsVariant>
 			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Расшифровка по страховкам</name>
@@ -1233,7 +652,7 @@
 <Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<selection>
 		<item xsi:type="SelectedItemField">
-			<field>Количество</field>
+			<field>КоличествоПродаж</field>
 		</item>
 		<item xsi:type="SelectedItemField">
 			<field>Сумма</field>

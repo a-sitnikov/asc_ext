@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.6">
+	<Item id="909c6664-b8c5-41d0-8d38-4aa427ad124f">
+		<Name>ДиагностическаяКарта</Name>
+		<Code/>
+		<Description>Диагностическая карта</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="935b4454-a36d-4e76-ace0-f1d2460afaba">
+		<Name>ДопКВСтраховки</Name>
+		<Code/>
+		<Description>Доп КВ (страховки)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="03d64192-5200-4a2a-aeeb-e6940562c8df">
+		<Name>КВБанков</Name>
+		<Code/>
+		<Description>КВ банков</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5c725351-b248-4c42-b17b-4d98145c4838">
+		<Name>ОплатаВБанке</Name>
+		<Code/>
+		<Description>Оплата в Банке (страховки)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="331c7ab4-88d6-4334-8ba1-362f98167eb6">
+		<Name>Страховки</Name>
+		<Code/>
+		<Description>Страховки</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d9bdc766-8904-45ec-8e18-cd4685574909">
+		<Name>ПрямыеРасчетыССК</Name>
+		<Code/>
+		<Description>Прямые расчеты с СК</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

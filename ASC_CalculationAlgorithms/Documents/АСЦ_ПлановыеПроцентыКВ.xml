@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<Document uuid="65bd294f-008b-488a-80a7-c19ccbc59bc2">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.АСЦ_ПлановыеПроцентыКВ" category="Object">
+				<xr:TypeId>9829430a-5e84-41b7-b143-ed05a5191985</xr:TypeId>
+				<xr:ValueId>3a860d1a-68d9-418f-b50a-84b11d2d80db</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.АСЦ_ПлановыеПроцентыКВ" category="Ref">
+				<xr:TypeId>a2958d14-aa13-4845-a54a-2dfa0950b59d</xr:TypeId>
+				<xr:ValueId>4c00af11-ba2b-4017-92d7-8f62c7fc0553</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.АСЦ_ПлановыеПроцентыКВ" category="Selection">
+				<xr:TypeId>91ab9f0c-230e-4b5b-93b8-bd1da8a958f4</xr:TypeId>
+				<xr:ValueId>79e60075-02ae-4dc0-925e-b7abec5ae905</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.АСЦ_ПлановыеПроцентыКВ" category="List">
+				<xr:TypeId>42fa4c22-0f2f-4c0b-930f-9ac4a9e29d72</xr:TypeId>
+				<xr:ValueId>9f449ecd-0de1-4498-96b4-25e264fa3c92</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.АСЦ_ПлановыеПроцентыКВ" category="Manager">
+				<xr:TypeId>b66cb7ba-e172-4420-97f2-953e75147f61</xr:TypeId>
+				<xr:ValueId>dddc54fb-3580-4a68-aa49-057754a8f108</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>АСЦ_ПлановыеПроцентыКВ</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<DefaultObjectForm>Document.АСЦ_ПлановыеПроцентыКВ.Form.ФормаДокумента</DefaultObjectForm>
+			<DefaultListForm>Document.АСЦ_ПлановыеПроцентыКВ.Form.ФормаСписка</DefaultListForm>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="d36e928f-2620-4162-b582-a2431248d5cb">
+				<Properties>
+					<Name>Организация</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="339f1ef2-ab8e-431f-bac6-81888e9b9e15">
+				<Properties>
+					<Name>Период</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Периоды</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="541a2215-a162-45b4-870b-762da7636a40">
+				<Properties>
+					<Name>Комментарий</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаДокумента</Form>
+			<Form>ФормаСписка</Form>
+			<TabularSection uuid="db019752-fb94-4ab1-b46f-9bf13059204b">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.АСЦ_ПлановыеПроцентыКВ.Проценты" category="TabularSection">
+						<xr:TypeId>c6d14b3b-fd34-42eb-8723-554c00fecf93</xr:TypeId>
+						<xr:ValueId>8673dad8-7f70-46f6-941d-7aaf4a8b8551</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.АСЦ_ПлановыеПроцентыКВ.Проценты" category="TabularSectionRow">
+						<xr:TypeId>9692e5b1-0912-4e26-bcad-80880c503db5</xr:TypeId>
+						<xr:ValueId>3f404c4e-ff21-4be3-a068-3071da9159d7</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>Проценты</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="d5b8608c-09c9-4ac4-992d-7e4d7f7dc158">
+						<Properties>
+							<Name>ДЦ</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="0b507e0a-3639-4358-8f5b-28f3c779ca88">
+						<Properties>
+							<Name>Контрагент</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="75d14260-439d-41e8-86e6-ed413ca3d169">
+						<Properties>
+							<Name>Период</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:dateTime</v8:Type>
+								<v8:DateQualifiers>
+									<v8:DateFractions>Date</v8:DateFractions>
+								</v8:DateQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="c1b02a3f-60e4-4620-833e-e6406cfe3847">
+						<Properties>
+							<Name>ПроцентКВ</Name>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>10</v8:Digits>
+									<v8:FractionDigits>2</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<Command uuid="6f6274bf-796e-4245-8c74-e69b580cbc8f">
+				<Properties>
+					<Name>АСЦ_ПлановыеПроцентыКВ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>АСЦ Плановые проценты КВ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>NavigationPanelOrdinary</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+				</Properties>
+			</Command>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

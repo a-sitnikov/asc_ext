@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<Catalog uuid="7d0532fa-0b6d-4412-b8a4-56b27e93b8c2">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.АСЦ_ВидыОперацийПлановоеНачислениеКВ" category="Object">
+				<xr:TypeId>18b88e35-2833-42c6-b71b-fd155fc230e8</xr:TypeId>
+				<xr:ValueId>a7d8df4f-aec7-4f55-95ce-7c1dde402c85</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.АСЦ_ВидыОперацийПлановоеНачислениеКВ" category="Ref">
+				<xr:TypeId>8ce2d68c-3ef2-4778-ba04-ad252d7cfb69</xr:TypeId>
+				<xr:ValueId>cef6e968-16a3-456e-a494-87f912051f66</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.АСЦ_ВидыОперацийПлановоеНачислениеКВ" category="Selection">
+				<xr:TypeId>aa976abc-5271-4589-96aa-08175c652743</xr:TypeId>
+				<xr:ValueId>a1da4728-ac85-4550-9bf2-f264c4ac0ea1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.АСЦ_ВидыОперацийПлановоеНачислениеКВ" category="List">
+				<xr:TypeId>effdbe84-175b-4c0e-b23c-8cd31dd23092</xr:TypeId>
+				<xr:ValueId>e05544d9-425e-4e59-bbfb-bd13e6645458</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.АСЦ_ВидыОперацийПлановоеНачислениеКВ" category="Manager">
+				<xr:TypeId>989c794e-5819-4d4d-8646-2a9c654e00c9</xr:TypeId>
+				<xr:ValueId>c00ebba2-6fd6-4506-aa0a-cb0a490795b5</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>АСЦ_ВидыОперацийПлановоеНачислениеКВ</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<CodeLength>0</CodeLength>
+			<DescriptionLength>50</DescriptionLength>
+			<CodeType>String</CodeType>
+			<DefaultObjectForm>Catalog.АСЦ_ВидыОперацийПлановоеНачислениеКВ.Form.ФормаЭлемента</DefaultObjectForm>
+			<DefaultListForm>Catalog.АСЦ_ВидыОперацийПлановоеНачислениеКВ.Form.ФормаСписка</DefaultListForm>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="8bb8aee8-feb0-4c82-b165-1740a26a7714">
+				<Properties>
+					<Name>ДвиженияСумма</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="e6f8b6b6-1219-4107-aea1-ffa65a11de06">
+				<Properties>
+					<Name>НастройкаСоотвествияВыгрузкаАстра</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СоответствиеВнешнимИБ</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="c4abf3f3-a868-4090-8d13-afb3a5b6dd3d">
+				<Properties>
+					<Name>ФормироватьКорректировки</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="62914b92-b358-4293-b0bd-fc2f0617a659">
+				<Properties>
+					<Name>ФиксированнаяСебестоимость</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="232d7d9f-aafa-41f6-ad24-b0c0e1fb358c">
+				<Properties>
+					<Name>УчетПоДоговорам</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="f09893cf-fb34-4d21-93ce-a44b1e6a0ef7">
+				<Properties>
+					<Name>ПривязыватьКРеализации</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="adb26b5b-0e9b-4020-b136-9e4d750b872a">
+				<Properties>
+					<Name>УчетПоНоменклатуре</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="29bfd312-4a06-4fb3-bf8e-7194e4ba50bf">
+				<Properties>
+					<Name>СводныйУчет</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="1e7af79a-4d86-46ac-b367-f0f0434e9914">
+				<Properties>
+					<Name>ОтражатьВБУ</Name>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаЭлемента</Form>
+			<Form>ФормаСписка</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

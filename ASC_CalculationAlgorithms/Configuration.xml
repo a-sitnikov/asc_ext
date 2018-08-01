@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
 	<Configuration uuid="58e4e9c0-5b91-4498-b158-7020eafef56d">
 		<InternalInfo>
 			<xr:ContainedObject>
@@ -42,15 +42,33 @@
 			<ConfigurationExtensionCompatibilityMode>Version8_3_10</ConfigurationExtensionCompatibilityMode>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor>АСЦ</Vendor>
-			<Version>2018.04.05</Version>
+			<Version>2018.07.16</Version>
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>Продажи</Subsystem>
+			<Subsystem>БизнесАнализ</Subsystem>
+			<StyleItem>ЦветНедоступногоТекста</StyleItem>
+			<StyleItem>ДобавленныйРеквизитФон</StyleItem>
 			<CommonPicture>СостоянияДокумента</CommonPicture>
 			<CommonPicture>Скрепка</CommonPicture>
 			<CommonPicture>Отчеты</CommonPicture>
 			<CommonPicture>ЗаполнитьФорму</CommonPicture>
+			<CommonPicture>ПереходВправоАктивный</CommonPicture>
+			<CommonPicture>ЖурналПроводокМСФО</CommonPicture>
+			<CommonPicture>ЗагрузитьИзExcel2007</CommonPicture>
+			<CommonPicture>СтруктураПодчиненностиДокумента</CommonPicture>
+			<Role>АСЦ_ЧтениеКорректировкаРеализации</Role>
+			<Role>АСЦ_ЧтениеОтчетПосредника</Role>
+			<Role>АСЦ_ЧтениеОтчетКомитенту</Role>
+			<Role>АСЦ_АналитическиеОтчеты</Role>
+			<Role>АСЦ_ДобавлениеИзменениеОтчетПосредника</Role>
+			<Role>АСЦ_ДобавлениеИзменениеКорректировкаРеализации</Role>
+			<Role>АСЦ_ДобавлениеИзменениеОтчетКомитенту</Role>
+			<Role>АСЦ_ПолныеПрава</Role>
+			<Role>АСЦ_ВебСервисВыгрузкаОФУ</Role>
+			<Role>АСЦ_ДобавлениеИзменениеПлановыхПроцентовКВ</Role>
+			<Role>АСЦ_ПодсистемаНачислениеКВ</Role>
 			<CommonModule>АСЦ_104АСП</CommonModule>
 			<CommonModule>АСЦ_ОбщийМодуль</CommonModule>
 			<CommonModule>АСЦ_ПоискОбъектов</CommonModule>
@@ -65,39 +83,51 @@
 			<FunctionalOption>ВедетсяУчетОсновныхСредств</FunctionalOption>
 			<DefinedType>ВладелецПрисоединенныхФайлов</DefinedType>
 			<DefinedType>ОснованияЭлектронныхДокументов</DefinedType>
+			<DefinedType>АдресатЗапретаИзменения</DefinedType>
 			<CommonCommand>ДополнительныеСведенияКоманднаяПанель</CommonCommand>
 			<CommonCommand>СтруктураПодчиненности</CommonCommand>
 			<CommonCommand>ПрисоединенныеФайлыБП</CommonCommand>
 			<CommonCommand>ПоказатьДвиженияДокумента</CommonCommand>
 			<CommonCommand>ОтправитьПоЭлектроннойПочте</CommonCommand>
 			<CommonCommand>ИсторияИзменений</CommonCommand>
+			<CommonCommand>АСЦ_ПоказатьДвиженияДокумента</CommonCommand>
+			<CommonCommand>АСЦ_СтруктураПодчиненности</CommonCommand>
 			<Constant>ВедетсяУчетОсновныхСредств</Constant>
 			<Constant>ИспользоватьНесколькоОрганизаций</Constant>
 			<Constant>ВедетсяОтгрузкаБезПереходаПраваСобственности</Constant>
 			<Constant>РазрешенаРаботаСНовостями</Constant>
-			<Catalog>СтатьиДоходов</Catalog>
-			<Catalog>Организации</Catalog>
-			<Catalog>Контрагенты</Catalog>
-			<Catalog>ДоговорыКонтрагентов</Catalog>
-			<Catalog>СтатьиДвиженияДенежныхСредств</Catalog>
-			<Catalog>ПодразделенияОрганизаций</Catalog>
-			<Catalog>Номенклатура</Catalog>
-			<Catalog>ПоказателиОтчетов</Catalog>
-			<Catalog>ВидыОтчетов</Catalog>
 			<Catalog>Банки</Catalog>
-			<Catalog>СоответствиеВнешнимИБ</Catalog>
-			<Catalog>ВнешниеИнформационныеБазы</Catalog>
-			<Catalog>СтраныМира</Catalog>
 			<Catalog>БанковскиеСчета</Catalog>
-			<Catalog>Пользователи</Catalog>
-			<Catalog>Склады</Catalog>
 			<Catalog>Валюты</Catalog>
+			<Catalog>ВидыОтчетов</Catalog>
+			<Catalog>ВнешниеИнформационныеБазы</Catalog>
+			<Catalog>ДоговорыКонтрагентов</Catalog>
+			<Catalog>Контрагенты</Catalog>
+			<Catalog>Номенклатура</Catalog>
+			<Catalog>Организации</Catalog>
+			<Catalog>ПодразделенияОрганизаций</Catalog>
+			<Catalog>ПоказателиОтчетов</Catalog>
+			<Catalog>Пользователи</Catalog>
+			<Catalog>ПроизвольныеОтчеты</Catalog>
+			<Catalog>РасшифровкиАналитическихОтчетов</Catalog>
+			<Catalog>Склады</Catalog>
+			<Catalog>СоответствиеВнешнимИБ</Catalog>
+			<Catalog>СохраненныеНастройки</Catalog>
+			<Catalog>СтатьиДвиженияДенежныхСредств</Catalog>
+			<Catalog>СтатьиДвиженияРесурсов</Catalog>
+			<Catalog>СтатьиДоходов</Catalog>
+			<Catalog>СтатьиДоходовИРасходов</Catalog>
+			<Catalog>СтраныМира</Catalog>
+			<Catalog>Периоды</Catalog>
+			<Catalog>АСЦ_ВидыОперацийПлановоеНачислениеКВ</Catalog>
 			<Document>АСЦ_ОтчетПосредника</Document>
 			<Document>ОтчетКомитентуОПродажах</Document>
 			<Document>РеализацияТоваровУслуг</Document>
 			<Document>КорректировкаРеализации</Document>
 			<Document>АСЦ_Платеж</Document>
-			<Enum>ВидыДоговоровКонтрагентовУХ</Enum>
+			<Document>АСЦ_ПлановыеПроцентыКВ</Document>
+			<Document>АСЦ_ПлановоеНачислениеКВ</Document>
+			<Document>АСЦ_ОтчетПосредникаУпр</Document>
 			<Enum>ВидыДоговоровКонтрагентов</Enum>
 			<Enum>ТипыЗначенийПоказателейОтчетов</Enum>
 			<Enum>ЮридическоеФизическоеЛицо</Enum>
@@ -107,6 +137,8 @@
 			<Enum>СтатусыДокументовРеализации</Enum>
 			<Enum>СтатусыСчетаФактуры</Enum>
 			<Enum>СостоянияВерсийЭД</Enum>
+			<Enum>ВидыНазначенияДатЗапрета</Enum>
+			<DataProcessor>АСЦ_ЗагрузкаИзExcel</DataProcessor>
 			<InformationRegister>ОсновныеДоговорыКонтрагента</InformationRegister>
 			<InformationRegister>ИзмененныеОбъектыДляВыгрузки</InformationRegister>
 			<InformationRegister>ДополнительныеСведения</InformationRegister>
@@ -116,7 +148,11 @@
 			<InformationRegister>СтатусыДокументов</InformationRegister>
 			<InformationRegister>ДокументыСОшибкамиПроверкиКонтрагентов</InformationRegister>
 			<InformationRegister>СостоянияЭД</InformationRegister>
+			<InformationRegister>ТекущиеНастройкиАналитическихОтчетов</InformationRegister>
+			<InformationRegister>ДатыЗапретаИзменения</InformationRegister>
+			<InformationRegister>АСЦ_ПлановыеПроцентыКВ</InformationRegister>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
+			<ChartOfCharacteristicTypes>РазделыДатЗапретаИзменения</ChartOfCharacteristicTypes>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

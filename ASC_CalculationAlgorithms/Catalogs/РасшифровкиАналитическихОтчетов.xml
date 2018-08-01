@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<Catalog uuid="aadadcf8-2c52-4c5a-a5d1-e47323b2bcfe">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.РасшифровкиАналитическихОтчетов" category="Object">
+				<xr:TypeId>bd80ada4-f5a6-4ccd-a0c5-2123a7e989fd</xr:TypeId>
+				<xr:ValueId>bbcd73ca-a79a-47e6-b24e-f60bebe456a1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.РасшифровкиАналитическихОтчетов" category="Ref">
+				<xr:TypeId>70a870e8-9d75-4286-bd9c-1c3cbaea2fcc</xr:TypeId>
+				<xr:ValueId>7228bde0-aca4-466b-a835-b232e124b463</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.РасшифровкиАналитическихОтчетов" category="Selection">
+				<xr:TypeId>b33f0a9a-35de-465a-8fc8-bf8a2a4cedbf</xr:TypeId>
+				<xr:ValueId>fe931efa-6d04-4fd7-a9a1-8a3099f095b3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.РасшифровкиАналитическихОтчетов" category="List">
+				<xr:TypeId>08d1d76a-c479-4d1d-90df-bec8c589de9a</xr:TypeId>
+				<xr:ValueId>a1cfd333-60dd-4adf-93cb-aa639fbfd52a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.РасшифровкиАналитическихОтчетов" category="Manager">
+				<xr:TypeId>0d34f57d-03b3-403c-a6bf-8b5f1ba4d80f</xr:TypeId>
+				<xr:ValueId>5f656b63-bc19-40cd-8143-00aa6afb35fd</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>РасшифровкиАналитическихОтчетов</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

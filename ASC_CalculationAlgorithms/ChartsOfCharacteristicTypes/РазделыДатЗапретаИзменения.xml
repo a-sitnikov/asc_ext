@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<ChartOfCharacteristicTypes uuid="c99c43ea-7450-4d20-9355-4dedeb5ec9e3">
+		<InternalInfo>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesObject.РазделыДатЗапретаИзменения" category="Object">
+				<xr:TypeId>6a235ab1-c355-4290-b633-060bf2c19630</xr:TypeId>
+				<xr:ValueId>d78e1448-36c9-4d93-b87e-116c90a21360</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesRef.РазделыДатЗапретаИзменения" category="Ref">
+				<xr:TypeId>a836250f-2a7a-461b-a837-23f632c8209c</xr:TypeId>
+				<xr:ValueId>1678aaa2-2029-4616-a225-ffd3b59bc0d6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesSelection.РазделыДатЗапретаИзменения" category="Selection">
+				<xr:TypeId>3235af36-aaf6-4b10-88dd-56c2857b9110</xr:TypeId>
+				<xr:ValueId>0b699689-e2b4-44d2-8465-177af5675563</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesList.РазделыДатЗапретаИзменения" category="List">
+				<xr:TypeId>36b6a893-a898-42d2-9501-fe7b55c664ed</xr:TypeId>
+				<xr:ValueId>68c5ef3f-abbd-4bfa-b561-4cbbd663f436</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="Characteristic.РазделыДатЗапретаИзменения" category="Characteristic">
+				<xr:TypeId>a78095fe-8657-4f53-a571-53c4636a8931</xr:TypeId>
+				<xr:ValueId>ed754b4e-c02f-4fc2-94b1-a63acd72699e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesManager.РазделыДатЗапретаИзменения" category="Manager">
+				<xr:TypeId>208f25d5-244d-490a-98e7-04bad44d75b4</xr:TypeId>
+				<xr:ValueId>bd043b88-e2a9-48ca-b570-35cf749b6c7c</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>РазделыДатЗапретаИзменения</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects/>
+	</ChartOfCharacteristicTypes>
+</MetaDataObject>

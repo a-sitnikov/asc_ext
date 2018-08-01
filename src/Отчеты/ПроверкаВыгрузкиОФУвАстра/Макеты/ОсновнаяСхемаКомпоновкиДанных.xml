@@ -179,6 +179,12 @@
 				<appearance/>
 				<inputParameters/>
 			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Реализация</dataPath>
+				<field>Реализация</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
 			<item xsi:type="DataSetObject">
 				<name>ДанныеАстра</name>
 				<field xsi:type="DataSetFieldField">
@@ -314,21 +320,16 @@
 				<objectName>Данные</objectName>
 			</item>
 			<item xsi:type="DataSetQuery">
-				<name>ДанныеТекущейИБ</name>
+				<name>ДанныетекущейИБ</name>
 				<field xsi:type="DataSetFieldField">
-					<dataPath>СуммаКВ</dataPath>
-					<field>СуммаКВ</field>
+					<dataPath>СуммаКВАстра</dataPath>
+					<field>СуммаКВАстра</field>
 					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
 						<d6p1:item>
 							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Сумма КВ</d6p1:content>
+							<d6p1:content>Сумма КВАстра</d6p1:content>
 						</d6p1:item>
 					</title>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>Сумма</dataPath>
-					<field>Сумма</field>
 					<appearance/>
 				</field>
 				<field xsi:type="DataSetFieldField">
@@ -343,46 +344,28 @@
 					<appearance/>
 				</field>
 				<field xsi:type="DataSetFieldField">
-					<dataPath>Организация</dataPath>
-					<field>Организация</field>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
-					<dataPath>Договор</dataPath>
-					<field>Договор</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Договор</d6p1:content>
-						</d6p1:item>
-					</title>
+					<dataPath>СуммаКВ</dataPath>
+					<field>СуммаКВ</field>
 					<appearance/>
 				</field>
 				<field xsi:type="DataSetFieldField">
 					<dataPath>Статья</dataPath>
 					<field>Статья</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Статья</d6p1:content>
-						</d6p1:item>
-					</title>
 					<appearance/>
 				</field>
 				<field xsi:type="DataSetFieldField">
-					<dataPath>Дата</dataPath>
-					<field>Дата</field>
+					<dataPath>Реализация</dataPath>
+					<field>Реализация</field>
 					<appearance/>
 				</field>
 				<field xsi:type="DataSetFieldField">
 					<dataPath>ДЦ</dataPath>
 					<field>ДЦ</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>ДЦ</d6p1:content>
-						</d6p1:item>
-					</title>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Сумма</dataPath>
+					<field>Сумма</field>
 					<appearance/>
 				</field>
 				<field xsi:type="DataSetFieldField">
@@ -397,134 +380,65 @@
 					<appearance/>
 				</field>
 				<field xsi:type="DataSetFieldField">
-					<dataPath>СуммаКВАстра</dataPath>
-					<field>СуммаКВАстра</field>
+					<dataPath>Дата</dataPath>
+					<field>Дата</field>
+					<appearance/>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Договор</dataPath>
+					<field>Договор</field>
 					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
 						<d6p1:item>
 							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Сумма КВАстра</d6p1:content>
+							<d6p1:content>Договор</d6p1:content>
 						</d6p1:item>
 					</title>
 					<appearance/>
 				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Организация</dataPath>
+					<field>Организация</field>
+					<appearance/>
+				</field>
 				<dataSource>ИсточникДанных1</dataSource>
 				<query>ВЫБРАТЬ
-	Выборка.Дата КАК Дата,
-	Выборка.Организация КАК Организация,
-	Выборка.ДЦ КАК ДЦ,
-	Выборка.Статья КАК Статья,
-	Выборка.Договор КАК Договор,
-	Выборка.Документ КАК Документ,
-	СУММА(Выборка.СуммаКВ) КАК СуммаКВ,
-	СУММА(Выборка.Сумма) КАК Сумма,
-	0 КАК СуммаАстра,
-	0 КАК СуммаКВАстра
+	Док.Дата КАК Дата,
+	Док.Ссылка КАК Документ,
+	Док.Основание КАК Реализация,
+	Док.Организация КАК Организация,
+	Док.ДоговорКонтрагента.Наименование КАК Договор,
+	Док.ДЦ КАК ДЦ,
+	Док.Статья КАК Статья,
+	Док.СуммаКВ КАК СуммаКВ,
+	Док.Сумма КАК Сумма,
+	0 КАК СуммаКВАстра,
+	0 КАК СуммаАстра
 {ВЫБРАТЬ
 	Дата,
+	Документ.*,
 	Организация.*,
+	Договор,
+	Реализация.*,
 	ДЦ.*,
 	Статья.*,
-	Договор,
-	Документ.*,
-	СуммаКВ,
 	Сумма,
+	СуммаКВ,
 	СуммаКВАстра,
 	СуммаАстра}
 ИЗ
-	(ВЫБРАТЬ
-		ДокТЧ.Ссылка.Дата КАК Дата,
-		ДокТЧ.Ссылка.Организация КАК Организация,
-		ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО КАК ДЦ,
-		ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение КАК Статья,
-		ДокТЧ.Ссылка.ДоговорКонтрагента.Наименование КАК Договор,
-		ДокТЧ.Ссылка КАК Документ,
-		ДокТЧ.Сумма КАК СуммаКВ,
-		ДокТЧ.Сумма КАК Сумма
-	ИЗ
-		Документ.РеализацияТоваровУслуг.Услуги КАК ДокТЧ
-	ГДЕ
-		ДокТЧ.Ссылка.Дата МЕЖДУ &amp;Дата1 И &amp;Дата2
-		И ДокТЧ.Ссылка.Проведен
-	{ГДЕ
-		ДокТЧ.Ссылка.Организация.* КАК Организация,
-		ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО.* КАК ДЦ,
-		ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение.* КАК Статья}
-	
-	ОБЪЕДИНИТЬ ВСЕ
-	
-	ВЫБРАТЬ
-		ДокТЧ.Ссылка.Дата,
-		ДокТЧ.Ссылка.Организация,
-		ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО,
-		ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение,
-		ДокТЧ.Ссылка.ДоговорКонтрагента.Наименование,
-		ДокТЧ.Ссылка,
-		0,
-		ДокТЧ.Сумма
-	ИЗ
-		Документ.РеализацияТоваровУслуг.АгентскиеУслуги КАК ДокТЧ
-	ГДЕ
-		ДокТЧ.Ссылка.Дата МЕЖДУ &amp;Дата1 И &amp;Дата2
-		И ДокТЧ.Ссылка.Проведен
-	{ГДЕ
-		ДокТЧ.Ссылка.Организация.* КАК Организация,
-		ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО.* КАК ДЦ,
-		ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение.* КАК Статья}
-	
-	ОБЪЕДИНИТЬ ВСЕ
-	
-	ВЫБРАТЬ
-		ДокТЧ.Ссылка.Дата,
-		ДокТЧ.Ссылка.Организация,
-		ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО,
-		ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение,
-		ДокТЧ.Ссылка.ДоговорКонтрагента.Наименование,
-		ДокТЧ.Ссылка,
-		ДокТЧ.Сумма - ДокТЧ.СуммаДоИзменения,
-		ДокТЧ.Сумма - ДокТЧ.СуммаДоИзменения
-	ИЗ
-		Документ.КорректировкаРеализации.Услуги КАК ДокТЧ
-	ГДЕ
-		ДокТЧ.Ссылка.Дата МЕЖДУ &amp;Дата1 И &amp;Дата2
-		И ДокТЧ.Ссылка.Проведен
-	{ГДЕ
-		ДокТЧ.Ссылка.Организация.* КАК Организация,
-		ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО.* КАК ДЦ,
-		ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение.* КАК Статья}
-	
-	ОБЪЕДИНИТЬ ВСЕ
-	
-	ВЫБРАТЬ
-		ДокТЧ.Ссылка.Дата,
-		ДокТЧ.Ссылка.Организация,
-		ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО,
-		ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение,
-		ДокТЧ.Ссылка.ДоговорКонтрагента.Наименование,
-		ДокТЧ.Ссылка,
-		0,
-		ДокТЧ.Сумма - ДокТЧ.СуммаДоИзменения
-	ИЗ
-		Документ.КорректировкаРеализации.АгентскиеУслуги КАК ДокТЧ
-	ГДЕ
-		ДокТЧ.Ссылка.Дата МЕЖДУ &amp;Дата1 И &amp;Дата2
-		И ДокТЧ.Ссылка.Проведен
-	{ГДЕ
-		ДокТЧ.Ссылка.Организация.* КАК Организация,
-		ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнойЦФО.* КАК ДЦ,
-		ДокТЧ.Ссылка.ДоговорКонтрагента.ОсновнаяСтатьяИсполнение.* КАК Статья}) КАК Выборка
-		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.НастройкаОбработкиОтчетов КАК Рег
-		ПО Выборка.ДЦ = Рег.Организация
-			И (Рег.ЭлементНастройкиОтчета = ЗНАЧЕНИЕ(Перечисление.ЭлементыНастройкиОтчета.ВнешняяИнформационнаяБаза))
-			И (Рег.ШаблонДокументаБД = НЕОПРЕДЕЛЕНО)
-			И (Рег.ЗначениеЭлементаНастройкиОтчета = &amp;База)
-
-СГРУППИРОВАТЬ ПО
-	Выборка.Дата,
-	Выборка.Организация,
-	Выборка.ДЦ,
-	Выборка.Статья,
-	Выборка.Договор,
-	Выборка.Документ</query>
+	Документ.АСЦ_ПлановоеНачислениеКВ КАК Док
+ГДЕ
+	Док.Дата МЕЖДУ &amp;Дата1 И &amp;Дата2
+	И Док.ВидОперации.НастройкаСоотвествияВыгрузкаАстра.Наименование = "Реализация ОФУ"
+	И НЕ Док.ПометкаУдаления
+{ГДЕ
+	Док.Ссылка.* КАК Документ,
+	Док.Организация.*,
+	Док.ДЦ.*,
+	Док.Статья.*,
+	Док.СуммаКВ,
+	Док.Основание.* КАК Реализация,
+	Док.Сумма}</query>
 				<autoFillFields>false</autoFillFields>
 			</item>
 		</dataSet>
@@ -606,22 +520,7 @@
 				<d4p1:endDate>0001-01-01T00:00:00</d4p1:endDate>
 			</value>
 			<useRestriction>false</useRestriction>
-			<denyIncompleteValues>true</denyIncompleteValues>
-			<use>Always</use>
-		</parameter>
-		<parameter>
-			<name>База</name>
-			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
-				<d4p1:item>
-					<d4p1:lang>ru</d4p1:lang>
-					<d4p1:content>База</d4p1:content>
-				</d4p1:item>
-			</title>
-			<valueType>
-				<TypeId xmlns="http://v8.1c.ru/8.1/data/core">1a1c15c9-4e3e-445d-96fd-a48dce6bceab</TypeId>
-			</valueType>
-			<value xsi:nil="true"/>
-			<useRestriction>false</useRestriction>
+			<inputParameters/>
 			<denyIncompleteValues>true</denyIncompleteValues>
 			<use>Always</use>
 		</parameter>
@@ -642,6 +541,7 @@
 			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 			<useRestriction>true</useRestriction>
 			<expression>&amp;Период.ДатаНачала</expression>
+			<inputParameters/>
 		</parameter>
 		<parameter>
 			<name>Дата2</name>
@@ -660,6 +560,23 @@
 			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 			<useRestriction>true</useRestriction>
 			<expression>&amp;Период.ДатаОкончания</expression>
+			<inputParameters/>
+		</parameter>
+		<parameter>
+			<name>База</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>База</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<TypeId xmlns="http://v8.1c.ru/8.1/data/core">1a1c15c9-4e3e-445d-96fd-a48dce6bceab</TypeId>
+			</valueType>
+			<value xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xsi:type="dcscor:DesignTimeValue"/>
+			<useRestriction>false</useRestriction>
+			<inputParameters/>
+			<use>Always</use>
 		</parameter>
 		<settingsVariant>
 			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Проверка выгрузки ОФУ в Астра</name>
@@ -762,7 +679,7 @@
 			<dcscor:use>false</dcscor:use>
 			<dcscor:parameter>База</dcscor:parameter>
 			<dcscor:value xsi:nil="true"/>
-			<userSettingID>8a90bbf0-3f56-4e23-87c9-a70b37ac20d6</userSettingID>
+			<userSettingID>69929fb9-a30f-46f0-adbf-6d2486fc7b36</userSettingID>
 		</dcscor:item>
 	</dataParameters>
 	<conditionalAppearance>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -498,6 +498,7 @@
 					<v8:content>Выгрузить данные</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ЗагрузитьДанные" id="2">
 			<Title>
@@ -512,6 +513,7 @@
 					<v8:content>Загрузить данные</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ПересчитатьВыгружаемыеПоСсылке" id="3">
 			<Title>
@@ -531,6 +533,7 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОчиститьДополнительныеОбъектыВыгрузки" id="4">
 			<Title>
@@ -546,6 +549,7 @@
 				</v8:item>
 			</ToolTip>
 			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДобавитьИзЗапроса" id="5">
 			<Title>
@@ -560,6 +564,7 @@
 					<v8:content>Добавить из запроса</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="НастройкиКонсолиЗапросов" id="6">
 			<Title>
@@ -574,6 +579,7 @@
 					<v8:content>Настройки консоли запросов</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="СкопироватьОтбор" id="7">
 			<Title>
@@ -588,6 +594,7 @@
 					<v8:content>Скопировать отбор</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="УдалитьОтбор" id="8">
 			<Title>
@@ -602,6 +609,7 @@
 					<v8:content>Удалить отбор</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ПоказатьВыгружаемыеДанные" id="9">
 			<Title>
@@ -616,6 +624,7 @@
 					<v8:content>Показать выгружаемые данные</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОтобразитьНастройкиВыгрузки" id="10">
 			<Title>
@@ -630,6 +639,7 @@
 					<v8:content>Отобразить настройки выгрузки</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОчиститьОолеОтчетов" id="11">
 			<Title>
@@ -644,6 +654,7 @@
 					<v8:content>Очистить ооле отчетов</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КоманднаяПанельОтчетовПоГруппеОтчетов" id="12">
 			<Title>
@@ -658,6 +669,7 @@
 					<v8:content>Командная панель отчетов по группе отчетов</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КоманднаяПанельОтчетовПоШаблонуПроцесса" id="13">
 			<Title>
@@ -672,6 +684,7 @@
 					<v8:content>Командная панель отчетов по шаблону процесса</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КоманднаяПанельОтчетовПоЭтапуПроцесса" id="14">
 			<Title>
@@ -686,9 +699,10 @@
 					<v8:content>Командная панель отчетов по этапу процесса</v8:content>
 				</v8:item>
 			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
-	<BaseForm version="2.4">
+	<BaseForm version="2.6">
 		<Title>
 			<v8:item>
 				<v8:lang>ru</v8:lang>
@@ -1187,6 +1201,7 @@
 						<v8:content>Выгрузить данные</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ЗагрузитьДанные" id="2">
 				<Title>
@@ -1201,6 +1216,7 @@
 						<v8:content>Загрузить данные</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ПересчитатьВыгружаемыеПоСсылке" id="3">
 				<Title>
@@ -1220,6 +1236,7 @@
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
 				<Representation>TextPicture</Representation>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ОчиститьДополнительныеОбъектыВыгрузки" id="4">
 				<Title>
@@ -1235,6 +1252,7 @@
 					</v8:item>
 				</ToolTip>
 				<Representation>TextPicture</Representation>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ДобавитьИзЗапроса" id="5">
 				<Title>
@@ -1249,6 +1267,7 @@
 						<v8:content>Добавить из запроса</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="НастройкиКонсолиЗапросов" id="6">
 				<Title>
@@ -1263,6 +1282,7 @@
 						<v8:content>Настройки консоли запросов</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="СкопироватьОтбор" id="7">
 				<Title>
@@ -1277,6 +1297,7 @@
 						<v8:content>Скопировать отбор</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="УдалитьОтбор" id="8">
 				<Title>
@@ -1291,6 +1312,7 @@
 						<v8:content>Удалить отбор</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ПоказатьВыгружаемыеДанные" id="9">
 				<Title>
@@ -1305,6 +1327,7 @@
 						<v8:content>Показать выгружаемые данные</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ОтобразитьНастройкиВыгрузки" id="10">
 				<Title>
@@ -1319,6 +1342,7 @@
 						<v8:content>Отобразить настройки выгрузки</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="ОчиститьОолеОтчетов" id="11">
 				<Title>
@@ -1333,6 +1357,7 @@
 						<v8:content>Очистить ооле отчетов</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="КоманднаяПанельОтчетовПоГруппеОтчетов" id="12">
 				<Title>
@@ -1347,6 +1372,7 @@
 						<v8:content>Командная панель отчетов по группе отчетов</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="КоманднаяПанельОтчетовПоШаблонуПроцесса" id="13">
 				<Title>
@@ -1361,6 +1387,7 @@
 						<v8:content>Командная панель отчетов по шаблону процесса</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 			<Command name="КоманднаяПанельОтчетовПоЭтапуПроцесса" id="14">
 				<Title>
@@ -1375,6 +1402,7 @@
 						<v8:content>Командная панель отчетов по этапу процесса</v8:content>
 					</v8:item>
 				</ToolTip>
+				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
 		</Commands>
 	</BaseForm>
