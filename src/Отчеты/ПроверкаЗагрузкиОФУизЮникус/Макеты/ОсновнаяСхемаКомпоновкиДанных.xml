@@ -118,31 +118,6 @@
 				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>Центр</dataPath>
-				<field>Центр</field>
-				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Центр</d5p1:content>
-					</d5p1:item>
-				</title>
-				<valueType>
-					<TypeId xmlns="http://v8.1c.ru/8.1/data/core">e5a069cc-4bb6-4856-b35b-18350aff5c45</TypeId>
-				</valueType>
-				<appearance/>
-				<inputParameters>
-					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core">
-						<parameter>ПараметрыВыбора</parameter>
-						<value xsi:type="ChoiceParameters">
-							<item>
-								<choiceParameter>Отбор.ИспользоватьВРегламентированномУчете</choiceParameter>
-								<value xsi:type="xs:boolean">false</value>
-							</item>
-						</value>
-					</item>
-				</inputParameters>
-			</field>
-			<field xsi:type="DataSetFieldField">
 				<dataPath>Документ</dataPath>
 				<field>Документ</field>
 				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
@@ -155,21 +130,13 @@
 				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>ДокументРеализации</dataPath>
-				<field>ДокументРеализации</field>
-				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Документ реализации</d5p1:content>
-					</d5p1:item>
-				</title>
-				<appearance/>
-				<inputParameters/>
-			</field>
-			<field xsi:type="DataSetFieldField">
 				<dataPath>ДЦ</dataPath>
 				<field>ДЦ</field>
+				<valueType>
+					<TypeId xmlns="http://v8.1c.ru/8.1/data/core">5ff90a53-454d-4881-aa69-fd679f99c5f4</TypeId>
+				</valueType>
 				<appearance/>
+				<inputParameters/>
 			</field>
 			<item xsi:type="DataSetObject">
 				<name>ДанныеЮникус</name>
@@ -247,12 +214,12 @@
 					<appearance/>
 				</field>
 				<field xsi:type="DataSetFieldField">
-					<dataPath>Центр</dataPath>
-					<field>Центр</field>
+					<dataPath>ДЦ</dataPath>
+					<field>ДЦ</field>
 					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
 						<d6p1:item>
 							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Центр</d6p1:content>
+							<d6p1:content>ДЦ</d6p1:content>
 						</d6p1:item>
 					</title>
 					<valueType>
@@ -377,17 +344,6 @@
 					<appearance/>
 				</field>
 				<field xsi:type="DataSetFieldField">
-					<dataPath>ДокументРеализации</dataPath>
-					<field>ДокументРеализации</field>
-					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
-						<d6p1:item>
-							<d6p1:lang>ru</d6p1:lang>
-							<d6p1:content>Документ реализации</d6p1:content>
-						</d6p1:item>
-					</title>
-					<appearance/>
-				</field>
-				<field xsi:type="DataSetFieldField">
 					<dataPath>ДЦ</dataPath>
 					<field>ДЦ</field>
 					<appearance/>
@@ -399,11 +355,6 @@
 	Док.ДЦ КАК ДЦ,
 	Док.Сумма КАК Сумма,
 	Док.СуммаКВ КАК СуммаКВ,
-	ВЫБОР
-		КОГДА Док.Основание = ЗНАЧЕНИЕ(Документ.АСЦ_ПлановоеНачислениеКВ.ПустаяСсылка)
-			ТОГДА Док.Ссылка
-		ИНАЧЕ Док.Основание
-	КОНЕЦ КАК ДокументРеализации,
 	Док.Ссылка КАК Документ,
 	0 КАК СуммаЮникус,
 	0 КАК СуммаКВЮникус
@@ -412,7 +363,6 @@
 	Договор,
 	ДЦ.*,
 	Документ.*,
-	ДокументРеализации.*,
 	СуммаКВ,
 	Сумма,
 	СуммаКВЮникус,
@@ -422,9 +372,12 @@
 ГДЕ
 	Док.Дата МЕЖДУ &amp;Дата1 И &amp;Дата2
 	И НЕ Док.ПометкаУдаления
+	И Док.ВидОперации В (ЗНАЧЕНИЕ(Справочник.АСЦ_ВидыОперацийПлановоеНачислениеКВ.Страховки), ЗНАЧЕНИЕ(Справочник.АСЦ_ВидыОперацийПлановоеНачислениеКВ.ПрямыеРасчетыССК))
+	И (Док.Сумма &lt;&gt; 0
+			ИЛИ Док.СуммаКВ &lt;&gt; 0)
 {ГДЕ
 	Док.ДЦ.* КАК ДЦ,
-	Док.Ссылка.* КАК ДокументРеализации}</query>
+	Док.Ссылка.* КАК Документ}</query>
 				<autoFillFields>false</autoFillFields>
 			</item>
 		</dataSet>
@@ -440,7 +393,6 @@
 					</d5p1:item>
 				</title>
 				<appearance/>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ДоговорСсылка</dataPath>
@@ -452,7 +404,6 @@
 					</d5p1:item>
 				</title>
 				<appearance/>
-				<inputParameters/>
 			</field>
 			<dataSource>ИсточникДанных1</dataSource>
 			<query>ВЫБРАТЬ
@@ -530,7 +481,6 @@
 				<d4p1:endDate>0001-01-01T00:00:00</d4p1:endDate>
 			</value>
 			<useRestriction>false</useRestriction>
-			<inputParameters/>
 			<denyIncompleteValues>true</denyIncompleteValues>
 			<use>Always</use>
 		</parameter>
@@ -551,7 +501,6 @@
 			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 			<useRestriction>true</useRestriction>
 			<expression>&amp;Период.ДатаНачала</expression>
-			<inputParameters/>
 		</parameter>
 		<parameter>
 			<name>Дата2</name>
@@ -570,7 +519,6 @@
 			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 			<useRestriction>true</useRestriction>
 			<expression>&amp;Период.ДатаОкончания</expression>
-			<inputParameters/>
 		</parameter>
 		<settingsVariant>
 			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Проверка загрузки ОФУ из Юникус</name>
@@ -643,7 +591,7 @@
 	<filter>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
-			<left xsi:type="dcscor:Field">Центр</left>
+			<left xsi:type="dcscor:Field">ДЦ</left>
 			<comparisonType>Equal</comparisonType>
 			<userSettingID>12084f9f-47d3-42a8-bb64-806befd69232</userSettingID>
 		</item>
@@ -654,6 +602,17 @@
 			<right xsi:type="xs:string"/>
 			<viewMode>Normal</viewMode>
 			<userSettingID>eec1b32f-53ba-4316-925c-ee41d5eb08c8</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<left xsi:type="dcscor:Field">Документ.Основание</left>
+			<comparisonType>NotFilled</comparisonType>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не отображать корректировки</v8:content>
+				</v8:item>
+			</presentation>
+			<userSettingID>8a777aec-76f8-4d00-95ea-a31f17e9e852</userSettingID>
 		</item>
 		<viewMode>Normal</viewMode>
 		<userSettingID>e80e1b48-ea35-43a8-8b31-fa8d36745a31</userSettingID>
@@ -668,11 +627,6 @@
 				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
 			</dcscor:value>
 			<userSettingID>f7ffcd9f-b52d-428c-90f3-4ee520a05adb</userSettingID>
-		</dcscor:item>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:parameter>ПериодКорректировок</dcscor:parameter>
-			<dcscor:value xsi:type="xs:string">Корректировка</dcscor:value>
-			<userSettingID>b15d10a9-9cd2-4daf-b92e-f6b9c7860d33</userSettingID>
 		</dcscor:item>
 	</dataParameters>
 	<conditionalAppearance>
@@ -770,6 +724,7 @@
 				<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
 			</item>
 			<item xsi:type="GroupItemField">
+				<use>false</use>
 				<field>Дата</field>
 				<groupType>Items</groupType>
 				<periodAdditionType>None</periodAdditionType>
@@ -826,7 +781,6 @@
 		<outputParameters/>
 	</item>
 	<itemsViewMode>Normal</itemsViewMode>
-	<itemsUserSettingID>36d3277a-147a-43fd-89f9-b3097507e97d</itemsUserSettingID>
 </Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
 <SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
